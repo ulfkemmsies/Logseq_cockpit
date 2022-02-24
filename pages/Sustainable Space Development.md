@@ -1,0 +1,126 @@
+- Five main categories for meta-analysis:
+	- Commerce and Legislation
+		- New Space as an industry
+		- Property Rights
+		-
+		-
+	- Environmental and Planetary Protection
+		- Near Earth Object
+			- Detection
+			- Deflection
+		- Earth-for-Space
+		-
+	- Prospecting and Resource Extraction
+		- Lunar Mining
+			- Lunar Prospecting
+			-
+		- Asteroid
+			- Prospecting
+	- Social Consequences
+		- Benefits from Space
+		- Unequal Space Access between Countries
+		- Barriers of entry
+			- Capital
+			- Knowledge
+			- Experience
+		-
+	- Space Infrastructure
+		- Orbital Stations
+		- Fuel Depots
+		- EO satellites
+			- Comms
+			- Sensing
+			- Navigation
+		- Habitats
+		- Orbital Manufacturing
+-
+- Moral compass:
+	- Idea is to develop a quantitative and qualitative framework to evaluate the impact of a given company to a range of acceptable outcomes for space development
+		- Evaluate the impact on:
+			- Space Ecosystem
+				- Infrastructure
+				- Orbital Real Estate
+				- Celestial Bodies
+			- Earth itself
+				- Environment
+					- Atmosphere
+					- Ground
+						- Mining
+						- Launch/Spaceport
+				- Economy
+					- Countries
+					- Consumers
+				- Geopolitics
+					- Military involvement
+						- Further harms to others
+	- The outcome of the score given is whether the company gets:
+		- Funding
+		- Business
+-
+- PDFs
+	- Space Economics
+		- ![Establishing-a-framework-for-studying-the-emerging-cislu_2017_Acta-Astronaut.pdf](../assets/Establishing-a-framework-for-studying-the-emerging-cislu_2017_Acta-Astronaut_1644409004313_0.pdf)
+		- ![space.2019.0023.pdf](../assets/space.2019.0023_1644590767893_0.pdf)
+	- General Space Sustainability (perhaps legislation and governance?)
+		-
+		- Sustainable space exploration and its relevance to the privatization of space ventures - Iliopoulos, Esteban
+			- ![Sustainable-space-exploration-and-its-relevance-to-the-priv_2020_Acta-Astron.pdf](../assets/Sustainable-space-exploration-and-its-relevance-to-the-priv_2020_Acta-Astron_1644402724018_0.pdf)
+		- ![Global-risk--amp--global-challenges---Space-as-a-game-changer_2017_Acta-Astr.pdf](../assets/Global-risk--amp--global-challenges---Space-as-a-game-changer_2017_Acta-Astr_1644406750692_0.pdf)
+		- ![Mining-beyond-earth-for-sustainable-development--Will-humanit_2020_Acta-Astr.pdf](../assets/Mining-beyond-earth-for-sustainable-development--Will-humanit_2020_Acta-Astr_1644407247865_0.pdf)
+		- ![Towards-a-results-based-management-approach-for-capacity-building_2017_Acta-.pdf](../assets/Towards-a-results-based-management-approach-for-capacity-building_2017_Acta-_1644407342183_0.pdf)
+		- ![Establishing-space-activities-in-non-space-faring-nations--An_2018_Acta-Astr.pdf](../assets/Establishing-space-activities-in-non-space-faring-nations--An_2018_Acta-Astr_1644407416125_0.pdf)
+		- ![Application-of-environmental-life-cycle-assessment--LCA--wit_2020_Acta-Astro.pdf](../assets/Application-of-environmental-life-cycle-assessment--LCA--wit_2020_Acta-Astro_1644407450730_0.pdf)
+		- ![Spaceship-Earth--Space-driven-technologies-and-systems-for-_2015_Acta-Astron.pdf](../assets/Spaceship-Earth--Space-driven-technologies-and-systems-for-_2015_Acta-Astron_1644407571000_0.pdf)
+		-
+	- Commerce and Legislation
+		- ![Legal-conundrums-of-space-tourism_2021_Acta-Astronautica.pdf](../assets/Legal-conundrums-of-space-tourism_2021_Acta-Astronautica_1644407983382_0.pdf)
+		- ![Competitive-space-foresight--Incentivizing-compliance-thr_2021_Acta-Astronau.pdf](../assets/Competitive-space-foresight--Incentivizing-compliance-thr_2021_Acta-Astronau_1644408016005_0.pdf)
+		- ![The-cis-lunar-ecosystem---A-systems-model-and-scenarios-of-t_2021_Acta-Astro.pdf](../assets/The-cis-lunar-ecosystem---A-systems-model-and-scenarios-of-t_2021_Acta-Astro_1644408486082_0.pdf)
+		- ![The-economics-of-moon-mining_2020_Acta-Astronautica.pdf](../assets/The-economics-of-moon-mining_2020_Acta-Astronautica_1644408660847_0.pdf)
+		- ![Cooperation-in-space--An-international-comparison-for-the-be_2019_Acta-Astro.pdf](../assets/Cooperation-in-space--An-international-comparison-for-the-be_2019_Acta-Astro_1644408771855_0.pdf)
+		- ![space.2021.0050.pdf](../assets/space.2021.0050_1644590354429_0.pdf)
+		- ![space.2019.0039.pdf](../assets/space.2019.0039_1644590708879_0.pdf)
+		- ![space.2020.0044.pdf](../assets/space.2020.0044_1644590726946_0.pdf)
+		- ![space.2019.0006.pdf](../assets/space.2019.0006_1644590750917_0.pdf)
+		- ![space.2021.0049.pdf](../assets/space.2021.0049_1644590822427_0.pdf)
+		-
+		-
+		-
+		-
+	- Space Infrastructure
+		-
+		- ![Biological-challenges-of-true-space-settlement_2018_Acta-Astronautica.pdf](../assets/Biological-challenges-of-true-space-settlement_2018_Acta-Astronautica_1644408898969_0.pdf)
+		- ![Regolith-based-additive-manufacturing-for-sustainable-develop_2021_Acta-Astr.pdf](../assets/Regolith-based-additive-manufacturing-for-sustainable-develop_2021_Acta-Astr_1644409814468_0.pdf)
+		- ![Conceptual-design-and-assessment-of-a-mars-orbital-logistics_2021_Acta-Astro.pdf](../assets/Conceptual-design-and-assessment-of-a-mars-orbital-logistics_2021_Acta-Astro_1644409841511_0.pdf)
+		- ![Food-in-space-from-hydrogen-oxidizing-bacteria_2021_Acta-Astronautica.pdf](../assets/Food-in-space-from-hydrogen-oxidizing-bacteria_2021_Acta-Astronautica_1644409906960_0.pdf)
+		-
+	- Social Consequences
+		- ![From-impact-refugees-to-deterritorialized-states--Foresighting_2022_Acta-Ast.pdf](../assets/From-impact-refugees-to-deterritorialized-states--Foresighting_2022_Acta-Ast_1644407776098_0.pdf)
+		- ![Space-as-an-Enabler-in-the-Maritime-Sector_2019_Acta-Astronautica.pdf](../assets/Space-as-an-Enabler-in-the-Maritime-Sector_2019_Acta-Astronautica_1644408858777_0.pdf)
+		- ![A-socio-economic-impact-assessment-of-the-European-launc_2017_Acta-Astronaut.pdf](../assets/A-socio-economic-impact-assessment-of-the-European-launc_2017_Acta-Astronaut_1644409064661_0.pdf)
+		- ![An-adaptive-paradigm-for-human-space-settlement_2016_Acta-Astronautica.pdf](../assets/An-adaptive-paradigm-for-human-space-settlement_2016_Acta-Astronautica_1644409207410_0.pdf)
+		- ![Space-assets-for-demining-assistance_2013_Acta-Astronautica.pdf](../assets/Space-assets-for-demining-assistance_2013_Acta-Astronautica_1644409662601_0.pdf)
+		- ![space.2020.0016.pdf](../assets/space.2020.0016_1644590800388_0.pdf)
+		-
+		-
+		-
+	- Resource Acquisition
+		- ![Imagining-sustainable-human-ecosystems-with-power-to-x-in-si_2022_Acta-Astro.pdf](../assets/Imagining-sustainable-human-ecosystems-with-power-to-x-in-si_2022_Acta-Astro_1644409770128_0.pdf)
+		- ![Gas-purification-for-oxygen-extraction-from-lunar-regol_2021_Acta-Astronauti.pdf](../assets/Gas-purification-for-oxygen-extraction-from-lunar-regol_2021_Acta-Astronauti_1644409924540_0.pdf)
+		- ![space.2019.0002.pdf](../assets/space.2019.0002_1644590586147_0.pdf)
+		-
+		-
+	- Planetary Protection
+		- ![The-political-desirability--feasibility--and-sustainability_2019_Acta-Astron.pdf](../assets/The-political-desirability--feasibility--and-sustainability_2019_Acta-Astron_1644407686886_0.pdf)
+		- ![Dual-use-conundrum--Towards-the-weaponization-of-outer-_2021_Acta-Astronauti.pdf](../assets/Dual-use-conundrum--Towards-the-weaponization-of-outer-_2021_Acta-Astronauti_1644407831695_0.pdf)
+		- ![Evaluating-the-impact-of-space-activities-in-low-earth-_2021_Acta-Astronauti.pdf](../assets/Evaluating-the-impact-of-space-activities-in-low-earth-_2021_Acta-Astronauti_1644407908058_0.pdf)
+		- ![Environmental-sustainability-of-large-satellite-constellat_2020_Acta-Astrona.pdf](../assets/Environmental-sustainability-of-large-satellite-constellat_2020_Acta-Astrona_1644408540917_0.pdf)
+		- ![Space-assets--technology-and-services-in-support-of-ener_2017_Acta-Astronaut.pdf](../assets/Space-assets--technology-and-services-in-support-of-ener_2017_Acta-Astronaut_1644409102852_0.pdf)
+		- ![Identifying-the-50-statistically-most-concerning-derelict_2021_Acta-Astronau.pdf](../assets/Identifying-the-50-statistically-most-concerning-derelict_2021_Acta-Astronau_1644409882259_0.pdf)
+		- ![Just-in-time-collision-avoidance---A-review_2020_Acta-Astronautica.pdf](../assets/Just-in-time-collision-avoidance---A-review_2020_Acta-Astronautica_1644409999021_0.pdf)
+		-
+		-
+		-
+-
+- Keywords from Graphs:
+	-
