@@ -8,6 +8,8 @@
 		- ### 2. Weibull model for failure + suspension analysis (WeibullR package / Python reliability package as basis?) – automated reporting and web-based access
 			-
 		- ### 3. Proportional hazard model Jardine?
+			- ![Proportional_hazards_Jardine.pdf](../assets/Proportional_hazards_Jardine_1645798354955_0.pdf)
+			-
 		- ### 4. CRISP DM for reliability engineering & asset management
 			- #### 1. Translate with applicable terms
 			- #### 2. Case studies + content material --> Marketing?
