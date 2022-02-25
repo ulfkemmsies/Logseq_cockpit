@@ -1,2 +1,33 @@
 - # Responsibilities
+	- ## Model development
+		- 1. Availability modeling from renewal theory (thesis Bendara / Secuos Artis tool)
+		- 2. Weibull model for failure + suspension analyse (WeibullR package / Python reliability package as basis?) – automated reporting and web-based access
+		- 3. Proportional hazard model Jardine?
+		- 4. CRISP DM for reliability engineering & asset management
+			- 1. Translate with applicable terms
+			- 2. Case studies + content material --> Marketing?
+		- 5. Dynamic simulation from systems theory / business dynamics simulation
+		- 6. Process historians time series to simple physical models, e.g.:
+			- 1. Pump / compressor
+			- 2. Gearbox
+			- 3. Generalized models based on available measurement signals, and what to do if certain signals are not available
 	-
+	- ## Digital marketing
+		- 1. Specialization guide (Philip Morgan model)
+			- 1. Finalize model
+			- 2. Map out potential leads
+		- 2. LinkedIn Sales Navigator:
+		- 1. Use outcome of specialization guide to map out potential interesting companies
+		- 2. Generate leads
+		- 3. Content
+		- 1. Blog posts
+		- 2. LinkedIn posts
+		- 3. Website optimization
+	-
+	- Client work – work in progress and please keep confidential
+	- 1. APM Terminals:
+	  1. Reliability data analist - 1 day/week?
+	- 2. Configuration management / document control
+	  3. FMECA - risk analysis - maintenance plan
+	- 4. IFS data cleaning and management
+	- 2. Interim maintenance / reliability engineer (through intermediate firms.)
