@@ -1,6 +1,7 @@
 - # Responsibilities
 	- ## Model development
 		- ### 1. Availability modeling from renewal theory (thesis Bendara / Secuos Artis tool)
+			-
 		- ### 2. Weibull model for failure + suspension analyse (WeibullR package / Python reliability package as basis?) – automated reporting and web-based access
 		- ### 3. Proportional hazard model Jardine?
 		- ### 4. CRISP DM for reliability engineering & asset management
@@ -18,7 +19,7 @@
 			- #### 2. Map out potential leads
 		- ### 2. LinkedIn Sales Navigator:
 			- #### 1. Use outcome of specialization guide to map out potential interesting companies
-			- ####2. Generate leads
+			- #### 2. Generate leads
 		- ### 3. Content
 			- #### 1. Blog posts
 			- #### 2. LinkedIn posts
@@ -26,8 +27,8 @@
 	-
 	- ## Client work – work in progress and please keep confidential
 		- ### 1. APM Terminals:
-			- 1. Reliability data analist - 1 day/week?
-			- 2. Configuration management / document control
-			  3. FMECA - risk analysis - maintenance plan
-			- 4. IFS data cleaning and management
+			- #### 1. Reliability data analist - 1 day/week?
+			- #### 2. Configuration management / document control
+			- #### 3. FMECA - risk analysis - maintenance plan
+			- #### 4. IFS data cleaning and management
 		- ### 2. Interim maintenance / reliability engineer (through intermediate firms.)
