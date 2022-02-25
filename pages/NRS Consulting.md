@@ -5,7 +5,7 @@
 				- ![A_conceptual_interpretation_of_the_renewal_theorem_with_applications_JvN.pdf](../assets/A_conceptual_interpretation_of_the_renewal_theorem_with_applications_JvN_1645798049453_0.pdf)
 				- ![Bednara_thesis_2008 - Methds for approximating the availability functions.pdf](../assets/Bednara_thesis_2008_-_Methds_for_approximating_the_availability_functions_1645798062058_0.pdf)
 			-
-		- ### 2. Weibull model for failure + suspension analyse (WeibullR package / Python reliability package as basis?) – automated reporting and web-based access
+		- ### 2. Weibull model for failure + suspension analysis (WeibullR package / Python reliability package as basis?) – automated reporting and web-based access
 			-
 		- ### 3. Proportional hazard model Jardine?
 		- ### 4. CRISP DM for reliability engineering & asset management
