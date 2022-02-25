@@ -6,6 +6,7 @@
 				- ![Bednara_thesis_2008 - Methds for approximating the availability functions.pdf](../assets/Bednara_thesis_2008_-_Methds_for_approximating_the_availability_functions_1645798062058_0.pdf)
 			-
 		- ### 2. Weibull model for failure + suspension analysis (WeibullR package / Python reliability package as basis?) – automated reporting and web-based access
+			- [Reliability package Python](https://reliability.readthedocs.io/en/latest/)
 			-
 		- ### 3. Proportional hazard model Jardine?
 			- ![Proportional_hazards_Jardine.pdf](../assets/Proportional_hazards_Jardine_1645798354955_0.pdf)
