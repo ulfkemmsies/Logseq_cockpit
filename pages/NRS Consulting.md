@@ -24,10 +24,10 @@
 		- 2. LinkedIn posts
 		- 3. Website optimization
 	-
-	- Client work – work in progress and please keep confidential
-	- 1. APM Terminals:
-	  1. Reliability data analist - 1 day/week?
-	- 2. Configuration management / document control
-	  3. FMECA - risk analysis - maintenance plan
-	- 4. IFS data cleaning and management
-	- 2. Interim maintenance / reliability engineer (through intermediate firms.)
+	- ## Client work – work in progress and please keep confidential
+		- APM Terminals:
+			- 1. Reliability data analist - 1 day/week?
+			- 2. Configuration management / document control
+			  3. FMECA - risk analysis - maintenance plan
+			- 4. IFS data cleaning and management
+		- 2. Interim maintenance / reliability engineer (through intermediate firms.)
