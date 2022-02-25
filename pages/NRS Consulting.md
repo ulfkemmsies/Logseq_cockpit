@@ -7,7 +7,7 @@
 			-
 		- ### 2. Weibull model for failure + suspension analysis (WeibullR package / Python reliability package as basis?) – automated reporting and web-based access
 			- [Reliability package Python](https://reliability.readthedocs.io/en/latest/)
-			-
+			- /
 		- ### 3. Proportional hazard model Jardine?
 			- ![Proportional_hazards_Jardine.pdf](../assets/Proportional_hazards_Jardine_1645798354955_0.pdf)
 			-
