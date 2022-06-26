@@ -1,0 +1,84 @@
+- Project Flow:
+	- ![](https://cdn.mathpix.com/snip/images/fIF3I_RX1C-WuXRjMIrDisuelxJc4qlvVfx0qS11l9c.original.fullsize.png)
+	- Data Collection
+	- Data Modelling
+		- Problem Definition
+			- What problem are we trying to solve?
+			- Types of problems:
+				- Types of learning:
+					- Supervised
+						- Labels already extant for samples
+						- Classification
+							- Binary Classification
+							- Multi-class Classification
+						- Regression
+							- Continuous values
+					- Unsupervised
+					- Transfer
+					- Reinforcement
+						- Repetition and loss minimization dependent on goal (game playing)
+				- Regression
+				- Classification
+				- Recommendation
+			- When shouldn't ML be used?
+				- When simple hard-coded solution works
+		- Data
+			- What data do we have?
+			- Structured vs. Unstructured Data
+		- Evaluation
+			- What defines success?
+			- What accuracy level do we want?
+		- Features
+			- What features should we model? What do we know about the data?
+			- Numerical
+			- Categorical
+			- Derived
+			- Over 10% feature coverage is a good practice
+		- Modelling
+			- What kind of model should we use?
+			- Key points:
+				- Head toward generality (fitting well)
+				- Keep test set separate at all costs
+				- Compare apples to apples
+				- One best metric does not mean best model
+			- Splitting data: 3 sets
+				- Training
+					- Like course material
+					- Use 70-80%
+				- Validation
+					- Like practice exam
+					- Model hyperparameter tuning and experimentation evaluation
+					- 10-15% of data
+				- Test
+					- Like final exam
+					- For testing and comparing
+					- Use 10-15% of data
+			- Choosing model:
+				- Structured data works well with decision trees, catboost, xgboost
+				- Unstructured data works well with deep learning, transfer learning
+			- Tuning model:
+				- Hyperparameters
+				- Tune on training or validation data sets
+			- Comparing model:
+				- Accuracy is expected to to fall from training to test set, seek balanced fitting
+					- If decrease is too large, then underfitting
+						- Due to mismatch between sets (different features, etc.)
+						- Means model has not learned well
+						- Underfitting fixes:
+							- Train longer
+							- Use more advanced model
+							- Reduce amount of features
+							- Increase model hyperparameters
+					- If test set performance is higher (or much lower), then overfitting
+						- This happens through data leakage: test data getting into training set
+						- Could also happen through overfitting training data
+							- Means model does not generalize well
+						- Overfitting fixes:
+							- Collect more data
+							- Try a less advanced model
+				- Comparing different models means apples to apples:
+					- Same inputs (training set)
+					- Different prediction times and accuracies
+		- Experiments
+			- What else can we try?
+	- Deployment

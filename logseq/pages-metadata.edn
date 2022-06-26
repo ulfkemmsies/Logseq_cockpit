@@ -3,6 +3,10 @@
   :block/created-at 1645452229385,
   :block/updated-at 1645452229385}
  {:block/name
+  "../assets/a_conceptual_interpretation_of_the_renewal_theorem_with_applications_jvn_1645798049453_0.pdf",
+  :block/created-at 1654113794170,
+  :block/updated-at 1654113794170}
+ {:block/name
   "../assets/an-adaptive-paradigm-for-human-space-settlement_2016_acta-astronautica_1644409207410_0.pdf",
   :block/created-at 1645452229386,
   :block/updated-at 1645452229386}
@@ -10,6 +14,10 @@
   "../assets/application-of-environmental-life-cycle-assessment--lca--wit_2020_acta-astro_1644407450730_0.pdf",
   :block/created-at 1645452229385,
   :block/updated-at 1645452229385}
+ {:block/name
+  "../assets/bednara_thesis_2008_-_methds_for_approximating_the_availability_functions_1645798062058_0.pdf",
+  :block/created-at 1654113794159,
+  :block/updated-at 1654113794159}
  {:block/name
   "../assets/biological-challenges-of-true-space-settlement_2018_acta-astronautica_1644408898969_0.pdf",
   :block/created-at 1645452229385,
@@ -78,10 +86,21 @@
   "../assets/legal-conundrums-of-space-tourism_2021_acta-astronautica_1644407983382_0.pdf",
   :block/created-at 1645452229386,
   :block/updated-at 1645452229386}
+ {:block/name "../assets/m01-01-introduction_1646570782094_0.pptx",
+  :block/created-at 1654113794209,
+  :block/updated-at 1654113794209}
  {:block/name
   "../assets/mining-beyond-earth-for-sustainable-development--will-humanit_2020_acta-astr_1644407247865_0.pdf",
   :block/created-at 1645452229385,
   :block/updated-at 1645452229385}
+ {:block/name
+  "../assets/proportional_hazards_jardine_1645798354955_0.pdf",
+  :block/created-at 1654113794171,
+  :block/updated-at 1654113794171}
+ {:block/name
+  "../assets/proportional_hazards_jardine_1645971985398_0.pdf",
+  :block/created-at 1654113794209,
+  :block/updated-at 1654113794209}
  {:block/name
   "../assets/regolith-based-additive-manufacturing-for-sustainable-develop_2021_acta-astr_1644409814468_0.pdf",
   :block/created-at 1645452229385,
@@ -146,61 +165,855 @@
   "../assets/towards-a-results-based-management-approach-for-capacity-building_2017_acta-_1644407342183_0.pdf",
   :block/created-at 1645452229387,
   :block/updated-at 1645452229387}
+ {:block/name "01.03.2022",
+  :block/created-at 1646092800000,
+  :block/updated-at 1646092800000}
+ {:block/name "01.04.2022",
+  :block/created-at 1648771200000,
+  :block/updated-at 1648771200000}
+ {:block/name "01.05.2022",
+  :block/created-at 1651363200000,
+  :block/updated-at 1651363200000}
+ {:block/name "01.06.2022",
+  :block/created-at 1654041600000,
+  :block/updated-at 1654041600000}
+ {:block/name "01.07.2022",
+  :block/created-at 1656633600000,
+  :block/updated-at 1656633600000}
+ {:block/name "01.08.2022",
+  :block/created-at 1659312000000,
+  :block/updated-at 1659312000000}
+ {:block/name "02.03.2022",
+  :block/created-at 1646179200000,
+  :block/updated-at 1646179200000}
+ {:block/name "02.04.2022",
+  :block/created-at 1648857600000,
+  :block/updated-at 1648857600000}
+ {:block/name "02.05.2022",
+  :block/created-at 1651449600000,
+  :block/updated-at 1651449600000}
+ {:block/name "02.06.2022",
+  :block/created-at 1654128000000,
+  :block/updated-at 1654128000000}
+ {:block/name "02.07.2022",
+  :block/created-at 1656720000000,
+  :block/updated-at 1656720000000}
+ {:block/name "02.08.2022",
+  :block/created-at 1659398400000,
+  :block/updated-at 1659398400000}
  {:block/name "03.02.2022",
   :block/created-at 1643916452385,
   :block/updated-at 1643916463311}
+ {:block/name "03.03.2022",
+  :block/created-at 1646265600000,
+  :block/updated-at 1646265600000}
+ {:block/name "03.04.2022",
+  :block/created-at 1648944000000,
+  :block/updated-at 1648944000000}
+ {:block/name "03.05.2022",
+  :block/created-at 1651536000000,
+  :block/updated-at 1651536000000}
+ {:block/name "03.06.2022",
+  :block/created-at 1654214400000,
+  :block/updated-at 1654307983774}
+ {:block/name "03.07.2022",
+  :block/created-at 1656806400000,
+  :block/updated-at 1656806400000}
+ {:block/name "04.03.2022",
+  :block/created-at 1646352000000,
+  :block/updated-at 1646352000000}
+ {:block/name "04.04.2022",
+  :block/created-at 1649030400000,
+  :block/updated-at 1649030400000}
+ {:block/name "04.05.2022",
+  :block/created-at 1651622400000,
+  :block/updated-at 1651622400000}
+ {:block/name "04.06.2022",
+  :block/created-at 1654300800000,
+  :block/updated-at 1654374728495}
+ {:block/name "04.07.2022",
+  :block/created-at 1656892800000,
+  :block/updated-at 1656892800000}
+ {:block/name "05.03.2022",
+  :block/created-at 1646438400000,
+  :block/updated-at 1646438400000}
+ {:block/name "05.04.2022",
+  :block/created-at 1649116800000,
+  :block/updated-at 1649116800000}
+ {:block/name "05.05.2022",
+  :block/created-at 1651708800000,
+  :block/updated-at 1651708800000}
+ {:block/name "05.06.2022",
+  :block/created-at 1654387200000,
+  :block/updated-at 1654437419434}
+ {:block/name "05.07.2022",
+  :block/created-at 1656979200000,
+  :block/updated-at 1656979200000}
+ {:block/name "06.03.2022",
+  :block/created-at 1646616012215,
+  :block/updated-at 1648455932972}
+ {:block/name "06.04.2022",
+  :block/created-at 1649203200000,
+  :block/updated-at 1649203200000}
+ {:block/name "06.05.2022",
+  :block/created-at 1651795200000,
+  :block/updated-at 1651795200000}
+ {:block/name "06.06.2022",
+  :block/created-at 1654473600000,
+  :block/updated-at 1654473600000}
+ {:block/name "06.07.2022",
+  :block/created-at 1657065600000,
+  :block/updated-at 1657065600000}
+ {:block/name "07.03.2022",
+  :block/created-at 1646646548407,
+  :block/updated-at 1646647982671}
+ {:block/name "07.04.2022",
+  :block/created-at 1649289600000,
+  :block/updated-at 1649289600000}
+ {:block/name "07.05.2022",
+  :block/created-at 1651881600000,
+  :block/updated-at 1651881600000}
+ {:block/name "07.06.2022",
+  :block/created-at 1654560000000,
+  :block/updated-at 1654560000000}
+ {:block/name "07.07.2022",
+  :block/created-at 1657152000000,
+  :block/updated-at 1657152000000}
+ {:block/name "08.03.2022",
+  :block/created-at 1646697600000,
+  :block/updated-at 1646697600000}
+ {:block/name "08.04.2022",
+  :block/created-at 1649376000000,
+  :block/updated-at 1649376000000}
+ {:block/name "08.05.2022",
+  :block/created-at 1651968000000,
+  :block/updated-at 1651968000000}
+ {:block/name "08.06.2022",
+  :block/created-at 1654646400000,
+  :block/updated-at 1654720848671}
+ {:block/name "08.07.2022",
+  :block/created-at 1657238400000,
+  :block/updated-at 1657238400000}
+ {:block/name "09.03.2022",
+  :block/created-at 1646784000000,
+  :block/updated-at 1646784000000}
+ {:block/name "09.04.2022",
+  :block/created-at 1649462400000,
+  :block/updated-at 1649462400000}
+ {:block/name "09.05.2022",
+  :block/created-at 1652054400000,
+  :block/updated-at 1652054400000}
+ {:block/name "09.06.2022",
+  :block/created-at 1654732800000,
+  :block/updated-at 1654782604948}
+ {:block/name "09.07.2022",
+  :block/created-at 1657324800000,
+  :block/updated-at 1657324800000}
+ {:block/name "10.03.2022",
+  :block/created-at 1646870400000,
+  :block/updated-at 1646870400000}
+ {:block/name "10.04.2022",
+  :block/created-at 1649548800000,
+  :block/updated-at 1649548800000}
+ {:block/name "10.05.2022",
+  :block/created-at 1652140800000,
+  :block/updated-at 1652140800000}
+ {:block/name "10.06.2022",
+  :block/created-at 1654819200000,
+  :block/updated-at 1654819200000}
+ {:block/name "10.07.2022",
+  :block/created-at 1657411200000,
+  :block/updated-at 1657411200000}
+ {:block/name "11.03.2022",
+  :block/created-at 1646956800000,
+  :block/updated-at 1646956800000}
+ {:block/name "11.04.2022",
+  :block/created-at 1649635200000,
+  :block/updated-at 1649635200000}
+ {:block/name "11.05.2022",
+  :block/created-at 1652227200000,
+  :block/updated-at 1652227200000}
+ {:block/name "11.06.2022",
+  :block/created-at 1654905600000,
+  :block/updated-at 1654905600000}
+ {:block/name "11.07.2022",
+  :block/created-at 1657497600000,
+  :block/updated-at 1657497600000}
+ {:block/name "12.03.2022",
+  :block/created-at 1647043200000,
+  :block/updated-at 1647043200000}
+ {:block/name "12.04.2022",
+  :block/created-at 1649721600000,
+  :block/updated-at 1649721600000}
+ {:block/name "12.05.2022",
+  :block/created-at 1652313600000,
+  :block/updated-at 1652313600000}
+ {:block/name "12.06.2022",
+  :block/created-at 1654992000000,
+  :block/updated-at 1655297825544}
+ {:block/name "12.07.2022",
+  :block/created-at 1657584000000,
+  :block/updated-at 1657584000000}
+ {:block/name "13.03.2022",
+  :block/created-at 1648066134869,
+  :block/updated-at 1648066134869}
+ {:block/name "13.04.2022",
+  :block/created-at 1649854230493,
+  :block/updated-at 1649873016095}
+ {:block/name "13.05.2022",
+  :block/created-at 1652400000000,
+  :block/updated-at 1652400000000}
+ {:block/name "13.06.2022",
+  :block/created-at 1655078400000,
+  :block/updated-at 1655078400000}
+ {:block/name "13.07.2022",
+  :block/created-at 1657670400000,
+  :block/updated-at 1657670400000}
+ {:block/name "14.03.2022",
+  :block/created-at 1647216000000,
+  :block/updated-at 1647216000000}
+ {:block/name "14.04.2022",
+  :block/created-at 1649894400000,
+  :block/updated-at 1649894400000}
+ {:block/name "14.05.2022",
+  :block/created-at 1652486400000,
+  :block/updated-at 1652486400000}
+ {:block/name "14.06.2022",
+  :block/created-at 1655164800000,
+  :block/updated-at 1655164800000}
+ {:block/name "14.07.2022",
+  :block/created-at 1657756800000,
+  :block/updated-at 1657756800000}
+ {:block/name "15.03.2022",
+  :block/created-at 1647302400000,
+  :block/updated-at 1647302400000}
+ {:block/name "15.04.2022",
+  :block/created-at 1649980800000,
+  :block/updated-at 1649980800000}
+ {:block/name "15.05.2022",
+  :block/created-at 1652572800000,
+  :block/updated-at 1652572800000}
+ {:block/name "15.06.2022",
+  :block/created-at 1655251200000,
+  :block/updated-at 1655251200000}
+ {:block/name "15.07.2022",
+  :block/created-at 1657843200000,
+  :block/updated-at 1657843200000}
+ {:block/name "16.03.2022",
+  :block/created-at 1647388800000,
+  :block/updated-at 1647388800000}
+ {:block/name "16.04.2022",
+  :block/created-at 1650067200000,
+  :block/updated-at 1650067200000}
+ {:block/name "16.05.2022",
+  :block/created-at 1652659200000,
+  :block/updated-at 1652659200000}
+ {:block/name "16.06.2022",
+  :block/created-at 1655337600000,
+  :block/updated-at 1655337600000}
+ {:block/name "16.07.2022",
+  :block/created-at 1657929600000,
+  :block/updated-at 1657929600000}
+ {:block/name "17.03.2022",
+  :block/created-at 1648066124561,
+  :block/updated-at 1648066124561}
+ {:block/name "17.04.2022",
+  :block/created-at 1650153600000,
+  :block/updated-at 1650153600000}
+ {:block/name "17.05.2022",
+  :block/created-at 1652745600000,
+  :block/updated-at 1652745600000}
+ {:block/name "17.06.2022",
+  :block/created-at 1655424000000,
+  :block/updated-at 1655424000000}
+ {:block/name "17.07.2022",
+  :block/created-at 1658016000000,
+  :block/updated-at 1658016000000}
+ {:block/name "18.03.2022",
+  :block/created-at 1647561600000,
+  :block/updated-at 1647561600000}
+ {:block/name "18.04.2022",
+  :block/created-at 1650240000000,
+  :block/updated-at 1650240000000}
+ {:block/name "18.05.2022",
+  :block/created-at 1652832000000,
+  :block/updated-at 1652832000000}
+ {:block/name "18.06.2022",
+  :block/created-at 1655510400000,
+  :block/updated-at 1655510400000}
+ {:block/name "18.07.2022",
+  :block/created-at 1658102400000,
+  :block/updated-at 1658102400000}
+ {:block/name "19.03.2022",
+  :block/created-at 1647648000000,
+  :block/updated-at 1647648000000}
+ {:block/name "19.04.2022",
+  :block/created-at 1650326400000,
+  :block/updated-at 1650326400000}
+ {:block/name "19.05.2022",
+  :block/created-at 1652918400000,
+  :block/updated-at 1652918400000}
+ {:block/name "19.06.2022",
+  :block/created-at 1655596800000,
+  :block/updated-at 1655596800000}
+ {:block/name "19.07.2022",
+  :block/created-at 1658188800000,
+  :block/updated-at 1658188800000}
+ {:block/name "20.03.2022",
+  :block/created-at 1648066116143,
+  :block/updated-at 1648066116143}
+ {:block/name "20.04.2022",
+  :block/created-at 1650412800000,
+  :block/updated-at 1650412800000}
+ {:block/name "20.05.2022",
+  :block/created-at 1653004800000,
+  :block/updated-at 1653004800000}
+ {:block/name "20.06.2022",
+  :block/created-at 1655683200000,
+  :block/updated-at 1655683200000}
+ {:block/name "20.07.2022",
+  :block/created-at 1658275200000,
+  :block/updated-at 1658275200000}
+ {:block/name "21.03.2022",
+  :block/created-at 1647820800000,
+  :block/updated-at 1647820800000}
+ {:block/name "21.04.2022",
+  :block/created-at 1650499200000,
+  :block/updated-at 1650499200000}
+ {:block/name "21.05.2022",
+  :block/created-at 1653091200000,
+  :block/updated-at 1653091200000}
+ {:block/name "21.06.2022",
+  :block/created-at 1655769600000,
+  :block/updated-at 1655769600000}
+ {:block/name "21.07.2022",
+  :block/created-at 1658361600000,
+  :block/updated-at 1658361600000}
+ {:block/name "22.03.2022",
+  :block/created-at 1647907200000,
+  :block/updated-at 1647907200000}
+ {:block/name "22.04.2022",
+  :block/created-at 1650585600000,
+  :block/updated-at 1650585600000}
+ {:block/name "22.05.2022",
+  :block/created-at 1653177600000,
+  :block/updated-at 1653177600000}
+ {:block/name "22.06.2022",
+  :block/created-at 1655856000000,
+  :block/updated-at 1655856000000}
+ {:block/name "22.07.2022",
+  :block/created-at 1658448000000,
+  :block/updated-at 1658448000000}
  {:block/name "23.02.2022",
   :block/created-at 1645574400000,
   :block/updated-at 1645574400000}
+ {:block/name "23.03.2022",
+  :block/created-at 1648066154996,
+  :block/updated-at 1648066155061}
+ {:block/name "23.04.2022",
+  :block/created-at 1650672000000,
+  :block/updated-at 1650672000000}
+ {:block/name "23.05.2022",
+  :block/created-at 1653311631693,
+  :block/updated-at 1653324633123}
+ {:block/name "23.06.2022",
+  :block/created-at 1655942400000,
+  :block/updated-at 1655942400000}
+ {:block/name "23.07.2022",
+  :block/created-at 1658534400000,
+  :block/updated-at 1658534400000}
  {:block/name "24.02.2022",
   :block/created-at 1645734327998,
-  :block/updated-at 1645735565897}
+  :block/updated-at 1648196536980}
+ {:block/name "24.03.2022",
+  :block/created-at 1648120653330,
+  :block/updated-at 1648196437760}
+ {:block/name "24.04.2022",
+  :block/created-at 1650758400000,
+  :block/updated-at 1650758400000}
+ {:block/name "24.05.2022",
+  :block/created-at 1653350400000,
+  :block/updated-at 1653350400000}
+ {:block/name "24.06.2022",
+  :block/created-at 1656028800000,
+  :block/updated-at 1656028800000}
+ {:block/name "24.07.2022",
+  :block/created-at 1658620800000,
+  :block/updated-at 1658620800000}
+ {:block/name "25.02.2022",
+  :block/created-at 1645735797695,
+  :block/updated-at 1645797092958}
+ {:block/name "25.03.2022",
+  :block/created-at 1648196565607,
+  :block/updated-at 1648251793004}
+ {:block/name "25.04.2022",
+  :block/created-at 1650844800000,
+  :block/updated-at 1650844800000}
+ {:block/name "25.05.2022",
+  :block/created-at 1653436800000,
+  :block/updated-at 1653436800000}
+ {:block/name "25.06.2022",
+  :block/created-at 1656115200000,
+  :block/updated-at 1656115200000}
+ {:block/name "25.07.2022",
+  :block/created-at 1658707200000,
+  :block/updated-at 1658707200000}
+ {:block/name "26.02.2022",
+  :block/created-at 1645833600000,
+  :block/updated-at 1645833600000}
+ {:block/name "26.03.2022",
+  :block/created-at 1648280913076,
+  :block/updated-at 1648370841759}
+ {:block/name "26.04.2022",
+  :block/created-at 1650931200000,
+  :block/updated-at 1650931200000}
+ {:block/name "26.05.2022",
+  :block/created-at 1653569565550,
+  :block/updated-at 1653588301635}
+ {:block/name "26.06.2022",
+  :block/created-at 1656201600000,
+  :block/updated-at 1656201600000}
+ {:block/name "26.07.2022",
+  :block/created-at 1658793600000,
+  :block/updated-at 1658793600000}
+ {:block/name "27.02.2022",
+  :block/created-at 1645920000000,
+  :block/updated-at 1645920000000}
+ {:block/name "27.03.2022",
+  :block/created-at 1648370854012,
+  :block/updated-at 1648455407100}
+ {:block/name "27.04.2022",
+  :block/created-at 1651017600000,
+  :block/updated-at 1651017600000}
+ {:block/name "27.05.2022",
+  :block/created-at 1653609600000,
+  :block/updated-at 1653609600000}
+ {:block/name "27.06.2022",
+  :block/created-at 1656288000000,
+  :block/updated-at 1656288000000}
+ {:block/name "27.07.2022",
+  :block/created-at 1658880000000,
+  :block/updated-at 1658880000000}
+ {:block/name "28.02.2022",
+  :block/created-at 1646006400000,
+  :block/updated-at 1646006400000}
+ {:block/name "28.03.2022",
+  :block/created-at 1648455434836,
+  :block/updated-at 1648465690678}
+ {:block/name "28.04.2022",
+  :block/created-at 1651104000000,
+  :block/updated-at 1651104000000}
+ {:block/name "28.05.2022",
+  :block/created-at 1653696000000,
+  :block/updated-at 1653696000000}
+ {:block/name "28.06.2022",
+  :block/created-at 1656374400000,
+  :block/updated-at 1656374400000}
+ {:block/name "28.07.2022",
+  :block/created-at 1658966400000,
+  :block/updated-at 1658966400000}
+ {:block/name "29.03.2022",
+  :block/created-at 1648512000000,
+  :block/updated-at 1648512000000}
+ {:block/name "29.04.2022",
+  :block/created-at 1651190400000,
+  :block/updated-at 1651190400000}
+ {:block/name "29.05.2022",
+  :block/created-at 1653782400000,
+  :block/updated-at 1653782400000}
+ {:block/name "29.06.2022",
+  :block/created-at 1656460800000,
+  :block/updated-at 1656460800000}
+ {:block/name "29.07.2022",
+  :block/created-at 1659052800000,
+  :block/updated-at 1659052800000}
+ {:block/name "30.03.2022",
+  :block/created-at 1648598400000,
+  :block/updated-at 1648598400000}
+ {:block/name "30.04.2022",
+  :block/created-at 1651276800000,
+  :block/updated-at 1651276800000}
+ {:block/name "30.05.2022",
+  :block/created-at 1653868800000,
+  :block/updated-at 1653868800000}
+ {:block/name "30.06.2022",
+  :block/created-at 1656547200000,
+  :block/updated-at 1656547200000}
+ {:block/name "30.07.2022",
+  :block/created-at 1659139200000,
+  :block/updated-at 1659139200000}
+ {:block/name "31.03.2022",
+  :block/created-at 1648684800000,
+  :block/updated-at 1648684800000}
+ {:block/name "31.05.2022",
+  :block/created-at 1654042495242,
+  :block/updated-at 1654049161061}
+ {:block/name "31.07.2022",
+  :block/created-at 1659225600000,
+  :block/updated-at 1659225600000}
+ {:block/name "62b70571-473b-4596-ae8b-abc04ad95c86",
+  :block/created-at 1656225025963,
+  :block/updated-at 1656225025963}
+ {:block/name "62b707ea-f09f-43a8-b1fc-4d705dd125d4",
+  :block/created-at 1656225026675,
+  :block/updated-at 1656225026675}
+ {:block/name "62b70a4c-8a45-4be5-926a-7dce03ceb27d",
+  :block/created-at 1656225027349,
+  :block/updated-at 1656225027349}
+ {:block/name "62b70d89-6c44-4cff-97e3-360b339e1248",
+  :block/created-at 1656225030202,
+  :block/updated-at 1656225030202}
+ {:block/name "62b70df0-7080-4a82-be68-b1fca31354f5",
+  :block/created-at 1656225028670,
+  :block/updated-at 1656225028670}
+ {:block/name "62b71029-e26c-4412-b387-3ab1a31bb6b9",
+  :block/created-at 1656225029479,
+  :block/updated-at 1656225029479}
+ {:block/name "62b7123e-cf80-40ee-be9c-14ab7c208cb7",
+  :block/created-at 1656225028323,
+  :block/updated-at 1656225028323}
+ {:block/name "62b713fc-d9c6-495b-8aaf-d50aff67b4fa",
+  :block/created-at 1656225048027,
+  :block/updated-at 1656225048027}
+ {:block/name "62b71e3a-012a-4779-8350-91f1d316cfc9",
+  :block/created-at 1656225030743,
+  :block/updated-at 1656225030743}
+ {:block/name "62b75002-7f01-45c4-9ec2-69faefdc94a8",
+  :block/created-at 1656225031503,
+  :block/updated-at 1656225031503}
+ {:block/name "62b76229-6c45-46fa-a498-ac58266a2257",
+  :block/created-at 1656225036230,
+  :block/updated-at 1656225036230}
+ {:block/name "62b77e79-258c-47af-8208-98f63ebafff1",
+  :block/created-at 1656225034456,
+  :block/updated-at 1656225034456}
+ {:block/name "62b79ce7-700a-4e99-9725-43e4a92059be",
+  :block/created-at 1656225034132,
+  :block/updated-at 1656225034132}
+ {:block/name "62b79cf5-4d32-486f-8e4d-43f54dd2c68b",
+  :block/created-at 1656225036604,
+  :block/updated-at 1656225036604}
+ {:block/name "62b79f40-effb-4e97-9aea-42ee2b165414",
+  :block/created-at 1656225037013,
+  :block/updated-at 1656225037013}
+ {:block/name "62b7a26a-8dba-4938-b794-1778663e8b49",
+  :block/created-at 1656225037432,
+  :block/updated-at 1656225037432}
+ {:block/name "62b7c28b-1771-42b9-b283-f2aa44e6a7f0",
+  :block/created-at 1656225040073,
+  :block/updated-at 1656225040073}
+ {:block/name "62b7ca59-196b-4c01-a512-decc5c974a03",
+  :block/created-at 1656225040934,
+  :block/updated-at 1656225040934}
+ {:block/name "62b7cb4a-59e9-4150-893c-3e7b446e178d",
+  :block/created-at 1656225038216,
+  :block/updated-at 1656225038216}
+ {:block/name "62b7cd31-0fd9-4c8a-b5a9-453fe59d6bc1",
+  :block/created-at 1656225041802,
+  :block/updated-at 1656225041802}
+ {:block/name "62b7ce24-414c-43fa-9823-37079e3f19ba",
+  :block/created-at 1656225042245,
+  :block/updated-at 1656225042245}
+ {:block/name "62b7d5cc-9463-4e46-8aa0-e5a29f691eb0",
+  :block/created-at 1656225043155,
+  :block/updated-at 1656225043155}
+ {:block/name "62b7d6ad-2517-4425-a7f0-7e43da101659",
+  :block/created-at 1656225044093,
+  :block/updated-at 1656225044093}
+ {:block/name "62b7d896-8e68-4d07-9be0-089c0c4d05ac",
+  :block/created-at 1656225046050,
+  :block/updated-at 1656225046050}
+ {:block/name "62b7d980-e695-4380-ab4b-a1e760475f5c",
+  :block/created-at 1656225046299,
+  :block/updated-at 1656225046299}
+ {:block/name "62b7da03-fbd9-4264-b0b0-ab55acd3077b",
+  :block/created-at 1656225046846,
+  :block/updated-at 1656225046846}
+ {:block/name "62b7da44-eec3-4e22-946e-7cf038d32bf4",
+  :block/created-at 1656225047665,
+  :block/updated-at 1656225047665}
+ {:block/name "62b7da92-5a30-42b6-bab2-b965c13b037b",
+  :block/created-at 1656225047968,
+  :block/updated-at 1656225047968}
+ {:block/name "62b7df37-d48e-4b66-bf2d-0425a4a8113d",
+  :block/created-at 1656225048277,
+  :block/updated-at 1656225048277}
+ {:block/name "62b7e737-7b52-4ac0-9433-fa8d71fc04ef",
+  :block/created-at 1656225048334,
+  :block/updated-at 1656225048334}
+ {:block/name "62b7f93e-de7e-4cd1-ae1c-cea62c7a6de2",
+  :block/created-at 1656224291221,
+  :block/updated-at 1656224291221}
+ {:block/name "62b7fa49-48e1-4824-8295-68d6c9a38b04",
+  :block/created-at 1656224610057,
+  :block/updated-at 1656224610057}
  {:block/name "a",
   :block/created-at 1643893363531,
   :block/updated-at 1643893363531}
+ {:block/name "article",
+  :block/created-at 1656161155721,
+  :block/updated-at 1656161155721}
+ {:block/name "artis",
+  :block/created-at 1654113794177,
+  :block/updated-at 1654113794177}
+ {:block/name "axiom space",
+  :block/created-at 1654336443904,
+  :block/updated-at 1654336443904}
  {:block/name "b",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
+ {:block/name "blogpost",
+  :block/created-at 1654113794191,
+  :block/updated-at 1654113794191}
  {:block/name "c",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
  {:block/name "card",
   :block/created-at 1643893363531,
   :block/updated-at 1643893363531}
+ {:block/name "cislunar delta v map",
+  :block/created-at 1655337396839,
+  :block/updated-at 1655342898640}
+ {:block/name "cocaine",
+  :block/created-at 1654304984730,
+  :block/updated-at 1654304984730}
+ {:block/name "complete machine learning and data science bootcamp",
+  :block/created-at 1648138342600,
+  :block/updated-at 1648145256332}
  {:block/name "contents",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
+ {:block/name "cost sources for in-space shipping",
+  :block/created-at 1656109998037,
+  :block/updated-at 1656120319981}
+ {:block/name "cypher",
+  :block/created-at 1646607316998,
+  :block/updated-at 1646608691203}
+ {:block/name "discrete poissson process",
+  :block/created-at 1654113794184,
+  :block/updated-at 1654113794184}
  {:block/name "doing",
   :block/created-at 1643893363531,
   :block/updated-at 1643893363531}
  {:block/name "done",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
+ {:block/name "draws/2022-06-09-10-59-23.excalidraw",
+  :block/created-at 1654783396525,
+  :block/updated-at 1654783396525}
+ {:block/name "draws/2022-06-09-11-28-51.excalidraw",
+  :block/created-at 1654785125062,
+  :block/updated-at 1654785125062}
+ {:block/name "dream",
+  :block/created-at 1654345859796,
+  :block/updated-at 1654345859796}
+ {:block/name "drugs",
+  :block/created-at 1654304979901,
+  :block/updated-at 1654304979901}
+ {:block/name "exhaust velocity",
+  :block/created-at 1656168606211,
+  :block/updated-at 1656168606211}
+ {:block/name "exogravitas",
+  :block/created-at 1654113794175,
+  :block/updated-at 1654113794175}
  {:block/name "favorites",
   :block/created-at 1643893363531,
   :block/updated-at 1643893363531}
+ {:block/name "fuel in space pricing model",
+  :block/created-at 1654885200154,
+  :block/updated-at 1656109998042}
+ {:block/name "getting things done",
+  :block/created-at 1653572836275,
+  :block/updated-at 1653596047531}
+ {:block/name "gross-sensitive mass term",
+  :block/created-at 1655353954294,
+  :block/updated-at 1656224638106}
+ {:block/name
+  "hls__a_conceptual_interpretation_of_the_renewal_theorem_with_applications_jvn_1645798049453_0",
+  :block/created-at 1654113794193,
+  :block/updated-at 1654113794193}
+ {:block/name
+  "hls__bednara_thesis_2008_-_methds_for_approximating_the_availability_functions_1645798062058_0",
+  :block/created-at 1654113794176,
+  :block/updated-at 1654113794176}
+ {:block/name "hls__proportional_hazards_jardine_1645971985398_0",
+  :block/created-at 1654113794161,
+  :block/updated-at 1654113794161}
  {:block/name
   "hls__sustainable-space-exploration-and-its-relevance-to-the-priv_2020_acta-astron_1644402724018_0",
   :block/created-at 1645452229385,
   :block/updated-at 1645452229385}
+ {:block/name "hohmann transfer",
+  :block/created-at 1656164518390,
+  :block/updated-at 1656164518390}
+ {:block/name "how to price space resources at cislunar locations",
+  :block/created-at 1656161129366,
+  :block/updated-at 1656228408180}
  {:block/name "in-progress",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
+ {:block/name "internship",
+  :block/created-at 1654437020996,
+  :block/updated-at 1654437020996}
+ {:block/name "laplace transform",
+  :block/created-at 1654113794163,
+  :block/updated-at 1654113794163}
+ {:block/name "large scale orbital construction",
+  :block/created-at 1654782857915,
+  :block/updated-at 1654782857915}
  {:block/name "later",
   :block/created-at 1643893363531,
   :block/updated-at 1643893363531}
+ {:block/name "leo",
+  :block/created-at 1654437101493,
+  :block/updated-at 1654437101493}
+ {:block/name "lsoc",
+  :block/created-at 1654782821498,
+  :block/updated-at 1654885200156}
+ {:block/name "lunar construction",
+  :block/created-at 1654437474954,
+  :block/updated-at 1654437474954}
+ {:block/name "lunar habitats",
+  :block/created-at 1654437464284,
+  :block/updated-at 1654437464284}
+ {:block/name "lunar isru",
+  :block/created-at 1654437064607,
+  :block/updated-at 1654437064607}
+ {:block/name "lunar mobility",
+  :block/created-at 1654437070518,
+  :block/updated-at 1654437070518}
+ {:block/name "lunar orbit",
+  :block/created-at 1654437186240,
+  :block/updated-at 1654437186240}
+ {:block/name "lunar surface",
+  :block/created-at 1654437140617,
+  :block/updated-at 1654437140617}
+ {:block/name "machine learning",
+  :block/created-at 1648138267491,
+  :block/updated-at 1648138322974}
+ {:block/name "maneuver burn time",
+  :block/created-at 1656168767347,
+  :block/updated-at 1656168767347}
+ {:block/name "markov chain",
+  :block/created-at 1654113794211,
+  :block/updated-at 1654113794211}
+ {:block/name "markov process",
+  :block/created-at 1649856653091,
+  :block/updated-at 1649856658625}
+ {:block/name "mass fraction",
+  :block/created-at 1656163811448,
+  :block/updated-at 1656163811448}
+ {:block/name "model",
+  :block/created-at 1654885243300,
+  :block/updated-at 1654885243300}
+ {:block/name "neo4j",
+  :block/created-at 1654113794183,
+  :block/updated-at 1654113794183}
  {:block/name "now",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
+ {:block/name "nrs consulting",
+  :block/created-at 1645797701811,
+  :block/updated-at 1648131594324}
+ {:block/name "oop",
+  :block/created-at 1654885384015,
+  :block/updated-at 1654885384015}
+ {:block/name "orbital additive manufacturing",
+  :block/created-at 1654437049361,
+  :block/updated-at 1654437049361}
+ {:block/name "orbital communications",
+  :block/created-at 1654437494503,
+  :block/updated-at 1654437494503}
+ {:block/name "orbital refueling",
+  :block/created-at 1654437210223,
+  :block/updated-at 1654437210223}
+ {:block/name "payload",
+  :block/created-at 1654336428202,
+  :block/updated-at 1654336428202}
+ {:block/name "poisson process",
+  :block/created-at 1654113794170,
+  :block/updated-at 1654113794170}
+ {:block/name "propellant-payload ratio",
+  :block/created-at 1655354689190,
+  :block/updated-at 1655359045913}
+ {:block/name "propellant-sensitive mass term",
+  :block/created-at 1655353973819,
+  :block/updated-at 1656224557692}
+ {:block/name "reinforcement learning",
+  :block/created-at 1654113794186,
+  :block/updated-at 1654113794186}
+ {:block/name "reliability engineering",
+  :block/created-at 1648131603679,
+  :block/updated-at 1648131631805}
+ {:block/name "renewal theorem",
+  :block/created-at 1654113794178,
+  :block/updated-at 1654113794178}
+ {:block/name "simon van benten",
+  :block/created-at 1654113794170,
+  :block/updated-at 1654113794170}
+ {:block/name "software",
+  :block/created-at 1654885243299,
+  :block/updated-at 1654885243299}
+ {:block/name "space",
+  :block/created-at 1654436948346,
+  :block/updated-at 1654436948346}
+ {:block/name "space economics",
+  :block/created-at 1656161155723,
+  :block/updated-at 1656161155723}
+ {:block/name "space logistics",
+  :block/created-at 1656161155724,
+  :block/updated-at 1656161155724}
+ {:block/name "space stations",
+  :block/created-at 1654437162208,
+  :block/updated-at 1654437162208}
+ {:block/name "specific impulse",
+  :block/created-at 1656164840507,
+  :block/updated-at 1656164840507}
+ {:block/name "stochastic renewal processes",
+  :block/created-at 1654113794175,
+  :block/updated-at 1654113794175}
+ {:block/name "streamlit",
+  :block/created-at 1654437405528,
+  :block/updated-at 1654437405528}
  {:block/name "sustainable space development",
   :block/created-at 1643917144967,
   :block/updated-at 1644593229300}
+ {:block/name "the price point of large scale orbital construction?",
+  :block/created-at 1654782604944,
+  :block/updated-at 1654973565440}
+ {:block/name "thesis",
+  :block/created-at 1654437029379,
+  :block/updated-at 1654437029379}
+ {:block/name "thrust-to-mass ratio",
+  :block/created-at 1655354871648,
+  :block/updated-at 1655354871648}
+ {:block/name "to-do list",
+  :block/created-at 1648456030819,
+  :block/updated-at 1648456038293}
  {:block/name "todo",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
+ {:block/name "trt",
+  :block/created-at 1654285527683,
+  :block/updated-at 1654285558882}
+ {:block/name "trt maximization protocol",
+  :block/created-at 1654285493746,
+  :block/updated-at 1654304618200}
+ {:block/name "tu delft msc",
+  :block/created-at 1654436984420,
+  :block/updated-at 1654437494504}
+ {:block/name "ulf kemmsies",
+  :block/created-at 1654113794183,
+  :block/updated-at 1654113794183}
  {:block/name "wait",
   :block/created-at 1643893363532,
   :block/updated-at 1643893363532}
  {:block/name "waiting",
-  :block/created-at 1643893363531, 
-  :block/updated-at 1643893363531}]
+  :block/created-at 1643893363531,
+  :block/updated-at 1643893363531}
+ {:block/name "weibull distribution",
+  :block/created-at 1654113794193,
+  :block/updated-at 1654113794193}
+ {:block/name "workbench",
+  :block/created-at 1656210472809, 
+  :block/updated-at 1656210525119}]

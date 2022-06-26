@@ -1,0 +1,3 @@
+- The Availability and Reliability Tracking Information System, is a web-based application for calculating the available capacity of continuous production and consumption systems.
+- It has been designed for large and complex systems that consist of many facilities, each of which may be subject to capacity variations, inspection, testing, failure, repair and maintenance. It is applied to renewable energy projects, oil and gas projects, gas liquefaction plants, refineries, chemical plants, power plants and transport networks.
+- ARTIS calculates the available capacity levels of a system, their frequency and duration and the integrated system availability, all relative to demand.

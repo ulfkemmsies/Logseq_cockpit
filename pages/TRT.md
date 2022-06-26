@@ -1,0 +1,5 @@
+- Potential side effects
+- Dangers
+- Interactions with other drugs
+	-
+-

@@ -1,0 +1,70 @@
+title:: The price point of large scale orbital construction?
+tags:: blogpost, exogravitas, space, LEO, LSOC
+
+-
+- Develop model from lunar propellant basis to create Monte Carlo estimates of price points: [[Fuel in space pricing model]]
+-
+- Main questions:
+	- How cheap must lunar mining get to compete with Earth-launched metal in LEO?
+	- Who and what markets will be driving demand for LSOC?
+	- How cheap will LEO launch be for bulk?
+	- When can the crossover point be reached so that off-Earth materials are competitive?
+		- How long do Earth-launched companies have to sell competitively?
+	- Is there an overlap between the development of the ISS's successor and the period of price advantage for Earth resources?
+	- By how much does the paradigm shift in price advantage of Earth resources accelerate the timeline for LSOC?
+	- How do the logistical advantages of lunar orbits as LSOC hubs interact with the proximity of LEO to current space markets?
+		- When does the shift of the bulk of LSOC from LEO to LLO happen?
+		- How does this depend on availability of non-Earth resources?
+	- How do different launch technologies affect the price of structures in space?
+		- e.g. Spinlaunch sending bulk metal blocks at a fraction of market prices
+	- What are the main materials that would be used for LSOC?
+		- How do these overlap with those resulting from off-Earth mining?
+	- How are the prices for transportation calculated taking the vehicle cost into account?
+		- If vehicles are assumed infinitely renewable, then the marginal cost of a flight is only the fuel, but the initial investment needs to be paid off somehow.
+- Assumptions:
+	- All product (fuel, material) gets bought eventually wherever it is stored (due to subsidies)
+	- All nodes have infinite storage capacity for all fuels and materials
+	- Refueling trips are only made between the source and the closest target node (to prevent exponential growth)
+	- Vehicles only carry extra fuel for one-way trips and refuel at destination with cheapest available fuel
+	- Local price of materials depends on entire chain of transport from source
+	- All product is transported using the cheapest technology available
+	- All vehicles are reusable
+	- When aerobraking can be used, it is used (%15 percent dry mass increase and around 3 km/s delta v reduction for LEO capture)
+	- In-space vehicle assumed as a space-only tug that does not actually exist yet, and for now runs on hydrolox (for lunar refuelling)
+	-
+- Important events on timeline that constitute large changes to the model's assumptions:
+	- Creation of Lunar gateway
+		- First large-scale propellant depot in LLO
+	- Establishment of first lunar metal mine
+	- First lunar propellant facility
+	- First large-scale in-space transport system in LEO
+	- First large-scale propellant depot in LEO
+	- Decommissioning of ISS
+	- First NEO mining operation
+	-
+- b
+- Main point: there is a window of time where LEO is the main location for LSOC, after which it will shift to LLO. There is another window of time in which Earth-based resources will be cheaper in LEO than non-Earth-based ones. Once we accept this price advantage that metal from Earth will have in LEO for the coming period versus ISRU metal, then the timeline for developing LSOC can be accelerated (mainly in order to enable non-rocket launch systems).
+-
+-
+-
+- # Article text
+	- Executive summary
+		- One of the main goals for lunar and NEO resource extraction is to cheaply supply cislunar space with fuel, water and construction materials (the main drivers of launch mass) by replacing the cargo expensively launched from Earth. These allow for cheap in-space transport through refueling and Large Scale Orbital Construction of habitats and vehicles, including non-rocket transport that could reduce launch prices from Earth (the main system constraint) by orders of magnitude. Cheap access to space is our end goal.
+		- However, the assumptions underlying this competitive price advantage of off-Earth resources are twofold: First, mining, refining, and transport systems cheap enough to allow one to undercut local prices (e.g. of fuel in LEO) set by Earth suppliers.
+		- Second: Earth launch costs will not drop significantly. This has already been challenged by improvements in rocket reusability and will see much greater disruption through alternative technologies, like Spinlaunch.
+		- Due to the high upfront investment in space resource utilization technology (R&D, transport, support) being recouped in the price of sale, it is possible that lunar and NEO resources might not be competitive in LEO for a long time.
+		- Many predictions of space development over the next century state that LSOC must wait for space resources to be widely available because the price decrease for construction material will be large enough (and fast enough) to justify the delay. I am suggesting that this wait will be too long, and the price difference too small. LSOC (and any other pursuits being held back by bulk material price) can and must be pursued now.
+		- I might be wrong - to test my hypothesis is exactly why this article was written. There is much complexity and many unknowns, so we will do our best.
+	- Background and questions
+		- The inspiration for this article was a paradigm shift I suffered last year while writing my bachelor thesis. My job was to calculate whether a crewed lunar surface habitat could be profitable if an ice-melting HO2/LOx propellant production facility was included in the mission plan. The fuel would be sold at various cislunar destinations (mostly LEO) and pay for the entire 10 year mission. The Monte Carlo simulation used for this estimation gave a 50% chance that we would either break even or make a profit, which is pretty good considering the ten-figure price tag such massive infrastructural projects usually have.
+		- The principal assumption behind this model (which was heavily based on previous work) was the price of propellant on the Moon after all the mining and processing - at some value, it is low enough to allow for lunar fuel to undercut Earth fuel prices by 25% in LEO. If this weren't the case, the only customers for a more expensive product would be governmental agencies, making the purchase an effective subsidy. This subsidy must happen anyway, because otherwise the companies developing ISRU tech would run out of funds, and such a financing model is the de facto backbone of emerging space markets.
+		- What we really want is for private actors to
+		- What really caught my attention was that, for the majority of scenarios, lunar-mined propellant simply was not competitive in LEO compared to fuel launched from Earth - due mostly to the high cost of lunar ISRU and the low efficiency of roundtrip missions from Luna to LEO (only around 11% of the stored propellant can be sold, because the rest is needed for the trip back). There are factors which drastically change this math, like refueling nodes on the way, aerobraking for LEO capture, and the use of orbit-only space tugs that don't use chemical propulsion, but something more efficient (and slow) like electric.
+		- Why is this lack of price competitiveness important? It is a reality check against the fundamental motivation behind space resource utilization: nearly infinite materials and energy for mankind just waiting to be exploited. Those resources won't be free, and they certainly won't be cheap for a long time - the high upfront investment in space-grade mining and refining systems must be recouped in the sale price of the bounty. This is not to deny the reality of just how much stuff is out there, but  rather ask the question of when a commerce-driven space ecology will prefer those off-Earth resources due to price alone.
+		- This greatly impacts another key process in space development: Large Scale Orbital Construction. Fuel demand drivers are obviously transport and life support, but metals will likely be needed largely to build the bulk of infrastructure like habitats, spacecraft, shielding, and large non-rocket transport systems. Sourcing the majority of your structure in orbit cuts a lot of launch mass, leaving only small components to be sent up, reducing costs greatly, but now your system needs to be processed and built in the tricky conditions of space.
+		- Where this large amount of metal comes from is a central question of cislunar development, and one of its justifications: shipping from the Moon's surface or orbit is so much more fuel-efficient (around 27x) than launching to LEO from Earth that one could easily make the case for off-Earth resources eventually enabling orbital megastructures.
+		-
+	- What this article is and isn't
+	- The space resources paradigm
+		- Infinite lunar and NEO resources
+	-

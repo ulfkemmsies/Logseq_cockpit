@@ -1,0 +1,3 @@
+- [[Discrete Poissson process]]
+-
+-
