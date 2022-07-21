@@ -1,36 +1,39 @@
+public:: true
 tags:: article, blogpost, space, space economics, space logistics
 
 - {{renderer :toc_zunejyven}}{{renderer :toc_zunejyven}}
 	- # Introduction
 	  collapsed:: true
-		- The commercial space industry, which has flourished in this last decade due to rocket reusability, satellite miniaturization, and wider data analysis capabilities, is ==slowly== moving outward from Earth orbit to the greater cislunar space which envelops our home. A longstanding narrative is that of exploiting space resources to benefit our techno-industrial complex, ==eventually== perhaps even substituting resources from our own biosphere ==in order to== salvage it. In cislunar space (and a bit beyond), lunar and Near Earth Object (NEO) resources are the easiest to reach and the probable first targets for exploration. This process can be greatly cheapened by transport infrastructure at key locations, and conversely, the harvested construction materials can cheapen the construction of such infrastructure.
+		- The commercial space industry, which has flourished in this last decade due to rocket reusability, satellite miniaturization, and wider data analysis capabilities, is slowly moving outward from Earth orbit to the greater cislunar space which envelops our home. A longstanding narrative is that of exploiting space resources to benefit our techno-industrial complex, eventually perhaps even substituting resources from our own biosphere in order to salvage it. In cislunar space (and a bit beyond), lunar and Near Earth Object (NEO) resources are the easiest to reach and the probable first targets for exploration. This process can be greatly cheapened by transport infrastructure at key locations, and conversely, the harvested construction materials can cheapen the construction of such infrastructure.
 		  id:: 62b70571-473b-4596-ae8b-abc04ad95c86
-		- A possible metric for the progress of cislunar development is the price of goods at any given location: comparing goods coming from different sources (NEOs, Moon, Earth) shows how efficient the ==overall== system is for that specific trajectory and where more infrastructure ==is needed==. ==In order to== forecast these prices, orbital mechanics, vehicle parameters, and rocket equations must ==be taken== into account. Unlike logistics on Earth, where shipping costs are a fraction of the final price paid, space transport is still so difficult and expensive that is remains the main cost driver.
+		- A possible metric for the progress of cislunar development is the price of goods at any given location: comparing goods coming from different sources (NEOs, Moon, Earth) shows how efficient the overall system is for that specific trajectory and where more infrastructure is needed. In order to forecast these prices, orbital mechanics, vehicle parameters, and rocket equations must be taken into account. Unlike logistics on Earth, where shipping costs are a fraction of the final price paid, space transport is still so difficult and expensive that is remains the main cost driver.
 		  id:: 62b707ea-f09f-43a8-b1fc-4d705dd125d4
-		- This article is an attempt to create a framework, model, and software implementation to estimate how much space resources will cost at different orbital points of interest. It will ==be written== for both laypeople and industry members using expandable content for the underlying equation derivations and deeper detail. It will also ==accompany== a simple app that implements the theory. ==Many== assumptions are ==being made== herein, and since they will vary in their quality, this article is also an attempt to ==validate== them through the feedback it will generate from knowledgeable readers.
+		- This article is the first step in an attempt to create a framework, model, and software implementation to estimate how much space resources will cost at different orbital points of interest. It will be written for both laypeople and industry members using expandable content for the underlying equation derivations and deeper detail. It will also accompany a simple app that implements the theory. Many assumptions are being made herein, and since they will vary in their quality, this article is also an attempt to validate them through the feedback it will generate from knowledgeable readers.
 		  id:: 62b70a4c-8a45-4be5-926a-7dce03ceb27d
 		- The main steps taken herein are as follows:
 			- Define all background information, equations and terms
-			- Define the main cost drivers and find an expression for price propagation across nodes
-			- Introduce simplifications that mitigate the need for vehicle specifications
+			- Define the main cost drivers for idealized space cargo transport
+			- Introduce simplifications (mass ratios) that mitigate the need for vehicle specifications
+			- Find an expression for price propagation between locations
 			- Discuss the implications of infrastructural network arrangements
 	- # Background information at various levels
+	  collapsed:: true
 		- ## Basic
 			- ### How rockets work
-				- The main paradigm for space propulsion is chemical rockets: a fuel reacts chemically, ==is energized== and accelerated, and propels the vehicle forward by flying out the back. The main fuel we will be considering is Hydrolox, or liquid hydrogen LH$_{2}$ and liquid oxygen LOx. This is because Hydrolox can ==be produced== by electrolyzing (separating the hydrogen and oxygen) water, which exists in ==abundance== on the Moon, making it the probable fuel used for cislunar transport systems.
+				- The main paradigm for space propulsion is chemical rockets: a fuel reacts chemically, is energized and accelerated, and propels the vehicle forward by flying out the back. The main fuel we will be considering is Hydrolox, or liquid hydrogen LH$_{2}$ and liquid oxygen LOx. This is because Hydrolox can be produced by electrolyzing (separating the hydrogen and oxygen) water, which exists in abundance on the Moon, making it the probable fuel used for cislunar transport systems.
 				  id:: 62b70df0-7080-4a82-be68-b1fca31354f5
-				- Travelling in space ==is done== mainly by consecutively changing your speed and orbit around some gravitational body. The ideal maneuver between two orbits or bodies is a [[Hohmann Transfer]] and requires ==several== propellant burns, each changing the spacecraft's velocity by some $\Delta V$ [km/s]. The total $\Delta V$ for a trip between two locations also indicates how much energy (burned propellant) ==is required== for transport.
+				- Travelling in space is done mainly by consecutively changing your speed and orbit around some gravitational body. The ideal maneuver between two orbits or bodies is a [[Hohmann Transfer]] and requires several propellant burns, each changing the spacecraft's velocity by some $\Delta V$ [km/s]. The total $\Delta V$ for a trip between two locations also indicates how much energy (burned propellant) is required for transport.
 				  id:: 62b71029-e26c-4412-b387-3ab1a31bb6b9
-				- The [[Mass Fraction]] $\eta$ of a single rocket maneuver is the ratio of the initial and final vehicle masses, i.e. after the required propellant has ==been burned==.
+				- The [[Mass Fraction]] $\eta$ of a single rocket maneuver is the ratio of the initial and final vehicle masses, i.e. after the required propellant has been burned.
 				  id:: 62b70d89-6c44-4cff-97e3-360b339e1248
 				  $$\eta = m_{init} / (m_{init} - m_{prop})$$
 				  $\eta$ also relates $v_e$ and $\Delta V$:
 				  $$ \eta = e^{\Delta V / v_e}$$
-				  where $v_e$ is the fuel's [[Exhaust Velocity]] (which depends on the propellant used and is often represented by the engine's [[Specific Impulse]] $I_{sp} = v_e / g_0$). This means we can know $\eta$ solely from knowing our propellant-engine combination and the orbital trajectory ==being traversed==.
-				- The [[Maneuver Burn Time]] of a single propellant burn ==is described== in the following equation
+				  where $v_e$ is the fuel's [[Exhaust Velocity]] (which depends on the propellant used and is often represented by the engine's [[Specific Impulse]] $I_{sp} = v_e / g_0$). This means we can know $\eta$ solely from knowing our propellant-engine combination and the orbital trajectory being traversed.
+				- The [[Maneuver Burn Time]] of a single propellant burn is described in the following equation
 				  id:: 62b71e3a-012a-4779-8350-91f1d316cfc9
 				  $$ t_{burn}=\frac{m_{init} \cdot v_e}{T_{eng}}\left(1-e^{-\frac{\Delta V}{v_e}}\right) $$
-				  where $T_{eng}$ is the engine's thrust. Since a mission often has ==several== burns, the vehicle will be lighter at later burns due to the shed propellant mass.
+				  where $T_{eng}$ is the engine's thrust. Since a mission often has several burns, the vehicle will be lighter at later burns due to the shed propellant mass.
 				-
 			- ### Some terms used
 				- The **dry mass** of a rocket is its mass without any propellant or payload: all the systems, engines, structures, tanks, and cables.
@@ -45,34 +48,37 @@ tags:: article, blogpost, space, space economics, space logistics
 				-
 			-
 	- # Cost drivers
-		- When some cargo ==is shipped== from A to B, transportation cost (as well as the profit margin) is the difference between the price paid before and after delivery. On Earth, shipping fees are a small fraction of the final price due to low propellant mass fractions $m_{prop}/m_{init}$ and extreme vehicle reusability. Ships and pickup trucks have a propellant mass fraction of 3%, cars 4%, cargo jets 40%, and rockets around 85% [[NASA](https://www.nasa.gov/mission_pages/station/expeditions/expedition30/tryanny.html)]. Container ships can ==be used== intensely for 10 to 12 years [[Containercorp](https://www.containercorp.ca/how-==many==-times-can-a-shipping-container-be-used/)] and commercial airplanes for 25 to 30 years [[Quora](https://www.quora.com/How-==many==-years-can-passenger-airplanes-continue-to-fly-after-they-have-been-put-in-service?share=1)], but even the most reused rocket, a SpaceX Falcon 9, has ==only== flown a total of 10 times [[Eclipse Aviation](https://www.eclipseaviation.com/how-==many==-times-has-spacex-reused-a-rocket/#6)] - the historical norm being ==just== one expendable use. ==It is== no wonder that space shipping makes up a large part of the final price of delivered payloads.
+	  collapsed:: true
+		- When some cargo is shipped from A to B, transportation cost (as well as the profit margin) is the difference between the price paid before and after delivery. On Earth, shipping fees are a small fraction of the final price due to low propellant mass fractions $m_{prop}/m_{init}$ and extreme vehicle reusability. Ships and pickup trucks have a propellant mass fraction of 3%, cars 4%, cargo jets 40%, and rockets around 85% [[NASA](https://www.nasa.gov/mission_pages/station/expeditions/expedition30/tryanny.html)]. Container ships can be used intensely for 10 to 12 years [[Containercorp](https://www.containercorp.ca/how-many-times-can-a-shipping-container-be-used/)] and commercial airplanes for 25 to 30 years [[Quora](https://www.quora.com/How-many-years-can-passenger-airplanes-continue-to-fly-after-they-have-been-put-in-service?share=1)], but even the most reused rocket, a SpaceX Falcon 9, has only flown a total of 10 times [[Eclipse Aviation](https://www.eclipseaviation.com/how-many-times-has-spacex-reused-a-rocket/#6)] - the historical norm being just one expendable use. It is no wonder that space shipping makes up a large part of the final price of delivered payloads.
 		  id:: 62b75002-7f01-45c4-9ec2-69faefdc94a8
 		- ## Components of transportation cost:
 			- ### Reusability-limited cost
-				- Recouping the initial investment in the vehicle. The more uses your vehicle has, the more this recouping can ==be spread== out: $C_{use} = C_{init}/ n_{cycles}$
+			  collapsed:: true
+				- Recouping the initial investment in the vehicle. The more uses your vehicle has, the more this recouping can be spread out: $C_{use} = C_{init}/ n_{cycles}$
 				  id:: 62b79ce7-700a-4e99-9725-43e4a92059be
 				- For rockets, the lifetime of the engine is often the limit for the rest of the vehicle. Liquid propellant rocket engines have a limited amount of cycles (or restarts) $n_{cycles}$ and a total burn lifetime $t_{life}$, according to [this analysis](https://sci-hub.st/https://link.springer.com/article/10.1007/s12567-011-0006-x?shared-article-renderer):
 				  >  [...] two major degradations limit the safe life operation of a rocket engine, the low-cycle fatigue damage related mainly to an engine start-up and shutdown operation, and the time-dependent damage driven by creep and material wear out related to the duration of the engine main stage operation.
-				- These two limits, $n_{cycles}$ and $t_{life}$, ==are related== by
+				- These two limits, $n_{cycles}$ and $t_{life}$, are related by
 				  id:: 62b77e79-258c-47af-8208-98f63ebafff1
 				  $$n_{cycles} \cdot t_{burn, avg}= t_{life}$$
-				  In case ==only== one or the other value ==is known==, they can ==be transformed== into the other. Since trajectories have ==several== burns $n_{burns}$ each, the **reusability-limited cost per trajectory** will be:
+				  In case only one or the other value is known, they can be transformed into the other. Since trajectories have several burns $n_{burns}$ each, the **reusability-limited cost per trajectory** will be:
 				  $$C_{use} = C_{init} \cdot \frac{n_{burns}}{n_{cycles}}  = C_{init} \cdot \frac{t_{burn}}{t_{life}}$$
 					- A further first level estimation from [this source](https://sci-hub.st/https://link.springer.com/article/10.1007/s12567-011-0006-x?shared-article-renderer) relates the average burn time to the Main Combustion Chamber (MCC) cycles to failure: ![image.png](../assets/image_1656192393449_0.png){:height 277, :width 439}
 					  id:: 62b76229-6c45-46fa-a498-ac58266a2257
-					  The equation graphed ==roughly== equals $n_{uses} = 6024.0964 \cdot t_{burn, avg}^{-1}$, indicating that the average rocket in their analysis has a burn lifetime of around 6000 seconds. The authors suggest applying a safety margin factor of 3 to find the amount of safe cycles until failure - so their average rocket had a lifetime of around 2000 seconds.
+					  The equation graphed roughly equals $n_{uses} = 6024.0964 \cdot t_{burn, avg}^{-1}$, indicating that the average rocket in their analysis has a burn lifetime of around 6000 seconds. The authors suggest applying a safety margin factor of 3 to find the amount of safe cycles until failure - so their average rocket had a lifetime of around 2000 seconds.
 					-
 			- ### Maintenance cost
-				- Regular repair and maintenance. This cost has a fixed and variable part - one captures damage caused by ==simply== using the vehicle, and the other depends on the conditions the vehicle must endure and the energetic distance of the journey: $C_{repair} = C_{repair, fixed} + C_{repair, var} \cdot \Delta V$
+			  collapsed:: true
+				- Regular repair and maintenance. This cost has a fixed and variable part - one captures damage caused by simply using the vehicle, and the other depends on the conditions the vehicle must endure and the energetic distance of the journey: $C_{repair} = C_{repair, fixed} + C_{repair, var} \cdot \Delta V$
 				  id:: 62b79cf5-4d32-486f-8e4d-43f54dd2c68b
 				- The final maintenance and repair cost is $C_{repair} = C_{init} \cdot (f_{repair,fixed} \cdot m_{dry} \cdot (1 + f_{repair,var} \cdot \Delta V))$
-					- ==In order to== make the expression easier to solve, we define these costs as a fraction of the initial vehicle cost:
+					- In order to make the expression easier to solve, we define these costs as a fraction of the initial vehicle cost:
 					  id:: 62b79f40-effb-4e97-9aea-42ee2b165414
 					  $$C_{repair, fixed} = C_{init} \cdot r_{repair}$$
 					  $$\quad C_{repair, var} = C_{init} \cdot f_{repair, var}$$
 					- Furthermore, we define $r_{repair}$ as a function of the vehicle dry mass $m_{dry}$:
 					  $$r_{repair} = f_{repair, fixed} \cdot m_{dry}$$
-						- The implication of this simplification is that the marginal damage suffered by the vehicle per $\Delta V$ travelled depends on the mass of the vehicle's systems and structures. The intuition behind this is that complexity and vulnerability scale with system mass, and since $\Delta V$ influences burn time more than travel time, ==it is== also an expression of the operation of the engines (which are ==usually== the main source of failure.)
+						- The implication of this simplification is that the marginal damage suffered by the vehicle per $\Delta V$ travelled depends on the mass of the vehicle's systems and structures. The intuition behind this is that complexity and vulnerability scale with system mass, and since $\Delta V$ influences burn time more than travel time, it is also an expression of the operation of the engines (which are usually the main source of failure.)
 						  id:: 62b7a26a-8dba-4938-b794-1778663e8b49
 			- ### Propellant cost
 				- The cost of the fuel used: $C_{prop} = m_{prop} \cdot P_{prop}$ where $P_{prop}$ is the price paid for propellant at the origin.
@@ -87,35 +93,38 @@ tags:: article, blogpost, space, space economics, space logistics
 			- The expression found for all modelled costs is 
 			  $$C_{total} = C_{init} \cdot ( \frac{t_{burn}}{t_{life}} + (f_{repair, fixed} \cdot m_{dry} ) \cdot (1 + f_{repair, var} \cdot \Delta V ) ) + P_{prop} \cdot m_{prop}$$
 	- # Trajectory performance parameters
+	  collapsed:: true
 		- ## Rocket sizing 101
 		  collapsed:: true
-			- Spacecraft design often starts with a simple ==requirement==: deliver a payload $m_{pay}$ from A to B. The chosen engine-propellant combo yields the Specific Impulse $I_{sp}$ and thus the Exhaust Velocity $v_e$. The orbital maneuvers required ==are found== using the appropriate equations, yielding the $\Delta V$ for each burn.
+			- Spacecraft design often starts with a simple requirement: deliver a payload $m_{pay}$ from A to B. The chosen engine-propellant combo yields the Specific Impulse $I_{sp}$ and thus the Exhaust Velocity $v_e$. The orbital maneuvers required are found using the appropriate equations, yielding the $\Delta V$ for each burn.
 			  id:: 62b7ce24-414c-43fa-9823-37079e3f19ba
-			- The calculation of the initial mass required for the entire vehicle $m_{init}$ ==is performed== backwards. Starting at the $n^{th}$ burn:
+			- The calculation of the initial mass required for the entire vehicle $m_{init}$ is performed backwards. Starting at the $n^{th}$ burn:
 			  id:: 62b7d5cc-9463-4e46-8aa0-e5a29f691eb0
 			  $$\eta_n = \frac{m_{dry} \cdot m_{pay} \cdot m_{prop,n}}{m_{dry} \cdot m_{pay}} = e^{ \frac{\Delta V_n}{v_e} }$$
 			  $$m_{prop, n} = (m_{dry} + m_{pay}) \cdot (\eta_n -1)$$
-			  And with the propellant mass required for the final burn found, the previous burn's propellant mass can also ==be calculated==.
+			  And with the propellant mass required for the final burn found, the previous burn's propellant mass can also be calculated.
 			  $$m_{prop, n-1} = (m_{dry} + m_{pay} + m_{prop, n}) \cdot (\eta_{n-1} -1)$$
-			- If the vehicle ==is staged== and thus has different $m_{dry}$ at different times, this must also ==be taken== into account. This process ==is repeated== until $m_{init}$ ==is reached==.
+			- If the vehicle is staged and thus has different $m_{dry}$ at different times, this must also be taken into account. This process is repeated until $m_{init}$ is reached.
 			  id:: 62b7d6ad-2517-4425-a7f0-7e43da101659
 		- ## Rocket sizing with mass ratios
-			- If the actual mass of the payload is not known, ==it is== possible to size a rocket, albeit using coefficients instead.
+		  collapsed:: true
+			- If the actual mass of the payload is not known, it is possible to size a rocket, albeit using coefficients instead.
 			  id:: 62b7d896-8e68-4d07-9be0-089c0c4d05ac
-				- The Payload Ratio $PR$ ==is defined== as $PR = m_{pay} / (m_{dry} + m_{prop})$.
+				- The Payload Ratio $PR$ is defined as $PR = m_{pay} / (m_{dry} + m_{prop})$.
 				  id:: 62b7d980-e695-4380-ab4b-a1e760475f5c
-				- The Structural Coefficient $SC$ ==is defined== as $SC = m_{dry} / (m_{dry} + m_{prop})$
+				- The Structural Coefficient $SC$ is defined as $SC = m_{dry} / (m_{dry} + m_{prop})$
 				  id:: 62b7da03-fbd9-4264-b0b0-ab55acd3077b
-				- With some algebra, it can ==be shown== that $\eta = \frac{1 + PR}{SC + PR}$.
+				- With some algebra, it can be shown that $\eta = \frac{1 + PR}{SC + PR}$.
 				  id:: 62b7da44-eec3-4e22-946e-7cf038d32bf4
-				- ==Clearly==, a large payload ratio (more payload delivered), small structural coefficient (less dry mass needed), and large mass ratio are preferable.
+				- Clearly, a large payload ratio (more payload delivered), small structural coefficient (less dry mass needed), and large mass ratio are preferable.
 				  id:: 62b7da92-5a30-42b6-bab2-b965c13b037b
 			- Using mass ratios for vehicle sizing yields important performance parameters that remain true regardless of the absolute size of the vehicle.
-			- Solving all the equations needed for concrete answers ==concerning== payload masses delivered and costs can require in-depth knowledge of the vehicles ==being used==. ==In order to== make the model as generalizable as possible, simplifications and assumptions must ==be made== ==in order to== capture most of the result with less previous information.
+			- Solving all the equations needed for concrete answers concerning payload masses delivered and costs can require in-depth knowledge of the vehicles being used. In order to make the model as generalizable as possible, simplifications and assumptions must be made in order to capture most of the result with less previous information.
 			  id:: 62b713fc-d9c6-495b-8aaf-d50aff67b4fa
-			- As shown above, mass ratios express the performance of a vehicle for any mass it may have. In the ==previously== derived expression for the total cost of a trajectory, there are three mass ratios which relate the dry, initial and propellant masses to that of the payload.
+			- As shown above, mass ratios express the performance of a vehicle for any mass it may have. In the previously derived expression for the total cost of a trajectory, there are three mass ratios which relate the dry, initial and propellant masses to that of the payload.
 			  id:: 62b7df37-d48e-4b66-bf2d-0425a4a8113d
 		- ## Finding the mass ratios
+		  collapsed:: true
 			- ### Adapting previous work
 			  collapsed:: true
 				- If you haven't yet visited Selenian Boondocks, I highly recommend the blog - a [recent article](https://selenianboondocks.com/2022/04/pf-derivation-split-dv-2/) by Kirk Sorensen saved me some work deriving the equations we're going to need. He considered the case of a vehicle that launches with a payload, drops it off somewhere, and continues on to another location (possibly the original starting point). I will spare you the derivation, which you can find in his article.
@@ -128,7 +137,7 @@ tags:: article, blogpost, space, space economics, space logistics
 				  $$\frac{m_{\text {init}}}{m_{\text {pay}}}=\frac{\eta_{1}\left(1+\epsilon \eta_{2}-\lambda\left(\eta_{2}-1\right)\right)}{1-(\phi+\lambda) \eta_{1} \eta_{2}+\lambda}$$
 				  Here the $\eta$'s are the mass fractions $m_{init}/m_{final}$ for each maneuver of the mission (the second being the return trip sans the payload mass).
 				- Rearranging $m_{init}/m_{pay}$ to find $m_{prop}/m_{pay}$:
-				  $$\frac{m_{prop}}{m_{payload}} = \frac{1-(\phi+\lambda) \eta_{1} \eta_{2}+\lambda}{\eta_{1}\left(1+\epsilon \eta_{2}-\lambda\left(\eta_{2}-1\right)\right)} \cdot (1- \frac{1}{\eta_1 \eta_2}) - (1-\frac{1}{\eta_2})$$
+				  $$\frac{m_{prop}}{m_{payload}} = \frac{\eta_{1}\left(1+\epsilon \eta_{2}-\lambda\left(\eta_{2}-1\right)\right)}{1-(\phi+\lambda) \eta_{1} \eta_{2}+\lambda} \cdot (1- \frac{1}{\eta_1 \eta_2}) - (1-\frac{1}{\eta_2})$$
 				- Finally, rearranging to express $m_{dry} / m_{pay}$ as a function of the mass-sensitive terms:
 				  $$\frac{m_{dry}}{m_{pay}} = \phi \cdot \frac{m_{init}}{m_{pay}}+\lambda \cdot  \frac{m_{prop}}{m_{pay}}+\epsilon$$
 			- ### Three important considerations
@@ -137,8 +146,8 @@ tags:: article, blogpost, space, space economics, space logistics
 				- There are two scenarios which further simplify the mass ratio equations: if there is no return trip, then $\eta_2 =1$ since the craft's mass does not change. If the return trajectory has the same $\Delta V$ as the initial one, then $\eta_1 = \eta_2 = \eta$. This can only happen when there is no atmosphere to aerobrake in.
 				- An underlying assumption of Sorensen's is a single-stage vehicle, mainly describing space-only tugs that don't need it. That means the mass ratio equations do not apply to multi-stage vehicles (anything launching from Earth).
 		- ## Summary of mass ratio equations
-			- ### Model Assumptions:
-			  collapsed:: true
+		  collapsed:: true
+			- ### Model Assumptions
 				- The vehicle performs a maneuver $\eta_1$, drops off a payload $m_{pay}$, and performs a second maneuver $\eta_2$.
 				- The dry mass is composed of contributions by  $$m_{\text {dry }}=\phi \cdot m_{\text {init }}+\lambda \cdot  m_{\text {prop }}+\epsilon \cdot m_{\text {pay }}$$
 				- $\epsilon = 0$ for fuel tankers because the only payload being carried is propellant and thus all payload contributions to the dry mass are captured in $\lambda$.
@@ -161,84 +170,23 @@ tags:: article, blogpost, space, space economics, space logistics
 				  $$\lambda=\frac{(M X R)\left(\frac{f_{O T}}{\rho_{o x}}\right)+\left(\frac{f_{F T}}{\rho_{f u e l}}\right)}{(1+M X R)\left(1-f_{\text {ullage }}\right)}$$
 					- {{embed ((62b7fa49-48e1-4824-8295-68d6c9a38b04))}}
 	- # Price propagation
-		- The price of a good can ==be said== to "propagate" when the good is physically moved in space and resold at a different price. The new price depends ==only== on the parameters of the trajectory and the initial price, and thus the cost of moving cargo through the logistical network "propagates" alongside the cargo itself. Ideally, the effect of each trajectory on the price of goods travelling through it should ==be calculated== as ==easily== as possible and with as little information as possible.
+	  collapsed:: true
+		- The price of a good can be said to "propagate" when the good is physically moved in space and resold at a different price. The new price depends only on the parameters of the trajectory and the initial price, and thus the cost of moving cargo through the logistical network "propagates" alongside the cargo itself. Ideally, the effect of each trajectory on the price of goods travelling through it should be calculated as easily as possible and with as little information as possible.
 		  id:: 62b7cb4a-59e9-4150-893c-3e7b446e178d
 		- If the target profit margin $f_{profit}$ for a trajectory from $A$ to $B$ is known beforehand, the required sale price $P_B$ can be found through:
 		  id:: 62b7c28b-1771-42b9-b283-f2aa44e6a7f0
 		  $$P_{B} = f_{profit} \cdot (P_A + \frac{C_{total}}{m_{pay}})$$
 		- Focusing on and expanding $C_{total}/m_{pay}$:
 		  $$\frac{C_{total}}{m_{pay}} =C_{init} \cdot \left[ \frac{v_e}{T_{eng}} \cdot \frac{(1-e^{\frac{ - \Delta V}{v_e}})}{t_{life}} \cdot \frac{m_{init}}{m_{pay}} + (f_{repair, fixed} \cdot (1 + f_{repair, var} \cdot \Delta V ) ) \cdot \frac{m_{dry}}{m_{pay}} \right] + P_{prop} \cdot \frac{m_{prop}}{m_{pay}}$$
-		- Plugging $C_{total} / m_{pay}$ back into the equation for $P_B$ yields a long expression that can ==be calculated== with knowledge about the trajectory travelled $(\Delta V, n_{burns}, f_{profit})$, the node being departed from $(P_{prop}, P_{pay})$, the vehicle used to do so $(C_{init}, f_{repair, fix/var})$, and the engine-propellant combination used by the vehicle $(T_{eng}, v_e, t_{life})$.
-		  id:: 62b7ca59-196b-4c01-a512-decc5c974a03
-		- id:: 62b7cd31-0fd9-4c8a-b5a9-453fe59d6bc1
-	-
-- ## Suggestions
-  collapsed:: true
-	- "slowly" can weaken meaning [🔖](62b70571-473b-4596-ae8b-abc04ad95c86)
-	- "eventually" can weaken meaning [🔖](62b70571-473b-4596-ae8b-abc04ad95c86)
-	- "in order to" is wordy or unneeded [🔖](62b70571-473b-4596-ae8b-abc04ad95c86)
-	- "overall" is wordy or unneeded [🔖](62b707ea-f09f-43a8-b1fc-4d705dd125d4)
-	- "is needed" may be passive voice [🔖](62b707ea-f09f-43a8-b1fc-4d705dd125d4)
-	- "In order to" is wordy or unneeded [🔖](62b707ea-f09f-43a8-b1fc-4d705dd125d4)
-	- "be taken" may be passive voice [🔖](62b707ea-f09f-43a8-b1fc-4d705dd125d4)
-	- "be written" may be passive voice [🔖](62b70a4c-8a45-4be5-926a-7dce03ceb27d)
-	- "accompany" is wordy or unneeded [🔖](62b70a4c-8a45-4be5-926a-7dce03ceb27d)
-	- "Many" is a weasel word and can weaken meaning [🔖](62b70a4c-8a45-4be5-926a-7dce03ceb27d)
-	- "being made" may be passive voice [🔖](62b70a4c-8a45-4be5-926a-7dce03ceb27d)
-	- "validate" is wordy or unneeded [🔖](62b70a4c-8a45-4be5-926a-7dce03ceb27d)
-	- "is energized" may be passive voice [🔖](62b70df0-7080-4a82-be68-b1fca31354f5)
-	- "be produced" may be passive voice [🔖](62b70df0-7080-4a82-be68-b1fca31354f5)
-	- "abundance" is wordy or unneeded [🔖](62b70df0-7080-4a82-be68-b1fca31354f5)
-	- "is done" may be passive voice [🔖](62b71029-e26c-4412-b387-3ab1a31bb6b9)
-	- "several" is a weasel word [🔖](62b71029-e26c-4412-b387-3ab1a31bb6b9)
-	- "is required" may be passive voice [🔖](62b71029-e26c-4412-b387-3ab1a31bb6b9)
-	- "been burned" may be passive voice [🔖](62b70d89-6c44-4cff-97e3-360b339e1248)
-	- "being traversed" may be passive voice [🔖](62b70d89-6c44-4cff-97e3-360b339e1248)
-	- "is described" may be passive voice [🔖](62b71e3a-012a-4779-8350-91f1d316cfc9)
-	- "several" is a weasel word [🔖](62b71e3a-012a-4779-8350-91f1d316cfc9)
-	- "is shipped" may be passive voice [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "be used" may be passive voice [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "many" is a weasel word and can weaken meaning [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "many" is a weasel word and can weaken meaning [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "only" can weaken meaning [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "many" is a weasel word and can weaken meaning [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "just" can weaken meaning [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "It is" is wordy or unneeded [🔖](62b75002-7f01-45c4-9ec2-69faefdc94a8)
-	- "be spread" may be passive voice [🔖](62b79ce7-700a-4e99-9725-43e4a92059be)
-	- "are related" may be passive voice [🔖](62b77e79-258c-47af-8208-98f63ebafff1)
-	- "only" can weaken meaning [🔖](62b77e79-258c-47af-8208-98f63ebafff1)
-	- "is known" may be passive voice [🔖](62b77e79-258c-47af-8208-98f63ebafff1)
-	- "be transformed" may be passive voice [🔖](62b77e79-258c-47af-8208-98f63ebafff1)
-	- "several" is a weasel word [🔖](62b77e79-258c-47af-8208-98f63ebafff1)
-	- "roughly" can weaken meaning [🔖](62b76229-6c45-46fa-a498-ac58266a2257)
-	- "simply" can weaken meaning [🔖](62b79cf5-4d32-486f-8e4d-43f54dd2c68b)
-	- "In order to" is wordy or unneeded [🔖](62b79f40-effb-4e97-9aea-42ee2b165414)
-	- "it is" is wordy or unneeded [🔖](62b7a26a-8dba-4938-b794-1778663e8b49)
-	- "usually" can weaken meaning [🔖](62b7a26a-8dba-4938-b794-1778663e8b49)
-	- "be said" may be passive voice [🔖](62b7cb4a-59e9-4150-893c-3e7b446e178d)
-	- "only" can weaken meaning [🔖](62b7cb4a-59e9-4150-893c-3e7b446e178d)
-	- "be calculated" may be passive voice [🔖](62b7cb4a-59e9-4150-893c-3e7b446e178d)
-	- "easily" can weaken meaning [🔖](62b7cb4a-59e9-4150-893c-3e7b446e178d)
-	- "be calculated" may be passive voice [🔖](62b7ca59-196b-4c01-a512-decc5c974a03)
-	- "being used" may be passive voice [🔖](62b7ca59-196b-4c01-a512-decc5c974a03)
-	- "requirement" is wordy or unneeded [🔖](62b7ce24-414c-43fa-9823-37079e3f19ba)
-	- "are found" may be passive voice [🔖](62b7ce24-414c-43fa-9823-37079e3f19ba)
-	- "is performed" may be passive voice [🔖](62b7d5cc-9463-4e46-8aa0-e5a29f691eb0)
-	- "be calculated" may be passive voice [🔖](62b7d5cc-9463-4e46-8aa0-e5a29f691eb0)
-	- "is staged" may be passive voice [🔖](62b7d6ad-2517-4425-a7f0-7e43da101659)
-	- "be taken" may be passive voice [🔖](62b7d6ad-2517-4425-a7f0-7e43da101659)
-	- "is repeated" may be passive voice [🔖](62b7d6ad-2517-4425-a7f0-7e43da101659)
-	- "is reached" may be passive voice [🔖](62b7d6ad-2517-4425-a7f0-7e43da101659)
-	- "it is" is wordy or unneeded [🔖](62b7d896-8e68-4d07-9be0-089c0c4d05ac)
-	- "is defined" may be passive voice [🔖](62b7d980-e695-4380-ab4b-a1e760475f5c)
-	- "is defined" may be passive voice [🔖](62b7da03-fbd9-4264-b0b0-ab55acd3077b)
-	- "be shown" may be passive voice [🔖](62b7da44-eec3-4e22-946e-7cf038d32bf4)
-	- "Clearly" is a weasel word and can weaken meaning [🔖](62b7da92-5a30-42b6-bab2-b965c13b037b)
-	- "concerning" is wordy or unneeded [🔖](62b713fc-d9c6-495b-8aaf-d50aff67b4fa)
-	- "being used" may be passive voice [🔖](62b713fc-d9c6-495b-8aaf-d50aff67b4fa)
-	- "In order to" is wordy or unneeded [🔖](62b713fc-d9c6-495b-8aaf-d50aff67b4fa)
-	- "be made" may be passive voice [🔖](62b713fc-d9c6-495b-8aaf-d50aff67b4fa)
-	- "in order to" is wordy or unneeded [🔖](62b713fc-d9c6-495b-8aaf-d50aff67b4fa)
-	- "previously" can weaken meaning and is wordy or unneeded [🔖](62b7df37-d48e-4b66-bf2d-0425a4a8113d)
-	- "only" can weaken meaning [🔖](62b7e737-7b52-4ac0-9433-fa8d71fc04ef)
-	- "be found" may be passive voice [🔖](62b7e737-7b52-4ac0-9433-fa8d71fc04ef)
+		- Plugging $C_{total} / m_{pay}$ back into the equation for $P_B$ yields a long expression that can be calculated with knowledge about the trajectory travelled $(\Delta V, n_{burns}, f_{profit})$, the node being departed from $(P_{prop}, P_{pay})$, the vehicle used to do so $(C_{init}, f_{repair, fix/var})$, and the engine-propellant combination used by the vehicle $(T_{eng}, v_e, t_{life})$.
+		- ## Assumed behaviour for differing fuel prices
+			- When the above expression for price propagation is implemented across many nodes in a location graph of cislunar space, it can model how the price of goods increases as they travel further and further from their origin. What happens, however, when two different fuel prices collide at a single location? Which fuel is used further downstream for each flow?
+			- Another assumption is made in order to answer this question: at any given location, the cheapest local fuel will be used as the propellant for outgoing travel, while the original fuel of that flow is kept as the payload. That is, $P_{prop} = P_{best}$ and $P_{A} = P_{pay}$
+			-
+	- # Implementation and Implications
+		- This section will show several examples of cislunar transport graphs drawn using the software accompanying this article. To clarify some of the layout: the color of the arrows and nodes represents the propellant origin: blue is the Moon, green is the Earth. A node being a certain color indicates that the fuel from the corresponding source is cheaper there - this allows us to quickly visualize the dominance of a certain fuel source. We shall call a specific output state the  "landscape" of cislunar space for shorthand.
+		- An important point is that (in the current version of the algorithm) the final system state only depends on the initial source fuel prices, vehicles used, and available refueling locations. The idea behind quickly being able to change these three factors (as well as the many supporting coefficients and variables) quickly is to inspect the impact of certain changes, e.g. how building fuel stations at _X_ location lowers system prices or improving _Y_ vehicle makes a certain path competitive.
+		- This systemic impact is a potential metric for how worth it a specific improvement is as it relates to all of cislunar space's techno-industrial complex.
+		- It is worth mentioning that, at the time of writing, the starting point for Earth-based fuel is LEO.
+			- This simplification has two reasons: first, vehicle masses quickly snowball as one gets further from LEO, and linear mass ratio expressions no longer hold. Secondly, the best data available (out of the many variables to be ascertained) is that for launch prices to LEO, which is just the starting price of fuel in our system.
+		-
