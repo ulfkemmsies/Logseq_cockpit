@@ -125,7 +125,7 @@ tags:: article, blogpost, space, space economics, space logistics
 			  id:: 62b7df37-d48e-4b66-bf2d-0425a4a8113d
 		- ## Finding the mass ratios
 		  collapsed:: true
-			- ### Adapting previous work
+			- ### Adapting previous works
 			  collapsed:: true
 				- If you haven't yet visited Selenian Boondocks, I highly recommend the blog - a [recent article](https://selenianboondocks.com/2022/04/pf-derivation-split-dv-2/) by Kirk Sorensen saved me some work deriving the equations we're going to need. He considered the case of a vehicle that launches with a payload, drops it off somewhere, and continues on to another location (possibly the original starting point). I will spare you the derivation, which you can find in his article.
 				- In Sorensen's model, he defines the dry mass of the craft (no propellant or payload) as depending on three terms: [initial-mass-sensitive](https://selenianboondocks.com/2010/02/calculating-gross-mass-sensitive-term/) ($\phi$), [propellant-mass-sensitive](https://selenianboondocks.com/2010/02/calculating-propellant-mass-sensitive-term/) ($\lambda$), and payload-mass-sensitive ($\epsilon$) mass terms. Typical values for in-space (vacuum) liquid hydrogen engines and propellant tanks are $\phi = 0.01$ and $\lambda = 0.03$.
