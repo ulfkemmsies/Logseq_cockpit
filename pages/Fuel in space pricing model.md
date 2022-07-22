@@ -56,6 +56,7 @@ tags:: software, model, space, OOP, blogpost
 		- ![desmos-graph initial mass advantage.png](../assets/desmos-graph_initial_mass_advantage_1655041049502_0.png){:height 434, :width 489}
 	- # How prices propagate
 		- ## Simple mass propagation
+		  collapsed:: true
 			- If I wanted to sell Earth-based LH2/LOx at the Moon's surface, the price would be massively affected by the presence of staging nodes that allow for refueling frequently and between short hops - hopefully the above section clarified how significant the difference in delivered payload prices can be between long hauls and quick trips.
 			- To keep our model simple, let's assume that these nodes already exist at 3 key places: Low Lunar Orbit, Earth-Moon Lagrange Point 1, and Low Earth Orbit. That means that our hypothetical propellant must be carried to each node and stockpiled to allow for later refueling - for our purposes, this stockpile already exists at each location. The transfer between one location and the next involves refueling at a new, higher price than the last node because of all that extra propellant mass needed to deliver a payload to a certain location.
 			- The $m_{prop}/m_{payload}$ ratios we defined before are only valid for one mission between A and B. When we arrive at B, we will have delivered our payload mass and burned the necessary propellant, so if someone were to buy that payload at B, they would effectively be consuming the total mass (just like we consume lots of oil for overnight shipping):
@@ -161,6 +162,7 @@ tags:: software, model, space, OOP, blogpost
 				  $$
 				- Arriving at a stable price state simply requires: establishing the best prices, calculating the $\Delta p$'s, and moving forward in time by adding them to the current prices - iteratively, until $\Delta P= \vec{0}$.
 		- # Setting up the model
+		  collapsed:: true
 			- The stable price state defined above is only stable within a macro time period e.g. a year. The objective is to model how this state changes from one macro period to the next, for instance over the next decade. The parameters that alter how the network will converge at the beginning of each period are the ones we previously assumed as static:
 				- The location (and existence) of nodes i.e. the structure of the graph itself
 				  The $\Delta V$'s between the nodes
@@ -178,6 +180,7 @@ tags:: software, model, space, OOP, blogpost
 					- Smooth rates of change
 					- Timing for each event
 		- # Further Work
+		  collapsed:: true
 			- Adding a profit margin per trajectory
 			- Realistically model the initial response to system changes (e.g. lunar lander making two-way trips to LLO until it becomes until one-way becomes possible through accumulated fuel)
 			- Modeling real capacity of fuel and materials at nodes (they can be full)

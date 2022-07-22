@@ -1,3 +1,5 @@
+public:: true
+
 - Equation:
   $$\lambda=\frac{(M X R)\left(\frac{f_{O T}}{\rho_{o x}}\right)+\left(\frac{f_{F T}}{\rho_{f u e l}}\right)}{(1+M X R)\left(1-f_{\text {ullage }}\right)}$$
 - Term definitions:
