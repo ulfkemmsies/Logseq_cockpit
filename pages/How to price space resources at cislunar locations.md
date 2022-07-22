@@ -117,7 +117,7 @@ tags:: article, blogpost, space, space economics, space logistics
 		  id:: 62b7d6ad-2517-4425-a7f0-7e43da101659
 	- ## Rocket sizing with mass ratios
 	  collapsed:: true
-		- If the actual mass of the payload is not known, it is possible to size a rocket, albeit using coefficients instead.
+		- If the actual mass of the payload is not known, it is possible to size a rocket, albeit using simplified coefficients instead.
 		  id:: 62b7d896-8e68-4d07-9be0-089c0c4d05ac
 			- The Payload Ratio $PR$ is defined as $PR = m_{pay} / (m_{dry} + m_{prop})$.
 			  id:: 62b7d980-e695-4380-ab4b-a1e760475f5c
