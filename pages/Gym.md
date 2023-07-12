@@ -1,0 +1,9 @@
+- Agenda
+	- DONE Horizontal Push >[2023-03-28 13:30 - 14:30](#agenda://?start=1680003000000&end=1680006600000&allDay=false)
+	- DONE Heavy Vertical Pull >[2023-05-17 14:00 - 15:30](#agenda://?start=1684324800000&end=1684330200000&allDay=false)
+	- DONE Gym >[2023-05-22 13:00 - 14:00](#agenda://?start=1684753200000&end=1684756800000&allDay=false)
+	- DONE Heavy Vertical Pull >[2023-06-07 13:30 - 15:00](#agenda://?start=1686137400000&end=1686142800000&allDay=false)
+	- DONE Heavy Vertical Push >[2023-06-08 11:30 - 13:00](#agenda://?start=1686216600000&end=1686222000000&allDay=false)
+	- DONE Heavy Horizontal Pull >[2023-06-09 12:00 - 13:30](#agenda://?start=1686304800000&end=1686310200000&allDay=false)
+	- DONE Heavy Vertical Pull Day >[2023-06-15 14:00 - 15:30](#agenda://?start=1686830400000&end=1686835800000&allDay=false)
+	- DONE Heavy Horizontal Push >[2023-06-20 16:00 - 17:00](#agenda://?start=1687269600000&end=1687273200000&allDay=false)

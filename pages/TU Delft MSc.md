@@ -1,3 +1,7 @@
+alias:: [[Space MSc.]]
+type:: [[Projects]]
+
+-
 - Topics of interest for #internship and #thesis:
 	- [[LEO]]
 		- [[Orbital Additive Manufacturing]]

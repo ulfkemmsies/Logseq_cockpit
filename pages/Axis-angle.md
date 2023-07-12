@@ -1,0 +1,5 @@
+- ![image.png](../assets/image_1663348848167_0.png)
+- Axis-angle describes the orientation by a unit vector \(e\) that indicates the direction of an axis of rotation and a rotation \(\theta\).
+- Advantages: do not suffer from "gimbal lock", rotation around a single axis, simplicity and few parameters (4)
+- Disadvantages: non-unique solutions since rotation \(\theta\) about \(e\) is the same as rotation \(-\theta\) about \(-e\) (for one rotation matrix there are two possible axis-angles)
+- While the vector \(e\) has three components, since it is a unit vector, the elevation and azimuth angles are sufficient to describe it. Thus, along with \(\theta\) they practically amount to only 3 needed parameters, rather than \(4 .\)

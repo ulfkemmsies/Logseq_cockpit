@@ -1,0 +1,146 @@
+file-path:: file://C:/Users/ulfkemmsies/Zotero/storage/FAQZ9FBS/Bianchi - Micropropulsion course Numerical analysis of wavy .pdf
+
+- In particular flows between at low Re numbers, between 10 and 100, showed Nusselts numbers strongly increasing with Re numbers. Its worth noting that the definition of the global Nusselt number changes between authors, thus comparison between different works should be done carefully. Wavy microchannels have been found to lead to higher Nusselt numbers and thus better convective heat transfer [ 10 , 11 , 14 ] when compared to an equal straight channel. However the pressure losses also increased considerably.
+  ls-type:: annotation
+  hl-page:: 1
+  hl-color:: green
+- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
+  hl-page:: 2
+  ls-type:: annotation
+  id:: 648c7afb-9e0e-40ec-b42a-fc05bef1d639
+  hl-color:: red
+  • Incompressible flow
+  • Steady state (this was verified with transient simulations)
+  • Negligible radiative and natural convective heat transfer
+  • Negligible viscous dissipation
+  • Laminar flow
+  • Constant fluid properties
+- Instead a constant heat flux (H2) and a constant wall temperature (T2) boundary condition was used. 
+  ls-type:: annotation
+  hl-page:: 2
+  hl-color:: red
+  id:: 648c7c53-a928-4a3d-97c7-a5cfcb082ed5
+- The depth of the channel is 𝐻 = 0.1 𝑚𝑚 and, given the rectangular section, the hydraulic diameter is 𝐷ℎ = 0.1359 𝑚𝑚. The aspect ratio is 𝛼 = 2.12. Only three sides exchange heat with the fluid, as the top of the channel is covered with an adiabatic material.
+  ls-type:: annotation
+  hl-page:: 2
+  hl-color:: yellow
+  id:: 64919a4e-c420-43c5-8994-b348cf636a3e
+- Given that the performance indicators analyzed in this work (Nusselt and friction factor) are both normalized to surface area and length respectively, this does not influence their value.
+  ls-type:: annotation
+  hl-page:: 2
+  hl-color:: red
+- ## Performance Factors 
+  hl-page:: 2
+  ls-type:: annotation
+  id:: 648c7bb9-541f-4ebb-813e-9d95eb20b92c
+  hl-color:: yellow
+  The performance of the channels is evaluated using Nusselt’s number, calculated using the following equation:
+  \(N u=\frac{h \cdot D_h}{k_W}\)
+  Where 𝑘𝑊 is the thermal conductivity of water
+- For this reason a second definition of the mean fluid temperature was used, calculated making an average over the whole fluid volume.
+  hl-page:: 3
+  ls-type:: annotation
+  id:: 648c7c0a-978c-4a6b-9a7b-6a76bb73f7e1
+  hl-color:: yellow
+  $$
+  h=\frac{q}{A_{\text {wall heat }} \cdot\left(T_w-T_m\right)}
+  $$
+  where \(T_w\) is the average temperature of the three heated walls and \(A_{\text {wall heat }}\) is their area. The mean fluid temperature, \(T_m\), is calculated with the following two methods:
+  $$
+  \begin{array}{r}
+  T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right) \\
+  T_{m, \text { volAve }}=\frac{\int_{V_{\text {fluid }}} T d V}{V_{\text {fluid }}}
+  \end{array}
+  $$
+  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
+  To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. This is defined as:
+  $$
+  f=\frac{-(d p / d x) \cdot D_h}{\frac{1}{2} \rho U^2}=\frac{\left(p_{\text {inlet }}-p_{\text {outlet }}\right) \cdot D_h}{\frac{1}{2} \rho U_{\text {inlet }}^2 \cdot L}
+  $$
+  Here \(p_{\text {inlet }}\) and \(p_{\text {outlet }}\) are the average pressures over the respective areas. \(U_{\text {inlet }}\) is the mean flow velocity, obtained from the mass flow. \(L\) is the centerline length (different between the straight and wavy microchannel). Finally, the Reynolds number is calculated as:
+  $$
+  R e=\frac{m \cdot D_h}{A_{\text {inlet }} \cdot \mu}
+  $$
+- ## Pressure losses 
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 649056e0-757e-41e3-91ba-4716b47823ea
+  hl-color:: yellow
+  It has been found by Kohl et al. [6] that the pressure losses in (straight) microchannel respect the findings of Shah and London [8] for macrochannel. They affirm that, for a fully developed flow, the product of the friction factor and the Reynolds number, \(f R e\), is constant. Linearly interpolating from Shah's data, we find that a rectangular channel with an aspect ratio of \(\alpha=0.4717\) as ours is expected to have a \(f R e=63.1204\). However, given the presence of a pressure drop associated with the developing region, we should expect a measured \(f R e\) to behave as depicted by the following equation:
+  $$
+  f R e_{e f f}=f R e+K_{\infty} \cdot R e \cdot \frac{D_h}{L}
+  $$
+  \(K_{\infty}\) depends on the aspect ratio, and from Shah's data is expected to be \(K_{\infty}=1.3542\).
+  
+  ![image.png](../assets/image_1689091009539_0.png)
+- We know that the Isp can be calculated using:
+  hl-page:: 8
+  ls-type:: annotation
+  hl-color:: yellow
+  $$
+  I s p=\frac{F}{m g}=\frac{\sqrt{2 C_p T_c\left(1-\left(\frac{p_e}{p_c}\right)^{\frac{\gamma-1}{\gamma}}\right)}}{g}+\frac{A_e}{m g} p_c\left(\frac{p_e}{p_c}\right)
+  $$
+  Where \(A_e=5.8 \cdot 10^{-8} \mathrm{~m}^2\) using the Silva's "wide nozzle", the mass flow considered is \(m=3.42 \mathrm{mg} / \mathrm{s}\) and the pressure ratio depends on the geometric expansion ratio of the wide nozzle (17) and on the specific heat ratio of water vapour (approximated as 1.31 ).
+- ## Heat Transfer 
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 64905718-9ace-4332-b413-84c7c00baca3
+  hl-color:: yellow
+  The Nusselt number indicates the ratio between the heat transferred via convection and the heat transferred via conduction. A higher Nusselt number, given the same transferred heat, means having lower wall temperatures.
+- In the context of the VLM analyzed here, a lower channel temperature means a simpler heat management. Minimizing the leakage of heat from the thruster to the surrounding environment leads to higher heating efficiency, lowering the power requirements. 
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 64905725-b3a2-428b-b1c9-d4289454bf51
+- A higher Nusselt number also means that, given a wall temperature, a shorter channel is needed to reach certain fluid temperature (or vaporization).
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: red
+  id:: 64905730-df3f-4047-bf30-7961f923d8f3
+- Wavy microchannel can provide better heat exchange in three different ways:
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 6490573b-7714-4e95-b88b-4b0017d0662a
+  hl-color:: red
+  • Lateral flows
+  • Dean vortices
+  • Boundary layer thinning Lateral flows.
+  This is a phenomena where vortices are present in the direction of flow. This is not present at the low Reynolds number present in this work. Dean vortices. Dean vortices are a secondary motion super imposed on the primary Poiseuille laminar pipe flow, caused by the curvature of the pipe. This is shown as a pair (or more, according the to the Re number) of counter-rotating cells as seen in Figure 8. This vortices enhance the mixing of hot and cold fluid, leading to higher Nusselt numbers [10]. Boundary layer thinning. While in a straight microchannel the thermal boundary layer thickens along the channel length, given a constant wall temperature condition, in a wavy microchannel the curvature shifts the mean flow to the outer wall of the curved channel. This causes a thinning of both thermal and hydrodynamic boundary layers, meaning better convection happens.
+- The difference in Nusselt numbers between the \(\mathrm{T} 2\) and \(\mathrm{H} 2\) boundary conditions was also found by Sui et al.[11]. These were found to be increasing with the relative wave amplitude \(\gamma\).
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 649056f7-9b4b-4264-9523-efc63987ea78
+  hl-color:: yellow
+  $$
+  \gamma=\frac{\text { Amplitude }}{\text { Wavelength }}
+  $$
+  The relative amplitude of the serpentine channel here analyzed is \(\gamma=0.42\).
+- ## Consideration on the VLM Performance
+  hl-page:: 8
+  ls-type:: annotation
+  id:: 64916b9b-8097-47af-a6f3-2409262023ed
+  hl-color:: yellow
+  In this section we briefly put the results analyzed in the previous section in the context of the Vaporizing Liquid Micro-thruster. All the results of this work concern only the liquid phase. All considerations on the advantages of the wavy geometry in the VLM are thus incomplete: it is possible that an analysis of the boiling and vapour phases reveals flaws or advantages that make these results insignificant in the trade off between straight and wavy microchannel. Furthermore, more complex geometries, e.g. where the channel switches between wavy and straight, could be used.
+- In the context of a VLM, the important parameters to be considered in a design trade off are:
+  hl-page:: 8
+  ls-type:: annotation
+  hl-color:: yellow
+  • Size.
+  • Wall temperature (given a fixed power): a lower wall temp. aides in heat transfer management.
+  • Pressure losses: these can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank.
+- Size. The wavy geometry occupies a slightly larger volume than the straight microchannel, having a width of 0.532 mm, compared to a straight channel width of 0.212 mm. This may be considered to be negligible, depending on the design. However the wavy channel also exposes a larger contact area, that, regardless of improvements in the convective heat transfer caused by the fluid flow, helps in reducing wall temperature. However the contact area could be augmented by the use of a longer straight channel.
+  ls-type:: annotation
+  hl-page:: 8
+  hl-color:: yellow
+  id:: 64916bbb-b2ef-4c0b-b18f-b3ddffb5e3cf
+- Wall temperature. The increase in contact area means that, given a certain power provided to the heater, a lower heat flux is needed. It follows that a lower difference in temperature between wall and fluid is needed, as both convection and conduction depend are proportional to this difference. From Figure 14 we can see how the wavy microchannel can lead to a wall temperature difference of up to 10 K between the wavy and straight microchannel. This, depending on the context, can be a relevant amount, especially considering the tight thermal design boundaries a Cubesat creates. This reduction in wall temperature is in part due to the augmented contact area and in part due to the improved convective performance (as seen in the computed Nusselt numbers).
+  ls-type:: annotation
+  hl-page:: 8
+  hl-color:: yellow
+  id:: 64916bc5-f2e9-41be-8baf-aa121dd034bd
+- Pressure losses. As seen in subsection 4.2, the pressure losses created by the wavy geometry are generally limited and do not pose a particularly big design challenge.
+  ls-type:: annotation
+  hl-page:: 8
+  hl-color:: yellow
+  id:: 64916bcc-3262-4e8e-a0b8-b4dc16397169
+-

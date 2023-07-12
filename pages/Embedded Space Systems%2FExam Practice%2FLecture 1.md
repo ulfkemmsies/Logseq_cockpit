@@ -1,0 +1,21 @@
+- 1 What are basic features and components of an Embedded System?
+- 2 Embedded System are very popular both in terrestrial and space applications. Choose from the lists below one example for Earth and one for Space and discuss how different the 2 systems are in terms of dependability, mass/size, power and computing capability.
+- 3 Define dependability and its components.
+- 4 What is the difference between reliability and availability?
+- 5 What is maintainability and why is it important in embedded systems?
+- 6 List the component options for embedded systems and discuss their advantages and disadvantages.
+- 7 What is a microprocessor and what are its main features?
+- 8 What is a microcontroller and how is it different from a microprocessor?
+- 9 What are the advantages of using a microcontroller in an embedded system?
+- 10 What is the processor-memory gap and how does it affect performance?
+- 11 What are the trade-offs involved in choosing memory for an embedded system?
+- 12 What is the hierarchy of memories and how does it help improve performance?
+- 13 What are the main advantages of using a microcontroller in terms of size, flexibility, and speed?
+- 14 What are the main disadvantages of using a microcontroller in terms of software development and testing?
+- 15 How does the clock speed of a microprocessor compare to that of a microcontroller?
+- 16 What are some examples of applications that use microprocessors?
+- 17 What are some examples of applications that use microcontrollers?
+- 18 How does the use of a microcontroller affect the design and unit cost of an embedded system?
+- 19 What are some challenges involved in designing dependable embedded systems?
+- 20 How can the knowledge of the physical environment be used to achieve higher predictability and reliability in embedded systems?
+-

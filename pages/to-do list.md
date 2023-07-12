@@ -1,2 +1,3 @@
-- {{query (task TODO)}}
+- {{query (or (task TODO) (task WAITING))}}
+  query-table:: false
 -

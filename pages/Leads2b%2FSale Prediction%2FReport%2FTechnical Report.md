@@ -1,0 +1,33 @@
+title:: Leads2b/Sale Prediction/Report/Technical Report
+
+- Topics
+	- General setup and motivation
+		- Why and how predict sales?
+		- ML Background
+	- Relevant ML Concepts
+		- Incremental Learning
+		- Probabilistic Classification
+		- Probability Calibration
+			- Binary Focal Loss
+		- Imbalanced Datasets
+			- Sampling
+			- Other methods
+	- Implementation
+		- Data used
+			- Database
+			- Tsfresh
+			- CNAE and ReceitaWS
+		- Modules + Docker
+	- Results
+		- SHAP Analysis
+		- Calibration Curve
+		- Histogram
+		- Validation
+	- Future Work
+		- Further calibration
+		- User-specific models
+		- New Features
+		- Cloud infrastructure + Sagemaker
+		- Validation over time
+		- DB filtering
+		- Educational Material for users

@@ -1,0 +1,10 @@
+- ![image.png](../assets/image_1663348881165_0.png)
+- Euler angles describe the orientation by three subsequent rotations along the principal axes of the coordinate frame.
+	- These rotations can be extrinsic or intrinsic.
+		- In the extrinsic case, the rotations are applied with respect to the original (starting) frame.
+		- In the intrinsic case, the rotations are applied with respect to the currently rotated frame (in each subsequent step).
+- Advantages: simplicity and few parameters (3)
+- Disadvantages: potential loss of DoF (known as "gimbal lock") where rotations about two axes perform the same motion, subsequent rotations around multiple axes, difficult to interpolate
+- For proper Euler angles (e.g., order of rotation z-x-z), gimbal lock happens when the second rotation is 0 degrees.
+	- For Tait-Bryan angles (e.g., order of rotation \(z-y-x\) ), gimbal lock happens when the second rotation is \(\pm 90\) degrees.
+-

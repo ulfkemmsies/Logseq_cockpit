@@ -1,0 +1,619 @@
+- # Fault Tolerance
+	- Fault tolerance is the ability of a system to continue performing its intended function in spite of faults.
+	- ### Fault  
+	  Deviation of at least one characteristics property (feature) of the system from the acceptable, usual, standard condition.
+	  A fault might be present and latent in the system.
+	  Examples: broken wire, SW bug
+	- ### Error 
+	  Deviation from correctness or accuracy in computation. Discrepancy between obtained value/condition and the true and correct value/condition.
+	  Examples: incorrect value computed, incorrect information received
+	- ### Failure 
+	  A permanent interruption of a system's ability to perform a required function under specified operating conditions.
+	  Example: satellite radio not transmitting anymore
+	- ### Malfunction 
+	  is an intermittent irregularity in the fulfillment of a system's desired function. A fault progresses into a failure if the interruption of a system's required performance is permanent and into a malfunction is the interruptions of a system's required performance is temporary.
+	- [[GPT Generated Flashcards]]
+	  collapsed:: true
+		- What is fault tolerance? #card
+		  id:: 642bbb45-a059-49f1-883a-52062a1c31eb
+			- The ability of a system to continue performing its intended function in spite of faults.
+		- What is a fault? #card
+		  id:: 642bbb45-f5e8-458b-859c-76f0b01f99d2
+			- A deviation of at least one characteristic property of the system from the acceptable, usual, standard condition.
+		- What is an example of a fault? #card
+		  id:: 642bbb45-a171-4cb5-b305-b6325d71e545
+			- A broken wire or software bug.
+		- Can faults be latent in the system? #card
+		  id:: 642bbb45-a97d-47c1-9df0-2d3af62ae7c3
+			- Yes.
+		- What is an error? #card
+		  id:: 642bbb45-6473-4a6f-a755-3e5db040cdcb
+			- A deviation from correctness or accuracy in computation.
+		- What is an example of an error? #card
+		  id:: 642bbb45-9f6c-45e3-b819-ce2bc476d831
+			- Incorrect value computed or incorrect information received.
+		- What is a failure? #card
+		  id:: 642bbb45-4b1c-44ae-b6be-accef7d0b2ac
+			- A permanent interruption of a system's ability to perform a required function under specified operating conditions.
+		- What is an example of a failure? #card
+		  id:: 642bbb45-64d6-429e-8e45-dbf98f758139
+			- Satellite radio not transmitting anymore.
+		- What is a malfunction? #card
+		  id:: 642bbb45-70ab-4af5-aab8-cc5cc2f0f607
+			- An intermittent irregularity in the fulfillment of a system's desired function.
+		- How does a fault progress into a failure or malfunction? #card
+		  id:: 642bbb45-76ce-4ae3-9f60-17defc348ae9
+			- A fault progresses into a failure if the interruption is permanent, and into a malfunction if the interruption is temporary.
+- # Dependability
+	- ## Attributes
+		- ### Reliability
+		  Reliability is the ability of a system to perform a required function under stated conditions, within a given scope, during given period of time.
+		  A reliable system is able to perform a function for a certain period of time without any failures.
+		  One way to quantify the reliability of a system is the **Mean Time To Failure** \(M T F=\frac{1}{\lambda} \)
+		  where \(\lambda\) is the amount of failures per unit time.
+		- ### Availability
+		  Availability \(A(t)\) of a system at time \(t\) is the probability that the system is functioning correctly at the instant of time \(t\).
+		  \(A(T)=\frac{1}{T} \int_0^T A(t) d t \)
+		  A system can be highly available yet having frequent periods of being nonoperational as long as the duration of each period is extremely short.
+		- Maintainability is the measure of the ability of an item to be retained in or restored to a specified condition when maintenance is performed.
+		- ### Safety
+		  is the probability that a system will either perform its function correctly or will discontinue its operation in a safe way.
+	- ## Impairments
+		- ### Fault tolerance
+		   is a technique that can improve reliability, but...
+		  1. A fault tolerant system does not necessarily have a high reliability.
+		  2. A system can be designed to tolerate any single error, but the probability of such error to occur can be so high that the reliability is very low.
+		  Fault tolerance can improve a system's reliability by keeping the system operational when hardware or software faults occur. A computer system with one redundant processor can be designed to continue working correctly even if one of the processors fails
+		- A **common-mode fault** is a fault which occurs simultaneously in two or more redundant components.
+		  It is caused by phenomena that create dependencies between components.
+		  Examples: Common communication bus, shared environmental conditions, common source of power, design mistake
+		  **Design diversity** is the implementation of one or more variant of the redundant component.
+		- [[GPT Generated Flashcards]]
+		  collapsed:: true
+			- What is reliability in terms of embedded systems? #card
+			  id:: 642bbb45-da07-4187-bd7d-364964d0efb5
+				- The ability of a system to perform a required function under stated conditions for a certain period of time without any failures.
+			- How is Mean Time To Failure (MTTF) calculated? #card
+			  id:: 642bbb45-58ef-4f4e-8fd0-c149deeec3bd
+				- MTTF = 1/λ, where λ is the amount of failures per unit time.
+			- What is availability in the context of an embedded system? #card
+			  id:: 642bbb45-b826-41d1-af7b-cdfe30ebb64b
+				- The probability that the system is functioning correctly at a specific instant of time.
+			- How can a system be highly available but still have frequent periods of being nonoperational? #card
+			  id:: 642bbb45-68a6-471b-9243-293de659e25f
+				- If the duration of each nonoperational period is extremely short.
+			- What is maintainability in the context of an embedded system? #card
+			  id:: 642bbb45-257d-4a6f-bb5e-6484e2dd371d
+				- The measure of the ability of an item to be retained in or restored to a specified condition when maintenance is performed.
+			- What is safety in the context of an embedded system? #card
+			  id:: 642bbb45-318e-4f1e-a46e-2a6a3128ebe5
+				- The probability that a system will either perform its function correctly or discontinue its operation in a safe way.
+			- What is fault tolerance? #card
+			  id:: 642bbb45-c46b-4e7b-973f-42790ac4acf2
+				- A technique that improves reliability by keeping a system operational when hardware or software faults occur.
+			- Can a fault tolerant system have low reliability? #card
+			  id:: 642bbb45-a576-4383-91d9-d695580c206a
+				- Yes, if the probability of errors occurring is high.
+			- What is a common-mode fault? #card
+			  id:: 642bbb45-5783-45b6-9051-e772282c8a26
+				- A fault which occurs simultaneously in two or more redundant components caused by phenomena that create dependencies between components.
+			- What is design diversity? #card
+			  id:: 642bbb45-218a-43fe-93f4-9dcb3b0047b1
+				- The implementation of one or more variants of the redundant component.
+		- ### Hardware faults
+		  Fault duration specifies the length of time that a fault is active:
+		  1. Permanent fault: remains in existence indefinitely if no corrective action is taken (stuck-at fault)
+		  2. Transient fault: can appear and disappear within a very short period of time (ionizing radiation)
+		  3. Intermittent fault: appear, disappears and then reappears repeatedly (weak solder joint)
+		- ### Software faults
+		  Software faults differ from hardware faults in several aspects:
+		  1. Do not age or wear out
+		  2. Cannot be deformed or broken
+		  3. Cannot be affected by environmental factors
+		  4. If deterministic, it always performs the same way under the same circumstances
+		- ### **Error processing** consists of: 
+		  1. **Error detection**: identification of erroneous state(s)
+		  2. **Error diagnosis**: damage assessment
+		  3. **Error recovery**: error-free state substituted to erroneous state
+		  4. **Backward recovery**: system brought back in state visited before error occurrence
+		  5. **Recovery points**: (checkpoint)
+		  6. **Forward recovery**: Erroneous state is discarded and correct one is determined without losing any computation.
+		- [[GPT Generated Flashcards]]
+		  collapsed:: true
+			- What are the three types of hardware faults based on duration? #card
+			  id:: 642bbb45-3f24-48ea-86a7-792aa2b7d2b6
+				- Permanent, transient, and intermittent faults.
+			- How do software faults differ from hardware faults? #card
+			  id:: 642bbb45-2ae6-4403-b321-2e46a9b216a6
+				- They do not age, wear out, get affected by environmental factors, and are deterministic.
+			- What are the four main steps of error processing? #card
+			  id:: 642bbb45-55e5-4f78-afff-987ee89330f0
+				- Error detection, error diagnosis, error recovery, and backward recovery.
+			- What is the purpose of recovery points in error processing? #card
+			  id:: 642bbb45-ed2d-48cd-94e5-0712ac10f2a0
+				- To create checkpoints for backward recovery.
+			- What is forward recovery in error processing? #card
+			  id:: 642bbb45-3e42-4994-a66f-fb97ddc07e19
+				- Determining a correct state without losing computation, discarding the erroneous state.
+	- ## Means
+		- ### **Fault prevention** 
+		  The objective is to avoid occurrence or introduction of faults - Implement quality control methods to avoid specification or implementation mistakes and component defects by for example: design reviews, component screening, and testing
+		- ### **Fault removal** 
+		  Is performed during the development stage as well as during the operational life of a system:
+		  1. Development stage: verification, diagnosis and correction
+		  2. Operational stage: corrective and preventive maintenance
+		- ### **Fault forecasting** 
+		  Capability to estimate faults including present and future rates and consequences:
+		  1. Qualitatively (search for causes of faults)
+		  2. Quantitatively (estimation of failure rate, time to failure, time between failures)
+		- ### **Fault tolerant Strategies** 
+		  Fault tolerance in embedded system is achieved in most cases through redundancy in hardware, software, information, and/or time.
+		  Such redundancy can be implemented in static, dynamic or hybrid configurations.
+		  In general fault tolerance can be achieved by the following techniques:
+		  1. **Fault masking** is any process that insures that faults in a system do not introduce errors. Example: Error correcting memories and majority voting.
+		  2. **Reconfiguration** is the process of eliminating faulty component from a system and restoring the system to some operational state.
+		- ### **Reconfiguration approach** 
+		  1. **Fault detection** is the process of recognizing that a fault has occurred. Fault detection is often required before any recovery procedure can be initiated.
+		  2. **Fault location** is the process of determining where a fault has occurred so that an appropriate recovery can be initiated.
+		  3. **Fault containment** is the process of isolating a fault and preventing the effects of that fault from propagating throughout the system.
+		  4. **Fault recovery** is the process of regaining operational status via reconfiguration even in the presence of faults.
+		- [[GPT Generated Flashcards]]
+		  collapsed:: true
+			- What is the main objective of fault prevention? #card
+			  id:: 642bbb45-89a0-4bb8-8ad1-2686cd7ead35
+				- To avoid occurrence or introduction of faults.
+			- What are some methods used for fault prevention? #card
+			  id:: 642bbb45-1f59-426c-b8e4-5bbccfd6ad18
+				- Design reviews, component screening, and testing.
+			- When is fault removal performed? #card
+			  id:: 642bbb45-e090-49a4-a15c-e58d734614a6
+				- During the development stage and the operational life of a system.
+			- What are the two stages of fault removal? #card
+			  id:: 642bbb45-bf6b-4171-a9b0-7c428fd426ef
+				- Development stage and operational stage.
+			- What are the two types of fault forecasting? #card
+			  id:: 642bbb45-59be-4062-8c01-dab8c8f896cf
+				- Qualitatively and quantitatively.
+			- How is fault tolerance achieved in embedded systems? #card
+			  id:: 642bbb45-07fa-4396-9c62-dbe181fe30b0
+				- Through redundancy in hardware, software, information, and/or time.
+			- What is fault masking? #card
+			  id:: 642bbb45-9ddb-4b2c-8503-0470665b98ff
+				- A process that ensures system faults do not introduce errors.
+			- What is an example of fault masking? #card
+			  id:: 642bbb45-c44f-499b-b0a5-599a398c191f
+				- Error correcting memories and majority voting.
+			- What is reconfiguration? #card
+			  id:: 642bbb45-74f7-481a-a773-9cbe8db64a03
+				- The process of eliminating faulty components and restoring the system to an operational state.
+			- What is the first step in the reconfiguration approach? #card
+			  id:: 642bbb45-5416-40ca-92ea-d8ba42796fe3
+				- Fault detection.
+			- What is fault location? #card
+			  id:: 642bbb45-5ee2-47be-aed3-459d08206997
+				- The process of determining where a fault has occurred to initiate an appropriate recovery.
+			- What is fault containment? #card
+			  id:: 642bbb45-c2b7-4813-9b1e-90c11e112939
+				- The process of isolating a fault and preventing its effects from propagating throughout the system.
+			- What is fault recovery? #card
+			  id:: 642bbb45-fe74-499d-9fb3-79d1bae83350
+				- The process of regaining operational status via reconfiguration even in the presence of faults.
+- # Redundancy
+  Redundancy is the addition of information, resources, time that would be unnecessary in a fault-free environment:
+  1. **Hardware redundancy** is the addition of extra hardware, usually for the purpose either detecting or tolerating faults.
+  2. **Software redundancy** is the addition of extra software, beyond what is needed to perform a given function, to detect and possibly tolerate faults.
+  3. **Information redundancy** is the addition of extra information beyond that required to implement a given function; for example, error detection codes.
+  4. **Time redundancy** uses additional time to perform the functions of a system such that fault detection and often fault tolerance can be achieved. Transient faults are tolerated by this approach.
+	- ## Hardware Redundancy
+		- [[GPT Generated Flashcards]]
+		  collapsed:: true
+			- What is the concept behind passive hardware redundancy techniques? #card
+			  id:: 642bbb45-7a83-42ce-9306-3d3109ff93f1
+				- Fault masking.
+			- What is the primary function of active hardware redundancy techniques? #card
+			  id:: 642bbb45-7bcf-46be-9672-52ee212fa2ac
+				- Detecting and locating faults, and removing faulty hardware from the system.
+			- What is the purpose of hybrid hardware redundancy techniques? #card
+			  id:: 642bbb45-4958-4ea5-aaee-39ad44b713ee
+				- Combining features of passive and active approaches for increased reliability.
+			- Which type of hardware redundancy technique is considered very expensive but highly reliable? #card
+			  id:: 642bbb45-d41d-4e7f-b6ec-f9cb86dad9a3
+				- Hybrid techniques.
+			- What does passive hardware redundancy rely on for fault tolerance? #card
+			  id:: 642bbb45-c553-49cf-bce9-076a03d5811b
+				- Voting mechanisms.
+		- ### Passive techniques 
+		  use the concept of fault masking. These techniques are designed to achieve fault tolerance without requiring any action on the part of the system. Relies on voting mechanisms.
+			- **Triple Modular Redundancy (TMR)**
+			  ![image.png](../assets/image_1680531145450_0.png){:height 173, :width 605} 
+			  3 active components, fault masking by voter
+			  Problem: voter is a single point of failure!
+			- **N-Modular Redundancy (NMR)**
+			  Generalization of TMR employing N modules rather than only 3.
+			  \(\mathrm{N}\) must be a odd number for majority voting.
+			  The advantage is that if \(\mathrm{N}>2 \mathrm{f}\), up to f faults can be tolerated.
+			  For example a 5MR allows tolerating the failures of two modules
+			  But this introduces higher overhead/cost
+			- **HW voter vs SW voter**
+			  The decision to use hardware voting or software voting depends on:
+			  1. The availability of processor to perform voting.
+			  2. The speed at which voting must be performed.
+			  3. The criticality of space, power, and weight limitations.
+			  4. The flexibility required of the voter with respect to future changes in the system.
+			  Hardware voting is faster, but at the cost of more hardware.
+			  Software voting is usually slow, but no additional hardware cost.
+			- **Problem with the voter**
+			  It is assumed that in fault-free operation the outputs of voters are equal.
+			  
+			  However, in practical applications the three results may not completely agree:
+			  1. Sensors, even when coming from the same batch, typically give slightly different readings (therefore calibration is always necessary).
+			  2. Analog-to-digital converter might give outputs which differ only in the least significant bits
+			  
+			  
+			  The problem can be solved by:
+			  1. Mid-value select approach: among the three available values in the TMR system the value that lies between the remaining two is selected.
+			  2. The least-significant bits of data are ignored.
+			- [[GPT Generated Flashcards]]
+			  collapsed:: true
+				- What is Triple Modular Redundancy (TMR)? #card
+				  id:: 642bbb45-bc8d-4249-8f14-b768a6da99e9
+					- A reliability technique using 3 active components and fault masking by voter.
+				- What is the issue with a voter in TMR? #card
+				  id:: 642bbb45-2e86-4f8b-8880-20e6ad8f071a
+					- The voter is a single point of failure.
+				- What is N-Modular Redundancy (NMR)? #card
+				  id:: 642bbb45-f8ba-40f6-900a-a4f5cc44fa43
+					- A generalization of TMR employing N modules instead of only 3.
+				- What is the condition for N in N-Modular Redundancy? #card
+				  id:: 642bbb45-c958-47b9-9f50-2235380fb3d2
+					- N must be an odd number for majority voting.
+				- How does NMR determine the number of tolerated faults? #card
+				  id:: 642bbb45-9ce6-499c-8ea7-06d54574ef5d
+					- If N > 2f, up to f faults can be tolerated.
+				- What are the downsides of using more modules in NMR? #card
+				  id:: 642bbb45-f6a3-443c-a0c9-7a34e9c409e4
+					- Higher overhead and cost.
+				- What is the main difference between hardware voting and software voting? #card
+				  id:: 642bbb45-7157-455b-8910-e792c58d0a12
+					- Hardware voting is faster but requires more hardware, while software voting is slower but doesn't require additional hardware.
+				- What are four factors to consider when choosing between hardware and software voting? #card
+				  id:: 642bbb45-ebc9-4f08-bee2-601e221c1df9
+					- Availability of processor, speed of voting, criticality of space/power/weight, and flexibility for future changes.
+				- In fault-free operation, what is assumed about voter outputs? #card
+				  id:: 642bbb45-0a47-4297-960b-cd6444e2066f
+					- They are equal.
+				- What are two reasons for not having completely agreeable outputs in practical applications? #card
+				  id:: 642bbb45-0e45-4d32-a7cc-1b10f7587e0a
+					- Slightly different sensor readings and analog-to-digital converter differences in least significant bits.
+				- What are two solutions to the problem of output disagreement in TMR? #card
+				  id:: 642bbb45-da44-4bde-9da9-86075347e03b
+					- Mid-value select approach and ignoring the least-significant bits of data.
+		- ### Active techniques 
+		  achieve fault tolerance by detecting/locating the fault and performing some action to remove the faulty hardware from the system.
+			- **Duplication with comparison**
+			  ![image.png](../assets/image_1680531458081_0.png) 
+			  Two identical modules perform the same computation in parallel and their results are compared.
+			  The duplication concept can only detect faults, not tolerate them. It is not possible to determine which module is faulty.
+			- **Standby sparing (Active redundancy)**
+			  In standby sparing, one module is operational and one or more modules serve as standbys or spares.
+			  If a fault is detected and located, the faulty module is removed from the operation and replaced with a spare.
+			  
+			  Two possible implementations:
+			  1. **Hot** standby sparing: the standby modules operate synchronously with the online modules and are prepared to take over any time. Used in applications such where the reconfiguration time needs to be minimized.
+			  2. **Cold** standby sparing: the standby modules are un-powered until needed to replace a faulty module. This involves momentary disturbance in the service. Used in applications where power consumption is extremely important.
+			- **Pair-and-a-Spare Technique**
+			  ![image.png](../assets/image_1680531651493_0.png) 
+			  The Pair-and-a-Spare technique combines the standby sparing and duplication with comparison.
+			  Two modules are operated in parallel at all times and their results are compared to provide the error detection capability.
+			  A second duplicate (pair, but it could be more modules in case of pair and k-spare) is used to take over in case the working duplicate (pair) detects an error.
+			  A pair is always operational. The system does not halt while running diagnostic procedure upon fault occurrence.
+			- **Watchdog**
+			  ![image.png](../assets/image_1680531732376_0.png) 
+			  The concept of a watchdog timer is that the lack of an action is an indication of a fault.
+			  A watchdog timer is a timer that must be reset on a repetitive basis.
+			  The fundamental assumption is that the system is fault free if it possesses the capability to repetitively perform a function such as setting a timer.
+			  The frequency at which the timer must be reset is application dependent.
+			  A watchdog timer can be used to detect faults in both the hardware and the software of a system.
+			- [[GPT Generated Flashcards]]
+			  collapsed:: true
+				- What is the purpose of duplication with comparison in embedded systems? #card
+				  id:: 642bbb45-25d4-4610-8d51-210ca68bb0eb
+					- To detect faults by comparing results from two identical modules performing the same computation in parallel.
+				- What is standby sparing in embedded systems? #card
+				  id:: 642bbb45-c7ba-49df-afff-ef818e735181
+					- A fault tolerance technique where one module is operational and one or more modules serve as standbys or spares.
+				- What are the two possible implementations of standby sparing? #card
+				  id:: 642bbb45-e478-49ce-b4a0-9c1e03e3d0b0
+					- Hot standby sparing and cold standby sparing.
+				- What is the main benefit of hot standby sparing? #card
+				  id:: 642bbb45-8164-47a4-aa3a-bc8a6ec56f73
+					- Minimizing reconfiguration time.
+				- What is the main benefit of cold standby sparing? #card
+				  id:: 642bbb45-0e53-4b69-a5e4-c08fcd2c7b2c
+					- Reducing power consumption.
+				- What is the Pair-and-a-Spare technique? #card
+				  id:: 642bbb45-0873-47cc-8c1e-2cf2e995d799
+					- A technique that combines standby sparing and duplication with comparison to provide error detection capability and fault tolerance.
+				- What is a watchdog timer? #card
+				  id:: 642bbb45-d654-4233-8dc3-3d25fcbafe24
+					- A timer that must be reset on a repetitive basis to detect faults in both hardware and software of a system.
+				- What is the fundamental assumption of a watchdog timer? #card
+				  id:: 642bbb45-5430-4e8d-9551-fa19d5adbb9f
+					- The system is fault-free if it possesses the capability to repetitively perform a function such as setting a timer.
+		- ### Hybrid techniques 
+		  combine features of both the passive and active approaches. Very reliable but also very expensive, and used when reliability is absolutely critical.
+			- **NMR with spares**
+			  ![image.png](../assets/image_1680531859607_0.png) 
+			  The idea is to provide a basic core of \(\mathrm{N}\) modules arranged in a form of voting configuration and spares are providec to replace failed units in the NMR core.
+			  Spares are not active.
+			- **Self-purging redundancy**
+			  ![image.png](../assets/image_1680532001454_0.png) 
+			  Self-Purging Redundancy is similar to NMR with spares except that all the modules are active.
+			  Moreover, each module has a capability to remove itself from the system if its faulty.
+			- **Sift-Out Modular Redundancy**
+			  ![image.png](../assets/image_1680532070201_0.png) 
+			  Like for NMR, N identical modules are active
+			  This method uses comparators, detectors, and collectors.
+			  The comparator compares each module's output with remaining modules' outputs.
+			  The detector determines which disagreements are reported by the comparator and disables a unit that disagrees with a majority of the remaining modules.
+			  To be done carefully: some failures are transient therefore purge a module only if it produces incorrect outputs over a sustained period of time.
+			- [[GPT Generated Flashcards]]
+			  collapsed:: true
+				- What are 3 types of Hybrid Redundancy techniques? #card
+				  id:: 642bbb45-b89a-483e-8b45-2023e6549b6a
+					- NMR with spares, Self-purging redundancy , and Sift-Out Modular Redundancy
+				- What is the main purpose of NMR with spares? #card
+				  id:: 642bbb45-2945-47e6-b53b-89068849fd3d
+					- To provide a basic core of N modules in a voting configuration and have spares to replace failed units.
+				- Are spares active or inactive in NMR with spares? #card
+				  id:: 642bbb45-d39a-4022-a0cb-0989a138cbe4
+					- Inactive.
+				- What is the difference between Self-Purging Redundancy and NMR with spares? #card
+				  id:: 642bbb45-879a-440e-84b9-76f5c30d9e1d
+					- All modules are active in Self-Purging Redundancy, and each module can remove itself if faulty.
+				- What is the main concept of Sift-Out Modular Redundancy? #card
+				  id:: 642bbb45-479d-48b3-9e69-8214c8e5483e
+					- N identical modules are active, using comparators, detectors, and collectors to handle disagreements and disable faulty units.
+				- In Sift-Out Modular Redundancy, what does the comparator do? #card
+				  id:: 642bbb45-209f-477b-b409-20e6af329294
+					- Compares each module's output with the outputs of the remaining modules.
+				- In Sift-Out Modular Redundancy, what does the detector do? #card
+				  id:: 642bbb45-6a10-46c0-a526-00e473dbd344
+					- Determines which disagreements are reported by the comparator and disables a unit that disagrees with a majority of remaining modules.
+				- What should be considered when purging a module in Sift-Out Modular Redundancy? #card
+				  id:: 642bbb45-8e1e-4f7b-a2b9-d39f2796674e
+					- Purge a module only if it produces incorrect outputs over a sustained period of time, as some failures are transient.
+	- ## Software Redundancy
+		- ### Software Redundancy to Detect Hardware Faults
+		  **Consistency checks** use a priori knowledge about the characteristics of the information to verify the correctness of that information.
+		  Example: Range checks, overflow and underflow checks.
+		  **Capability checks** are performed to verify that a system possesses the expected capabilities.
+		  Examples: Memory test - a processor can simply write specific patterns to certain memory locations and read those locations to verify that the data was stored and retrieved properly.
+		  **ALU tests**: Periodically, a processor can execute specific instructions on specific data and compare the results to known results stored in ROM.
+		  **Testing of communication** among processors, in a multiprocessor, is achieved by periodically sending specific messages from one processor to another or writing into a specific location of a shared memory.
+		- ### Information Redundancy 
+		  Guarantees data consistency by exploiting additional information to achieve a redundant encoding.
+		  Redundant codes permit to detect or correct corrupted bits due to faults (e.g. radiation induced single event upset):
+		  Error Detection Codes (EDC)
+		  Error Correction Codes (ECC)
+		- ### Error Detection and Correction Methods
+			- **Parity**: Single Bit Error Detection
+			  Simplest form of error detection, single bit error detection. We add one bit to a string of binary code which counts if the total number of 1-bits in the string is even or odd.
+			  You need to decide whether the convention is odd or even parity!
+			  |  |  | Odd parity | Even parity |
+			  | :--- | :--- | :--- | :--- |
+			  | 0000000 | 0 | 00000000 | 10000000 |
+			  | 0010110 | 3 | 10010110 | 010010110 |
+			  | 1101100 | 4 | 01101100 | 11101100 |
+			  | 1111111 | 7 | 11111111 | 01111111 |
+			- **Cyclic Redundancy Check (CRC)**
+			  Detect if any error has occurred in a given, structure
+			- **Hamming code**
+			  Single bit correct, double bit detect
+			  A method of error correction used in digital communication. They add extra bits to the original message that can detect and correct errors that may occur during transmission. These extra bits allow the receiver to verify if the original message was correctly received and request retransmission if it was not.
+			  Parity check bits are all the bit positions \(2^i\) for all \(\mathrm{i}\) \(\geq 0\)
+			  Each \(i^{th} \) parity bit checks and skips that number of bit e.g. check 1, skip 1; check 2, skip 2
+			  Errors are detected by checking the even or uneven parity of the parity bits.
+			  If the parity differs, the weighted sum of the parity bits itself marks the location of the error.
+				- How to calculate the Hamming code simply:
+				  To generate a Hamming code, follow these steps:
+				  
+				  1. Determine the number of parity bits needed. Count the number of bits in the data message and find the smallest Hamming code that has parity bits equal to or greater than this number. The number of parity bits needed is the number of new bits that we add to a message.
+				  
+				  2. Identify the positions of the parity bits in the code. These positions are usually the powers of two, starting with 1 as the lowest power. So, the first parity bit would be in position 1, the second in position 2, the fourth in position 4, and so on.
+				  
+				  3. Assign each bit in the message to a position in the code. The bits that correspond to the positions of the parity bits should be left blank so that the parity bits can be calculated. 
+				  
+				  4. Calculate the parity bits. For each parity bit position, count the number of 1's in the bits that cover the position. If the count is even, the parity bit should be 0. If the count is odd, the parity bit should be 1.
+				  
+				  5. Place the calculated parity bits in the Hamming code in their respective positions.
+				  
+				  The resulting Hamming code is the original message with the parity bits added.
+				- [[GPT Generated Flashcards]]
+				  collapsed:: true
+					- What are Hamming codes used for? #card
+					  id:: 642bbb45-1e3e-4914-8abe-e69712072c79
+						- Error correction in digital communication.
+					- What do Hamming codes add to the original message? #card
+					  id:: 642bbb45-2c80-4e0e-8170-54ae5d612e92
+						- Extra bits.
+					- What is the purpose of the extra bits in Hamming codes? #card
+					  id:: 642bbb45-845a-4ee3-a023-9594784450c0
+						- To detect and correct errors during transmission.
+					- What are parity check bits? #card
+					  id:: 642bbb45-5d8f-4c6d-b929-f0e63000a21f
+						- Bit positions 2^i for all i ≥ 0.
+					- How does the i-th parity bit work? #card
+					  id:: 642bbb45-395b-4ec9-98a5-29c79055b604
+						- Checks and skips the i-th number of bits.
+					- How are errors detected in Hamming codes? #card
+					  id:: 642bbb45-0fdb-46fd-97ba-ccdb79c8d975
+						- By checking the even or uneven parity of the parity bits.
+					- How is the location of the error determined in Hamming codes? #card
+					  id:: 642bbb45-3ed6-4cc1-9081-91037737877a
+						- The weighted sum of the differing parity bits.
+			- **Reed-Salomon Code**: Correct multiple bits
+			  The Reed-Salomon code is a type of error-correcting code that is capable of correcting multiple erroneous bits in a data transmission. This code works by adding redundant bits to the original message, which allows the receiver to detect and correct errors in the transmission. 
+			  
+			  In essence, the Reed-Salomon code is designed to add extra layers of protection to a data transmission by introducing redundancy in the form of extra bits. When the receiver receives the transmission, it will be able to identify any errors that have occurred and use the redundant bits to correct them. 
+			  
+			  The number of errors that a Reed-Salomon code can correct depends on the length of the code, the size of the alphabet used (i.e. the number of different symbols that can be transmitted), and the specific parameters of the code itself. In general, this code can correct multiple errors, making it an effective method for ensuring the accuracy of data transmissions.
+			- [[GPT Generated Flashcards]]
+			  collapsed:: true
+				- What are consistency checks in embedded systems? #card
+				  id:: 642bbb45-3986-43b0-aed8-7054b3babf80
+					- Checks that use a priori knowledge about the characteristics of the information to verify its correctness.
+				- What are examples of consistency checks? #card
+				  id:: 642bbb45-a4ca-4106-9485-0a8a29dc955e
+					- Range checks, overflow checks, and underflow checks.
+				- What is the purpose of capability checks? #card
+				  id:: 642bbb45-15e1-47d1-88e4-6c2252c627ca
+					- To verify that a system possesses the expected capabilities.
+				- What is an example of a capability check? #card
+				  id:: 642bbb45-9e09-4684-8d78-0397bd3c9cd5
+					- Memory test.
+				- What is the purpose of ALU tests? #card
+				  id:: 642bbb45-11cd-4890-819d-c391038e56d3
+					- To periodically verify the correctness of specific instructions on specific data.
+				- How is communication testing done in multiprocessor systems? #card
+				  id:: 642bbb45-8992-496b-ad04-a14584ddb978
+					- By periodically sending specific messages between processors or writing into shared memory.
+				- What is information redundancy? #card
+				  id:: 642bbb45-0fdc-4e41-845f-3cb59e269311
+					- Additional information that guarantees data consistency through redundant encoding.
+				- What are two examples of redundant codes used for fault detection and correction? #card
+				  id:: 642bbb45-b4b5-4d66-bd4c-99a2fc1edeb8
+					- Error Detection Codes (EDC) and Error Correction Codes (ECC).
+				- What is the parity method used for? #card
+				  id:: 642bbb45-1295-4782-b38f-c40da986dd58
+					- Single Bit Error Detection.
+				- What is the purpose of the Cyclic Redundancy Check (CRC)? #card
+				  id:: 642bbb45-86ed-48d7-b983-c02b7bfbf96e
+					- To detect if any error has occurred in a given structure.
+				- What can Hamming Code detect and correct? #card
+				  id:: 642bbb45-be84-4c1f-a134-2254be79e960
+					- Single Bit correction and double bit detection.
+				- What is the Reed-Salomon Code used for? #card
+				  id:: 642bbb45-e060-4810-a47d-b3185182f7a5
+					- Correcting multiple bits.
+	- [[GPT Generated Flashcards]]
+	  collapsed:: true
+		- What is redundancy? #card
+		  id:: 642bbb45-3407-4f4e-9880-9d035d13496e
+			- The addition of information, resources, or time that would be unnecessary in a fault-free environment.
+		- What is hardware redundancy used for? #card
+		  id:: 642bbb45-9e6e-45a4-83f4-9a7afcc093df
+			- Detecting or tolerating faults.
+		- What is software redundancy used for? #card
+		  id:: 642bbb45-011e-4b90-8eab-5b6eda69d518
+			- Detecting and possibly tolerating faults.
+		- What is information redundancy? #card
+		  id:: 642bbb45-7701-4f6d-a984-9b8d0d0b7858
+			- The addition of extra information beyond that required to implement a given function, such as error detection codes.
+		- What is the purpose of time redundancy? #card
+		  id:: 642bbb45-25d9-4ddf-adf2-1c04ee4c4a10
+			- To perform system functions with additional time for fault detection and often fault tolerance, tolerating transient faults.
+- # Radiation hardening for space electronics
+	- Physical Radiation Hardening Techniques:
+	  use various physical means to realize the hardening purpose, such as:
+	  1. Using insulating substrates
+	  2. Utilizing bipolar integrated circuits
+	  3. Adopting radiation-tolerant SRAM
+		- Radiation Hardening Assurance
+		  ![image.png](../assets/image_1680534857218_0.png){:height 379, :width 657}
+	- **Logical radiation-hardening techniques:**
+	  error correcting memory, redundancy, implementing watchdog timers etc.
+	- **Shielding**:
+	  shielding is provided at unit level (e.g. box) or component level (e.g. local shielding)
+	- **Particle accelerator**
+	  A particle accelerator is a machine where charged particles by means of electromagnetic fields are accelerated and confined in beam configuration.
+	  1. Electrostatic accelerator (Van der Graaf)
+	  2. Synchrotron
+	  3. Cyclotron
+	  
+	  
+	  Key elements:
+	  1. Radiofrequency (RF) cavity: a metallic chamber that contains an electromagnetic field.
+	  2. Dipole/Quadrupole magnets: bending and focus of the particle beam
+	- ### Whether to use radioactive sources or particle accelerators for radiation hardening 
+	  
+	  **Radioactive material pros**
+	  Can be placed in local Labs → portable
+	  Low cost
+	  Easier safety handling TID testing
+	  
+	  **Radioactive material cons**
+	  Lower efficiency (particles emitted at \(4 \pi\))
+	  Lower energy
+	  Energy spectrum
+	  Representativity of space environment
+	  
+	  **Particle accelerator cons**
+	  High Flux
+	  Monochromatic energy
+	  Higher energy
+	  Beam only on DUT
+	  SEE testing
+	  
+	  **Particle accelerator cons**
+	  Expensive access and limited availability
+	  Mostly faraway from development 
+	  Labs Safety is critical 
+	  Activation of samples
+	- **Linear Energy Transfer (LET)**
+	  is a measure of the energy transferred to the device per unit length as an ionizing particle travels through a material. The common unit is \(\mathrm{MeV}^* \mathrm{Cm}^2 / \mathrm{mg}\) of material (Si for MOS devices).
+	- **LET threshold (LETth)**
+	  is the minimum LET to cause an effect.
+	- **Cross section** \( (\sigma)\)
+	  is the device SEE response to ionizing radiation. For an experimental test for a specific LET, sigma = \#errors/ion fluence. The units for cross section are \(\mathrm{cm}^2\) per device or per bit.
+	  Asymptotic or saturation cross section \(\left(\sigma_{\text {sat }}\right)\) is the value that the cross section approaches as LET gets very large.
+	- **Sensitive volume**
+	  refers to the device volume affected by SEE-inducing radiation. The geometry of the sensitive volume is not easily known, but some information is gained from test cross section data.
+	- [[GPT Generated Flashcards]]
+	  collapsed:: true
+		- What are physical radiation hardening techniques? #card
+		  id:: 642bbb45-1f5f-4fac-8a4f-048d4a4fe50c
+			- Insulating substrates, bipolar integrated circuits, and radiation-tolerant SRAM.
+		- What are logical radiation hardening techniques? #card
+		  id:: 642bbb45-0770-46bc-80f4-6eb55b0bcc10
+			- Error correcting memory, redundancy, and watchdog timers.
+		- What are the two levels of shielding in radiation hardening? #card
+		  id:: 642bbb45-0ad4-422b-94f6-488d50c47eb5
+			- Unit level and component level.
+		- What is a particle accelerator? #card
+		  id:: 642bbb45-a078-4e29-bb00-9b3a6111634a
+			- A machine where charged particles are accelerated and confined in a beam configuration using electromagnetic fields.
+		- Name three types of particle accelerators. #card
+		  id:: 642bbb45-2c64-4e6f-972e-6f769b4a0680
+			- Electrostatic accelerator, synchrotron, and cyclotron.
+		- What are the key elements of a particle accelerator? #card
+		  id:: 642bbb45-aca9-40fd-bf8a-998b3943005d
+			- Radiofrequency cavity and dipole/quadrupole magnets.
+		- What are the pros of using radioactive material for radiation hardening? #card
+		  id:: 642bbb45-edd4-493a-aaea-c856efbf8046
+			- Portability, low cost, and easier safety handling.
+		- What are the cons of using radioactive material for radiation hardening? #card
+		  id:: 642bbb45-1fe7-4775-992c-d67fd6775040
+			- Lower efficiency, lower energy, energy spectrum, and limited representativity of the space environment.
+		- What are the pros of using particle accelerators for radiation hardening? #card
+		  id:: 642bbb45-6b6c-46d0-a95c-070c7fda7f4e
+			- High flux, monochromatic energy, higher energy, and beam focused on the device under test.
+		- What are the cons of using particle accelerators for radiation hardening? #card
+		  id:: 642bbb45-be69-47ef-9cad-0f85cc8a3b5b
+			- Expensive access, limited availability, distance from development labs, safety issues, and activation of samples.
+		- What is Linear Energy Transfer (LET)? #card
+		  id:: 642bbb45-c200-4de7-96c9-d9fc3280b28b
+			- A measure of the energy transferred to the device per unit length as an ionizing particle travels through a material.
+		- What is LET threshold (LETth)? #card
+		  id:: 642bbb45-cf45-4ba2-9baa-ceba13f22508
+			- The minimum LET required to cause an effect.
+		- What is cross section (σ)? #card
+		  id:: 642bbb45-ad20-4295-8ed7-2adc508f50b9
+			- The device SEE response to ionizing radiation, calculated as the number of errors divided by ion fluence.
+		- What is asymptotic or saturation cross section (σsat)? #card
+		  id:: 642bbb45-1979-4526-af35-67dc1f8ebfa7
+			- The value that the cross section approaches as LET gets very large.
+		- What is sensitive volume? #card
+		  id:: 642bbb45-648d-4630-aab6-06a1185f33b7
+			- The device volume affected by SEE-inducing radiation.
+		-
