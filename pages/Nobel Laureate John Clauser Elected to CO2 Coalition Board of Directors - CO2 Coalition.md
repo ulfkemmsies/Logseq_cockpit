@@ -1,8 +1,10 @@
 - ## 🔖 Articles
 	- [Nobel Laureate John Clauser Elected to CO2 Coalition Board of Directors - CO2 Coalition](https://omnivore.app/me/nobel-laureate-john-clauser-elected-to-co-2-coalition-board-of-d-1895d38ddc8)
 	  site:: [CO2 Coalition](https://co2coalition.org/publications/nobel-laureate-john-clauser-elected-to-co2-coalition-board-of-directors)
+	  labels:: [[climatechange]]
 	  date-saved:: [[16.07.2023]]
 	  date-published:: [[05.05.2023]]
+	  reading-state:: READING
 		- ### Highlights
 			- > Dr. Clauser has criticized the awarding of the 2021 Nobel Prize for work in the development of computer models predicting global warming and told President Biden that he disagreed with his climate policies. [⤴️](https://omnivore.app/me/nobel-laureate-john-clauser-elected-to-co-2-coalition-board-of-d-1895d38ddc8#b4dc84ca-7feb-4cbb-a1a0-94c3a70c4dba)
 			- > Dr. Clauser has developed a climate model that adds a new significant dominant process to existing models. The process involves the visible light reflected by cumulus clouds that cover, on average, half of the Earth. Existing models greatly underestimate this cloud feedback, which provides a very powerful, dominant thermostatic control of the Earth’s temperature.
