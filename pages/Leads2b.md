@@ -15,6 +15,11 @@
 	- DONE Vini Meeting >[2023-06-15 20:00 - 20:30](#agenda://?start=1686852000000&end=1686853800000&allDay=false)
 	- DONE Figure out Repo Architecture >[2023-06-15 16:30 - 20:00](#agenda://?start=1686839400000&end=1686852000000&allDay=false)
 	- DONE Vini Session >[2023-06-20 19:00 - 20:00](#agenda://?start=1687280400000&end=1687284000000&allDay=false)
+	- TODO L2B Work Session >[2023-08-01 13:00 - 21:00](#agenda://?start=1690887600000&end=1690916400000&allDay=false)
+	- TODO L2B Work Session >[2023-08-02 13:00 - 21:00](#agenda://?start=1690974000000&end=1691002800000&allDay=false)
+	- TODO L2B Work Session >[2023-08-03 13:00 - 21:00](#agenda://?start=1691060400000&end=1691089200000&allDay=false)
+	- TODO L2B Work Session >[2023-08-04 13:00 - 21:00](#agenda://?start=1691146800000&end=1691175600000&allDay=false)
+	- TODO L2B Work Session >[2023-08-05 17:00 - 21:00](#agenda://?start=1691247600000&end=1691262000000&allDay=false)
 - To-Do
 	- DONE Put all open issues into Jira
 	  DEADLINE: <2023-03-27 Mon 18:00>

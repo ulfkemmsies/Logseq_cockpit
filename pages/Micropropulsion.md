@@ -6,7 +6,12 @@ type:: class
 		- DONE Schedule Interim Exam
 		  DEADLINE: <2023-05-12 Fri>
 	- DONE Study interim exam flashcards >[2023-05-20 09:00 - 09:30](#agenda://?start=1684566000000&end=1684567800000&allDay=false) >[🍅🍅🍅🍅🍅🍅🍅🍅 222min](#agenda-pomo://?t=f-1684581183086-1200%2Cf-1684593310292-1200%2Cf-1684595919507-1200%2Cp-1684598013950-565%2Cf-1684648450051-1200%2Cf-1684649654888-1200%2Cp-1684651863980-864%2Cf-1684655021600-1200%2Cf-1684656263741-1200%2Cp-1684657503097-743%2Cf-1684732166284-1500%2Cp-1684737339463-397%2Cp-1684738016777-845)
-	- TODO Microprop Work Session >[2023-08-01 07:00 - 12:00](#agenda://?start=1690866000000&end=1690884000000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-01 07:00 - 11:00](#agenda://?start=1690866000000&end=1690880400000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-02 07:00 - 11:00](#agenda://?start=1690952400000&end=1690966800000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-03 07:00 - 11:00](#agenda://?start=1691038800000&end=1691053200000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-04 07:00 - 11:00](#agenda://?start=1691125200000&end=1691139600000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-05 07:00 - 17:00](#agenda://?start=1691211600000&end=1691247600000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-06 07:00 - 17:00](#agenda://?start=1691298000000&end=1691334000000&allDay=false)
 - DONE Ask Cervone about operational values >[🍅 8min](#agenda-pomo://?t=p-1686128083661-461)
   id:: 647ee052-999e-4122-98b4-b1ab35a51d53
 - TODO Finish Micropropulsion Lit Review >[🍅🍅🍅🍅🍅🍅🍅 163min](#agenda-pomo://?t=f-1686922472221-1200%2Cf-1686926605185-1200%2Cf-1686927933350-1200%2Cf-1687248657225-1200%2Cp-1687249865054-260%2Cf-1687250350749-1200%2Cp-1687252306967-1066%2Cf-1687262716368-1200%2Cf-1687265692736-1200)
