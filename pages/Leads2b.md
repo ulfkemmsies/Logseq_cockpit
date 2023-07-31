@@ -47,6 +47,8 @@
 	- TODO L2B Work Session >[2023-08-18 13:00 - 21:00](#agenda://?start=1692356400000&end=1692385200000&allDay=false)
 	- TODO L2B Work Session >[2023-08-19 17:00 - 21:00](#agenda://?start=1692457200000&end=1692471600000&allDay=false)
 	- TODO L2B Work Session >[2023-08-20 17:00 - 21:00](#agenda://?start=1692543600000&end=1692558000000&allDay=false)
+	- TODO L2B Work Session >[2023-08-21 14:00 - 21:00](#agenda://?start=1692619200000&end=1692644400000&allDay=false)
+	- TODO L2B Work Session >[2023-08-22 14:00 - 21:00](#agenda://?start=1692705600000&end=1692730800000&allDay=false)
 - To-Do
 	- DONE Put all open issues into Jira
 	  DEADLINE: <2023-03-27 Mon 18:00>

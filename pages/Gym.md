@@ -27,4 +27,3 @@
 	- TODO Accessory Work >[2023-08-18 11:00 - 13:00](#agenda://?start=1692349200000&end=1692356400000&allDay=false)
 	- TODO Heavy Horizontal Push >[2023-08-19 11:00 - 13:00](#agenda://?start=1692435600000&end=1692442800000&allDay=false)
 	- TODO Heavy Horizontal Pull >[2023-08-20 11:00 - 13:00](#agenda://?start=1692522000000&end=1692529200000&allDay=false)
-	- TODO Accessory Work >[2023-08-21 11:00 - 13:00](#agenda://?start=1692608400000&end=1692615600000&allDay=false)
