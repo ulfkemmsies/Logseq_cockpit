@@ -31,4 +31,12 @@
 	- DONE Remko Session >[2023-06-09 09:00 - 12:00](#agenda://?start=1686294000000&end=1686304800000&allDay=false)
 	- DONE Call RAMLAB >[2023-06-07 09:00 - 09:30](#agenda://?start=1686121200000&end=1686123000000&allDay=false)
 	- DONE RAMLAB Call >[2023-06-08 17:00 - 17:30](#agenda://?start=1686236400000&end=1686238200000&allDay=false)
+	- TODO Training Session >[2023-08-23 08:00 - 18:00](#agenda://?start=1692770400000&end=1692806400000&allDay=false)
+	- TODO Training Session >[2023-08-24 08:00 - 18:00](#agenda://?start=1692856800000&end=1692892800000&allDay=false)
+	- TODO Training Session >[2023-08-25 08:00 - 18:00](#agenda://?start=1692943200000&end=1692979200000&allDay=false)
+	- TODO Training Session >[2023-08-28 08:00 - 18:00](#agenda://?start=1693202400000&end=1693238400000&allDay=false)
+	- TODO Training Session >[2023-08-29 08:00 - 18:00](#agenda://?start=1693288800000&end=1693324800000&allDay=false)
+	- TODO Training Session >[2023-08-30 08:00 - 18:00](#agenda://?start=1693375200000&end=1693411200000&allDay=false)
+	- TODO Training Session >[2023-08-31 08:00 - 18:00](#agenda://?start=1693461600000&end=1693497600000&allDay=false)
+	- TODO Training Session >[2023-09-01 08:00 - 18:00](#agenda://?start=1693548000000&end=1693584000000&allDay=false)
 -
