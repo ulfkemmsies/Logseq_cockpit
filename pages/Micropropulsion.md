@@ -12,6 +12,11 @@ type:: class
 	- TODO Microprop Work Session >[2023-08-04 07:00 - 11:00](#agenda://?start=1691125200000&end=1691139600000&allDay=false)
 	- TODO Microprop Work Session >[2023-08-05 07:00 - 17:00](#agenda://?start=1691211600000&end=1691247600000&allDay=false)
 	- TODO Microprop Work Session >[2023-08-06 07:00 - 17:00](#agenda://?start=1691298000000&end=1691334000000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-07 07:00 - 11:00](#agenda://?start=1691384400000&end=1691398800000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-08 07:00 - 11:00](#agenda://?start=1691470800000&end=1691485200000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-09 07:00 - 11:00](#agenda://?start=1691557200000&end=1691571600000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-10 07:00 - 11:00](#agenda://?start=1691643600000&end=1691658000000&allDay=false)
+	- TODO Microprop Work Session >[2023-08-11 07:00 - 11:00](#agenda://?start=1691730000000&end=1691744400000&allDay=false)
 - DONE Ask Cervone about operational values >[🍅 8min](#agenda-pomo://?t=p-1686128083661-461)
   id:: 647ee052-999e-4122-98b4-b1ab35a51d53
 - TODO Finish Micropropulsion Lit Review >[🍅🍅🍅🍅🍅🍅🍅 163min](#agenda-pomo://?t=f-1686922472221-1200%2Cf-1686926605185-1200%2Cf-1686927933350-1200%2Cf-1687248657225-1200%2Cp-1687249865054-260%2Cf-1687250350749-1200%2Cp-1687252306967-1066%2Cf-1687262716368-1200%2Cf-1687265692736-1200)
