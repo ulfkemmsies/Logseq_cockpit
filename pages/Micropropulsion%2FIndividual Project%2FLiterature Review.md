@@ -129,25 +129,31 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			- ## Pressure Losses
 			  id:: 64b187ff-b52e-49a5-9e78-41334db85922
 				- Can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank
-				- To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. This is defined as:
+				- Channel friction factor
+				  id:: 64b187ff-3dfb-4dde-a864-6deb64858bd1
 				  $$
 				  f=\frac{\left(p_{\text {inlet }}-p_{\text {outlet }}\right) \cdot D_h}{\frac{1}{2} \rho U_{\text {inlet }}^2 \cdot L}
 				  $$
-				  Here \(p_{\text {inlet }}\) and \(p_{\text {outlet }}\) are the average pressures over the respective areas. \(U_{\text {inlet }}\) is the mean flow velocity, obtained from the mass flow. \(L\) is the centerline length.
+					- To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. Here \(p_{\text {inlet }}\) and \(p_{\text {outlet }}\) are the average pressures over the respective areas. \(U_{\text {inlet }}\) is the mean flow velocity, obtained from the mass flow. \(L\) is the centerline length.
 				- Shah and London affirm that, for macrochannels, for a fully developed flow, the product of the friction factor and the Reynolds number, \(f R e\), is constant. However, given the presence of a pressure drop associated with the developing region, we should expect a measured \(f R e\) to behave as depicted by the following equation:
 				  $$
 				  f R e_{e f f}=f R e+K_{\infty} \cdot R e \cdot \frac{D_h}{L}
 				  $$
 				  
 				  ![image.png](../assets/image_1689091009539_0.png)
-			- The Reynolds number is calculated as:
+			- Reynolds number
+			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
 			  $$
 			  R e=\frac{m \cdot D_h}{A_{\text {inlet }} \cdot \mu}
 			  $$
-			  which is an equivalent and more useful (for dimensioning, given the density of water is known) version of
-			  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\)
+				- which is an equivalent and more useful (for dimensioning, given the density of water is known) version of
+				  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\)
 			- ## Isp Losses
 			  id:: 64b187ff-2090-4b88-bb02-5c195b77b4e5
+			  $$
+			  I s p_{\text {loss }}=\frac{A_e}{m} \cdot\left(\frac{p_e}{p_c}\right) \cdot \Delta p 
+			   ~ [\mathrm{s}]
+			  $$
 				- Isp can be calculated using:
 				  $$
 				  I s p=\frac{F}{m g}=\frac{\sqrt{2 C_p T_c\left(1-\left(\frac{p_e}{p_c}\right)^{\frac{\gamma-1}{\gamma}}\right)}}{g}+\frac{A_e}{m g} p_c\left(\frac{p_e}{p_c}\right)
