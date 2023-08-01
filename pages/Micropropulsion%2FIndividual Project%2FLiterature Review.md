@@ -1,4 +1,5 @@
 public:: true
+id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 
 - Previous model recap
 	- Propulsion background (common equations)
@@ -139,6 +140,7 @@ public:: true
 			  which is an equivalent and more useful (for dimensioning, given the density of water is known) version of
 			  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\)
 			- ## Isp Losses
+			  id:: 64b187ff-2090-4b88-bb02-5c195b77b4e5
 				- Isp can be calculated using:
 				  $$
 				  I s p=\frac{F}{m g}=\frac{\sqrt{2 C_p T_c\left(1-\left(\frac{p_e}{p_c}\right)^{\frac{\gamma-1}{\gamma}}\right)}}{g}+\frac{A_e}{m g} p_c\left(\frac{p_e}{p_c}\right)
@@ -152,6 +154,7 @@ public:: true
 				  $$
 	- Aerospike project
 		- Thrust efficiency \(\eta_F\)
+		  id:: 64b187ff-c6ef-4895-bcaf-0e6274fe2683
 		  collapsed:: true
 			- $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
 			  $$\left.F_{1 D}=C_F p_c A_t=p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
@@ -172,6 +175,7 @@ public:: true
 			  \(\eta_F = \frac{F_{meas}}{F_{1D}} = \frac{C_F \cdot p_c \cdot A_t}{C_{F, i} \cdot p_c \cdot A_t} = \frac{C_F}{C_{F, i}}\)
 			  These equations are used to estimate the experimental value of thrust and determine the thrust efficiency.
 		- Discharge coefficient \(C_D\)
+		  id:: 64b187ff-3e99-4e24-9ffa-821cb1f6ba8e
 		  collapsed:: true
 			- The text discusses the derivation of an expression to calculate the discharge coefficient for choked axisymmetric nozzles with a circular cross-section. The expression takes into account the effect of the boundary layer in reducing the effective nozzle throat area. These effects are more significant for throat Reynolds numbers under 100,000. The equation for the discharge coefficient, derived by Tang and Fenn (1978), is given as:
 			  
@@ -183,6 +187,7 @@ public:: true
 			  
 			  where \(R_e t\) is the throat Reynolds number, \(R^*\) is the radius of the throat, and \(R_t\) is the throat radius curvature. The values for \(R^*\) and \(R_t\) can be obtained from Table 3.1. The specific heat ratio \(\gamma\) is 1.4 for nitrogen. It is important to note that the expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles.
 		- Specific impulse efficiency \(\eta_{I_{s p}}\)
+		  id:: 64b187ff-c257-42a5-b2c5-659e768024fe
 			- $$\eta_{I_{s p}}=\frac{I_{s p_{\text {meas }}}}{I_{s p_{1 D}}}$$
 			  
 			  $$I_{s p_{1 D}}=\frac{F_{1 D}}{\dot{m}_{1 D} \cdot g_0}$$
@@ -196,11 +201,10 @@ public:: true
 	- Control model paper
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
 		- Nozzle Model
-		  collapsed:: true
-		  
-		  Provides the mass flow at the nozzle based on the pressure in the chamber
-		  
-		  \(\dot{m}_3=\left(\alpha_1 p_1+\beta_1\right) A_t \sqrt{\frac{k}{R_s}\left(\frac{2}{k+1}\right)^{\frac{k+1}{k-1}}}\)
+		  id:: 64b187ff-09db-463e-b211-48932b579005
+			- Provides the mass flow at the nozzle based on the pressure in the chamber
+			  
+			  \(\dot{m}_3=\left(\alpha_1 p_1+\beta_1\right) A_t \sqrt{\frac{k}{R_s}\left(\frac{2}{k+1}\right)^{\frac{k+1}{k-1}}}\)
 			- Derivation:
 			  
 			  The mass flow rate at the nozzle, \(\dot{m}_3\), is calculated using the ideal rocket conditions. The mass flow rate equation is given by:
@@ -229,14 +233,14 @@ public:: true
 			  \end{gathered}
 			  $$
 		- Vaporization Model
+		  id:: 64b187ff-4001-4bec-84ab-9c6216fb8c62
 		  collapsed:: true
-		  
-		  Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure
-		  
-		  The vaporization rate, \(\dot{m}_2\), is calculated as the difference between the liquid flow rate, \(\dot{m}_1\), and the time derivative of volume multiplied by the liquid density, \(\rho_l\):
-		  \[
-		  \dot{m}_2 = \dot{m}_1 - \dot{V} \rho_l
-		  \]
+			- Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure
+			  
+			  The vaporization rate, \(\dot{m}_2\), is calculated as the difference between the liquid flow rate, \(\dot{m}_1\), and the time derivative of volume multiplied by the liquid density, \(\rho_l\):
+			  \[
+			  \dot{m}_2 = \dot{m}_1 - \dot{V} \rho_l
+			  \]
 			- Derivation:
 			  
 			  The average volume of vapor, \(V_{av}\), is calculated as a function of the thruster temperature and pressure:
@@ -251,13 +255,13 @@ public:: true
 			  \dot{V} = A(V_{av} - V)
 			  \]
 		- Pressure model
+		  id:: 64b187ff-337d-4671-a915-1e559796f457
 		  collapsed:: true
-		  
-		  The pressure inside the chamber, \(p\), is calculated using the ideal gas law:
-		  \[
-		  p = \frac{1}{\alpha_2} \left(\frac{m R_s}{V} - \beta_2\right)
-		  \]
-		  where \(\alpha_2\) and \(\beta_2\) are coefficients obtained from a linear approximation.
+			- The pressure inside the chamber, \(p\), is calculated using the ideal gas law:
+			  \[
+			  p = \frac{1}{\alpha_2} \left(\frac{m R_s}{V} - \beta_2\right)
+			  \]
+			  where \(\alpha_2\) and \(\beta_2\) are coefficients obtained from a linear approximation.
 			- Derivation:
 			  
 			  Considering the ideal gas law given by:
@@ -276,11 +280,11 @@ public:: true
 			  \end{gathered}
 			  $$
 		- Chip Temperature Model
+		  id:: 64b187ff-49cf-4345-84ec-8471d5e07b42
 		  collapsed:: true
-		  
-		  Provides thruster temperature based on input power
-		  
-		  $$T = 3405.75 \cdot P ~ [W]$$
+			- Provides thruster temperature based on input power
+			  
+			  $$T = 3405.75 \cdot P ~ [W]$$
 			- Derivation:
 			  
 			  The temperature of the thruster is modeled as a linear first-order system whose input is the applied power. The Laplace transfer function of the powertemperature system is given by (23):
