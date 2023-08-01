@@ -26,7 +26,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		- Performance Losses
 			- Divergence Losses
 			  id:: 64b187ff-8ae0-4207-9d44-4c112880be1d
-			  collapsed:: true
+			  \(\epsilon_{div} = 1 - \frac{1 - \cos(\alpha)}{2}\)
 				- When the exit half angle of a nozzle is greater than 0°, the gases ejected from the nozzle are not parallel to the direction of thrust. This results in momentum components in directions perpendicular to the thrust vector. However, since the nozzle is symmetric, these perpendicular momentum components cancel each other out and do not cause thrust misalignment. Nevertheless, they contribute to a loss in thrust as not all momentum is effectively used to propel the spacecraft forward.
 				  
 				  The divergence thrust correction factor, denoted as ε_div, quantifies this loss. It is calculated using the equation:
@@ -36,7 +36,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  where α represents the exit half angle of the nozzle. This loss factor depends solely on the exit half angle and affects both large and small nozzles.
 			- Boundary Layer Losses
 			  id:: 64b187ff-8c1a-4dcb-9cae-967f94f67897
-			  collapsed:: true
 				- The boundary layer is formed along the nozzle wall due to viscous flow effects, causing the flow to slow down near the walls and deflect the full flow. This phenomenon is more significant in micro-nozzles due to their low Reynolds number, which increases the skin friction coefficient and causes larger boundary layers.
 				  
 				  Characterizing the boundary layer is crucial for predicting performance losses in micro-nozzles. A simplified model using flat plate boundary layer solutions can be used for linear convergent-divergent micro-nozzles. The skin friction coefficient for incompressible, laminar flow is given by the equation \(c_{f x}=\frac{0.664}{\sqrt{R e_x}}\), where \(R e_x\) is the Reynolds number.
@@ -56,7 +55,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  It is important to note that for nozzles with non-circular cross sections, the circumference term should be replaced with the equivalent perimeter.
 		- Reference Temperature Approach
 		  id:: 64b187ff-ebbe-48b2-a3d0-bab106f918e7
-		  collapsed:: true
 			- The previous section discussed a method for predicting boundary layer properties assuming incompressible flow. However, when the flow becomes supersonic, this assumption is no longer valid. To account for this, the "Reference Temperature Approach" corrects the skin friction coefficient using an average temperature across the boundary layer. The correction can be calculated using the equation:
 			  
 			  \[c_f=c_{f, i}\left(\frac{T_w / T_0+1}{2}+0.22 \frac{\gamma-1}{2} M^2\right)^{-0.6}\]
@@ -68,7 +66,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  This equation can be used for any point along the nozzle, as long as the corresponding flow Mach number (\(M_e\)) is used.
 		- Aggregate Performance Loss
 		  id:: 64b187ff-2db4-4fe4-997f-f52657d8a1a0
-		  collapsed:: true
 			- To calculate the aggregate performance loss, a step-by-step procedure is followed. First, independent loss factors not affected by boundary layer effects are determined. The divergence thrust correction factor is calculated based on the divergent half angle. Then, the properties of the boundary layer, such as the compressible skin friction coefficient, exit momentum thickness, and exit displacement thickness, are calculated using known flow parameters.
 			  
 			  The following steps are taken to account for boundary layer effects:
@@ -98,6 +95,8 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		- Performance factors (only considered for liquid phase)
 			- Larger contact area helps reduce wall temperature. Lower channel temperature means a simpler heat management. Minimizing the leakage of heat from the thruster to the surrounding environment leads to higher heating efficiency, lowering the power requirements.
 			- Nusselt number
+			  id:: 64b187ff-20cf-46c6-a290-4d508fe0c853
+			  \(N u=\frac{h \cdot D_h}{k_W}\)
 				- Is a dimensionless parameter used in heat transfer analysis to quantify the relationship between convective and conductive heat transfer across a boundary or surface.
 				  It considers factors such as thermal conductivity, fluid properties, and flow characteristics. For low Reynolds numbers (between 10 and 100), the Nusselt number increases significantly with increasing Reynolds numbers.
 				  
