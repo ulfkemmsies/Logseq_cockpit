@@ -2,6 +2,7 @@ id:: 6465c12e-fd56-432a-b0c0-2893d32eaa78
 type:: class
 
 - Agenda
+  collapsed:: true
 	- DONE Interim Exam @ Room 10.13 at Faculty >[2023-05-22 11:30 - 12:30](#agenda://?start=1684747800000&end=1684751400000&allDay=false)
 		- DONE Schedule Interim Exam
 		  DEADLINE: <2023-05-12 Fri>
@@ -30,6 +31,7 @@ type:: class
 	- TODO Microprop Work Session >[2023-08-18 07:00 - 11:00](#agenda://?start=1692334800000&end=1692349200000&allDay=false)
 - DONE Ask Cervone about operational values >[🍅 8min](#agenda-pomo://?t=p-1686128083661-461)
   id:: 647ee052-999e-4122-98b4-b1ab35a51d53
-- TODO Finish Micropropulsion Lit Review >[🍅🍅🍅🍅🍅🍅🍅 163min](#agenda-pomo://?t=f-1686922472221-1200%2Cf-1686926605185-1200%2Cf-1686927933350-1200%2Cf-1687248657225-1200%2Cp-1687249865054-260%2Cf-1687250350749-1200%2Cp-1687252306967-1066%2Cf-1687262716368-1200%2Cf-1687265692736-1200)
+- DONE Finish Micropropulsion Lit Review >[🍅🍅🍅🍅🍅🍅🍅 163min](#agenda-pomo://?t=f-1686922472221-1200%2Cf-1686926605185-1200%2Cf-1686927933350-1200%2Cf-1687248657225-1200%2Cp-1687249865054-260%2Cf-1687250350749-1200%2Cp-1687252306967-1066%2Cf-1687262716368-1200%2Cf-1687265692736-1200)
   id:: 647ee062-f228-4562-8193-5008fe7737bc
+- TODO Micropropulsion Equation Modelling
 -
