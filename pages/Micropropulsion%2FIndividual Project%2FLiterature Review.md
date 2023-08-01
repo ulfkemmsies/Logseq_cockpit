@@ -139,6 +139,7 @@ public:: true
 				  $$
 	- Aerospike project
 		- Thrust efficiency \(\eta_F\)
+		  collapsed:: true
 			- $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
 			  $$\left.F_{1 D}=C_F p_c A_t=p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
 			- Momentum loss (method 1)
@@ -158,6 +159,7 @@ public:: true
 			  \(\eta_F = \frac{F_{meas}}{F_{1D}} = \frac{C_F \cdot p_c \cdot A_t}{C_{F, i} \cdot p_c \cdot A_t} = \frac{C_F}{C_{F, i}}\)
 			  These equations are used to estimate the experimental value of thrust and determine the thrust efficiency.
 		- Discharge coefficient \(C_D\)
+		  collapsed:: true
 			- The text discusses the derivation of an expression to calculate the discharge coefficient for choked axisymmetric nozzles with a circular cross-section. The expression takes into account the effect of the boundary layer in reducing the effective nozzle throat area. These effects are more significant for throat Reynolds numbers under 100,000. The equation for the discharge coefficient, derived by Tang and Fenn (1978), is given as:
 			  
 			  \[C_D=1-\left(\frac{\gamma+1}{2}\right)^{3/4}\left(\frac{-2.128}{\gamma+1}+3.266\right) R^{-0.5}+9.428 \frac{(\gamma-1)(\gamma+2)}{(\gamma+1)^{0.5}} R^{-1}\]
@@ -178,12 +180,10 @@ public:: true
 			  This equation is only valid over the Reynolds number interval between 382 and 3721.
 			  
 			  \(\frac{A_{\text {eff }}}{A_{\text {geo }}}=0.322135-\frac{38.6498}{R e}+0.063732 \cdot \log (R e)\)
-	- Topology optimization paper
-		- Energy efficiency: relates to the efficiency in the heat transfer process occurring inside the vaporization chamber
-		- Propulsion efficiency: relates to the friction losses in the fluid flow inside the vaporization chamber that affects the thrust and specific impulse. Friction losses are known to impact the nozzle performance as well but here we focus only on the chamber aspects.
 	- Control model paper
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
 		- Nozzle Model
+		  collapsed:: true
 		  
 		  Provides the mass flow at the nozzle based on the pressure in the chamber
 		  
@@ -216,6 +216,7 @@ public:: true
 			  \end{gathered}
 			  $$
 		- Vaporization Model
+		  collapsed:: true
 		  
 		  Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure
 		  
@@ -282,7 +283,12 @@ public:: true
 			  \lim _{s \rightarrow 0} s G(s) \rightarrow T = K \cdot \tau \cdot P \\
 			  T = 3405.75 \cdot P ~ [W]
 			  $$
+	- Topology optimization paper
+	  collapsed:: true
+		- Energy efficiency: relates to the efficiency in the heat transfer process occurring inside the vaporization chamber
+		- Propulsion efficiency: relates to the friction losses in the fluid flow inside the vaporization chamber that affects the thrust and specific impulse. Friction losses are known to impact the nozzle performance as well but here we focus only on the chamber aspects.
 	- Fluid flow control paper
+	  collapsed:: true
 		- Solving the Navier-Stokes equations for the connecting channel between the pressure valve and heating chamber...
 		  
 		  If we define the velocity as the state of the system we can re-write it in the state space form \(\dot{x}=A x+B \bar{u}\) considering the pressure drop as the input \(\bar{u}=\Delta p\) :
