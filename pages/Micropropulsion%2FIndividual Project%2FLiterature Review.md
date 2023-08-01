@@ -169,9 +169,12 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 	- Aerospike project
 		- Thrust efficiency \(\eta_F\)
 		  id:: 64b187ff-c6ef-4895-bcaf-0e6274fe2683
-		  $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
+		  $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}=\frac{C_F \cdot p_c \cdot A_t}{C_{F, i} \cdot p_c \cdot A_t}=\frac{C_F}{C_{F, i}}$$
 			- $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
-			  $$\left.F_{1 D}=C_F p_c A_t=p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
+			- Ideal Thrust
+			  id:: 64c8bc9c-9fc1-4f7a-8841-014bf136144f
+			  $$\left.F_{1 D}=C_F p_c A_t=
+			  p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
 			- Momentum loss (method 1)
 			  
 			  Skin friction on the walls of the nozzle leads to a reduction in thrust of the propulsion system. This reduction is known as the "momentum loss thickness" and can be represented as a force with an axial component in the direction of thrust. By subtracting this force from the total thrust, the "measured" thrust can be calculated, allowing for the determination of thrust efficiency. The equation for calculating the momentum loss is given as \(\Delta F=\left(\rho_e \cdot u_e \cdot 2 \pi R_e \cdot \theta_e\right) \cdot u_e\).
