@@ -202,6 +202,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
 		- Nozzle Model
 		  id:: 64b187ff-09db-463e-b211-48932b579005
+		  collapsed:: true
 			- Provides the mass flow at the nozzle based on the pressure in the chamber
 			  
 			  \(\dot{m}_3=\left(\alpha_1 p_1+\beta_1\right) A_t \sqrt{\frac{k}{R_s}\left(\frac{2}{k+1}\right)^{\frac{k+1}{k-1}}}\)
@@ -256,7 +257,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  \]
 		- Pressure model
 		  id:: 64b187ff-337d-4671-a915-1e559796f457
-		  collapsed:: true
 			- The pressure inside the chamber, \(p\), is calculated using the ideal gas law:
 			  \[
 			  p = \frac{1}{\alpha_2} \left(\frac{m R_s}{V} - \beta_2\right)
