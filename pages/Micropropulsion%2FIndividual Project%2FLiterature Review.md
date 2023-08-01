@@ -128,6 +128,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
 			- ## Pressure Losses
 			  id:: 64b187ff-b52e-49a5-9e78-41334db85922
+			  \(\Delta p\)
 				- Can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank
 				- Channel friction factor
 				  id:: 64b187ff-3dfb-4dde-a864-6deb64858bd1
@@ -168,7 +169,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 	- Aerospike project
 		- Thrust efficiency \(\eta_F\)
 		  id:: 64b187ff-c6ef-4895-bcaf-0e6274fe2683
-		  collapsed:: true
 			- $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
 			  $$\left.F_{1 D}=C_F p_c A_t=p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
 			- Momentum loss (method 1)
