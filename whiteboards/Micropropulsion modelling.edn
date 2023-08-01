@@ -1,0 +1,99 @@
+{:blocks (
+{:block/created-at 1690868311036
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "64b187ff-8ae0-4207-9d44-4c112880be1d"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 41]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "96bfd540-302d-11ee-ae3c-1b4e0ece8468"
+:noFill false
+:point [288 216]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690868285634}}
+:block/updated-at 1690868311036} 
+{:block/created-at 1690868392805
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 1
+:scale [1 1]
+:pageId "64b187ff-8c1a-4dcb-9cae-967f94f67897"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 40.99997279293003]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "c0de4dc0-302d-11ee-ae3c-1b4e0ece8468"
+:noFill false
+:point [288 320]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690868356282}}
+:block/updated-at 1690868392805} 
+{:block/created-at 1690868393949
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 2
+:scale [1 1]
+:pageId "64b187ff-820c-4011-be5d-5dc586619e2e"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 40.99997279293003]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "cf42d7f0-302d-11ee-ae3c-1b4e0ece8468"
+:noFill false
+:point [288 424]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690868380487}}
+:block/updated-at 1690868393949})
+:pages (
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "64c89969-afb2-45bb-9783-37d984eb6670"
+:name "micropropulsion modelling"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ("96bfd540-302d-11ee-ae3c-1b4e0ece8468" "c0de4dc0-302d-11ee-ae3c-1b4e0ece8468" "cf42d7f0-302d-11ee-ae3c-1b4e0ece8468")}}
+:block/updated-at 1690868393949
+:block/created-at 1690868073660
+:block/type "whiteboard"
+:block/name "micropropulsion modelling"
+:block/original-name "Micropropulsion modelling"})}

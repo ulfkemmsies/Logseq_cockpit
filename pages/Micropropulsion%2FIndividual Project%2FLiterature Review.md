@@ -2,6 +2,7 @@ public:: true
 
 - Previous model recap
 	- Propulsion background (common equations)
+	  collapsed:: true
 		- The equations for analyzing the performance of micropropulsion systems are given by:
 		  Thrust (F): $F = \dot{m}V_e + (p_e - p_a)A_e$
 		  
@@ -22,58 +23,61 @@ public:: true
 		  Smaller nozzles will naturally cause the flow Reynolds number to become very small.
 	- Conventional Nozzles project
 		- Performance Losses
-			- Divergence Losses 
-			  When the exit half angle of a nozzle is greater than 0°, the gases ejected from the nozzle are not parallel to the direction of thrust. This results in momentum components in directions perpendicular to the thrust vector. However, since the nozzle is symmetric, these perpendicular momentum components cancel each other out and do not cause thrust misalignment. Nevertheless, they contribute to a loss in thrust as not all momentum is effectively used to propel the spacecraft forward.
-			  
-			  The divergence thrust correction factor, denoted as ε_div, quantifies this loss. It is calculated using the equation:
-			  
-			  \(\epsilon_{div} = 1 - \frac{1 - \cos(\alpha)}{2}\)
-			  
-			  where α represents the exit half angle of the nozzle. This loss factor depends solely on the exit half angle and affects both large and small nozzles.
+			- Divergence Losses
+			  id:: 64b187ff-8ae0-4207-9d44-4c112880be1d
+				- When the exit half angle of a nozzle is greater than 0°, the gases ejected from the nozzle are not parallel to the direction of thrust. This results in momentum components in directions perpendicular to the thrust vector. However, since the nozzle is symmetric, these perpendicular momentum components cancel each other out and do not cause thrust misalignment. Nevertheless, they contribute to a loss in thrust as not all momentum is effectively used to propel the spacecraft forward.
+				  
+				  The divergence thrust correction factor, denoted as ε_div, quantifies this loss. It is calculated using the equation:
+				  
+				  \(\epsilon_{div} = 1 - \frac{1 - \cos(\alpha)}{2}\)
+				  
+				  where α represents the exit half angle of the nozzle. This loss factor depends solely on the exit half angle and affects both large and small nozzles.
 			- Boundary Layer Losses
-			  The boundary layer is formed along the nozzle wall due to viscous flow effects, causing the flow to slow down near the walls and deflect the full flow. This phenomenon is more significant in micro-nozzles due to their low Reynolds number, which increases the skin friction coefficient and causes larger boundary layers.
-			  
-			  Characterizing the boundary layer is crucial for predicting performance losses in micro-nozzles. A simplified model using flat plate boundary layer solutions can be used for linear convergent-divergent micro-nozzles. The skin friction coefficient for incompressible, laminar flow is given by the equation \(c_{f x}=\frac{0.664}{\sqrt{R e_x}}\), where \(R e_x\) is the Reynolds number.
-			  
-			  The momentum thickness (\(\theta_x\)) and displacement thickness (\(\delta^*\)) are given by
-			  \(\begin{gathered}\theta_x=c_{f x} \cdot x \\ \delta^*=2.59036 \cdot \theta_x\end{gathered}\)
-			  respectively. The displacement thickness represents how much the flow is displaced by the boundary layer. The angle of the nozzle divergent should be optimized to balance displacement thickness and divergence losses. The true area ratio of the nozzle can be calculated using \(\left(\frac{A_e}{A_t}\right)_{t r u e}=\frac{2 \cdot\left(R_e-\delta^*\right)}{W_t}\), where \(W_t\) is the throat width.
-			  
-			  It is important to note that the assumptions made in this boundary layer solution include laminar and attached flow, as well as the assumption that the boundary layer starts developing at the throat and increases in size until the nozzle exit.
+			  id:: 64b187ff-8c1a-4dcb-9cae-967f94f67897
+				- The boundary layer is formed along the nozzle wall due to viscous flow effects, causing the flow to slow down near the walls and deflect the full flow. This phenomenon is more significant in micro-nozzles due to their low Reynolds number, which increases the skin friction coefficient and causes larger boundary layers.
+				  
+				  Characterizing the boundary layer is crucial for predicting performance losses in micro-nozzles. A simplified model using flat plate boundary layer solutions can be used for linear convergent-divergent micro-nozzles. The skin friction coefficient for incompressible, laminar flow is given by the equation \(c_{f x}=\frac{0.664}{\sqrt{R e_x}}\), where \(R e_x\) is the Reynolds number.
+				  
+				  The momentum thickness (\(\theta_x\)) and displacement thickness (\(\delta^*\)) are given by
+				  \(\begin{gathered}\theta_x=c_{f x} \cdot x \\ \delta^*=2.59036 \cdot \theta_x\end{gathered}\)
+				  respectively. The displacement thickness represents how much the flow is displaced by the boundary layer. The angle of the nozzle divergent should be optimized to balance displacement thickness and divergence losses. The true area ratio of the nozzle can be calculated using \(\left(\frac{A_e}{A_t}\right)_{t r u e}=\frac{2 \cdot\left(R_e-\delta^*\right)}{W_t}\), where \(W_t\) is the throat width.
+				  
+				  It is important to note that the assumptions made in this boundary layer solution include laminar and attached flow, as well as the assumption that the boundary layer starts developing at the throat and increases in size until the nozzle exit.
 			- Momentum Losses
-			  The presence of a boundary layer in addition to the modification of effective nozzle geometry leads to momentum losses in the flow. These losses occur as the flow loses momentum within the boundary layer. To account for this, the thrust loss due to momentum can be calculated using the equation:
-			  
-			  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
-			  
-			  It is important to note that for nozzles with non-circular cross sections, the circumference term should be replaced with the equivalent perimeter.
+			  id:: 64b187ff-820c-4011-be5d-5dc586619e2e
+				- The presence of a boundary layer in addition to the modification of effective nozzle geometry leads to momentum losses in the flow. These losses occur as the flow loses momentum within the boundary layer. To account for this, the thrust loss due to momentum can be calculated using the equation:
+				  
+				  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
+				  
+				  It is important to note that for nozzles with non-circular cross sections, the circumference term should be replaced with the equivalent perimeter.
 		- Reference Temperature Approach
-		  The previous section discussed a method for predicting boundary layer properties assuming incompressible flow. However, when the flow becomes supersonic, this assumption is no longer valid. To account for this, the "Reference Temperature Approach" corrects the skin friction coefficient using an average temperature across the boundary layer. The correction can be calculated using the equation:
-		  
-		  \[c_f=c_{f, i}\left(\frac{T_w / T_0+1}{2}+0.22 \frac{\gamma-1}{2} M^2\right)^{-0.6}\]
-		  
-		  where \(T_w\) is the wall temperature and \(T_0\) is the stagnation temperature at the point where the skin friction coefficient is determined. In this context, we only consider the exit stagnation temperature, as the characteristics of the flat plate boundary layer will be determined at the exit of the nozzle to quantify the loss in exit area. The exit total temperature (\(T_{0_e}\)) can be calculated using isentropic relations:
-		  
-		  \[T_{0_e}=T_e \cdot\left(1+\frac{\gamma-1}{2} \cdot M_e^2\right)\]
-		  
-		  This equation can be used for any point along the nozzle, as long as the corresponding flow Mach number (\(M_e\)) is used.
+			- The previous section discussed a method for predicting boundary layer properties assuming incompressible flow. However, when the flow becomes supersonic, this assumption is no longer valid. To account for this, the "Reference Temperature Approach" corrects the skin friction coefficient using an average temperature across the boundary layer. The correction can be calculated using the equation:
+			  
+			  \[c_f=c_{f, i}\left(\frac{T_w / T_0+1}{2}+0.22 \frac{\gamma-1}{2} M^2\right)^{-0.6}\]
+			  
+			  where \(T_w\) is the wall temperature and \(T_0\) is the stagnation temperature at the point where the skin friction coefficient is determined. In this context, we only consider the exit stagnation temperature, as the characteristics of the flat plate boundary layer will be determined at the exit of the nozzle to quantify the loss in exit area. The exit total temperature (\(T_{0_e}\)) can be calculated using isentropic relations:
+			  
+			  \[T_{0_e}=T_e \cdot\left(1+\frac{\gamma-1}{2} \cdot M_e^2\right)\]
+			  
+			  This equation can be used for any point along the nozzle, as long as the corresponding flow Mach number (\(M_e\)) is used.
 		- Aggregate Performance Loss
-		  To calculate the aggregate performance loss, a step-by-step procedure is followed. First, independent loss factors not affected by boundary layer effects are determined. The divergence thrust correction factor is calculated based on the divergent half angle. Then, the properties of the boundary layer, such as the compressible skin friction coefficient, exit momentum thickness, and exit displacement thickness, are calculated using known flow parameters.
-		  
-		  The following steps are taken to account for boundary layer effects:
-		  
-		  1. Thrust reduction due to momentum loss is determined based on the momentum thickness.
-		  2. The true area ratio is determined based on the displacement thickness.
-		  3. The true area ratio leads to a lower exit pressure than predicted by IRT (Isentropic Relation Theory). The effective pressure ratio and exit pressures are iteratively determined using the equation:
-		  
-		  \(\frac{\mathrm{A}_{\mathrm{e}}}{\mathrm{A}_{\mathrm{t}}}=\frac{\Gamma}{\sqrt{\frac{2 \gamma}{\gamma-1} \cdot\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{2}{\gamma}\right)}\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}}\)
-		  
-		  4. The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and reduced exit pressure. The true thrust, estimated using this methodology, is given by:
-		  
-		  \(F_{\text {true }}=m \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
-		  
-		  Finally, the thrust coefficient can be determined using the equation:
-		  
-		  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
+			- To calculate the aggregate performance loss, a step-by-step procedure is followed. First, independent loss factors not affected by boundary layer effects are determined. The divergence thrust correction factor is calculated based on the divergent half angle. Then, the properties of the boundary layer, such as the compressible skin friction coefficient, exit momentum thickness, and exit displacement thickness, are calculated using known flow parameters.
+			  
+			  The following steps are taken to account for boundary layer effects:
+			  
+			  1. Thrust reduction due to momentum loss is determined based on the momentum thickness.
+			  2. The true area ratio is determined based on the displacement thickness.
+			  3. The true area ratio leads to a lower exit pressure than predicted by IRT (Isentropic Relation Theory). The effective pressure ratio and exit pressures are iteratively determined using the equation:
+			  
+			  \(\frac{\mathrm{A}_{\mathrm{e}}}{\mathrm{A}_{\mathrm{t}}}=\frac{\Gamma}{\sqrt{\frac{2 \gamma}{\gamma-1} \cdot\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{2}{\gamma}\right)}\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}}\)
+			  
+			  4. The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and reduced exit pressure. The true thrust, estimated using this methodology, is given by:
+			  
+			  \(F_{\text {true }}=m \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
+			  
+			  Finally, the thrust coefficient can be determined using the equation:
+			  
+			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
 		- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
 		  • Incompressible flow
