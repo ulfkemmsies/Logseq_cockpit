@@ -2,7 +2,6 @@ public:: true
 
 - Previous model recap
 	- Propulsion background (common equations)
-	  collapsed:: true
 		- The equations for analyzing the performance of micropropulsion systems are given by:
 		  Thrust (F): $F = \dot{m}V_e + (p_e - p_a)A_e$
 		  
@@ -22,9 +21,7 @@ public:: true
 		  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\).
 		  Smaller nozzles will naturally cause the flow Reynolds number to become very small.
 	- Conventional Nozzles project
-	  collapsed:: true
 		- Performance Losses
-		  collapsed:: true
 			- Divergence Losses 
 			  When the exit half angle of a nozzle is greater than 0°, the gases ejected from the nozzle are not parallel to the direction of thrust. This results in momentum components in directions perpendicular to the thrust vector. However, since the nozzle is symmetric, these perpendicular momentum components cancel each other out and do not cause thrust misalignment. Nevertheless, they contribute to a loss in thrust as not all momentum is effectively used to propel the spacecraft forward.
 			  
@@ -78,7 +75,6 @@ public:: true
 		  
 		  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
-	  collapsed:: true
 		- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
 		  • Incompressible flow
 		  • Steady state (this was verified with transient simulations)
@@ -142,7 +138,6 @@ public:: true
 				   ~ [\mathrm{s}]
 				  $$
 	- Aerospike project
-	  collapsed:: true
 		- Thrust efficiency \(\eta_F\)
 			- $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
 			  $$\left.F_{1 D}=C_F p_c A_t=p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
@@ -184,14 +179,11 @@ public:: true
 			  
 			  \(\frac{A_{\text {eff }}}{A_{\text {geo }}}=0.322135-\frac{38.6498}{R e}+0.063732 \cdot \log (R e)\)
 	- Topology optimization paper
-	  collapsed:: true
 		- Energy efficiency: relates to the efficiency in the heat transfer process occurring inside the vaporization chamber
 		- Propulsion efficiency: relates to the friction losses in the fluid flow inside the vaporization chamber that affects the thrust and specific impulse. Friction losses are known to impact the nozzle performance as well but here we focus only on the chamber aspects.
 	- Control model paper
-	  collapsed:: true
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
 		- Nozzle Model
-		  collapsed:: true
 		  
 		  Provides the mass flow at the nozzle based on the pressure in the chamber
 		  
@@ -224,7 +216,6 @@ public:: true
 			  \end{gathered}
 			  $$
 		- Vaporization Model
-		  collapsed:: true
 		  
 		  Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure
 		  
@@ -292,7 +283,6 @@ public:: true
 			  T = 3405.75 \cdot P ~ [W]
 			  $$
 	- Fluid flow control paper
-	  collapsed:: true
 		- Solving the Navier-Stokes equations for the connecting channel between the pressure valve and heating chamber...
 		  
 		  If we define the velocity as the state of the system we can re-write it in the state space form \(\dot{x}=A x+B \bar{u}\) considering the pressure drop as the input \(\bar{u}=\Delta p\) :
