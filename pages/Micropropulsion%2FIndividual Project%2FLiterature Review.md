@@ -229,7 +229,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
 		- Nozzle Model
 		  id:: 64b187ff-09db-463e-b211-48932b579005
-		  collapsed:: true
 			- Provides the mass flow at the nozzle based on the pressure in the chamber
 			  
 			  \(\dot{m}_3=\left(\alpha_1 p_1+\beta_1\right) A_t \sqrt{\frac{k}{R_s}\left(\frac{2}{k+1}\right)^{\frac{k+1}{k-1}}}\)
@@ -260,8 +259,11 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  \beta_1=\frac{p_s}{\sqrt{C+\frac{B}{\left(A-\log _{10}\left(p_s\right)\right)}}}-\alpha_1 p_s
 			  \end{gathered}
 			  $$
-		- Vaporization Model
+		- Vaporization Rate Model
 		  id:: 64b187ff-4001-4bec-84ab-9c6216fb8c62
+		  \[
+		  \dot{m}_2 = \dot{m}_1 - \dot{V} \rho_l
+		  \]
 			- Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure
 			  
 			  The vaporization rate, \(\dot{m}_2\), is calculated as the difference between the liquid flow rate, \(\dot{m}_1\), and the time derivative of volume multiplied by the liquid density, \(\rho_l\):
@@ -281,8 +283,11 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  \[
 			  \dot{V} = A(V_{av} - V)
 			  \]
-		- Pressure model
+		- Chamber Gas Pressure model
 		  id:: 64b187ff-337d-4671-a915-1e559796f457
+		  \[
+		  p = \frac{1}{\alpha_2} \left(\frac{m R_s}{V} - \beta_2\right)
+		  \]
 			- The pressure inside the chamber, \(p\), is calculated using the ideal gas law:
 			  \[
 			  p = \frac{1}{\alpha_2} \left(\frac{m R_s}{V} - \beta_2\right)
@@ -307,7 +312,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  $$
 		- Chip Temperature Model
 		  id:: 64b187ff-49cf-4345-84ec-8471d5e07b42
-		  collapsed:: true
+		  $$T = 3405.75 \cdot P ~ [W]$$
 			- Provides thruster temperature based on input power
 			  
 			  $$T = 3405.75 \cdot P ~ [W]$$
