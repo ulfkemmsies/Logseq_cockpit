@@ -227,8 +227,9 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  \(\frac{A_{\text {eff }}}{A_{\text {geo }}}=0.322135-\frac{38.6498}{R e}+0.063732 \cdot \log (R e)\)
 	- Control model paper
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
-		- Nozzle Model
+		- Nozzle Mass Flow Model
 		  id:: 64b187ff-09db-463e-b211-48932b579005
+		  \(\dot{m}_3=\left(\alpha_1 p_1+\beta_1\right) A_t \sqrt{\frac{k}{R_s}\left(\frac{2}{k+1}\right)^{\frac{k+1}{k-1}}}\)
 			- Provides the mass flow at the nozzle based on the pressure in the chamber
 			  
 			  \(\dot{m}_3=\left(\alpha_1 p_1+\beta_1\right) A_t \sqrt{\frac{k}{R_s}\left(\frac{2}{k+1}\right)^{\frac{k+1}{k-1}}}\)
@@ -245,9 +246,12 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  
 			  The temperature of the gas is assumed to be the saturation (boiling) temperature.
 			  
-			  The temperature of the vapor can be calculated based on the pressure using the Antoine equation: \(T=\frac{B}{A-\log _{10} p}+C\) where \(A=10.27, B=1810.94\), and \(C=28.67\) for pressure in \(\mathrm{Pa}\) and temperature in the range \(372.15-647.15 \mathrm{~K}\).
-			  
-			  If we consider the pressure in the range \(1-5\) bar, then we can replace the term \(\frac{p_1}{\sqrt{T_1}}\) in (3) with a function of the pressure:
+			  The temperature of the vapor can be calculated based on the pressure using the Antoine equation:
+				- Chamber Vapor Temperature (Antoine)
+				  id:: 64c8c71e-986b-41f9-b9f4-1ba47709621a
+				  \(T=\frac{B}{A-\log _{10} p}+C\)
+					- where \(A=10.27, B=1810.94\), and \(C=28.67\) for pressure in \(\mathrm{Pa}\) and temperature in the range \(372.15-647.15 \mathrm{~K}\).
+			- If we consider the pressure in the range \(1-5\) bar, then we can replace the term \(\frac{p_1}{\sqrt{T_1}}\) in (3) with a function of the pressure:
 			  $$
 			  \frac{p_1}{\sqrt{T_1}}=\frac{p_1}{\sqrt{\frac{B}{A-\log _{10} p_1}+C}} \approx \alpha_1 p_1+\beta_1
 			  $$
