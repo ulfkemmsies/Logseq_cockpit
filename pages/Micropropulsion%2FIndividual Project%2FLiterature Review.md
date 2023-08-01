@@ -83,8 +83,9 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  \(\frac{\mathrm{A}_{\mathrm{e}}}{\mathrm{A}_{\mathrm{t}}}=\frac{\Gamma}{\sqrt{\frac{2 \gamma}{\gamma-1} \cdot\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{2}{\gamma}\right)}\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}}\)
 			  
 			  4. The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and reduced exit pressure. The true thrust, estimated using this methodology, is given by:
-			  
-			  \(F_{\text {true }}=m \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
+				- True Thrust
+				  id:: 64c8bd12-b650-47d9-8a35-f95667464ffd
+				  \(F_{\text {true }}=m \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
 			- Thrust coefficient
 			  id:: 64c8adb2-93c4-4c41-bb4e-daf679f7fef9
 			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
@@ -212,6 +213,11 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			- Measured Isp
 			  id:: 64c8b7fd-1bb6-4f5c-b408-b0a43bf8a9cc
 			  $$I_{s p_{\text {meas }}}=\frac{F_{\text {meas }}}{\dot{m}_{\text {meas }} \cdot g_0}$$
+			- Ideal mass flow
+			  id:: 64c8be50-9c82-46cc-af9f-3cf7cba7a041
+			  $$
+			  \dot{m}_{1 D}=\frac{p_c A_t}{c^*}=\frac{\sqrt{\gamma}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{2(\gamma-1) p_c A_t}}}{\sqrt{R T_c}}
+			  $$
 			- The text discusses a study conducted by Bayt (1999) on different micronozzles and their performance. One of the designs studied is a micronozzle with a rectangular throat section and an area ratio of 16.9. The study examines the performance of this nozzle at various Reynolds numbers. Additionally, Bayt (1999) investigates the relationship between the effective and geometric area ratio of the micronozzle for different Reynolds numbers.
 			- The value of discharge coefficient was assumed to be the ratio between effective area ratio and geometric area ratio.
 			  \(C_D=\frac{\dot{m}_{\text {meas }}}{\dot{m}_{1 D}}=\frac{\rho u A_{e f f}}{\rho u A_{g e o}}=\frac{A_{e f f}}{A_{g e o}}\)
