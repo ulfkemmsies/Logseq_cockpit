@@ -194,16 +194,15 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  These equations are used to estimate the experimental value of thrust and determine the thrust efficiency.
 		- Discharge coefficient \(C_D\)
 		  id:: 64b187ff-3e99-4e24-9ffa-821cb1f6ba8e
-		  \(C_D=\frac{\dot{m}_{\text {meas }}}{\dot{m}_{1 D}}\)
+		  \[C_D=1-\left(\frac{\gamma+1}{2}\right)^{3/4}\left(\frac{-2.128}{\gamma+1}+3.266\right) R^{-0.5}+9.428 \frac{(\gamma-1)(\gamma+2)}{(\gamma+1)^{0.5}} R^{-1} =\frac{\dot{m}_{\text {meas }}}{\dot{m}_{1 D}}\]
 			- The text discusses the derivation of an expression to calculate the discharge coefficient for choked axisymmetric nozzles with a circular cross-section. The expression takes into account the effect of the boundary layer in reducing the effective nozzle throat area. These effects are more significant for throat Reynolds numbers under 100,000. The equation for the discharge coefficient, derived by Tang and Fenn (1978), is given as:
 			  
 			  \[C_D=1-\left(\frac{\gamma+1}{2}\right)^{3/4}\left(\frac{-2.128}{\gamma+1}+3.266\right) R^{-0.5}+9.428 \frac{(\gamma-1)(\gamma+2)}{(\gamma+1)^{0.5}} R^{-1}\]
 			  
-			  where \(C_D\) is the discharge coefficient and \(R\) is the modified throat Reynolds number. The modified throat Reynolds number can be calculated using the expression:
-			  
+			  where \(C_D\) is the discharge coefficient and \(R\) is the modified throat Reynolds number.
+			- Modified throat Reynolds number:
 			  \[R=R_e t\left(\frac{R^*}{R_t}\right)\]
-			  
-			  where \(R_e t\) is the throat Reynolds number, \(R^*\) is the radius of the throat, and \(R_t\) is the throat radius curvature. The values for \(R^*\) and \(R_t\) can be obtained from Table 3.1. The specific heat ratio \(\gamma\) is 1.4 for nitrogen. It is important to note that the expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles.
+				- where \(R_e t\) is the throat Reynolds number, \(R^*\) is the radius of the throat, and \(R_t\) is the throat radius curvature. The values for \(R^*\) and \(R_t\) can be obtained from Table 3.1. The specific heat ratio \(\gamma\) is 1.4 for nitrogen. It is important to note that the expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles.
 		- Specific impulse efficiency \(\eta_{I_{s p}}\)
 		  id:: 64b187ff-c257-42a5-b2c5-659e768024fe
 		  $$\eta_{I_{s p}}=\frac{I_{s p_{\text {meas }}}}{I_{s p_{1 D}}}$$
