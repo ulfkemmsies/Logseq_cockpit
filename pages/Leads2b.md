@@ -68,7 +68,6 @@
 		- DONE Find out why bug is blocking execution >[🍅🍅 44min](#agenda-pomo://?t=f-1680509468217-1500-21680510083414Aster+asking+for+undies%2Cf-1680511296415-900%2Cp-1680512333984-189)
 		- DONE Figure out memory allocation issue
 	- Automated call evaluation
-	  collapsed:: true
 		- DONE Schedule meeting with Mendonça >[🍅 40min](#agenda-pomo://?t=f-1679901751486-2400)
 			- DONE Meeting Mendonça >[2023-03-28 15:00 - 16:00](#agenda://?start=1680008400000&end=1680012000000&allDay=false)
 				- Vícios de linguagem
@@ -82,6 +81,9 @@
 		- TODO Gather comparison dataset of calls >[🍅🍅 291min](#agenda-pomo://?t=p-1680699653203-1%2Cf-1680681658714-16200%2Cf-1680777316745-1200)
 			- TODO Run GPT-4 on comparison dataset to find match
 		- TODO Create Prodigy setup for manual validation
+		- TODO Implement Portuguese Llama 2 LoRa in packaged form
+		- TODO Test local LLM model on call transcripts to validate output quality
+		-
 	- Audio transcription
 		- DONE Make API calls asynchronous >[🍅🍅🍅🍅🍅🍅🍅🍅 148min](#agenda-pomo://?t=f-1679903310354-1200-21679904088836Aster+on+call%2Cf-1679905254310-1200-21679906027861Aster+asked+for+code%2Cp-1679911025881-545-11679911402565Aster+asking+to+open+window%7C%60%7E%7C21679911564164Aster+asking+to+get+ready%2Cf-1679992850925-1500-11679994142798Stopped+to+look+at+clock%2Cf-1679994899350-1500-11679995682572Had+to+pee%2Cp-1679997188393-308%2Cf-1680264310676-600%2Cp-1680265068137-174-11680265139799Went+to+go+boil+water%2Cf-1680265949689-600%2Cf-1680266891700-600%2Cf-1680267504777-600)
 		  collapsed:: true
@@ -114,7 +116,7 @@
 		- LATER Expose to L2B API
 		- DONE Run Black formatter on all code
 		- DONE Add offline huggingface models to docker image
-		- TODO Implement JS backend for service >[🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅 299min](#agenda-pomo://?t=p-1686818265169-241%2Cf-1686818943555-1200%2Cp-1686820149960-102%2Cf-1686823016543-1200%2Cf-1686826235526-1200%2Cf-1686828109608-1200%2Cf-1686829523788-900%2Cf-1687241135391-1200%2Cp-1687242354931-261%2Cf-1687243068641-900%2Cf-1687245451826-1200%2Cf-1687246830951-600%2Cf-1687333901800-1200%2Cf-1687335401052-1200%2Cp-1687337002402-498%2Cf-1687339129639-1200%2Cf-1687340334462-1200%2Cf-1687341598332-1200%2Cf-1687349550435-1200)
+		- DONE Implement JS backend for service >[🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅 299min](#agenda-pomo://?t=p-1686818265169-241%2Cf-1686818943555-1200%2Cp-1686820149960-102%2Cf-1686823016543-1200%2Cf-1686826235526-1200%2Cf-1686828109608-1200%2Cf-1686829523788-900%2Cf-1687241135391-1200%2Cp-1687242354931-261%2Cf-1687243068641-900%2Cf-1687245451826-1200%2Cf-1687246830951-600%2Cf-1687333901800-1200%2Cf-1687335401052-1200%2Cp-1687337002402-498%2Cf-1687339129639-1200%2Cf-1687340334462-1200%2Cf-1687341598332-1200%2Cf-1687349550435-1200)
 		  id:: 648acc8e-f606-4418-9a1b-35c834c25f1b
 			- Notes on backend:
 				- Deploy through application repo
