@@ -7,7 +7,6 @@
 		  collapsed:: true
 			- {{embed [[hls__Bianchi - Micropropulsion course Numerical analysis of wavy]]}}
 		- [[@Simplified Modelling of Aerospike Micro-nozzles]]
-		  collapsed:: true
 			- Summary:
 			  The text discusses the performance of micronozzles under low Reynolds numbers. Three performance parameters, namely thrust efficiency, discharge coefficient, and specific impulse efficiency, are used to study their performance. The theoretical values of these parameters are calculated using the principles of Ideal Rocket Theory. The text also mentions the momentum loss caused by skin friction in the nozzle walls, which reduces the thrust of the propulsion system. The effect of viscous forces on the nozzle quality is estimated using an expression derived by Spisz. The text further discusses the calculation of thrust efficiency and discharge coefficient using different equations. The discharge coefficient is calculated considering the effect of the boundary layer on the nozzle throat area. The values of effective and geometric area ratio for different Reynolds numbers are provided in a table. The discharge coefficient is assumed to be the ratio between effective and geometric area ratio. The text concludes with an equation that represents the best fit for the given values of the ratio between effective and geometric area ratio.
 			- {{embed [[hls__Micropropulsion project_aerospike nozzles]]}}
@@ -96,6 +95,7 @@
 		  collapsed:: true
 			- {{embed [[hls__Ref4]]}}
 		- [[@Vaporizing Liquid Microthrusters with integrated heaters and temperature measurement]]
+		  collapsed:: true
 			- {{embed [[hls__Silva et al. - 2017 - Vaporizing Liquid Microthrusters with integrated h]]}}
 - Assignment
 	- Tasks

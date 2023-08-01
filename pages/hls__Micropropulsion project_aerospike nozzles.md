@@ -19,7 +19,11 @@ file-path:: file://C:/Users/ulfkemmsies/Zotero/storage/WMQRQSZP/Micropropulsion 
   I_{s p_{1 D}}=\frac{F_{1 D}}{\dot{m}_{1 D} \cdot g_0}
   \end{gathered}
   $$
-	- I_{s p_{1 D}}=\
+	- \(I_{s p_{\text {meas }}}=\frac{F_{\text {meas }}}{\dot{m}_{\text {meas }} \cdot g_0}\)
+	  hl-page:: 11
+	  ls-type:: annotation
+	  id:: 64c8b78f-ccd1-47a3-bf73-483e9093daa1
+	  hl-color:: yellow
 - [:span]
   ls-type:: annotation
   hl-page:: 13

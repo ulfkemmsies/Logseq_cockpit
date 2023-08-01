@@ -202,9 +202,13 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  where \(R_e t\) is the throat Reynolds number, \(R^*\) is the radius of the throat, and \(R_t\) is the throat radius curvature. The values for \(R^*\) and \(R_t\) can be obtained from Table 3.1. The specific heat ratio \(\gamma\) is 1.4 for nitrogen. It is important to note that the expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles.
 		- Specific impulse efficiency \(\eta_{I_{s p}}\)
 		  id:: 64b187ff-c257-42a5-b2c5-659e768024fe
-			- $$\eta_{I_{s p}}=\frac{I_{s p_{\text {meas }}}}{I_{s p_{1 D}}}$$
-			  
+		  $$\eta_{I_{s p}}=\frac{I_{s p_{\text {meas }}}}{I_{s p_{1 D}}}$$
+			- Ideal Isp
+			  id:: 64b187ff-002c-45eb-8867-858482117f81
 			  $$I_{s p_{1 D}}=\frac{F_{1 D}}{\dot{m}_{1 D} \cdot g_0}$$
+			- Measured Isp
+			  id:: 64c8b7fd-1bb6-4f5c-b408-b0a43bf8a9cc
+			  $$I_{s p_{\text {meas }}}=\frac{F_{\text {meas }}}{\dot{m}_{\text {meas }} \cdot g_0}$$
 			- The text discusses a study conducted by Bayt (1999) on different micronozzles and their performance. One of the designs studied is a micronozzle with a rectangular throat section and an area ratio of 16.9. The study examines the performance of this nozzle at various Reynolds numbers. Additionally, Bayt (1999) investigates the relationship between the effective and geometric area ratio of the micronozzle for different Reynolds numbers.
 			- The value of discharge coefficient was assumed to be the ratio between effective area ratio and geometric area ratio.
 			  \(C_D=\frac{\dot{m}_{\text {meas }}}{\dot{m}_{1 D}}=\frac{\rho u A_{e f f}}{\rho u A_{g e o}}=\frac{A_{e f f}}{A_{g e o}}\)
