@@ -25,6 +25,7 @@ public:: true
 		- Performance Losses
 			- Divergence Losses
 			  id:: 64b187ff-8ae0-4207-9d44-4c112880be1d
+			  collapsed:: true
 				- When the exit half angle of a nozzle is greater than 0°, the gases ejected from the nozzle are not parallel to the direction of thrust. This results in momentum components in directions perpendicular to the thrust vector. However, since the nozzle is symmetric, these perpendicular momentum components cancel each other out and do not cause thrust misalignment. Nevertheless, they contribute to a loss in thrust as not all momentum is effectively used to propel the spacecraft forward.
 				  
 				  The divergence thrust correction factor, denoted as ε_div, quantifies this loss. It is calculated using the equation:
@@ -34,6 +35,7 @@ public:: true
 				  where α represents the exit half angle of the nozzle. This loss factor depends solely on the exit half angle and affects both large and small nozzles.
 			- Boundary Layer Losses
 			  id:: 64b187ff-8c1a-4dcb-9cae-967f94f67897
+			  collapsed:: true
 				- The boundary layer is formed along the nozzle wall due to viscous flow effects, causing the flow to slow down near the walls and deflect the full flow. This phenomenon is more significant in micro-nozzles due to their low Reynolds number, which increases the skin friction coefficient and causes larger boundary layers.
 				  
 				  Characterizing the boundary layer is crucial for predicting performance losses in micro-nozzles. A simplified model using flat plate boundary layer solutions can be used for linear convergent-divergent micro-nozzles. The skin friction coefficient for incompressible, laminar flow is given by the equation \(c_{f x}=\frac{0.664}{\sqrt{R e_x}}\), where \(R e_x\) is the Reynolds number.
@@ -45,12 +47,15 @@ public:: true
 				  It is important to note that the assumptions made in this boundary layer solution include laminar and attached flow, as well as the assumption that the boundary layer starts developing at the throat and increases in size until the nozzle exit.
 			- Momentum Losses
 			  id:: 64b187ff-820c-4011-be5d-5dc586619e2e
+			  collapsed:: true
 				- The presence of a boundary layer in addition to the modification of effective nozzle geometry leads to momentum losses in the flow. These losses occur as the flow loses momentum within the boundary layer. To account for this, the thrust loss due to momentum can be calculated using the equation:
 				  
 				  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
 				  
 				  It is important to note that for nozzles with non-circular cross sections, the circumference term should be replaced with the equivalent perimeter.
 		- Reference Temperature Approach
+		  id:: 64b187ff-ebbe-48b2-a3d0-bab106f918e7
+		  collapsed:: true
 			- The previous section discussed a method for predicting boundary layer properties assuming incompressible flow. However, when the flow becomes supersonic, this assumption is no longer valid. To account for this, the "Reference Temperature Approach" corrects the skin friction coefficient using an average temperature across the boundary layer. The correction can be calculated using the equation:
 			  
 			  \[c_f=c_{f, i}\left(\frac{T_w / T_0+1}{2}+0.22 \frac{\gamma-1}{2} M^2\right)^{-0.6}\]
@@ -61,6 +66,8 @@ public:: true
 			  
 			  This equation can be used for any point along the nozzle, as long as the corresponding flow Mach number (\(M_e\)) is used.
 		- Aggregate Performance Loss
+		  id:: 64b187ff-2db4-4fe4-997f-f52657d8a1a0
+		  collapsed:: true
 			- To calculate the aggregate performance loss, a step-by-step procedure is followed. First, independent loss factors not affected by boundary layer effects are determined. The divergence thrust correction factor is calculated based on the divergent half angle. Then, the properties of the boundary layer, such as the compressible skin friction coefficient, exit momentum thickness, and exit displacement thickness, are calculated using known flow parameters.
 			  
 			  The following steps are taken to account for boundary layer effects:
@@ -89,14 +96,15 @@ public:: true
 		- Constant heat flux and constant wall temperature were assumed, with a wall temperature of 370 K and a constant heat flux chosen so that the water in the chambers would not exceed 370 K, thus remaining liquid.
 		- Performance factors (only considered for liquid phase)
 			- Larger contact area helps reduce wall temperature. Lower channel temperature means a simpler heat management. Minimizing the leakage of heat from the thruster to the surrounding environment leads to higher heating efficiency, lowering the power requirements.
-			- The Nusselt number is a dimensionless parameter used in heat transfer analysis to quantify the relationship between convective and conductive heat transfer across a boundary or surface.
-			  It considers factors such as thermal conductivity, fluid properties, and flow characteristics. For low Reynolds numbers (between 10 and 100), the Nusselt number increases significantly with increasing Reynolds numbers.
-			  
-			  A higher Nusselt number also means that, given a wall temperature, a shorter channel is needed to reach certain fluid temperature (or vaporization).
-			  
-			  Studies have shown that wavy microchannels result in higher Nusselt numbers and improved convective heat transfer compared to straight channels of the same size. However, this improvement comes at the cost of increased pressure losses. 
-			  
-			  The Nusselt number can be calculated using the equation: \(N u=\frac{h \cdot D_h}{k_W}\), where \(h\) is the convective heat transfer coefficient, \(D_h\) is the hydraulic diameter, and \(k_W\) is the thermal conductivity.
+			- Nusselt number
+				- Is a dimensionless parameter used in heat transfer analysis to quantify the relationship between convective and conductive heat transfer across a boundary or surface.
+				  It considers factors such as thermal conductivity, fluid properties, and flow characteristics. For low Reynolds numbers (between 10 and 100), the Nusselt number increases significantly with increasing Reynolds numbers.
+				  
+				  A higher Nusselt number also means that, given a wall temperature, a shorter channel is needed to reach certain fluid temperature (or vaporization).
+				  
+				  Studies have shown that wavy microchannels result in higher Nusselt numbers and improved convective heat transfer compared to straight channels of the same size. However, this improvement comes at the cost of increased pressure losses. 
+				  
+				  The Nusselt number can be calculated using the equation: \(N u=\frac{h \cdot D_h}{k_W}\), where \(h\) is the convective heat transfer coefficient, \(D_h\) is the hydraulic diameter, and \(k_W\) is the thermal conductivity.
 			- The heat transfer coefficient is calculated using:
 			  $$
 			  h=\frac{q}{A_{\text {wall heat }} \cdot\left(T_w-T_m\right)}
@@ -111,6 +119,7 @@ public:: true
 			  $$
 			  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
 			- ## Pressure Losses
+			  id:: 64b187ff-b52e-49a5-9e78-41334db85922
 				- Can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank
 				- To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. This is defined as:
 				  $$
