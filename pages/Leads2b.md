@@ -81,7 +81,7 @@
 		- TODO Gather comparison dataset of calls >[🍅🍅 291min](#agenda-pomo://?t=p-1680699653203-1%2Cf-1680681658714-16200%2Cf-1680777316745-1200)
 			- TODO Run GPT-4 on comparison dataset to find match
 		- TODO Create Prodigy setup for manual validation
-		- TODO Implement Portuguese Llama 2 LoRa in packaged form >[🍅🍅🍅🍅🍅🍅🍅🍅 195min](#agenda-pomo://?t=f-1690889386766-1200%2Cf-1690891212601-1500%2Cf-1690893098123-1500%2Cf-1690895158876-1500%2Cf-1690897624458-1500%2Cf-1690899150337-1500%2Cf-1690901567435-1500%2Cf-1690903417773-1500)
+		- TODO Implement Portuguese Llama 2 LoRa in packaged form >[🍅🍅🍅🍅🍅🍅🍅🍅🍅 220min](#agenda-pomo://?t=f-1690889386766-1200%2Cf-1690891212601-1500%2Cf-1690893098123-1500%2Cf-1690895158876-1500%2Cf-1690897624458-1500%2Cf-1690899150337-1500%2Cf-1690901567435-1500%2Cf-1690903417773-1500%2Cf-1690906028550-1500)
 		- TODO Test local LLM model on call transcripts to validate output quality
 		-
 	- Audio transcription
