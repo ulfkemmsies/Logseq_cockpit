@@ -86,7 +86,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				- True Thrust
 				  id:: 64c8bd12-b650-47d9-8a35-f95667464ffd
 				  \(F_{\text {true }}=m \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
-			- Thrust coefficient
+			- True Thrust coefficient
 			  id:: 64c8adb2-93c4-4c41-bb4e-daf679f7fef9
 			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
@@ -201,6 +201,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  
 			  where \(C_D\) is the discharge coefficient and \(R\) is the modified throat Reynolds number.
 			- Modified throat Reynolds number:
+			  id:: 64c8c02f-c81c-4e4e-a61c-57352fd55365
 			  \[R=R_e t\left(\frac{R^*}{R_t}\right)\]
 				- where \(R_e t\) is the throat Reynolds number, \(R^*\) is the radius of the throat, and \(R_t\) is the throat radius curvature. The values for \(R^*\) and \(R_t\) can be obtained from Table 3.1. The specific heat ratio \(\gamma\) is 1.4 for nitrogen. It is important to note that the expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles.
 		- Specific impulse efficiency \(\eta_{I_{s p}}\)
@@ -261,7 +262,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  $$
 		- Vaporization Model
 		  id:: 64b187ff-4001-4bec-84ab-9c6216fb8c62
-		  collapsed:: true
 			- Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure
 			  
 			  The vaporization rate, \(\dot{m}_2\), is calculated as the difference between the liquid flow rate, \(\dot{m}_1\), and the time derivative of volume multiplied by the liquid density, \(\rho_l\):
