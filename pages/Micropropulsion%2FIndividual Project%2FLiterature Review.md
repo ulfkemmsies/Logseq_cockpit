@@ -23,7 +23,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\).
 		  Smaller nozzles will naturally cause the flow Reynolds number to become very small.
 	- Conventional Nozzles project
-	  collapsed:: true
 		- Performance Losses
 			- Divergence Losses
 			  id:: 64b187ff-8ae0-4207-9d44-4c112880be1d
@@ -51,6 +50,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			- Momentum Losses
 			  id:: 64b187ff-820c-4011-be5d-5dc586619e2e
 			  collapsed:: true
+			  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
 				- The presence of a boundary layer in addition to the modification of effective nozzle geometry leads to momentum losses in the flow. These losses occur as the flow loses momentum within the boundary layer. To account for this, the thrust loss due to momentum can be calculated using the equation:
 				  
 				  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
@@ -169,6 +169,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 	- Aerospike project
 		- Thrust efficiency \(\eta_F\)
 		  id:: 64b187ff-c6ef-4895-bcaf-0e6274fe2683
+		  $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
 			- $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
 			  $$\left.F_{1 D}=C_F p_c A_t=p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
 			- Momentum loss (method 1)
@@ -189,7 +190,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  These equations are used to estimate the experimental value of thrust and determine the thrust efficiency.
 		- Discharge coefficient \(C_D\)
 		  id:: 64b187ff-3e99-4e24-9ffa-821cb1f6ba8e
-		  collapsed:: true
+		  \(C_D=\frac{\dot{m}_{\text {meas }}}{\dot{m}_{1 D}}\)
 			- The text discusses the derivation of an expression to calculate the discharge coefficient for choked axisymmetric nozzles with a circular cross-section. The expression takes into account the effect of the boundary layer in reducing the effective nozzle throat area. These effects are more significant for throat Reynolds numbers under 100,000. The equation for the discharge coefficient, derived by Tang and Fenn (1978), is given as:
 			  
 			  \[C_D=1-\left(\frac{\gamma+1}{2}\right)^{3/4}\left(\frac{-2.128}{\gamma+1}+3.266\right) R^{-0.5}+9.428 \frac{(\gamma-1)(\gamma+2)}{(\gamma+1)^{0.5}} R^{-1}\]
