@@ -167,9 +167,10 @@
  :ref/linked-references-collapsed-threshold 50
  :journal/page-title-format "dd.MM.yyyy"
  :publishing/all-pages-public? false
- :favorites ["to-do list"]
+ :favorites ["Micropropulsion modelling" "MSc/Classes" "to-do list"]
  :feature/enable-whiteboards? true
- :ui/show-full-blocks? true
+ :ui/show-full-blocks? false
+ :zotero/settings-v2 {"default" {:type-id "9628799", :attachments-block-text "[[Attachments]]", :zotero-linked-attachment-base-directory "C:/Users/ulfkemmsies/Documents/Zotero", :page-insert-prefix "@", :zotero-data-directory "C:/Users/ulfkemmsies/Zotero", :prefer-citekey? false}}
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5
