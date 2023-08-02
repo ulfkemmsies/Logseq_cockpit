@@ -142,7 +142,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  f R e_{e f f}=f R e+K_{\infty} \cdot R e \cdot \frac{D_h}{L}
 				  $$
 				  
-				  ![image.png](../assets/image_1689091009539_0.png)
+				  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
 			- Reynolds number
 			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
 			  $$
