@@ -210,7 +210,9 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			- Kinematic viscosity
 			  id:: 64ca0a94-a5ec-4811-bdd0-9988469dbbe6
 			  \(v=\mu / \rho\)
-			- Mach number equation
+			- Ideal Gas Law
+			  id:: 64ca107d-4c54-4808-9ae4-f208931494bc
+			  \(p=\rho R_{\text {specific }} T\)
 		- Specific impulse efficiency \(\eta_{I_{s p}}\)
 		  id:: 64b187ff-c257-42a5-b2c5-659e768024fe
 		  $$\eta_{I_{s p}}=\frac{I_{s p_{\text {meas }}}}{I_{s p_{1 D}}}$$
