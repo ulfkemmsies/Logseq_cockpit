@@ -1,5 +1,5 @@
 {:blocks (
-{:block/created-at 1690958621384
+{:block/created-at 1690961912274
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -15,7 +15,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 67.76567530911827]
+:size [400 67.76565577732697]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -24,8 +24,8 @@
 :point [840 -416]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690868285886}}
-:block/updated-at 1690958621384} 
+:nonce 1690868285890}}
+:block/updated-at 1690961912274} 
 {:block/created-at 1690955943849
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -53,7 +53,7 @@
 :collapsedHeight 0
 :nonce 1690868356684}}
 :block/updated-at 1690955943849} 
-{:block/created-at 1690958621401
+{:block/created-at 1690961912288
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -69,7 +69,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 66.21881876571787]
+:size [400 66.21876467899419]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -78,8 +78,8 @@
 :point [856 -184]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690868381002}}
-:block/updated-at 1690958621401} 
+:nonce 1690868381006}}
+:block/updated-at 1690961912288} 
 {:block/content "Reference Temperature Approach"
 :block/format :markdown
 :block/left 
@@ -87,7 +87,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c89d69-9d17-4c86-91e6-11469729428d"} 
-{:block/created-at 1690958621413
+{:block/created-at 1690961912303
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -104,7 +104,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 79.79688512136106]
+:size [400 79.7968422665285]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -113,8 +113,8 @@
 :point [1600 -312]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869105363}}
-:block/updated-at 1690958621413} 
+:nonce 1690869105367}}
+:block/updated-at 1690961912303} 
 {:block/created-at 1690955943849
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -287,7 +287,7 @@
 :nonce 1690869196837
 :italic false}}
 :block/updated-at 1690955943849} 
-{:block/created-at 1690958621425
+{:block/created-at 1690961912318
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -303,7 +303,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 88.40627485687203]
+:size [400 88.40622751611576]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -312,9 +312,9 @@
 :point [112 -208]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869351650}}
-:block/updated-at 1690958621425} 
-{:block/created-at 1690958621437
+:nonce 1690869351654}}
+:block/updated-at 1690961912318} 
+{:block/created-at 1690961912332
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -330,7 +330,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 141.6406339306127]
+:size [400 141.64063969081576]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -339,9 +339,9 @@
 :point [96 -48]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869434868}}
-:block/updated-at 1690958621437} 
-{:block/created-at 1690958621452
+:nonce 1690869434872}}
+:block/updated-at 1690961912332} 
+{:block/created-at 1690961912346
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -357,7 +357,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 119.37494195101735]
+:size [400 119.37504675155498]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -366,9 +366,9 @@
 :point [1752 272]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869532595}}
-:block/updated-at 1690958621452} 
-{:block/created-at 1690958621464
+:nonce 1690869532599}}
+:block/updated-at 1690961912346} 
+{:block/created-at 1690961912359
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -385,7 +385,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [576 104.15624761850326]
+:size [576 104.15613086406665]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -394,9 +394,9 @@
 :point [880 888]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869545043}}
-:block/updated-at 1690958621464} 
-{:block/created-at 1690958621476
+:nonce 1690869545047}}
+:block/updated-at 1690961912359} 
+{:block/created-at 1690961912374
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -412,7 +412,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 119.35949943320375]
+:size [400 119.35944196213313]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -421,8 +421,8 @@
 :point [1384 480]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869572192}}
-:block/updated-at 1690958621476} 
+:nonce 1690869572196}}
+:block/updated-at 1690961912374} 
 {:block/created-at 1690955943848
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -475,7 +475,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c8a06a-58ff-4d99-993f-755696d3362a"} 
-{:block/created-at 1690958621487
+{:block/created-at 1690961912388
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -492,7 +492,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 76.60940060108976]
+:size [400 76.60932517830186]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -501,9 +501,9 @@
 :point [296 928]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869891715}}
-:block/updated-at 1690958621487} 
-{:block/created-at 1690958621499
+:nonce 1690869891719}}
+:block/updated-at 1690961912388} 
+{:block/created-at 1690961912402
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -519,7 +519,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 66.21863271128638]
+:size [400 66.21865852396411]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -528,9 +528,9 @@
 :point [-144 448]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869934846}}
-:block/updated-at 1690958621499} 
-{:block/created-at 1690958621511
+:nonce 1690869934850}}
+:block/updated-at 1690961912402} 
+{:block/created-at 1690961912417
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -546,7 +546,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 97.21864997713762]
+:size [400 97.21868733824698]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -555,9 +555,9 @@
 :point [-832 824]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869945879}}
-:block/updated-at 1690958621511} 
-{:block/created-at 1690958621523
+:nonce 1690869945883}}
+:block/updated-at 1690961912417} 
+{:block/created-at 1690961912431
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -573,7 +573,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 67.60938958666742]
+:size [400 67.60950172807858]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -582,9 +582,9 @@
 :point [200 624]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690869970405}}
-:block/updated-at 1690958621523} 
-{:block/created-at 1690958660178
+:nonce 1690869970409}}
+:block/updated-at 1690961912431} 
+{:block/created-at 1690961912445
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -600,7 +600,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 67.60934307305955]
+:size [400 67.6093955730485]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -609,8 +609,8 @@
 :point [-312 -592]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690872653006}}
-:block/updated-at 1690958660178} 
+:nonce 1690872653010}}
+:block/updated-at 1690961912445} 
 {:block/created-at 1690955943848
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -637,7 +637,7 @@
 :nonce 1690872782451
 :italic false}}
 :block/updated-at 1690955943848} 
-{:block/created-at 1690958621548
+{:block/created-at 1690961912459
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -654,7 +654,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [232 68.31248928326474]
+:size [232 68.31256649230161]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -663,8 +663,8 @@
 :point [2040 -128]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690873285490}}
-:block/updated-at 1690958621548} 
+:nonce 1690873285494}}
+:block/updated-at 1690961912459} 
 {:block/created-at 1690955943848
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -746,7 +746,7 @@
 :collapsedHeight 0
 :nonce 1690873568655}}
 :block/updated-at 1690958711937} 
-{:block/created-at 1690959352036
+{:block/created-at 1690961912473
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -762,7 +762,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 116.37491552134269]
+:size [400 116.37499944645046]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -771,9 +771,9 @@
 :point [-1416 -56]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690873640607}}
-:block/updated-at 1690959352036} 
-{:block/created-at 1690959358106
+:nonce 1690873640611}}
+:block/updated-at 1690961912473} 
+{:block/created-at 1690961912487
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -789,7 +789,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 121.53128850044696]
+:size [400 121.53116156751965]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -798,8 +798,8 @@
 :point [-1192 176]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690873729738}}
-:block/updated-at 1690959358106} 
+:nonce 1690873729742}}
+:block/updated-at 1690961912487} 
 {:block/created-at 1690958711939
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -836,7 +836,7 @@
 :nonce 1690873870823
 :italic false}}
 :block/updated-at 1690958711939} 
-{:block/created-at 1690958660176
+{:block/created-at 1690961912869
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -869,10 +869,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690873872094
+:nonce 1690873872098
 :italic false}}
-:block/updated-at 1690958660176} 
-{:block/created-at 1690958621584
+:block/updated-at 1690961912869} 
+{:block/created-at 1690961912501
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -888,7 +888,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 116.37518635211856]
+:size [400 116.37499944645046]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -897,8 +897,8 @@
 :point [1360 688]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690875617790}}
-:block/updated-at 1690958621584} 
+:nonce 1690875617794}}
+:block/updated-at 1690961912501} 
 {:block/created-at 1690956478104
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -935,7 +935,7 @@
 :nonce 1690875631245
 :italic false}}
 :block/updated-at 1690956478104} 
-{:block/created-at 1690958621720
+{:block/created-at 1690961912516
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -951,7 +951,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 116.37481424325559]
+:size [400 116.37499944645046]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -960,8 +960,8 @@
 :point [1296 272]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690875974668}}
-:block/updated-at 1690958621720} 
+:nonce 1690875974672}}
+:block/updated-at 1690961912516} 
 {:block/created-at 1690956478104
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -998,7 +998,7 @@
 :nonce 1690875989411
 :italic false}}
 :block/updated-at 1690956478104} 
-{:block/created-at 1690958621797
+{:block/created-at 1690961912531
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1015,7 +1015,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [624 143.32814762421884]
+:size [624 143.3281862040052]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1024,9 +1024,9 @@
 :point [1896 552]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690877141018}}
-:block/updated-at 1690958621797} 
-{:block/created-at 1690958621810
+:nonce 1690877141022}}
+:block/updated-at 1690961912531} 
+{:block/created-at 1690961912545
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1043,7 +1043,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [592 99.8437849782331]
+:size [592 99.84368892207715]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1052,8 +1052,8 @@
 :point [1312 -136]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690877243822}}
-:block/updated-at 1690958621810} 
+:nonce 1690877243826}}
+:block/updated-at 1690961912545} 
 {:block/created-at 1690956478104
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -1304,7 +1304,7 @@
 :nonce 1690877415637
 :italic false}}
 :block/updated-at 1690956478104} 
-{:block/created-at 1690960115594
+{:block/created-at 1690961912560
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1320,7 +1320,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 141.10932331876478]
+:size [400 141.10933376526296]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1329,8 +1329,8 @@
 :point [1808 880]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690877652941}}
-:block/updated-at 1690960115594} 
+:nonce 1690877652945}}
+:block/updated-at 1690961912560} 
 {:block/created-at 1690956478104
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -1439,7 +1439,7 @@
 :nonce 1690878092086
 :italic false}}
 :block/updated-at 1690956478104} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961903685
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1474,8 +1474,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690879295713
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961903685} 
+{:block/created-at 1690961903684
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1510,8 +1510,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690879880966
 :italic false}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961903684} 
+{:block/created-at 1690961912575
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1527,7 +1527,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 69.281088653597]
+:size [400 69.28123114178602]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1536,9 +1536,9 @@
 :point [-344 928]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690879930937}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262244
+:nonce 1690879930941}}
+:block/updated-at 1690961912575} 
+{:block/created-at 1690961912917
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1571,10 +1571,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690879950538
+:nonce 1690879950542
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961912917} 
+{:block/created-at 1690961912920
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1607,9 +1607,9 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690879953617
+:nonce 1690879953621
 :italic false}}
-:block/updated-at 1690961262243} 
+:block/updated-at 1690961912920} 
 {:block/content "public:: true"
 :block/format :markdown
 :block/left 
@@ -1628,7 +1628,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f151-6953-42b5-a578-8a22bfe24846"} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961912589
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1644,7 +1644,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 152.8280868960524]
+:size [400 152.82810600093762]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1654,8 +1654,8 @@
 :point [-1888 -160]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690956113446}}
-:block/updated-at 1690961262244} 
+:nonce 1690956113450}}
+:block/updated-at 1690961912589} 
 {:block/content "![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}"
 :block/format :markdown
 :block/left 
@@ -1663,7 +1663,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9f2ef-f209-4121-9e16-0e0d11cb83d8"} 
-{:block/created-at 1690961262243
+{:block/created-at 1690961903684
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1691,8 +1691,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690956528308}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961903684} 
+{:block/created-at 1690961903685
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1716,7 +1716,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690956888730
 :italic false}}
-:block/updated-at 1690961262244} 
+:block/updated-at 1690961903685} 
 {:block/content "Thrust (F):\n$F = \\dot{m}V_e + (p_e - p_a)A_e$"
 :block/format :markdown
 :block/left 
@@ -1726,7 +1726,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f49d-a19f-4946-af13-b8c412bb6b92"} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961912960
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1742,7 +1742,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 66.21872573850212]
+:size [400 66.21876467899419]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1752,8 +1752,8 @@
 :point [344 -936]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690956957846}}
-:block/updated-at 1690961262244} 
+:nonce 1690956957850}}
+:block/updated-at 1690961912960} 
 {:block/content "Exhaust velocity (V_e):\n$V_e = M_e\\sqrt{kRT_1}$"
 :block/format :markdown
 :block/left 
@@ -1763,7 +1763,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f4b1-b13c-4d37-bd75-a1dcfdb489dd"} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961912975
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1779,7 +1779,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 66.21877225211]
+:size [400 66.21876467899419]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1789,8 +1789,8 @@
 :point [408 -832]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690956977569}}
-:block/updated-at 1690961262244} 
+:nonce 1690956977573}}
+:block/updated-at 1690961912975} 
 {:block/content "Mass flow rate ($\\dot{m}$):\n\\(\\dot{m}=A_t p_1 k \\frac{\\sqrt{\\left(\\frac{2}{k+1}\\right)^{\\frac{k+1}{k-1}}}}{\\sqrt{k R T_1}}\\)"
 :block/format :markdown
 :block/left 
@@ -1800,7 +1800,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f4dc-66b0-4ada-8ebb-bb9ab5deef47"} 
-{:block/created-at 1690961262243
+{:block/created-at 1690961912989
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1817,7 +1817,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [232 92.85939464734794]
+:size [232 92.85937795047694]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1827,8 +1827,8 @@
 :point [400 -736]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690957020288}}
-:block/updated-at 1690961262243} 
+:nonce 1690957020292}}
+:block/updated-at 1690961912989} 
 {:block/content "Temperature at the exit (T_e): $T_e = T_1(1+(k-1)/2M_e^2)^{-1}$"
 :block/format :markdown
 :block/left 
@@ -1836,7 +1836,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9f4ec-4ae5-4173-860d-b097f8a3b2c7"} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961913008
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1852,7 +1852,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 67.43752180557935]
+:size [400 67.43747750183316]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1862,8 +1862,8 @@
 :point [-61.695443474394835 -794.4970009302754]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690957036091}}
-:block/updated-at 1690961262244} 
+:nonce 1690957036095}}
+:block/updated-at 1690961913008} 
 {:block/content "Pressure at the exit (p_e): $p_e = p_1(1+(k-1)/2M_e^2)^{-k/(k-1)}$"
 :block/format :markdown
 :block/left 
@@ -1871,7 +1871,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9f4f2-ea3a-4abe-8ed9-24406667391c"} 
-{:block/created-at 1690961262243
+{:block/created-at 1690961913022
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1887,7 +1887,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 67.43756831918724]
+:size [400 67.43747750183316]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1897,8 +1897,8 @@
 :point [-80 -896]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690957042080}}
-:block/updated-at 1690961262243} 
+:nonce 1690957042084}}
+:block/updated-at 1690961913022} 
 {:block/content "Average Vapor Volume\n\\[V_{av} = a_T T_n + a_p p_1 + b\\]"
 :block/format :markdown
 :block/left 
@@ -1908,7 +1908,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f55a-a7ad-40a7-9304-38630ca88af7"} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961913040
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1924,7 +1924,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 66.21881876571787]
+:size [400 66.21865852396411]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -1934,9 +1934,9 @@
 :point [-624 696]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690957147208}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262244
+:nonce 1690957147212}}
+:block/updated-at 1690961913040} 
+{:block/created-at 1690961913180
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1969,9 +1969,9 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690957183199
+:nonce 1690957183207
 :italic false}}
-:block/updated-at 1690961262244} 
+:block/updated-at 1690961913180} 
 {:block/content "Time derivative of volume \\(\\dot{V}\\)\n\\[\n\\dot{V} = A(V_{av} - V)\n\\]"
 :block/format :markdown
 :block/left 
@@ -1981,7 +1981,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f59e-b29a-43f3-8028-2e7771c24725"} 
-{:block/created-at 1690961262241
+{:block/created-at 1690961913054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1997,7 +1997,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 66.43743272271756]
+:size [400 66.4373378859299]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -2007,9 +2007,9 @@
 :point [-328 584]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690957214636}}
-:block/updated-at 1690961262241} 
-{:block/created-at 1690961262244
+:nonce 1690957214640}}
+:block/updated-at 1690961913054} 
+{:block/created-at 1690961913258
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2042,10 +2042,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690957238588
+:nonce 1690957238592
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961913258} 
+{:block/created-at 1690961913167
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2078,10 +2078,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690957240148
+:nonce 1690957240156
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961913167} 
+{:block/created-at 1690961912933
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2114,10 +2114,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690958048672
+:nonce 1690958048676
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961912933} 
+{:block/created-at 1690961903684
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2142,8 +2142,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958364642
 :italic false}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961903684} 
+{:block/created-at 1690961903684
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2178,8 +2178,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958427975
 :italic false}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961903684} 
+{:block/created-at 1690961913154
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2212,10 +2212,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690958460342
+:nonce 1690958460350
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961913154} 
+{:block/created-at 1690961903684
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2250,8 +2250,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958556216
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961903684} 
+{:block/created-at 1690961912863
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2284,9 +2284,9 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690958612105
+:nonce 1690958612109
 :italic false}}
-:block/updated-at 1690961262244} 
+:block/updated-at 1690961912863} 
 {:block/content "\\[\r\nV_{av} = a_T T_n + a_p p_1 + b\r\n\\]"
 :block/format :markdown
 :block/left 
@@ -2294,7 +2294,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9fb84-ebf0-45dd-b3ef-0abff592f0dd"} 
-{:block/created-at 1690961262243
+{:block/created-at 1690961913152
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2327,10 +2327,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690958732707
+:nonce 1690958732714
 :italic false}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961913152} 
+{:block/created-at 1690961903684
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2355,8 +2355,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958779787
 :italic false}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961903684} 
+{:block/created-at 1690961912931
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2389,10 +2389,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690958845585
+:nonce 1690958845589
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961912931} 
+{:block/created-at 1690961912892
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2425,10 +2425,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690958847412
+:nonce 1690958847416
 :italic false}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262244
+:block/updated-at 1690961912892} 
+{:block/created-at 1690961912881
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2461,10 +2461,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690959193009
+:nonce 1690959193016
 :italic false}}
-:block/updated-at 1690961262244} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961912881} 
+{:block/created-at 1690961912895
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2497,10 +2497,10 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690959202652
+:nonce 1690959202658
 :italic false}}
-:block/updated-at 1690961262243} 
-{:block/created-at 1690961262243
+:block/updated-at 1690961912895} 
+{:block/created-at 1690961913141
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2533,9 +2533,9 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690959284168
+:nonce 1690959284175
 :italic false}}
-:block/updated-at 1690961262243} 
+:block/updated-at 1690961913141} 
 {:block/content "Hydraulic Diameter\n\\(D_h=\\frac{4 A}{p}\\)"
 :block/format :markdown
 :block/left 
@@ -2545,7 +2545,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64ca0130-7928-4977-aae5-4bc4437e9a63"} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961913096
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2562,7 +2562,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [176 68.31248131575137]
+:size [176 68.31251341478658]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -2572,8 +2572,8 @@
 :point [-1016 -360]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690960177104}}
-:block/updated-at 1690961262244} 
+:nonce 1690960177108}}
+:block/updated-at 1690961913096} 
 {:block/content "Hydraulic\r\nDiameter"
 :block/format :markdown
 :block/left 
@@ -2581,7 +2581,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64ca0162-5b3e-475c-8e8f-6dd2a9f8687b"} 
-{:block/created-at 1690961262244
+{:block/created-at 1690961913279
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2614,9 +2614,83 @@
 :decorations 
 {:end "arrow"}
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690960262203
+:nonce 1690960262207
 :italic false}}
-:block/updated-at 1690961262244})
+:block/updated-at 1690961913279} 
+{:block/content "Throat Reynolds Number\n\\(\\operatorname{Re}^*=\\frac{a \\cdot d^*}{v}\\)"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64ca0162-5b3e-475c-8e8f-6dd2a9f8687b"}
+:block/parent 
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
+:block/properties 
+{}
+:block/uuid #uuid "64ca0810-4952-4abf-a00c-a2ea10f980a5"} 
+{:block/created-at 1690961983404
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 79
+:scale [1 1]
+:pageId "64ca0810-4952-4abf-a00c-a2ea10f980a5"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [232 65.67189197014143]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "a2e43160-3107-11ee-a42e-71814a7006c4"
+:noFill false
+:isLocked false
+:point [1552 1088]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690961936305}}
+:block/updated-at 1690961983404} 
+{:block/created-at 1690961983434
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 80
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "be7b2e62-3107-11ee-a42e-71814a7006c4"
+:fontWeight 400
+:noFill true
+:point [1430.87 996.16]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [172.78 90.84]
+:bindingId "be7b2e60-3107-11ee-a42e-71814a7006c4"}
+:end 
+{:id "end"
+:canBind true
+:point [0 0]
+:bindingId "be7b2e61-3107-11ee-a42e-71814a7006c4"}}
+:decorations 
+{:end "arrow"}
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:nonce 1690961982548
+:italic false}}
+:block/updated-at 1690961983434})
 :pages (
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"
 :block/properties 
@@ -2625,7 +2699,15 @@
 {:id "64c89969-afb2-45bb-9783-37d984eb6670"
 :name "micropropulsion equation modelling"
 :bindings 
-{:4dee1141-3101-11ee-a42e-71814a7006c4 
+{:be7b2e61-3107-11ee-a42e-71814a7006c4 
+{:id "be7b2e61-3107-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "be7b2e62-3107-11ee-a42e-71814a7006c4"
+:toId "84e38210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.72 0.37]
+:distance 4}
+:4dee1141-3101-11ee-a42e-71814a7006c4 
 {:id "4dee1141-3101-11ee-a42e-71814a7006c4"
 :type "line"
 :fromId "71978322-3100-11ee-a42e-71814a7006c4"
@@ -2776,6 +2858,14 @@
 :toId "8a3a17f0-3103-11ee-a42e-71814a7006c4"
 :handleId "end"
 :point [0.59 0.74]
+:distance 4}
+:be7b2e60-3107-11ee-a42e-71814a7006c4 
+{:id "be7b2e60-3107-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "be7b2e62-3107-11ee-a42e-71814a7006c4"
+:toId "a2e43160-3107-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
 :distance 4}
 :2d2e8ad0-3100-11ee-a42e-71814a7006c4 
 {:id "2d2e8ad0-3100-11ee-a42e-71814a7006c4"
@@ -2987,8 +3077,8 @@
 :distance 4}}
 :nonce 0
 :assets []
-:shapes-index ("96bfd540-302d-11ee-ae3c-1b4e0ece8468" "c0de4dc0-302d-11ee-ae3c-1b4e0ece8468" "cf42d7f0-302d-11ee-ae3c-1b4e0ece8468" "7ec59c20-302f-11ee-ae3c-1b4e0ece8468" "a16040a0-302f-11ee-ae3c-1b4e0ece8468" "a941c502-302f-11ee-ae3c-1b4e0ece8468" "ac39f662-302f-11ee-ae3c-1b4e0ece8468" "ae4d6d12-302f-11ee-ae3c-1b4e0ece8468" "b59dfc12-302f-11ee-ae3c-1b4e0ece8468" "11e3cf90-3030-11ee-ae3c-1b4e0ece8468" "437182a0-3030-11ee-ae3c-1b4e0ece8468" "7db52110-3030-11ee-ae3c-1b4e0ece8468" "84e38210-3030-11ee-ae3c-1b4e0ece8468" "955e4210-3030-11ee-ae3c-1b4e0ece8468" "a1050bd2-3030-11ee-ae3c-1b4e0ece8468" "53dbd270-3031-11ee-ae3c-1b4e0ece8468" "6dacdc80-3031-11ee-ae3c-1b4e0ece8468" "74305780-3031-11ee-ae3c-1b4e0ece8468" "82e63600-3031-11ee-ae3c-1b4e0ece8468" "c199ca00-3037-11ee-ae3c-1b4e0ece8468" "0ec04ed0-3038-11ee-ae3c-1b4e0ece8468" "3a668350-3039-11ee-ae3c-1b4e0ece8468" "5f3e94b0-3039-11ee-ae3c-1b4e0ece8468" "8ed97870-3039-11ee-ae3c-1b4e0ece8468" "e30b45e0-3039-11ee-ae3c-1b4e0ece8468" "0de238f0-303a-11ee-ae3c-1b4e0ece8468" "42fa7250-303a-11ee-ae3c-1b4e0ece8468" "97853531-303a-11ee-ae3c-1b4e0ece8468" "98703172-303a-11ee-ae3c-1b4e0ece8468" "a8b69e30-303e-11ee-ae3c-1b4e0ece8468" "b0e2e732-303e-11ee-ae3c-1b4e0ece8468" "7d9ae480-303f-11ee-ae3c-1b4e0ece8468" "867743a2-303f-11ee-ae3c-1b4e0ece8468" "34bb77e0-3042-11ee-ae3c-1b4e0ece8468" "721fb740-3042-11ee-ae3c-1b4e0ece8468" "81eecdf0-3042-11ee-ae3c-1b4e0ece8468" "859ce1d2-3042-11ee-ae3c-1b4e0ece8468" "86b27082-3042-11ee-ae3c-1b4e0ece8468" "a3e03a22-3042-11ee-ae3c-1b4e0ece8468" "acb28722-3042-11ee-ae3c-1b4e0ece8468" "baeec8d2-3042-11ee-ae3c-1b4e0ece8468" "d8914d42-3042-11ee-ae3c-1b4e0ece8468" "65f919b0-3043-11ee-ae3c-1b4e0ece8468" "6f3aca52-3043-11ee-ae3c-1b4e0ece8468" "0a823982-3044-11ee-ae3c-1b4e0ece8468" "6bc906b2-3044-11ee-ae3c-1b4e0ece8468" "3942bb72-3047-11ee-ae3c-1b4e0ece8468" "961967d0-3048-11ee-ae3c-1b4e0ece8468" "b3dabee0-3048-11ee-ae3c-1b4e0ece8468" "bf911902-3048-11ee-ae3c-1b4e0ece8468" "c16515b2-3048-11ee-ae3c-1b4e0ece8468" "14008640-30fa-11ee-a42e-71814a7006c4" "0b5309e0-30fb-11ee-a42e-71814a7006c4" "e21278d0-30fb-11ee-a42e-71814a7006c4" "0b7cbc80-30fc-11ee-a42e-71814a7006c4" "174713d0-30fc-11ee-a42e-71814a7006c4" "30b73930-30fc-11ee-a42e-71814a7006c4" "3a2b6b80-30fc-11ee-a42e-71814a7006c4" "3db72a50-30fc-11ee-a42e-71814a7006c4" "7c40d6e0-30fc-11ee-a42e-71814a7006c4" "91c93ac0-30fc-11ee-a42e-71814a7006c4" "a48f9870-30fc-11ee-a42e-71814a7006c4" "b2daf552-30fc-11ee-a42e-71814a7006c4" "b3c99b12-30fc-11ee-a42e-71814a7006c4" "959e4cb2-30fe-11ee-a42e-71814a7006c4" "51dd37b0-30ff-11ee-a42e-71814a7006c4" "77b88842-30ff-11ee-a42e-71814a7006c4" "c4318f02-30ff-11ee-a42e-71814a7006c4" "e5849850-30ff-11ee-a42e-71814a7006c4" "2d2e8ad2-3100-11ee-a42e-71814a7006c4" "494f7850-3100-11ee-a42e-71814a7006c4" "70a756c2-3100-11ee-a42e-71814a7006c4" "71978322-3100-11ee-a42e-71814a7006c4" "3fbeeef2-3101-11ee-a42e-71814a7006c4" "456f6282-3101-11ee-a42e-71814a7006c4" "760ac652-3101-11ee-a42e-71814a7006c4" "8a3a17f0-3103-11ee-a42e-71814a7006c4" "8ace3e72-30ff-11ee-a42e-71814a7006c4" "bd135dd2-3103-11ee-a42e-71814a7006c4")}}
-:block/updated-at 1690961262241
+:shapes-index ("96bfd540-302d-11ee-ae3c-1b4e0ece8468" "c0de4dc0-302d-11ee-ae3c-1b4e0ece8468" "cf42d7f0-302d-11ee-ae3c-1b4e0ece8468" "7ec59c20-302f-11ee-ae3c-1b4e0ece8468" "a16040a0-302f-11ee-ae3c-1b4e0ece8468" "a941c502-302f-11ee-ae3c-1b4e0ece8468" "ac39f662-302f-11ee-ae3c-1b4e0ece8468" "ae4d6d12-302f-11ee-ae3c-1b4e0ece8468" "b59dfc12-302f-11ee-ae3c-1b4e0ece8468" "11e3cf90-3030-11ee-ae3c-1b4e0ece8468" "437182a0-3030-11ee-ae3c-1b4e0ece8468" "7db52110-3030-11ee-ae3c-1b4e0ece8468" "84e38210-3030-11ee-ae3c-1b4e0ece8468" "955e4210-3030-11ee-ae3c-1b4e0ece8468" "a1050bd2-3030-11ee-ae3c-1b4e0ece8468" "53dbd270-3031-11ee-ae3c-1b4e0ece8468" "6dacdc80-3031-11ee-ae3c-1b4e0ece8468" "74305780-3031-11ee-ae3c-1b4e0ece8468" "82e63600-3031-11ee-ae3c-1b4e0ece8468" "c199ca00-3037-11ee-ae3c-1b4e0ece8468" "0ec04ed0-3038-11ee-ae3c-1b4e0ece8468" "3a668350-3039-11ee-ae3c-1b4e0ece8468" "5f3e94b0-3039-11ee-ae3c-1b4e0ece8468" "8ed97870-3039-11ee-ae3c-1b4e0ece8468" "e30b45e0-3039-11ee-ae3c-1b4e0ece8468" "0de238f0-303a-11ee-ae3c-1b4e0ece8468" "42fa7250-303a-11ee-ae3c-1b4e0ece8468" "97853531-303a-11ee-ae3c-1b4e0ece8468" "98703172-303a-11ee-ae3c-1b4e0ece8468" "a8b69e30-303e-11ee-ae3c-1b4e0ece8468" "b0e2e732-303e-11ee-ae3c-1b4e0ece8468" "7d9ae480-303f-11ee-ae3c-1b4e0ece8468" "867743a2-303f-11ee-ae3c-1b4e0ece8468" "34bb77e0-3042-11ee-ae3c-1b4e0ece8468" "721fb740-3042-11ee-ae3c-1b4e0ece8468" "81eecdf0-3042-11ee-ae3c-1b4e0ece8468" "859ce1d2-3042-11ee-ae3c-1b4e0ece8468" "86b27082-3042-11ee-ae3c-1b4e0ece8468" "a3e03a22-3042-11ee-ae3c-1b4e0ece8468" "acb28722-3042-11ee-ae3c-1b4e0ece8468" "baeec8d2-3042-11ee-ae3c-1b4e0ece8468" "d8914d42-3042-11ee-ae3c-1b4e0ece8468" "65f919b0-3043-11ee-ae3c-1b4e0ece8468" "6f3aca52-3043-11ee-ae3c-1b4e0ece8468" "0a823982-3044-11ee-ae3c-1b4e0ece8468" "6bc906b2-3044-11ee-ae3c-1b4e0ece8468" "3942bb72-3047-11ee-ae3c-1b4e0ece8468" "961967d0-3048-11ee-ae3c-1b4e0ece8468" "b3dabee0-3048-11ee-ae3c-1b4e0ece8468" "bf911902-3048-11ee-ae3c-1b4e0ece8468" "c16515b2-3048-11ee-ae3c-1b4e0ece8468" "14008640-30fa-11ee-a42e-71814a7006c4" "0b5309e0-30fb-11ee-a42e-71814a7006c4" "e21278d0-30fb-11ee-a42e-71814a7006c4" "0b7cbc80-30fc-11ee-a42e-71814a7006c4" "174713d0-30fc-11ee-a42e-71814a7006c4" "30b73930-30fc-11ee-a42e-71814a7006c4" "3a2b6b80-30fc-11ee-a42e-71814a7006c4" "3db72a50-30fc-11ee-a42e-71814a7006c4" "7c40d6e0-30fc-11ee-a42e-71814a7006c4" "91c93ac0-30fc-11ee-a42e-71814a7006c4" "a48f9870-30fc-11ee-a42e-71814a7006c4" "b2daf552-30fc-11ee-a42e-71814a7006c4" "b3c99b12-30fc-11ee-a42e-71814a7006c4" "959e4cb2-30fe-11ee-a42e-71814a7006c4" "51dd37b0-30ff-11ee-a42e-71814a7006c4" "77b88842-30ff-11ee-a42e-71814a7006c4" "c4318f02-30ff-11ee-a42e-71814a7006c4" "e5849850-30ff-11ee-a42e-71814a7006c4" "2d2e8ad2-3100-11ee-a42e-71814a7006c4" "494f7850-3100-11ee-a42e-71814a7006c4" "70a756c2-3100-11ee-a42e-71814a7006c4" "71978322-3100-11ee-a42e-71814a7006c4" "3fbeeef2-3101-11ee-a42e-71814a7006c4" "456f6282-3101-11ee-a42e-71814a7006c4" "760ac652-3101-11ee-a42e-71814a7006c4" "8a3a17f0-3103-11ee-a42e-71814a7006c4" "8ace3e72-30ff-11ee-a42e-71814a7006c4" "bd135dd2-3103-11ee-a42e-71814a7006c4" "a2e43160-3107-11ee-a42e-71814a7006c4" "be7b2e62-3107-11ee-a42e-71814a7006c4")}}
+:block/updated-at 1690962398589
 :block/created-at 1690868073660
 :block/type "whiteboard"
 :block/name "micropropulsion equation modelling"

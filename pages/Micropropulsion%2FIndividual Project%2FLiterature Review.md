@@ -203,6 +203,21 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  id:: 64c8c02f-c81c-4e4e-a61c-57352fd55365
 			  \[R=R_e t\left(\frac{R^*}{R_t}\right)\]
 				- where \(R_e t\) is the throat Reynolds number, \(R^*\) is the radius of the throat, and \(R_t\) is the throat radius curvature. The values for \(R^*\) and \(R_t\) can be obtained from Table 3.1. The specific heat ratio \(\gamma\) is 1.4 for nitrogen. It is important to note that the expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles.
+			- What is the equation for the speed of sound based on temperature?
+			- Speed of sound
+			  $$a = \sqrt{}$$
+				- [[gpt]]
+				  The equation for the speed of sound based on temperature is given by the Newton-Laplace equation:
+				  
+				  v = √(γ * R * T)
+				  
+				  where:
+				  - v is the speed of sound
+				  - γ is the adiabatic index (ratio of specific heat capacities)
+				  - R is the gas constant
+				  - T is the temperature in Kelvin
+				  
+				  This equation describes the relationship between the speed of sound and the temperature of the medium through which it propagates.
 		- Specific impulse efficiency \(\eta_{I_{s p}}\)
 		  id:: 64b187ff-c257-42a5-b2c5-659e768024fe
 		  $$\eta_{I_{s p}}=\frac{I_{s p_{\text {meas }}}}{I_{s p_{1 D}}}$$
