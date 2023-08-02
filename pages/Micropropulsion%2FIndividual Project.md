@@ -1,9 +1,9 @@
 - References and Literature Review notes
 	- Reference school reports
 		- [[@Analytical Relations for Performance Characterization of CD Micro-nozzles]]
-		  collapsed:: true
 			- {{embed [[hls__Micropropulsion project_conventional nozzles]]}}
 		- [[@Micropropulsion course Numerical analysis of wavy microchannels employed in a Vaporizing Liquid Micro-resistojet thruster]]
+		  collapsed:: true
 			- {{embed [[hls__Bianchi - Micropropulsion course Numerical analysis of wavy]]}}
 		- [[@Simplified Modelling of Aerospike Micro-nozzles]]
 		  collapsed:: true
