@@ -2265,4 +2265,4 @@
                           :page 1},
                :content {:text "In particular flows between at low Re numbers, between 10 and 100, showed Nusselts numbers strongly increasing with Re numbers. Its worth noting that the definition of the global Nusselt number changes between authors, thus comparison between different works should be done carefully. Wavy microchannels have been found to lead to higher Nusselt numbers and thus better convective heat transfer [ 10 , 11 , 14 ] when compared to an equal straight channel. However the pressure losses also increased considerably."},
                :properties {:color "green"}}],
- :extra {:page 8}}
+ :extra {:page 6}}

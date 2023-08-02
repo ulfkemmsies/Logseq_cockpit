@@ -4,7 +4,6 @@
 		  collapsed:: true
 			- {{embed [[hls__Micropropulsion project_conventional nozzles]]}}
 		- [[@Micropropulsion course Numerical analysis of wavy microchannels employed in a Vaporizing Liquid Micro-resistojet thruster]]
-		  collapsed:: true
 			- {{embed [[hls__Bianchi - Micropropulsion course Numerical analysis of wavy]]}}
 		- [[@Simplified Modelling of Aerospike Micro-nozzles]]
 		  collapsed:: true
@@ -16,6 +15,7 @@
 		  collapsed:: true
 			- {{embed [[hls__Silva et al. - TOPOLOGY OPTIMIZATION OF HEATING CHAMBER OF VAPORI]]}}
 		- [[@A Comprehensive Model for Control of Vaporizing Liquid Microthrusters]]
+		  collapsed:: true
 			- The important parameters to be considered in the design trade-off are size, wall temperature, and pressure losses. The wavy microchannel geometry improves convective heat transfer due to boundary layer thinning and the formation of Dean vortices. The Nusselt number is used to indicate the ratio between the heat transferred via convection and the heat transferred via conduction. A higher Nusselt number means having lower wall temperatures, which is critical in Cubesats where available power is often limited. Future work should concentrate on the two sections of the flow that have not been simulated in this work: boiling and vapor.
 			  id:: 64a59f7e-d25e-45fe-8227-81c8d3b66335
 			- ## Main Equations 
