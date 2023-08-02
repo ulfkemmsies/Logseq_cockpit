@@ -746,7 +746,7 @@
 :collapsedHeight 0
 :nonce 1690873568549}}
 :block/updated-at 1690956381199} 
-{:block/created-at 1690956479622
+{:block/created-at 1690957083692
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -768,11 +768,11 @@
 :opacity 1
 :id "0de238f0-303a-11ee-ae3c-1b4e0ece8468"
 :noFill false
-:point [-728 -88]
+:point [-744 -72]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690873639905}}
-:block/updated-at 1690956479622} 
+:nonce 1690873639915}}
+:block/updated-at 1690957083692} 
 {:block/created-at 1690956185069
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -1727,7 +1727,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f151-6953-42b5-a578-8a22bfe24846"} 
-{:block/created-at 1690956478104
+{:block/created-at 1690956548453
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1750,11 +1750,254 @@
 :id "14008640-30fa-11ee-a42e-71814a7006c4"
 :noFill false
 :isLocked false
-:point [-208 256]
+:point [-952 168]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
-:nonce 1690956113187}}
-:block/updated-at 1690956478104})
+:nonce 1690956113219}}
+:block/updated-at 1690956548453} 
+{:block/content "![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64c9f151-6953-42b5-a578-8a22bfe24846"}
+:block/parent 
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
+:block/uuid #uuid "64c9f2ef-f209-4121-9e16-0e0d11cb83d8"} 
+{:block/created-at 1690956541293
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 55
+:scale [1 1]
+:pageId "64c9f2ef-f209-4121-9e16-0e0d11cb83d8"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [528 163.9999592132784]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "0b5309e0-30fb-11ee-a42e-71814a7006c4"
+:noFill false
+:isLocked false
+:point [-944 384]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690956528091}}
+:block/updated-at 1690956541293} 
+{:block/created-at 1690956907329
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:borderRadius 2
+:index 56
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "box"
+:size [216 136]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label "Only applies to\nliquid phase!"
+:id "e21278d0-30fb-11ee-a42e-71814a7006c4"
+:fontWeight 400
+:noFill false
+:point [-968 -264]
+:fontSize 20
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:nonce 1690956888384
+:italic false}}
+:block/updated-at 1690956907329} 
+{:block/content "Thrust (F):\n$F = \\dot{m}V_e + (p_e - p_a)A_e$"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64c9f2ef-f209-4121-9e16-0e0d11cb83d8"}
+:block/parent 
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
+:block/properties 
+{}
+:block/uuid #uuid "64c9f49d-a19f-4946-af13-b8c412bb6b92"} 
+{:block/created-at 1690956990771
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 57
+:scale [1 1]
+:pageId "64c9f49d-a19f-4946-af13-b8c412bb6b92"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 66.21873548232615]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "0b7cbc80-30fc-11ee-a42e-71814a7006c4"
+:noFill false
+:isLocked false
+:point [344 -936]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690956957844}}
+:block/updated-at 1690956990771} 
+{:block/content "Exhaust velocity (V_e):\n$V_e = M_e\\sqrt{kRT_1}$"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64c9f49d-a19f-4946-af13-b8c412bb6b92"}
+:block/parent 
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
+:block/properties 
+{}
+:block/uuid #uuid "64c9f4b1-b13c-4d37-bd75-a1dcfdb489dd"} 
+{:block/created-at 1690957068469
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 58
+:scale [1 1]
+:pageId "64c9f4b1-b13c-4d37-bd75-a1dcfdb489dd"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 66.21877534297104]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "174713d0-30fc-11ee-a42e-71814a7006c4"
+:noFill false
+:isLocked false
+:point [408 -832]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690956977567}}
+:block/updated-at 1690957068469} 
+{:block/content "Mass flow rate ($\\dot{m}$):\n\\(\\dot{m}=A_t p_1 k \\frac{\\sqrt{\\left(\\frac{2}{k+1}\\right)^{\\frac{k+1}{k-1}}}}{\\sqrt{k R T_1}}\\)"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64c9f4b1-b13c-4d37-bd75-a1dcfdb489dd"}
+:block/parent 
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
+:block/properties 
+{}
+:block/uuid #uuid "64c9f4dc-66b0-4ada-8ebb-bb9ab5deef47"} 
+{:block/created-at 1690957069419
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 59
+:scale [1 1]
+:pageId "64c9f4dc-66b0-4ada-8ebb-bb9ab5deef47"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [232 92.85935832865435]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "30b73930-30fc-11ee-a42e-71814a7006c4"
+:noFill false
+:isLocked false
+:point [400 -736]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690957020286}}
+:block/updated-at 1690957069419} 
+{:block/content "Temperature at the exit (T_e): $T_e = T_1(1+(k-1)/2M_e^2)^{-1}$"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64c9f4dc-66b0-4ada-8ebb-bb9ab5deef47"}
+:block/parent 
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
+:block/uuid #uuid "64c9f4ec-4ae5-4173-860d-b097f8a3b2c7"} 
+{:block/created-at 1690957036213
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 60
+:scale [1 1]
+:pageId "64c9f4ec-4ae5-4173-860d-b097f8a3b2c7"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 67.43751456038974]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "3a2b6b80-30fc-11ee-a42e-71814a7006c4"
+:noFill false
+:isLocked false
+:point [-61.695443474394835 -794.4970009302754]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690957036089}}
+:block/updated-at 1690957036213} 
+{:block/content "Pressure at the exit (p_e): $p_e = p_1(1+(k-1)/2M_e^2)^{-k/(k-1)}$"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64c9f4ec-4ae5-4173-860d-b097f8a3b2c7"}
+:block/parent 
+{:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
+:block/uuid #uuid "64c9f4f2-ea3a-4abe-8ed9-24406667391c"} 
+{:block/created-at 1690957046110
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 61
+:scale [1 1]
+:pageId "64c9f4f2-ea3a-4abe-8ed9-24406667391c"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 67.43751456038974]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "3db72a50-30fc-11ee-a42e-71814a7006c4"
+:noFill false
+:isLocked false
+:point [-80 -896]
+:parentId "64c89969-afb2-45bb-9783-37d984eb6670"
+:collapsedHeight 0
+:nonce 1690957042078}}
+:block/updated-at 1690957046110})
 :pages (
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"
 :block/properties 
@@ -1789,8 +2032,8 @@
 :distance 4}}
 :nonce 0
 :assets []
-:shapes-index ("96bfd540-302d-11ee-ae3c-1b4e0ece8468" "c0de4dc0-302d-11ee-ae3c-1b4e0ece8468" "cf42d7f0-302d-11ee-ae3c-1b4e0ece8468" "7ec59c20-302f-11ee-ae3c-1b4e0ece8468" "a16040a0-302f-11ee-ae3c-1b4e0ece8468" "a941c502-302f-11ee-ae3c-1b4e0ece8468" "ac39f662-302f-11ee-ae3c-1b4e0ece8468" "ae4d6d12-302f-11ee-ae3c-1b4e0ece8468" "b59dfc12-302f-11ee-ae3c-1b4e0ece8468" "11e3cf90-3030-11ee-ae3c-1b4e0ece8468" "437182a0-3030-11ee-ae3c-1b4e0ece8468" "7db52110-3030-11ee-ae3c-1b4e0ece8468" "84e38210-3030-11ee-ae3c-1b4e0ece8468" "955e4210-3030-11ee-ae3c-1b4e0ece8468" "a1050bd2-3030-11ee-ae3c-1b4e0ece8468" "53dbd270-3031-11ee-ae3c-1b4e0ece8468" "6dacdc80-3031-11ee-ae3c-1b4e0ece8468" "74305780-3031-11ee-ae3c-1b4e0ece8468" "82e63600-3031-11ee-ae3c-1b4e0ece8468" "c199ca00-3037-11ee-ae3c-1b4e0ece8468" "0ec04ed0-3038-11ee-ae3c-1b4e0ece8468" "3a668350-3039-11ee-ae3c-1b4e0ece8468" "5f3e94b0-3039-11ee-ae3c-1b4e0ece8468" "8ed97870-3039-11ee-ae3c-1b4e0ece8468" "e30b45e0-3039-11ee-ae3c-1b4e0ece8468" "0de238f0-303a-11ee-ae3c-1b4e0ece8468" "42fa7250-303a-11ee-ae3c-1b4e0ece8468" "97853531-303a-11ee-ae3c-1b4e0ece8468" "98703172-303a-11ee-ae3c-1b4e0ece8468" "a8b69e30-303e-11ee-ae3c-1b4e0ece8468" "b0e2e732-303e-11ee-ae3c-1b4e0ece8468" "7d9ae480-303f-11ee-ae3c-1b4e0ece8468" "867743a2-303f-11ee-ae3c-1b4e0ece8468" "34bb77e0-3042-11ee-ae3c-1b4e0ece8468" "721fb740-3042-11ee-ae3c-1b4e0ece8468" "81eecdf0-3042-11ee-ae3c-1b4e0ece8468" "859ce1d2-3042-11ee-ae3c-1b4e0ece8468" "86b27082-3042-11ee-ae3c-1b4e0ece8468" "a3e03a22-3042-11ee-ae3c-1b4e0ece8468" "acb28722-3042-11ee-ae3c-1b4e0ece8468" "baeec8d2-3042-11ee-ae3c-1b4e0ece8468" "d8914d42-3042-11ee-ae3c-1b4e0ece8468" "65f919b0-3043-11ee-ae3c-1b4e0ece8468" "6f3aca52-3043-11ee-ae3c-1b4e0ece8468" "0a823982-3044-11ee-ae3c-1b4e0ece8468" "6bc906b2-3044-11ee-ae3c-1b4e0ece8468" "87cc1680-3045-11ee-ae3c-1b4e0ece8468" "9bc8f862-3045-11ee-ae3c-1b4e0ece8468" "3942bb72-3047-11ee-ae3c-1b4e0ece8468" "3a885ad2-3047-11ee-ae3c-1b4e0ece8468" "961967d0-3048-11ee-ae3c-1b4e0ece8468" "b3dabee0-3048-11ee-ae3c-1b4e0ece8468" "bf911902-3048-11ee-ae3c-1b4e0ece8468" "c16515b2-3048-11ee-ae3c-1b4e0ece8468" "14008640-30fa-11ee-a42e-71814a7006c4")}}
-:block/updated-at 1690956479622
+:shapes-index ("96bfd540-302d-11ee-ae3c-1b4e0ece8468" "c0de4dc0-302d-11ee-ae3c-1b4e0ece8468" "cf42d7f0-302d-11ee-ae3c-1b4e0ece8468" "7ec59c20-302f-11ee-ae3c-1b4e0ece8468" "a16040a0-302f-11ee-ae3c-1b4e0ece8468" "a941c502-302f-11ee-ae3c-1b4e0ece8468" "ac39f662-302f-11ee-ae3c-1b4e0ece8468" "ae4d6d12-302f-11ee-ae3c-1b4e0ece8468" "b59dfc12-302f-11ee-ae3c-1b4e0ece8468" "11e3cf90-3030-11ee-ae3c-1b4e0ece8468" "437182a0-3030-11ee-ae3c-1b4e0ece8468" "7db52110-3030-11ee-ae3c-1b4e0ece8468" "84e38210-3030-11ee-ae3c-1b4e0ece8468" "955e4210-3030-11ee-ae3c-1b4e0ece8468" "a1050bd2-3030-11ee-ae3c-1b4e0ece8468" "53dbd270-3031-11ee-ae3c-1b4e0ece8468" "6dacdc80-3031-11ee-ae3c-1b4e0ece8468" "74305780-3031-11ee-ae3c-1b4e0ece8468" "82e63600-3031-11ee-ae3c-1b4e0ece8468" "c199ca00-3037-11ee-ae3c-1b4e0ece8468" "0ec04ed0-3038-11ee-ae3c-1b4e0ece8468" "3a668350-3039-11ee-ae3c-1b4e0ece8468" "5f3e94b0-3039-11ee-ae3c-1b4e0ece8468" "8ed97870-3039-11ee-ae3c-1b4e0ece8468" "e30b45e0-3039-11ee-ae3c-1b4e0ece8468" "0de238f0-303a-11ee-ae3c-1b4e0ece8468" "42fa7250-303a-11ee-ae3c-1b4e0ece8468" "97853531-303a-11ee-ae3c-1b4e0ece8468" "98703172-303a-11ee-ae3c-1b4e0ece8468" "a8b69e30-303e-11ee-ae3c-1b4e0ece8468" "b0e2e732-303e-11ee-ae3c-1b4e0ece8468" "7d9ae480-303f-11ee-ae3c-1b4e0ece8468" "867743a2-303f-11ee-ae3c-1b4e0ece8468" "34bb77e0-3042-11ee-ae3c-1b4e0ece8468" "721fb740-3042-11ee-ae3c-1b4e0ece8468" "81eecdf0-3042-11ee-ae3c-1b4e0ece8468" "859ce1d2-3042-11ee-ae3c-1b4e0ece8468" "86b27082-3042-11ee-ae3c-1b4e0ece8468" "a3e03a22-3042-11ee-ae3c-1b4e0ece8468" "acb28722-3042-11ee-ae3c-1b4e0ece8468" "baeec8d2-3042-11ee-ae3c-1b4e0ece8468" "d8914d42-3042-11ee-ae3c-1b4e0ece8468" "65f919b0-3043-11ee-ae3c-1b4e0ece8468" "6f3aca52-3043-11ee-ae3c-1b4e0ece8468" "0a823982-3044-11ee-ae3c-1b4e0ece8468" "6bc906b2-3044-11ee-ae3c-1b4e0ece8468" "87cc1680-3045-11ee-ae3c-1b4e0ece8468" "9bc8f862-3045-11ee-ae3c-1b4e0ece8468" "3942bb72-3047-11ee-ae3c-1b4e0ece8468" "3a885ad2-3047-11ee-ae3c-1b4e0ece8468" "961967d0-3048-11ee-ae3c-1b4e0ece8468" "b3dabee0-3048-11ee-ae3c-1b4e0ece8468" "bf911902-3048-11ee-ae3c-1b4e0ece8468" "c16515b2-3048-11ee-ae3c-1b4e0ece8468" "14008640-30fa-11ee-a42e-71814a7006c4" "0b5309e0-30fb-11ee-a42e-71814a7006c4" "e21278d0-30fb-11ee-a42e-71814a7006c4" "0b7cbc80-30fc-11ee-a42e-71814a7006c4" "174713d0-30fc-11ee-a42e-71814a7006c4" "30b73930-30fc-11ee-a42e-71814a7006c4" "3a2b6b80-30fc-11ee-a42e-71814a7006c4" "3db72a50-30fc-11ee-a42e-71814a7006c4")}}
+:block/updated-at 1690957083692
 :block/created-at 1690868073660
 :block/type "whiteboard"
 :block/name "micropropulsion equation modelling"

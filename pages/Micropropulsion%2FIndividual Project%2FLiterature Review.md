@@ -3,7 +3,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 
 - Previous model recap
 	- Propulsion background (common equations)
-	  collapsed:: true
 		- The equations for analyzing the performance of micropropulsion systems are given by:
 		  Thrust (F): $F = \dot{m}V_e + (p_e - p_a)A_e$
 		  
