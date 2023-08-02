@@ -212,7 +212,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			- Measured Isp
 			  id:: 64c8b7fd-1bb6-4f5c-b408-b0a43bf8a9cc
 			  $$I_{s p_{\text {meas }}}=\frac{F_{\text {meas }}}{\dot{m}_{\text {meas }} \cdot g_0}$$
-			- Ideal mass flow
+			- Ideal throat mass flow
 			  id:: 64c8be50-9c82-46cc-af9f-3cf7cba7a041
 			  $$
 			  \dot{m}_{1 D}=\frac{p_c A_t}{c^*}=\frac{\sqrt{\gamma}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{2(\gamma-1) p_c A_t}}}{\sqrt{R T_c}}
