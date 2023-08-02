@@ -1,5 +1,5 @@
 {:blocks (
-{:block/created-at 1690964242405
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -25,8 +25,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690868285946}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -52,8 +52,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690868356738}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -79,7 +79,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690868381062}}
-:block/updated-at 1690964242405} 
+:block/updated-at 1690966536080} 
 {:block/content "Reference Temperature Approach"
 :block/format :markdown
 :block/left 
@@ -87,7 +87,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c89d69-9d17-4c86-91e6-11469729428d"} 
-{:block/created-at 1690964242405
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -114,8 +114,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869105423}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242404
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -142,8 +142,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869162959}}
-:block/updated-at 1690964242404} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -178,8 +178,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690869176006
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -214,8 +214,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690869181122
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -250,8 +250,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690869184678
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -286,8 +286,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690869196891
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690963175764
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536081
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -313,8 +313,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869351656}}
-:block/updated-at 1690963175764} 
-{:block/created-at 1690963175779
+:block/updated-at 1690966536081} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -340,8 +340,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869434874}}
-:block/updated-at 1690963175779} 
-{:block/created-at 1690963175795
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -367,8 +367,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869532655}}
-:block/updated-at 1690963175795} 
-{:block/created-at 1690963175812
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -395,8 +395,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869545075}}
-:block/updated-at 1690963175812} 
-{:block/created-at 1690963175828
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536072
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -422,8 +422,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869572228}}
-:block/updated-at 1690963175828} 
-{:block/created-at 1690955943848
+:block/updated-at 1690966536072} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -458,7 +458,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690869591469
 :italic false}}
-:block/updated-at 1690955943848} 
+:block/updated-at 1690966536079} 
 {:block/content "Nozzle Model"
 :block/format :markdown
 :block/left 
@@ -475,7 +475,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c8a06a-58ff-4d99-993f-755696d3362a"} 
-{:block/created-at 1690964346352
+{:block/created-at 1690966536081
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -502,8 +502,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869891873}}
-:block/updated-at 1690964346352} 
-{:block/created-at 1690964346350
+:block/updated-at 1690966536081} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -529,8 +529,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869934910}}
-:block/updated-at 1690964346350} 
-{:block/created-at 1690964502034
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -556,8 +556,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869946115}}
-:block/updated-at 1690964502034} 
-{:block/created-at 1690964692933
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -583,8 +583,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690869970478}}
-:block/updated-at 1690964692933} 
-{:block/created-at 1690963175904
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536081
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -610,8 +610,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690872653012}}
-:block/updated-at 1690963175904} 
-{:block/created-at 1690964247892
+:block/updated-at 1690966536081} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -636,8 +636,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690872782521
 :italic false}}
-:block/updated-at 1690964247892} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -664,8 +664,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690873285550}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690955943848
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -685,13 +685,13 @@
 :id "5f3e94b0-3039-11ee-ae3c-1b4e0ece8468"
 :fontWeight 400
 :noFill false
-:point [-104 -416]
+:point [-552 408]
 :fontSize 48
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
-:nonce 1690873346890
+:nonce 1690873346912
 :italic false}}
-:block/updated-at 1690955943848} 
-{:block/created-at 1690958594413
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -717,8 +717,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690873426646}}
-:block/updated-at 1690958594413} 
-{:block/created-at 1690964416193
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -745,8 +745,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690873568723}}
-:block/updated-at 1690964416193} 
-{:block/created-at 1690964563881
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -772,8 +772,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690873640629}}
-:block/updated-at 1690964563881} 
-{:block/created-at 1690963175949
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -799,8 +799,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690873729744}}
-:block/updated-at 1690963175949} 
-{:block/created-at 1690964414814
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -835,8 +835,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690873870867
 :italic false}}
-:block/updated-at 1690964414814} 
-{:block/created-at 1690963176556
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -871,8 +871,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690873872100
 :italic false}}
-:block/updated-at 1690963176556} 
-{:block/created-at 1690963175965
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -898,8 +898,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690875617878}}
-:block/updated-at 1690963175965} 
-{:block/created-at 1690963176480
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -934,8 +934,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690875631288
 :italic false}}
-:block/updated-at 1690963176480} 
-{:block/created-at 1690963175981
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -961,8 +961,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690875974744}}
-:block/updated-at 1690963175981} 
-{:block/created-at 1690963176483
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -997,8 +997,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690875989466
 :italic false}}
-:block/updated-at 1690963176483} 
-{:block/created-at 1690963237374
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1025,8 +1025,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690877141118}}
-:block/updated-at 1690963237374} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1053,8 +1053,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690877243882}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1089,8 +1089,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690877270227
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242401
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536076
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1123,8 +1123,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690877276333
 :italic false}}
-:block/updated-at 1690964242401} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536076} 
+{:block/created-at 1690966536081
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1159,8 +1159,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690877278311
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536081} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1195,8 +1195,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690877327231
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690964242405
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1231,8 +1231,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690877341997
 :italic false}}
-:block/updated-at 1690964242405} 
-{:block/created-at 1690963237525
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1267,8 +1267,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690877365928
 :italic false}}
-:block/updated-at 1690963237525} 
-{:block/created-at 1690963237525
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1303,8 +1303,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690877415727
 :italic false}}
-:block/updated-at 1690963237525} 
-{:block/created-at 1690963244222
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1330,8 +1330,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690877653364}}
-:block/updated-at 1690963244222} 
-{:block/created-at 1690963176468
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1366,8 +1366,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690878092128
 :italic false}}
-:block/updated-at 1690963176468} 
-{:block/created-at 1690964346350
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1402,8 +1402,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690879295771
 :italic false}}
-:block/updated-at 1690964346350} 
-{:block/created-at 1690964346351
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1438,8 +1438,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690879881048
 :italic false}}
-:block/updated-at 1690964346351} 
-{:block/created-at 1690964727605
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1465,8 +1465,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690879931007}}
-:block/updated-at 1690964727605} 
-{:block/created-at 1690964727672
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1501,8 +1501,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690879950637
 :italic false}}
-:block/updated-at 1690964727672} 
-{:block/created-at 1690964727676
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1537,7 +1537,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690879953713
 :italic false}}
-:block/updated-at 1690964727676} 
+:block/updated-at 1690966536078} 
 {:block/content "public:: true"
 :block/format :markdown
 :block/left 
@@ -1556,7 +1556,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f151-6953-42b5-a578-8a22bfe24846"} 
-{:block/created-at 1690963176058
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1583,7 +1583,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690956113452}}
-:block/updated-at 1690963176058} 
+:block/updated-at 1690966536078} 
 {:block/content "![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}"
 :block/format :markdown
 :block/left 
@@ -1591,7 +1591,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9f2ef-f209-4121-9e16-0e0d11cb83d8"} 
-{:block/created-at 1690962954441
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1619,8 +1619,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690956528308}}
-:block/updated-at 1690962954441} 
-{:block/created-at 1690962954436
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536076
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1644,7 +1644,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690956888730
 :italic false}}
-:block/updated-at 1690962954436} 
+:block/updated-at 1690966536076} 
 {:block/content "Thrust (F):\n$F = \\dot{m}V_e + (p_e - p_a)A_e$"
 :block/format :markdown
 :block/left 
@@ -1654,7 +1654,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f49d-a19f-4946-af13-b8c412bb6b92"} 
-{:block/created-at 1690964253037
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1681,7 +1681,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690956957864}}
-:block/updated-at 1690964253037} 
+:block/updated-at 1690966536079} 
 {:block/content "Exhaust velocity (V_e):\n$V_e = M_e\\sqrt{kRT_1}$"
 :block/format :markdown
 :block/left 
@@ -1691,7 +1691,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f4b1-b13c-4d37-bd75-a1dcfdb489dd"} 
-{:block/created-at 1690964253037
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1718,7 +1718,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690956977587}}
-:block/updated-at 1690964253037} 
+:block/updated-at 1690966536080} 
 {:block/content "Mass flow rate ($\\dot{m}$):\n\\(\\dot{m}=A_t p_1 k \\frac{\\sqrt{\\left(\\frac{2}{k+1}\\right)^{\\frac{k+1}{k-1}}}}{\\sqrt{k R T_1}}\\)"
 :block/format :markdown
 :block/left 
@@ -1728,7 +1728,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f4dc-66b0-4ada-8ebb-bb9ab5deef47"} 
-{:block/created-at 1690964253037
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1756,7 +1756,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690957020306}}
-:block/updated-at 1690964253037} 
+:block/updated-at 1690966536079} 
 {:block/content "Temperature at the exit (T_e): $T_e = T_1(1+(k-1)/2M_e^2)^{-1}$"
 :block/format :markdown
 :block/left 
@@ -1764,7 +1764,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9f4ec-4ae5-4173-860d-b097f8a3b2c7"} 
-{:block/created-at 1690964253037
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1791,7 +1791,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690957036109}}
-:block/updated-at 1690964253037} 
+:block/updated-at 1690966536077} 
 {:block/content "Pressure at the exit (p_e): $p_e = p_1(1+(k-1)/2M_e^2)^{-k/(k-1)}$"
 :block/format :markdown
 :block/left 
@@ -1799,7 +1799,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9f4f2-ea3a-4abe-8ed9-24406667391c"} 
-{:block/created-at 1690964253033
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1826,7 +1826,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690957042098}}
-:block/updated-at 1690964253033} 
+:block/updated-at 1690966536078} 
 {:block/content "Average Vapor Volume\n\\[V_{av} = a_T T_n + a_p p_1 + b\\]"
 :block/format :markdown
 :block/left 
@@ -1836,7 +1836,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f55a-a7ad-40a7-9304-38630ca88af7"} 
-{:block/created-at 1690964699882
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1863,8 +1863,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690957147306}}
-:block/updated-at 1690964699882} 
-{:block/created-at 1690964699940
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1899,7 +1899,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690957183360
 :italic false}}
-:block/updated-at 1690964699940} 
+:block/updated-at 1690966536077} 
 {:block/content "Time derivative of volume \\(\\dot{V}\\)\n\\[\n\\dot{V} = A(V_{av} - V)\n\\]"
 :block/format :markdown
 :block/left 
@@ -1909,7 +1909,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64c9f59e-b29a-43f3-8028-2e7771c24725"} 
-{:block/created-at 1690964346351
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1936,8 +1936,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690957214700}}
-:block/updated-at 1690964346351} 
-{:block/created-at 1690964699943
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1972,8 +1972,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690957238665
 :italic false}}
-:block/updated-at 1690964699943} 
-{:block/created-at 1690964346351
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2008,8 +2008,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690957240217
 :italic false}}
-:block/updated-at 1690964346351} 
-{:block/created-at 1690963176679
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2044,8 +2044,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958048678
 :italic false}}
-:block/updated-at 1690963176679} 
-{:block/created-at 1690962954440
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2070,8 +2070,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958364642
 :italic false}}
-:block/updated-at 1690962954440} 
-{:block/created-at 1690962954441
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2106,8 +2106,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958427975
 :italic false}}
-:block/updated-at 1690962954441} 
-{:block/created-at 1690964563881
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536076
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2142,8 +2142,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958460359
 :italic false}}
-:block/updated-at 1690964563881} 
-{:block/created-at 1690962954440
+:block/updated-at 1690966536076} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2178,8 +2178,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958556216
 :italic false}}
-:block/updated-at 1690962954440} 
-{:block/created-at 1690963176553
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2214,7 +2214,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958612111
 :italic false}}
-:block/updated-at 1690963176553} 
+:block/updated-at 1690966536077} 
 {:block/content "\\[\r\nV_{av} = a_T T_n + a_p p_1 + b\r\n\\]"
 :block/format :markdown
 :block/left 
@@ -2222,7 +2222,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64c9fb84-ebf0-45dd-b3ef-0abff592f0dd"} 
-{:block/created-at 1690963176589
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2257,8 +2257,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958732717
 :italic false}}
-:block/updated-at 1690963176589} 
-{:block/created-at 1690962954441
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2283,8 +2283,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958779787
 :italic false}}
-:block/updated-at 1690962954441} 
-{:block/created-at 1690963176679
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2319,8 +2319,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958845591
 :italic false}}
-:block/updated-at 1690963176679} 
-{:block/created-at 1690963176589
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2355,8 +2355,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690958847418
 :italic false}}
-:block/updated-at 1690963176589} 
-{:block/created-at 1690964563878
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536076
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2391,8 +2391,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690959193025
 :italic false}}
-:block/updated-at 1690964563878} 
-{:block/created-at 1690963176586
+:block/updated-at 1690966536076} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2427,8 +2427,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690959202661
 :italic false}}
-:block/updated-at 1690963176586} 
-{:block/created-at 1690963176676
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2463,7 +2463,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690959284178
 :italic false}}
-:block/updated-at 1690963176676} 
+:block/updated-at 1690966536080} 
 {:block/content "Hydraulic Diameter\n\\(D_h=\\frac{4 A}{p}\\)"
 :block/format :markdown
 :block/left 
@@ -2473,7 +2473,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64ca0130-7928-4977-aae5-4bc4437e9a63"} 
-{:block/created-at 1690963176180
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2501,7 +2501,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690960177110}}
-:block/updated-at 1690963176180} 
+:block/updated-at 1690966536078} 
 {:block/content "Hydraulic\r\nDiameter"
 :block/format :markdown
 :block/left 
@@ -2509,7 +2509,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64ca0162-5b3e-475c-8e8f-6dd2a9f8687b"} 
-{:block/created-at 1690963176737
+{:block/created-at 1690966536076
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2544,7 +2544,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690960262209
 :italic false}}
-:block/updated-at 1690963176737} 
+:block/updated-at 1690966536076} 
 {:block/content "Throat Reynolds Number\n\\(\\operatorname{Re}^*=\\frac{a \\cdot d^*}{v}\\)"
 :block/format :markdown
 :block/left 
@@ -2554,7 +2554,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64ca0810-4952-4abf-a00c-a2ea10f980a5"} 
-{:block/created-at 1690963176195
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2582,8 +2582,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690961936307}}
-:block/updated-at 1690963176195} 
-{:block/created-at 1690963176468
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2618,8 +2618,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690961982560
 :italic false}}
-:block/updated-at 1690963176468} 
-{:block/created-at 1690964123512
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2647,8 +2647,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690962557011}}
-:block/updated-at 1690964123512} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2663,8 +2663,8 @@
 :point [2000 1416]
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690962813469}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2691,8 +2691,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690962875780}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690964117144
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2727,8 +2727,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690962884142
 :italic false}}
-:block/updated-at 1690964117144} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2763,8 +2763,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690962886907
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2799,8 +2799,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690962954750
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2835,8 +2835,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690962960563
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690964693004
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2871,8 +2871,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690962992478
 :italic false}}
-:block/updated-at 1690964693004} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2897,8 +2897,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963198721
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536078} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2933,8 +2933,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963219126
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2969,8 +2969,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963222359
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3005,8 +3005,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963225480
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963741396
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536081
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3041,8 +3041,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963245557
 :italic false}}
-:block/updated-at 1690963741396} 
-{:block/created-at 1690963815152
+:block/updated-at 1690966536081} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3066,8 +3066,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963748717
 :italic false}}
-:block/updated-at 1690963815152} 
-{:block/created-at 1690964123550
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3102,8 +3102,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963795720
 :italic false}}
-:block/updated-at 1690964123550} 
-{:block/created-at 1690964123553
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3138,8 +3138,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963797191
 :italic false}}
-:block/updated-at 1690964123553} 
-{:block/created-at 1690964133307
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536081
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3174,8 +3174,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690963811928
 :italic false}}
-:block/updated-at 1690964133307} 
-{:block/created-at 1690964127623
+:block/updated-at 1690966536081} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3203,8 +3203,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690964101688}}
-:block/updated-at 1690964127623} 
-{:block/created-at 1690964137402
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536079
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3239,8 +3239,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690964122276
 :italic false}}
-:block/updated-at 1690964137402} 
-{:block/created-at 1690964127626
+:block/updated-at 1690966536079} 
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3275,8 +3275,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690964124089
 :italic false}}
-:block/updated-at 1690964127626} 
-{:block/created-at 1690964354733
+:block/updated-at 1690966536080} 
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3309,8 +3309,8 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690964354572
 :italic false}}
-:block/updated-at 1690964354733} 
-{:block/created-at 1690964502034
+:block/updated-at 1690966536077} 
+{:block/created-at 1690966536078
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3345,7 +3345,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690964357944
 :italic false}}
-:block/updated-at 1690964502034} 
+:block/updated-at 1690966536078} 
 {:block/content "Only applies to gas phase!"
 :block/format :markdown
 :block/left 
@@ -3355,7 +3355,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "64ca11e0-d9ab-46ae-b39e-d26d35c444e4"} 
-{:block/created-at 1690964484757
+{:block/created-at 1690966536080
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3383,7 +3383,7 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :collapsedHeight 0
 :nonce 1690964448122}}
-:block/updated-at 1690964484757} 
+:block/updated-at 1690966536080} 
 {:block/content ")"
 :block/format :markdown
 :block/left 
@@ -3391,7 +3391,7 @@
 :block/parent 
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"}
 :block/uuid #uuid "64ca11e6-415a-418a-8791-f37d68409c1d"} 
-{:block/created-at 1690964699944
+{:block/created-at 1690966536077
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -3426,12 +3426,811 @@
 :parentId "64c89969-afb2-45bb-9783-37d984eb6670"
 :nonce 1690964509858
 :italic false}}
-:block/updated-at 1690964699944})
+:block/updated-at 1690966536077})
 :pages (
 {:block/uuid #uuid "64c89969-afb2-45bb-9783-37d984eb6670"
 :block/properties 
-{:public true}
-:block/updated-at 1690964727746
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "64c89969-afb2-45bb-9783-37d984eb6670"
+:name "micropropulsion equation modelling"
+:bindings 
+{:be7b2e61-3107-11ee-a42e-71814a7006c4 
+{:id "be7b2e61-3107-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "be7b2e62-3107-11ee-a42e-71814a7006c4"
+:toId "84e38210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.72 0.37]
+:distance 4}
+:4dee1141-3101-11ee-a42e-71814a7006c4 
+{:id "4dee1141-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "71978322-3100-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.79 0.55]
+:distance 4}
+:f816a920-310b-11ee-a42e-71814a7006c4 
+{:id "f816a920-310b-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "f816a922-310b-11ee-a42e-71814a7006c4"
+:toId "14d20940-3109-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:77b88840-30ff-11ee-a42e-71814a7006c4 
+{:id "77b88840-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "77b88842-30ff-11ee-a42e-71814a7006c4"
+:toId "51dd37b0-30ff-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:01d90d61-310a-11ee-a42e-71814a7006c4 
+{:id "01d90d61-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "01d90d62-310a-11ee-a42e-71814a7006c4"
+:toId "a8b69e30-303e-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.41 0.31]
+:distance 4}
+:054cb050-310a-11ee-a42e-71814a7006c4 
+{:id "054cb050-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "054cb052-310a-11ee-a42e-71814a7006c4"
+:toId "65f919b0-3043-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:af4988d0-310a-11ee-a42e-71814a7006c4 
+{:id "af4988d0-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "af4988d2-310a-11ee-a42e-71814a7006c4"
+:toId "934c28e0-310a-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:456f6280-3101-11ee-a42e-71814a7006c4 
+{:id "456f6280-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "456f6282-3101-11ee-a42e-71814a7006c4"
+:toId "14008640-30fa-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:541dd081-310d-11ee-a42e-71814a7006c4 
+{:id "541dd081-310d-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "91c93ac0-30fc-11ee-a42e-71814a7006c4"
+:toId "7c40d6e0-30fc-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.49 0.65]
+:distance 4}
+:b5fb7bf1-310c-11ee-a42e-71814a7006c4 
+{:id "b5fb7bf1-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "d7d63332-3109-11ee-a42e-71814a7006c4"
+:toId "d2dfc0d0-3109-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.88 0.34]
+:distance 4}
+:9f821341-310a-11ee-a42e-71814a7006c4 
+{:id "9f821341-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "9f821342-310a-11ee-a42e-71814a7006c4"
+:toId "a2e43160-3107-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.34 0.56]
+:distance 4}
+:959e4cb1-30fe-11ee-a42e-71814a7006c4 
+{:id "959e4cb1-30fe-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "959e4cb2-30fe-11ee-a42e-71814a7006c4"
+:toId "14008640-30fa-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.7 0.74]
+:distance 4}
+:5118c451-3101-11ee-a42e-71814a7006c4 
+{:id "5118c451-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "456f6282-3101-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.05 0.95]
+:distance 4}
+:baefa460-310c-11ee-a42e-71814a7006c4 
+{:id "baefa460-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "baefa462-310c-11ee-a42e-71814a7006c4"
+:toId "ad8b4c20-310c-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:a1704eb0-310a-11ee-a42e-71814a7006c4 
+{:id "a1704eb0-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a1704eb2-310a-11ee-a42e-71814a7006c4"
+:toId "934c28e0-310a-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:77b88841-30ff-11ee-a42e-71814a7006c4 
+{:id "77b88841-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "77b88842-30ff-11ee-a42e-71814a7006c4"
+:toId "0b5309e0-30fb-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.51 0.63]
+:distance 4}
+:7f0d0de1-310a-11ee-a42e-71814a7006c4 
+{:id "7f0d0de1-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "961967d0-3048-11ee-ae3c-1b4e0ece8468"
+:toId "84e38210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.43 0.75]
+:distance 4}
+:70a756c1-3100-11ee-a42e-71814a7006c4 
+{:id "70a756c1-3100-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "70a756c2-3100-11ee-a42e-71814a7006c4"
+:toId "14008640-30fa-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.34 0.16]
+:distance 4}
+:5f46bf11-310a-11ee-a42e-71814a7006c4 
+{:id "5f46bf11-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "6bc906b2-3044-11ee-ae3c-1b4e0ece8468"
+:toId "7d9ae480-303f-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.31 0.24]
+:distance 4}
+:9f8572d1-3103-11ee-a42e-71814a7006c4 
+{:id "9f8572d1-3103-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "2d2e8ad2-3100-11ee-a42e-71814a7006c4"
+:toId "8a3a17f0-3103-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.76 0.28]
+:distance 4}
+:f73745a0-310b-11ee-a42e-71814a7006c4 
+{:id "f73745a0-310b-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "f73745a2-310b-11ee-a42e-71814a7006c4"
+:toId "db2b66c0-310b-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:a1579ac1-3103-11ee-a42e-71814a7006c4 
+{:id "a1579ac1-3103-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "8ace3e72-30ff-11ee-a42e-71814a7006c4"
+:toId "8a3a17f0-3103-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.48 0.2]
+:distance 4}
+:e5847141-30ff-11ee-a42e-71814a7006c4 
+{:id "e5847141-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "e5849850-30ff-11ee-a42e-71814a7006c4"
+:toId "c199ca00-3037-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.58 0.74]
+:distance 4}
+:baefa461-310c-11ee-a42e-71814a7006c4 
+{:id "baefa461-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "baefa462-310c-11ee-a42e-71814a7006c4"
+:toId "d2dfc0d0-3109-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.36 0.35]
+:distance 4}
+:dc824961-30f9-11ee-a42e-71814a7006c4 
+{:id "dc824961-30f9-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "c16515b2-3048-11ee-ae3c-1b4e0ece8468"
+:toId "b3dabee0-3048-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.54 0.76]
+:distance 4}
+:184bd140-310a-11ee-a42e-71814a7006c4 
+{:id "184bd140-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "184bd142-310a-11ee-a42e-71814a7006c4"
+:toId "82e63600-3031-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:d9831fe1-3109-11ee-a42e-71814a7006c4 
+{:id "d9831fe1-3109-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "d9831fe2-3109-11ee-a42e-71814a7006c4"
+:toId "a2e43160-3107-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.34 0.31]
+:distance 4}
+:bcf0de81-30ff-11ee-a42e-71814a7006c4 
+{:id "bcf0de81-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "97853531-303a-11ee-ae3c-1b4e0ece8468"
+:toId "8ed97870-3039-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.45 0.3]
+:distance 4}
+:a34ab401-310a-11ee-a42e-71814a7006c4 
+{:id "a34ab401-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a34ab402-310a-11ee-a42e-71814a7006c4"
+:toId "34bb77e0-3042-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.94 0.28]
+:distance 4}
+:5c657111-310a-11ee-a42e-71814a7006c4 
+{:id "5c657111-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "acb28722-3042-11ee-ae3c-1b4e0ece8468"
+:toId "7d9ae480-303f-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.51 0.76]
+:distance 4}
+:b2daf551-30fc-11ee-a42e-71814a7006c4 
+{:id "b2daf551-30fc-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b2daf552-30fc-11ee-a42e-71814a7006c4"
+:toId "a48f9870-30fc-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.37 0.19]
+:distance 4}
+:b9966c11-3103-11ee-a42e-71814a7006c4 
+{:id "b9966c11-3103-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "760ac652-3101-11ee-a42e-71814a7006c4"
+:toId "14008640-30fa-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.69 0.73]
+:distance 4}
+:760ac651-3101-11ee-a42e-71814a7006c4 
+{:id "760ac651-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "760ac652-3101-11ee-a42e-71814a7006c4"
+:toId "14008640-30fa-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.67 0.66]
+:distance 4}
+:e5847140-30ff-11ee-a42e-71814a7006c4 
+{:id "e5847140-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "e5849850-30ff-11ee-a42e-71814a7006c4"
+:toId "51dd37b0-30ff-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:10e9b611-310a-11ee-a42e-71814a7006c4 
+{:id "10e9b611-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "bf911902-3048-11ee-ae3c-1b4e0ece8468"
+:toId "53dbd270-3031-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.23 0.83]
+:distance 4}
+:dddc0d01-30f9-11ee-a42e-71814a7006c4 
+{:id "dddc0d01-30f9-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "bf911902-3048-11ee-ae3c-1b4e0ece8468"
+:toId "b3dabee0-3048-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:5dc50111-310a-11ee-a42e-71814a7006c4 
+{:id "5dc50111-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "867743a2-303f-11ee-ae3c-1b4e0ece8468"
+:toId "7d9ae480-303f-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.23]
+:distance 4}
+:b3c99b10-30fc-11ee-a42e-71814a7006c4 
+{:id "b3c99b10-30fc-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b3c99b12-30fc-11ee-a42e-71814a7006c4"
+:toId "a48f9870-30fc-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:bd135dd1-3103-11ee-a42e-71814a7006c4 
+{:id "bd135dd1-3103-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "bd135dd2-3103-11ee-a42e-71814a7006c4"
+:toId "8a3a17f0-3103-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.59 0.74]
+:distance 4}
+:be7b2e60-3107-11ee-a42e-71814a7006c4 
+{:id "be7b2e60-3107-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "be7b2e62-3107-11ee-a42e-71814a7006c4"
+:toId "a2e43160-3107-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:2d2e8ad0-3100-11ee-a42e-71814a7006c4 
+{:id "2d2e8ad0-3100-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "2d2e8ad2-3100-11ee-a42e-71814a7006c4"
+:toId "51dd37b0-30ff-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:d7d63331-3109-11ee-a42e-71814a7006c4 
+{:id "d7d63331-3109-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "d7d63332-3109-11ee-a42e-71814a7006c4"
+:toId "d2dfc0d0-3109-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.36 0.35]
+:distance 4}
+:6f278901-310a-11ee-a42e-71814a7006c4 
+{:id "6f278901-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b0e2e732-303e-11ee-ae3c-1b4e0ece8468"
+:toId "955e4210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.36 0.28]
+:distance 4}
+:b3c99b11-30fc-11ee-a42e-71814a7006c4 
+{:id "b3c99b11-30fc-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b3c99b12-30fc-11ee-a42e-71814a7006c4"
+:toId "6dacdc80-3031-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.47 0.24]
+:distance 4}
+:ddd56e91-30ff-11ee-a42e-71814a7006c4 
+{:id "ddd56e91-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "98703172-303a-11ee-ae3c-1b4e0ece8468"
+:toId "c199ca00-3037-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.4 0.85]
+:distance 4}
+:0dd76d01-310a-11ee-a42e-71814a7006c4 
+{:id "0dd76d01-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "961967d0-3048-11ee-ae3c-1b4e0ece8468"
+:toId "53dbd270-3031-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.87 0.84]
+:distance 4}
+:a34ab400-310a-11ee-a42e-71814a7006c4 
+{:id "a34ab400-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a34ab402-310a-11ee-a42e-71814a7006c4"
+:toId "934c28e0-310a-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:70a756c0-3100-11ee-a42e-71814a7006c4 
+{:id "70a756c0-3100-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "70a756c2-3100-11ee-a42e-71814a7006c4"
+:toId "494f7850-3100-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:c4318f00-30ff-11ee-a42e-71814a7006c4 
+{:id "c4318f00-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "c4318f02-30ff-11ee-a42e-71814a7006c4"
+:toId "51dd37b0-30ff-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:d7d63330-3109-11ee-a42e-71814a7006c4 
+{:id "d7d63330-3109-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "d7d63332-3109-11ee-a42e-71814a7006c4"
+:toId "ada0d750-3109-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:805d3491-310a-11ee-a42e-71814a7006c4 
+{:id "805d3491-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "054cb052-310a-11ee-a42e-71814a7006c4"
+:toId "84e38210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.59 0.65]
+:distance 4}
+:a1704eb1-310a-11ee-a42e-71814a7006c4 
+{:id "a1704eb1-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a1704eb2-310a-11ee-a42e-71814a7006c4"
+:toId "65f919b0-3043-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.36 0.38]
+:distance 4}
+:789097c1-310a-11ee-a42e-71814a7006c4 
+{:id "789097c1-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "baeec8d2-3042-11ee-ae3c-1b4e0ece8468"
+:toId "34bb77e0-3042-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.46 0.63]
+:distance 4}
+:8ace3e71-30ff-11ee-a42e-71814a7006c4 
+{:id "8ace3e71-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "8ace3e72-30ff-11ee-a42e-71814a7006c4"
+:toId "0de238f0-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.5 0.5]
+:distance 4}
+:184bd141-310a-11ee-a42e-71814a7006c4 
+{:id "184bd141-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "184bd142-310a-11ee-a42e-71814a7006c4"
+:toId "65f919b0-3043-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.43 0.28]
+:distance 4}
+:1db0c871-3100-11ee-a42e-71814a7006c4 
+{:id "1db0c871-3100-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "97853531-303a-11ee-ae3c-1b4e0ece8468"
+:toId "e30b45e0-3039-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.76]
+:distance 4}
+:bd135dd0-3103-11ee-a42e-71814a7006c4 
+{:id "bd135dd0-3103-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "bd135dd2-3103-11ee-a42e-71814a7006c4"
+:toId "51dd37b0-30ff-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:71978321-3100-11ee-a42e-71814a7006c4 
+{:id "71978321-3100-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "71978322-3100-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.57 0.2]
+:distance 4}
+:d9831fe0-3109-11ee-a42e-71814a7006c4 
+{:id "d9831fe0-3109-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "d9831fe2-3109-11ee-a42e-71814a7006c4"
+:toId "d2dfc0d0-3109-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:af4988d1-310a-11ee-a42e-71814a7006c4 
+{:id "af4988d1-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "af4988d2-310a-11ee-a42e-71814a7006c4"
+:toId "7db52110-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.8 0.33]
+:distance 4}
+:b9d92b50-310c-11ee-a42e-71814a7006c4 
+{:id "b9d92b50-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b9d92b52-310c-11ee-a42e-71814a7006c4"
+:toId "14d20940-3109-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:fcd218e1-310c-11ee-a42e-71814a7006c4 
+{:id "fcd218e1-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a3e03a22-3042-11ee-ae3c-1b4e0ece8468"
+:toId "721fb740-3042-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.58 0.12]
+:distance 4}
+:01d90d60-310a-11ee-a42e-71814a7006c4 
+{:id "01d90d60-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "01d90d62-310a-11ee-a42e-71814a7006c4"
+:toId "65f919b0-3043-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:62f59641-310a-11ee-a42e-71814a7006c4 
+{:id "62f59641-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a3e03a22-3042-11ee-ae3c-1b4e0ece8468"
+:toId "7db52110-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.51 0.69]
+:distance 4}
+:4649c680-310d-11ee-a42e-71814a7006c4 
+{:id "4649c680-310d-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "4649c682-310d-11ee-a42e-71814a7006c4"
+:toId "74305780-3031-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:760ac650-3101-11ee-a42e-71814a7006c4 
+{:id "760ac650-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "760ac652-3101-11ee-a42e-71814a7006c4"
+:toId "51dd37b0-30ff-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:497ab191-3101-11ee-a42e-71814a7006c4 
+{:id "497ab191-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "2d2e8ad2-3100-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.95 0.68]
+:distance 4}
+:a2fb1191-3103-11ee-a42e-71814a7006c4 
+{:id "a2fb1191-3103-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "760ac652-3101-11ee-a42e-71814a7006c4"
+:toId "8a3a17f0-3103-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.7 0.23]
+:distance 4}
+:3fbeeef0-3101-11ee-a42e-71814a7006c4 
+{:id "3fbeeef0-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "3fbeeef2-3101-11ee-a42e-71814a7006c4"
+:toId "0de238f0-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:7df0c871-310a-11ee-a42e-71814a7006c4 
+{:id "7df0c871-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "6bc906b2-3044-11ee-ae3c-1b4e0ece8468"
+:toId "84e38210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.55 0.84]
+:distance 4}
+:959e4cb0-30fe-11ee-a42e-71814a7006c4 
+{:id "959e4cb0-30fe-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "959e4cb2-30fe-11ee-a42e-71814a7006c4"
+:toId "0b5309e0-30fb-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:91c913b1-30fc-11ee-a42e-71814a7006c4 
+{:id "91c913b1-30fc-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "91c93ac0-30fc-11ee-a42e-71814a7006c4"
+:toId "7c40d6e0-30fc-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.68 0.8]
+:distance 4}
+:31518b21-3101-11ee-a42e-71814a7006c4 
+{:id "31518b21-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "71978322-3100-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.38 0.83]
+:distance 4}
+:72cd5f81-310a-11ee-a42e-71814a7006c4 
+{:id "72cd5f81-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "d8914d42-3042-11ee-ae3c-1b4e0ece8468"
+:toId "a8b69e30-303e-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.36 0.67]
+:distance 4}
+:f816a921-310b-11ee-a42e-71814a7006c4 
+{:id "f816a921-310b-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "f816a922-310b-11ee-a42e-71814a7006c4"
+:toId "a2e43160-3107-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.58 0.3]
+:distance 4}
+:8ace3e70-30ff-11ee-a42e-71814a7006c4 
+{:id "8ace3e70-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "8ace3e72-30ff-11ee-a42e-71814a7006c4"
+:toId "51dd37b0-30ff-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:7586da31-310a-11ee-a42e-71814a7006c4 
+{:id "7586da31-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "d8914d42-3042-11ee-ae3c-1b4e0ece8468"
+:toId "34bb77e0-3042-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.36 0.25]
+:distance 4}
+:b9d92b51-310c-11ee-a42e-71814a7006c4 
+{:id "b9d92b51-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b9d92b52-310c-11ee-a42e-71814a7006c4"
+:toId "ad8b4c20-310c-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.58 0.34]
+:distance 4}
+:4649c681-310d-11ee-a42e-71814a7006c4 
+{:id "4649c681-310d-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "4649c682-310d-11ee-a42e-71814a7006c4"
+:toId "8ed97870-3039-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.46 0.32]
+:distance 4}
+:054cb051-310a-11ee-a42e-71814a7006c4 
+{:id "054cb051-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "054cb052-310a-11ee-a42e-71814a7006c4"
+:toId "84e38210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.32 0.34]
+:distance 4}
+:71bb2c31-310a-11ee-a42e-71814a7006c4 
+{:id "71bb2c31-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b0e2e732-303e-11ee-ae3c-1b4e0ece8468"
+:toId "a8b69e30-303e-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.54 0.72]
+:distance 4}
+:b2daf550-30fc-11ee-a42e-71814a7006c4 
+{:id "b2daf550-30fc-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "b2daf552-30fc-11ee-a42e-71814a7006c4"
+:toId "7c40d6e0-30fc-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:2d2e8ad1-3100-11ee-a42e-71814a7006c4 
+{:id "2d2e8ad1-3100-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "2d2e8ad2-3100-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.46 0.67]
+:distance 4}
+:00ddf9a1-310c-11ee-a42e-71814a7006c4 
+{:id "00ddf9a1-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "00ddf9a2-310c-11ee-a42e-71814a7006c4"
+:toId "ada0d750-3109-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.35 0.68]
+:distance 4}
+:f73745a1-310b-11ee-a42e-71814a7006c4 
+{:id "f73745a1-310b-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "f73745a2-310b-11ee-a42e-71814a7006c4"
+:toId "14d20940-3109-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.5 0.17]
+:distance 4}
+:5774e131-3101-11ee-a42e-71814a7006c4 
+{:id "5774e131-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "8ace3e72-30ff-11ee-a42e-71814a7006c4"
+:toId "0de238f0-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.35 0.55]
+:distance 4}
+:71978320-3100-11ee-a42e-71814a7006c4 
+{:id "71978320-3100-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "71978322-3100-11ee-a42e-71814a7006c4"
+:toId "494f7850-3100-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:fba8db21-310c-11ee-a42e-71814a7006c4 
+{:id "fba8db21-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "acb28722-3042-11ee-ae3c-1b4e0ece8468"
+:toId "721fb740-3042-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.37 0.26]
+:distance 4}
+:456f6281-3101-11ee-a42e-71814a7006c4 
+{:id "456f6281-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "456f6282-3101-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.44 0.79]
+:distance 4}
+:6de32221-310a-11ee-a42e-71814a7006c4 
+{:id "6de32221-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "867743a2-303f-11ee-ae3c-1b4e0ece8468"
+:toId "955e4210-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.5 0.5]
+:distance 4}
+:3fbeeef1-3101-11ee-a42e-71814a7006c4 
+{:id "3fbeeef1-3101-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "3fbeeef2-3101-11ee-a42e-71814a7006c4"
+:toId "14008640-30fa-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.51 0.34]
+:distance 4}
+:c4318f01-30ff-11ee-a42e-71814a7006c4 
+{:id "c4318f01-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "c4318f02-30ff-11ee-a42e-71814a7006c4"
+:toId "8ed97870-3039-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.5 0.5]
+:distance 4}
+:91c913b0-30fc-11ee-a42e-71814a7006c4 
+{:id "91c913b0-30fc-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "91c93ac0-30fc-11ee-a42e-71814a7006c4"
+:toId "74305780-3031-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:a0db8160-310d-11ee-a42e-71814a7006c4 
+{:id "a0db8160-310d-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a0db8162-310d-11ee-a42e-71814a7006c4"
+:toId "42fa7250-303a-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:9f821340-310a-11ee-a42e-71814a7006c4 
+{:id "9f821340-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "9f821342-310a-11ee-a42e-71814a7006c4"
+:toId "934c28e0-310a-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:00ddf9a0-310c-11ee-a42e-71814a7006c4 
+{:id "00ddf9a0-310c-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "00ddf9a2-310c-11ee-a42e-71814a7006c4"
+:toId "14d20940-3109-11ee-a42e-71814a7006c4"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:a0db8161-310d-11ee-a42e-71814a7006c4 
+{:id "a0db8161-310d-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "a0db8162-310d-11ee-a42e-71814a7006c4"
+:toId "7c40d6e0-30fc-11ee-a42e-71814a7006c4"
+:handleId "end"
+:point [0.39 0.74]
+:distance 4}
+:66d0fbb1-310a-11ee-a42e-71814a7006c4 
+{:id "66d0fbb1-310a-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "baeec8d2-3042-11ee-ae3c-1b4e0ece8468"
+:toId "7db52110-3030-11ee-ae3c-1b4e0ece8468"
+:handleId "end"
+:point [0.61 0.19]
+:distance 4}
+:be443981-30ff-11ee-a42e-71814a7006c4 
+{:id "be443981-30ff-11ee-a42e-71814a7006c4"
+:type "line"
+:fromId "98703172-303a-11ee-ae3c-1b4e0ece8468"
+:toId "8ed97870-3039-11ee-ae3c-1b4e0ece8468"
+:handleId "start"
+:point [0.73 0.31]
+:distance 4}}
+:nonce 0
+:assets []
+:shapes-index ("96bfd540-302d-11ee-ae3c-1b4e0ece8468" "c0de4dc0-302d-11ee-ae3c-1b4e0ece8468" "cf42d7f0-302d-11ee-ae3c-1b4e0ece8468" "7ec59c20-302f-11ee-ae3c-1b4e0ece8468" "a16040a0-302f-11ee-ae3c-1b4e0ece8468" "a941c502-302f-11ee-ae3c-1b4e0ece8468" "ac39f662-302f-11ee-ae3c-1b4e0ece8468" "ae4d6d12-302f-11ee-ae3c-1b4e0ece8468" "b59dfc12-302f-11ee-ae3c-1b4e0ece8468" "11e3cf90-3030-11ee-ae3c-1b4e0ece8468" "437182a0-3030-11ee-ae3c-1b4e0ece8468" "7db52110-3030-11ee-ae3c-1b4e0ece8468" "84e38210-3030-11ee-ae3c-1b4e0ece8468" "955e4210-3030-11ee-ae3c-1b4e0ece8468" "a1050bd2-3030-11ee-ae3c-1b4e0ece8468" "53dbd270-3031-11ee-ae3c-1b4e0ece8468" "6dacdc80-3031-11ee-ae3c-1b4e0ece8468" "74305780-3031-11ee-ae3c-1b4e0ece8468" "82e63600-3031-11ee-ae3c-1b4e0ece8468" "c199ca00-3037-11ee-ae3c-1b4e0ece8468" "0ec04ed0-3038-11ee-ae3c-1b4e0ece8468" "3a668350-3039-11ee-ae3c-1b4e0ece8468" "5f3e94b0-3039-11ee-ae3c-1b4e0ece8468" "8ed97870-3039-11ee-ae3c-1b4e0ece8468" "e30b45e0-3039-11ee-ae3c-1b4e0ece8468" "0de238f0-303a-11ee-ae3c-1b4e0ece8468" "42fa7250-303a-11ee-ae3c-1b4e0ece8468" "97853531-303a-11ee-ae3c-1b4e0ece8468" "98703172-303a-11ee-ae3c-1b4e0ece8468" "a8b69e30-303e-11ee-ae3c-1b4e0ece8468" "b0e2e732-303e-11ee-ae3c-1b4e0ece8468" "7d9ae480-303f-11ee-ae3c-1b4e0ece8468" "867743a2-303f-11ee-ae3c-1b4e0ece8468" "34bb77e0-3042-11ee-ae3c-1b4e0ece8468" "721fb740-3042-11ee-ae3c-1b4e0ece8468" "81eecdf0-3042-11ee-ae3c-1b4e0ece8468" "859ce1d2-3042-11ee-ae3c-1b4e0ece8468" "86b27082-3042-11ee-ae3c-1b4e0ece8468" "a3e03a22-3042-11ee-ae3c-1b4e0ece8468" "acb28722-3042-11ee-ae3c-1b4e0ece8468" "baeec8d2-3042-11ee-ae3c-1b4e0ece8468" "d8914d42-3042-11ee-ae3c-1b4e0ece8468" "65f919b0-3043-11ee-ae3c-1b4e0ece8468" "6bc906b2-3044-11ee-ae3c-1b4e0ece8468" "3942bb72-3047-11ee-ae3c-1b4e0ece8468" "961967d0-3048-11ee-ae3c-1b4e0ece8468" "b3dabee0-3048-11ee-ae3c-1b4e0ece8468" "bf911902-3048-11ee-ae3c-1b4e0ece8468" "c16515b2-3048-11ee-ae3c-1b4e0ece8468" "14008640-30fa-11ee-a42e-71814a7006c4" "0b5309e0-30fb-11ee-a42e-71814a7006c4" "e21278d0-30fb-11ee-a42e-71814a7006c4" "0b7cbc80-30fc-11ee-a42e-71814a7006c4" "174713d0-30fc-11ee-a42e-71814a7006c4" "30b73930-30fc-11ee-a42e-71814a7006c4" "3a2b6b80-30fc-11ee-a42e-71814a7006c4" "3db72a50-30fc-11ee-a42e-71814a7006c4" "7c40d6e0-30fc-11ee-a42e-71814a7006c4" "91c93ac0-30fc-11ee-a42e-71814a7006c4" "a48f9870-30fc-11ee-a42e-71814a7006c4" "b2daf552-30fc-11ee-a42e-71814a7006c4" "b3c99b12-30fc-11ee-a42e-71814a7006c4" "959e4cb2-30fe-11ee-a42e-71814a7006c4" "51dd37b0-30ff-11ee-a42e-71814a7006c4" "77b88842-30ff-11ee-a42e-71814a7006c4" "c4318f02-30ff-11ee-a42e-71814a7006c4" "e5849850-30ff-11ee-a42e-71814a7006c4" "2d2e8ad2-3100-11ee-a42e-71814a7006c4" "494f7850-3100-11ee-a42e-71814a7006c4" "70a756c2-3100-11ee-a42e-71814a7006c4" "71978322-3100-11ee-a42e-71814a7006c4" "3fbeeef2-3101-11ee-a42e-71814a7006c4" "456f6282-3101-11ee-a42e-71814a7006c4" "760ac652-3101-11ee-a42e-71814a7006c4" "8a3a17f0-3103-11ee-a42e-71814a7006c4" "8ace3e72-30ff-11ee-a42e-71814a7006c4" "bd135dd2-3103-11ee-a42e-71814a7006c4" "a2e43160-3107-11ee-a42e-71814a7006c4" "be7b2e62-3107-11ee-a42e-71814a7006c4" "14d20940-3109-11ee-a42e-71814a7006c4" "ada0d750-3109-11ee-a42e-71814a7006c4" "d2dfc0d0-3109-11ee-a42e-71814a7006c4" "d7d63332-3109-11ee-a42e-71814a7006c4" "d9831fe2-3109-11ee-a42e-71814a7006c4" "01d90d62-310a-11ee-a42e-71814a7006c4" "054cb052-310a-11ee-a42e-71814a7006c4" "184bd142-310a-11ee-a42e-71814a7006c4" "934c28e0-310a-11ee-a42e-71814a7006c4" "9f821342-310a-11ee-a42e-71814a7006c4" "a1704eb2-310a-11ee-a42e-71814a7006c4" "a34ab402-310a-11ee-a42e-71814a7006c4" "af4988d2-310a-11ee-a42e-71814a7006c4" "db2b66c0-310b-11ee-a42e-71814a7006c4" "f73745a2-310b-11ee-a42e-71814a7006c4" "f816a922-310b-11ee-a42e-71814a7006c4" "00ddf9a2-310c-11ee-a42e-71814a7006c4" "ad8b4c20-310c-11ee-a42e-71814a7006c4" "b9d92b52-310c-11ee-a42e-71814a7006c4" "baefa462-310c-11ee-a42e-71814a7006c4" "445374c2-310d-11ee-a42e-71814a7006c4" "4649c682-310d-11ee-a42e-71814a7006c4" "7c087910-310d-11ee-a42e-71814a7006c4" "a0db8162-310d-11ee-a42e-71814a7006c4")}}
+:block/updated-at 1690966536072
 :block/created-at 1690868073660
 :block/type "whiteboard"
 :block/name "micropropulsion equation modelling"
