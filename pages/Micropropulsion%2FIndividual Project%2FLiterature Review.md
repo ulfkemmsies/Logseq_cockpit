@@ -249,7 +249,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  The temperature of the vapor can be calculated based on the pressure using the Antoine equation:
 				- Chamber Vapor Temperature (Antoine)
 				  id:: 64c8c71e-986b-41f9-b9f4-1ba47709621a
-				  \(T=\frac{B}{A-\log _{10} p}+C\)
+				  \(T_{1}=\frac{B}{A-\log _{10} p_{1}}+C\)
 					- where \(A=10.27, B=1810.94\), and \(C=28.67\) for pressure in \(\mathrm{Pa}\) and temperature in the range \(372.15-647.15 \mathrm{~K}\).
 			- If we consider the pressure in the range \(1-5\) bar, then we can replace the term \(\frac{p_1}{\sqrt{T_1}}\) in (3) with a function of the pressure:
 			  $$
@@ -268,7 +268,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		  \[
 		  \dot{m}_2 = \dot{m}_1 - \dot{V} \rho_l
 		  \]
-			- Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure
+			- Provides the mass flow in the chamber (vaporization rate) based on the thruster temperature and pressure at the two-phase section of the chamber
 			  
 			  The vaporization rate, \(\dot{m}_2\), is calculated as the difference between the liquid flow rate, \(\dot{m}_1\), and the time derivative of volume multiplied by the liquid density, \(\rho_l\):
 			  \[
@@ -282,11 +282,15 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  \]
 			  where \(a_T\), \(a_p\), and \(b\) are parameters of the linear regression, and \(T_n\) is the temperature of the chip measured around the nozzle.
 			  
+			  For the analysis presented here, the coefficients have been estimated as: \(a_T=1.63 \times 10^{-11} \mathrm{~m}^3 \mathrm{~K}^{-1}, a_p=\) \(-7.45 \times 10^{-15} \mathrm{~m}^3 \mathrm{~Pa}^{-1}\), and \(b=-4.36 \times 10^{-10} \mathrm{~m}^3\).
+			  
 			  Time derivative of volume:
 			  The time derivative of the volume, \(\dot{V}\), is assumed to be a first-order linear system:
 			  \[
 			  \dot{V} = A(V_{av} - V)
 			  \]
+			  
+			  where A is 75 \(s^{-1}\), \(V_{av}\) the average volume of vapor and \(V\) the total volume inside the chamber
 		- Chamber Gas Pressure model
 		  id:: 64b187ff-337d-4671-a915-1e559796f457
 		  \[
@@ -316,7 +320,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  $$
 		- Chip Temperature Model
 		  id:: 64b187ff-49cf-4345-84ec-8471d5e07b42
-		  $$T = 3405.75 \cdot P ~ [W]$$
+		  $$T_{n} = 3405.75 \cdot P ~ [W]$$
 			- Provides thruster temperature based on input power
 			  
 			  $$T = 3405.75 \cdot P ~ [W]$$
