@@ -3,29 +3,42 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 
 - Previous model recap
 	- Propulsion background (common equations)
-		- The equations for analyzing the performance of micropropulsion systems are given by:
+	  collapsed:: true
+		- The equations for analyzhydring the performance of micropropulsion systems are given by:
 		  Thrust (F): $F = \dot{m}V_e + (p_e - p_a)A_e$
 		  
 		  Exhaust velocity (V_e): $V_e = M_e\sqrt{kRT_1}$
 		  
 		  Mass flow rate ($\dot{m}$): \(\dot{m}=A_t p_1 k \frac{\sqrt{\left(\frac{2}{k+1}\right)^{\frac{k+1}{k-1}}}}{\sqrt{k R T_1}}\)
-		  
-		  Mach number at the exit (M_e):
-		  $A_e/A_t = ((k+1)/2)^{(k+1)/(2(k-1))}M_e^{-1}(1+(k-1)/2M_e^2)^{(k+1)/(2(k-1))}$
-		  
-		  Temperature at the exit (T_e): $T_e = T_1(1+(k-1)/2M_e^2)^{-1}$
-		  
-		  Pressure at the exit (p_e): $p_e = p_1(1+(k-1)/2M_e^2)^{-k/(k-1)}$
-		  
-		  Specific impulse (I_sp): $I_sp = F/\dot{m}g$
+		- Mach number at the exit (M_e):
+		  id:: 64cca4d4-7bfb-48f7-9c2d-0da990d3c76a
+		  \(\frac{A_e}{A_t}=\frac{1}{\mathrm{M_e}}\left[1+\left(\frac{\gamma-1}{\gamma+1}\right)\left(\mathrm{M_e}^2-1\right)\right]^{(\gamma+1) /[2(\gamma-1)]}\)
+		- Temperature at the exit (T_e): $T_e = T_1(1+(k-1)/2M_e^2)^{-1}$
+		- Pressure at the exit (p_e): $p_e = p_1(1+(k-1)/2M_e^2)^{-k/(k-1)}$
+		- Specific impulse (I_sp): $I_sp = F/\dot{m}g$
+		- Isentropic pressure relation
+		  id:: 64cc8fe0-64bb-483a-90b7-3291eeabbe05
+		  \(p=p_c\left(1+\frac{\gamma-1}{2} M^2\right)^{-\frac{\gamma}{\gamma-1}}\)
+		- Isentropic temperature relation
+		  id:: 64cc9394-6934-4957-9d20-d53102a0f5c2
+		  \(T=T_c\left(1+\frac{\gamma-1}{2} M^2\right)^{-1}\)
+		- Throat Critical Pressure Ratio
+		  id:: 64cd313d-8393-4c33-b197-21261dd2d0ee
+		  \(\left(\frac{\mathrm{p}_{\mathrm{t}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\mathrm{cr}}=\left(\frac{2}{\gamma+1}\right)^{\left(\frac{\gamma}{\gamma-1}\right)}\)
+		- Throat Critical Temperature Ratio
+		  id:: 64cd314d-c1ec-47af-ab5d-52575efd0178
+		  \(\left(\frac{\mathrm{T}_{\mathrm{t}}}{\mathrm{T}_{\mathrm{c}}}\right)_{\mathrm{cr}}=\left(\frac{2}{\gamma+1}\right)\)
+		- Throat Critical Density Ratio
+		  id:: 64cd3155-2b00-4cb0-adb9-f87b9aa82778
+		  \(\left(\frac{\rho_{\mathrm{t}}}{\rho_{\mathrm{c}}}\right)_{\mathrm{cr}}=\left(\frac{2}{\gamma+1}\right)^{\left(\frac{1}{\gamma-1}\right)}\)
 		- The Reynolds number of the flow in a nozzle is a good measure for how large exactly this boundary layer is, and is traditionally given by
 		  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\).
 		  Smaller nozzles will naturally cause the flow Reynolds number to become very small.
 	- Conventional Nozzles project
 		- Performance Losses
+		  id:: 64b187ff-29f1-401b-aca5-8562e50de684
 			- Divergence Losses
 			  id:: 64b187ff-8ae0-4207-9d44-4c112880be1d
-			  collapsed:: true
 			  \(\epsilon_{div} = 1 - \frac{1 - \cos(\alpha)}{2}\)
 				- When the exit half angle of a nozzle is greater than 0°, the gases ejected from the nozzle are not parallel to the direction of thrust. This results in momentum components in directions perpendicular to the thrust vector. However, since the nozzle is symmetric, these perpendicular momentum components cancel each other out and do not cause thrust misalignment. Nevertheless, they contribute to a loss in thrust as not all momentum is effectively used to propel the spacecraft forward.
 				  
@@ -36,20 +49,35 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  where α represents the exit half angle of the nozzle. This loss factor depends solely on the exit half angle and affects both large and small nozzles.
 			- Boundary Layer Losses
 			  id:: 64b187ff-8c1a-4dcb-9cae-967f94f67897
-			  collapsed:: true
 				- The boundary layer is formed along the nozzle wall due to viscous flow effects, causing the flow to slow down near the walls and deflect the full flow. This phenomenon is more significant in micro-nozzles due to their low Reynolds number, which increases the skin friction coefficient and causes larger boundary layers.
 				  
-				  Characterizing the boundary layer is crucial for predicting performance losses in micro-nozzles. A simplified model using flat plate boundary layer solutions can be used for linear convergent-divergent micro-nozzles. The skin friction coefficient for incompressible, laminar flow is given by the equation \(c_{f x}=\frac{0.664}{\sqrt{R e_x}}\), where \(R e_x\) is the Reynolds number.
-				  
-				  The momentum thickness (\(\theta_x\)) and displacement thickness (\(\delta^*\)) are given by
-				  \(\begin{gathered}\theta_x=c_{f x} \cdot x \\ \delta^*=2.59036 \cdot \theta_x\end{gathered}\)
-				  respectively. The displacement thickness represents how much the flow is displaced by the boundary layer. The angle of the nozzle divergent should be optimized to balance displacement thickness and divergence losses. The true area ratio of the nozzle can be calculated using \(\left(\frac{A_e}{A_t}\right)_{t r u e}=\frac{2 \cdot\left(R_e-\delta^*\right)}{W_t}\), where \(W_t\) is the throat width.
-				  
-				  It is important to note that the assumptions made in this boundary layer solution include laminar and attached flow, as well as the assumption that the boundary layer starts developing at the throat and increases in size until the nozzle exit.
+				  Characterizing the boundary layer is crucial for predicting performance losses in micro-nozzles. A simplified model using flat plate boundary layer solutions can be used for linear convergent-divergent micro-nozzles.
+				- Flat-plate Reynolds number (at exit)
+				  id:: 64cca075-1245-48d4-a4a6-fc03494b2f50
+				  \(R e_x=\frac{u_e x}{v}\)
+				- Skin friction coefficient
+				  id:: 64cc9748-d513-4809-adfe-e95b1c34956a
+				  \(c_{f x}=\frac{0.664}{\sqrt{R e_x}}\)
+					- for incompressible, laminar flow where \(R e_x\) is the Reynolds number.
+				- Momentum thickness (\(\theta_x\))
+				  id:: 64cc96fe-a16e-466f-b5c4-b5e4c733a8b1
+				  \(\theta_x=c_{f x} \cdot x\)
+				- Displacement thickness (\(\delta^*\))
+				  id:: 64cc9717-87fc-42f1-a457-d9749fd37124
+				  \( \delta^*=2.59036 \cdot \theta_x\)
+					- The displacement thickness represents how much the flow is displaced by the boundary layer.
+				- The angle of the nozzle divergent should be optimized to balance displacement thickness and divergence losses.
+				- True area ratio of the nozzle
+				  id:: 64cc97a7-8e4d-4525-8acc-56132260b2cd
+				  :LOGBOOK:
+				  CLOCK: [2023-08-04 Fri 08:16:20]
+				  :END:
+				  \(\left(\frac{A_e}{A_t}\right)_{t r u e}=\frac{2 \cdot\left(R_e-\delta^*\right)}{W_t}\)
+					- where \(W_t\) is the throat width.
+				- It is important to note that the assumptions made in this boundary layer solution include laminar and attached flow, as well as the assumption that the boundary layer starts developing at the throat and increases in size until the nozzle exit.
 			- Momentum Losses
 			  id:: 64b187ff-820c-4011-be5d-5dc586619e2e
-			  collapsed:: true
-			  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
+			  \(\Delta F_{\text {momentum }}=\left(\rho_e \cdot u_e \cdot\left(2 \pi R_e\right) \cdot \theta_e\right) \cdot u_e\)
 				- The presence of a boundary layer in addition to the modification of effective nozzle geometry leads to momentum losses in the flow. These losses occur as the flow loses momentum within the boundary layer. To account for this, the thrust loss due to momentum can be calculated using the equation:
 				  
 				  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
@@ -57,17 +85,16 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  It is important to note that for nozzles with non-circular cross sections, the circumference term should be replaced with the equivalent perimeter.
 		- Reference Temperature Approach
 		  id:: 64b187ff-ebbe-48b2-a3d0-bab106f918e7
-		  collapsed:: true
 		  \[c_f=c_{f, i}\left(\frac{T_w / T_0+1}{2}+0.22 \frac{\gamma-1}{2} M^2\right)^{-0.6}\]
-			- The previous section discussed a method for predicting boundary layer properties assuming incompressible flow. However, when the flow becomes supersonic, this assumption is no longer valid. To account for this, the "Reference Temperature Approach" corrects the skin friction coefficient using an average temperature across the boundary layer. The correction can be calculated using the equation:
-			  
+			- The previous section discussed a method for predicting boundary layer properties assuming incompressible flow. However, when the flow becomes supersonic, this assumption is no longer valid. To account for this, the "Reference Temperature Approach" corrects the skin friction coefficient using an average temperature across the boundary layer.
+			- Compressible skin friction coefficient:
+			  id:: 64ccab94-c4f8-424f-8c33-884a3c10f7bb
 			  \[c_f=c_{f, i}\left(\frac{T_w / T_0+1}{2}+0.22 \frac{\gamma-1}{2} M^2\right)^{-0.6}\]
-			  
-			  where \(T_w\) is the wall temperature and \(T_0\) is the stagnation temperature at the point where the skin friction coefficient is determined. In this context, we only consider the exit stagnation temperature, as the characteristics of the flat plate boundary layer will be determined at the exit of the nozzle to quantify the loss in exit area. The exit total temperature (\(T_{0_e}\)) can be calculated using isentropic relations:
-			  
+				- where \(T_w\) is the wall temperature and \(T_0\) is the stagnation temperature at the point where the skin friction coefficient is determined. In this context, we only consider the exit stagnation temperature, as the characteristics of the flat plate boundary layer will be determined at the exit of the nozzle to quantify the loss in exit area.
+			- Exit total temperature (\(T_{0_e}\))
+			  id:: 64ccabb3-a95f-4de4-89d4-d2e64270f595
 			  \[T_{0_e}=T_e \cdot\left(1+\frac{\gamma-1}{2} \cdot M_e^2\right)\]
-			  
-			  This equation can be used for any point along the nozzle, as long as the corresponding flow Mach number (\(M_e\)) is used.
+				- This equation can be used for any point along the nozzle, as long as the corresponding flow Mach number (\(M_e\)) is used.
 		- Aggregate Performance Loss
 		  id:: 64b187ff-2db4-4fe4-997f-f52657d8a1a0
 			- To calculate the aggregate performance loss, a step-by-step procedure is followed. First, independent loss factors not affected by boundary layer effects are determined:  The divergence thrust correction factor is calculated based on the divergent half angle.
@@ -77,18 +104,20 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  
 			  1. Thrust reduction due to momentum loss is determined based on the momentum thickness.
 			  2. The true area ratio is determined based on the displacement thickness.
-			  3. The true area ratio leads to a lower exit pressure than predicted by IRT (Isentropic Relation Theory). The effective pressure ratio and exit pressures are iteratively determined using the equation:
-			  
-			  \(\frac{\mathrm{A}_{\mathrm{e}}}{\mathrm{A}_{\mathrm{t}}}=\frac{\Gamma}{\sqrt{\frac{2 \gamma}{\gamma-1} \cdot\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{2}{\gamma}\right)}\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}}\)
-			  
-			  4. The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and reduced exit pressure. The true thrust, estimated using this methodology, is given by:
+			  3. The true area ratio leads to a lower exit pressure than predicted by IRT (Isentropic Relation Theory).
+				- Effective pressure ratio and exit pressures Iteration
+				  id:: 64ccaae0-593f-41cb-a280-d19582326b9d
+				  
+				  \(\frac{\mathrm{A}_{\mathrm{e}}}{\mathrm{A}_{\mathrm{t}}}=\frac{\Gamma}{\sqrt{\frac{2 \gamma}{\gamma-1} \cdot\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{2}{\gamma}\right)}\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}}\)
+			- 4. The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and reduced exit pressure. The true thrust, estimated using this methodology, is given by:
 				- True Thrust
 				  id:: 64c8bd12-b650-47d9-8a35-f95667464ffd
-				  \(F_{\text {true }}=m \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
+				  \(F_{\text {true }}=\dot{m} \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
 			- True Thrust coefficient
 			  id:: 64c8adb2-93c4-4c41-bb4e-daf679f7fef9
 			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
+	  collapsed:: true
 		- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
 		  • Incompressible flow
 		  • Steady state (this was verified with transient simulations)
@@ -118,6 +147,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				- where \(T_w\) is the average temperature of the three heated walls and \(A_{\text {wall heat }}\) is their area.
 			- Mean fluid temperature \(T_M\)
 			  id:: 64b187ff-2940-4304-8395-8954d0948db6
+			  \(T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right)\)
 				- was calculated making an average over the whole fluid volume due to the constant wall temperature assumption. The mean fluid temperature, \(T_m\), is calculated with the following two methods:
 				  $$
 				  \begin{array}{r}
@@ -126,6 +156,21 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  \end{array}
 				  $$
 				  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
+				- Fluid volume
+				  id:: 64cb5b4f-fe1f-4f91-96c7-8fddf3be0c26
+				  \(V_{fluid} = V_{tot} - V_{av}\)
+			- Water boiling temperature
+			  id:: 64cb5a30-d663-46c1-829c-ae394a71e4ba
+			  $$\ln \left(P_1 / P_2\right)=-\Delta H / R \times\left(1 / T_1-1 / T_2\right)$$
+				- where:
+				  \(\mathbf{P}_{\mathbf{1}}\) - Pressure at state 1 = 1 atm;
+				  \(\mathbf{P}_{\mathbf{2}}\) - Pressure at state 2;
+				  \(\mathbf{T}_{\mathbf{1}}\) - Boiling point at state 1 = 100 C;
+				  \(\mathbf{T}_2\) - Boiling point at state 2 (at pressure equal to \(\mathbf{P}_2\) );
+				  \(\boldsymbol{\Delta} \mathbf{H}\) - Latent heat of vaporization of the substance, measured in \(\mathrm{J} / \mathrm{mol}\) = 40.66 kJ/mol;
+				  \(\mathbf{R}\) - Gas constant, equal to \(8.314 \mathrm{~J} /(\mathrm{K} \cdot \mathrm{mol})\).
+				- Source: https://www.omnicalculator.com/chemistry/boiling-point#clausius-clapeyron-relation
+			-
 			- ## Pressure Losses
 			  id:: 64b187ff-b52e-49a5-9e78-41334db85922
 			  \(\Delta p\)
@@ -145,7 +190,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			- Reynolds number
 			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
 			  $$
-			  R e=\frac{m \cdot D_h}{A_{\text {inlet }} \cdot \mu}
+			  R e=\frac{\dot{m} \cdot D_h}{A_{\text {inlet }} \cdot \mu}
 			  $$
 				- which is an equivalent and more useful (for dimensioning, given the density of water is known) version of
 				  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\)
@@ -167,6 +212,10 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				   ~ [\mathrm{s}]
 				  $$
 	- Aerospike project
+	  collapsed:: true
+		- Vanderkerck-hove function \(\Gamma\)
+		  id:: 64cca9aa-bab3-43af-a59b-80f3fc20380c
+		  \(\Gamma=\sqrt{\gamma} \cdot\left(\frac{2}{\gamma+1}\right)^{\left(\frac{\gamma+1}{2(\gamma-1)}\right)}\)
 		- Thrust efficiency \(\eta_F\)
 		  id:: 64b187ff-c6ef-4895-bcaf-0e6274fe2683
 		  $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}=\frac{C_F \cdot p_c \cdot A_t}{C_{F, i} \cdot p_c \cdot A_t}=\frac{C_F}{C_{F, i}}$$
@@ -235,6 +284,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  
 			  \(\frac{A_{\text {eff }}}{A_{\text {geo }}}=0.322135-\frac{38.6498}{R e}+0.063732 \cdot \log (R e)\)
 	- Control model paper
+	  collapsed:: true
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
 		- Nozzle Mass Flow Model
 		  id:: 64b187ff-09db-463e-b211-48932b579005
@@ -300,16 +350,27 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  \]
 			  
 			  where A is 75 \(s^{-1}\), \(V_{av}\) the average volume of vapor and \(V\) the total volume inside the chamber
+			- Fluid Flow Centerline
+			  id:: 64cb54ca-cf92-4b81-80ef-a8e8352825dd
+			  \(V_{av}/V_{tot} \cdot L= L_{fl}\)
 		- Chamber Gas Pressure model
 		  id:: 64b187ff-337d-4671-a915-1e559796f457
 		  \[
-		  p = \frac{1}{\alpha_2} \left(\frac{m R_s}{V} - \beta_2\right)
+		  p=\frac{1}{\alpha_2}\left(\frac{R_s}{v}-\beta_2\right)
 		  \]
 			- The pressure inside the chamber, \(p\), is calculated using the ideal gas law:
 			  \[
 			  p = \frac{1}{\alpha_2} \left(\frac{m R_s}{V} - \beta_2\right)
 			  \]
 			  where \(\alpha_2\) and \(\beta_2\) are coefficients obtained from a linear approximation.
+			- Specific Volume \( v\)
+			  id:: 64cb622f-0941-4ceb-a7f4-d255ef87df5f
+			  \(\ln \left(\mathrm{v}_{\mathrm{g}}\right)=\mathrm{a}+\mathrm{b}\left[\ln \left(1 / \mathrm{T}_{\mathrm{r}}\right)\right]^{0.4}+\mathrm{c} / \mathrm{T}_{\mathrm{r}}^2+\mathrm{d} / \mathrm{T}_{\mathrm{r}}^4+\mathrm{e} / \mathrm{T}_{\mathrm{r}}^5\)
+				- \(\mathrm{T}_{\mathrm{r}}\) is the reduced temperature which is defined as \(\mathrm{T} / \mathrm{T}_{\mathrm{cr}} \cdot \mathrm{T}_{\mathrm{cr}}\) is critical temperature; for steam it is \(647.096 \mathrm{~K}\) [1].
+				- | $\mathrm{a}$ | $\mathrm{b}$ | $\mathrm{c}$ | $\mathrm{d}$ | $\mathrm{e}$ |
+				  | :--- | :--- | :--- | :--- | :--- |
+				  | -7.75883 | 3.23753 | 2.05755 | -0.06052 | 0.00529 |
+				- Source: [[@Simplified Equations for Saturated Steam Properties for Simulation Purpose]]
 			- Derivation:
 			  
 			  Considering the ideal gas law given by:
@@ -318,7 +379,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  $$
 			  where \(m\) is the mass of gas. Following a similar approach as the linear approximation used in the nozzle model, we can approximate the term \(\frac{p}{T}\) by a linear relation reducing the equation to:
 			  $$
-			  p=\frac{1}{\alpha_2}\left(\frac{m R_s}{V}-\beta_2\right)
+			  p=\frac{1}{\alpha_2}\left(\frac{m R_s}{V}-\beta_2\right) \rightarrow p=\frac{1}{\alpha_2}\left(\frac{R_s}{v}-\beta_2\right)
 			  $$
 			  where:
 			  $$
@@ -375,5 +436,34 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		  $$
 		  
 		  The values for alpha are experimentally determined but do not offer equations to optimize concerning e.g. sizing of the channels.
-- Heating chamber heat transfer
+- Heating chamber
+	- Chamber Inlet Sizing
+		- Inlet water pressure
+		  \( p_{in} = p_{tank} - 0.5 \cdot \rho \cdot (\dot{m}_{in} / \rho \cdot A_{in})^2 \)
+		- Water density at operational standard conditions (22 C, 1-10 atm) = 997.5 kg/m3
+	- Heating Chamber Sizing
+		- ![image.png](../assets/image_1691249918616_0.png)
+		- 14 elements
+		  ![image.png](../assets/image_1691249967013_0.png)
+		  $L = 8.96$ mm
+		  $L_c = 14.1$ mm
+		- Total chamber length
+		  \( L =0.64\  mm \cdot n_{elem} \)
+		- Chamber Centerline
+		  \(L_C = 1.00714 \ mm \cdot n_{elem}\)
+		- Aspect Ratio
+		  \( \alpha = 0.212 \ mm \div H \)
+		  where \(H\) is the channel depth in mm
+		- Heated wall surface area
+		  \( (2.01062 \ mm \cdot H + 0.213126 \ mm^{2} ) \cdot n_{elem} \cdot n_{x \ elem}\)
+		- Total chamber volume
+		  \( (0.213126 \ mm^{2} \cdot H ) \cdot n_{elem} \cdot n_{x \ elem}\)
+	- Heat transfer
 - Micro-nozzle performance
+	- Nozzle sizing
+		- Nozzle exit half-angle
+		  \( \alpha = \tan^{-1} \left( \frac{R_{e}}{L_n} \right) \)
+		- X measure along nozzle wall (at exit)
+		  \( x = \sqrt{R_{e}^2 + L_{n}^2} \)
+		- Nozzle exit area
+		  \( A_e = \pi \cdot R_{e}^2 \)

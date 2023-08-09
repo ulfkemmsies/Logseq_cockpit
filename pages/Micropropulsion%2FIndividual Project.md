@@ -1,6 +1,7 @@
 - References and Literature Review notes
 	- Reference school reports
 		- [[@Analytical Relations for Performance Characterization of CD Micro-nozzles]]
+		  collapsed:: true
 			- {{embed [[hls__Micropropulsion project_conventional nozzles]]}}
 		- [[@Micropropulsion course Numerical analysis of wavy microchannels employed in a Vaporizing Liquid Micro-resistojet thruster]]
 		  collapsed:: true
@@ -97,6 +98,8 @@
 		- [[@Vaporizing Liquid Microthrusters with integrated heaters and temperature measurement]]
 		  collapsed:: true
 			- {{embed [[hls__Silva et al. - 2017 - Vaporizing Liquid Microthrusters with integrated h]]}}
+	- Supplementary Materials
+		- [[@Simplified Equations for Saturated Steam Properties for Simulation Purpose]]
 - Assignment
 	- Tasks
 		- Carefully analyse the models proposed in the previous Micropropulsion projects for the heating
@@ -113,5 +116,3 @@
 		  chamber and the micro-nozzle of a VLM micro-resistojet?
 		- What is the most promising design for the new generation of VLM micro-resistojet thrusters
 		  to be manufactured and tested by TU Delft?
-- [[Micropropulsion/Individual Project/Literature Review]]
--
