@@ -20,7 +20,7 @@
 	- DONE L2B Work Session >[2023-08-03 13:00 - 21:00](#agenda://?start=1691060400000&end=1691089200000&allDay=false)
 	- DONE L2B Work Session >[2023-08-04 13:00 - 21:00](#agenda://?start=1691146800000&end=1691175600000&allDay=false)
 	- DONE L2B Work Session >[2023-08-07 13:00 - 21:00](#agenda://?start=1691406000000&end=1691434800000&allDay=false)
-	- TODO L2B Work Session >[2023-08-08 13:00 - 21:00](#agenda://?start=1691492400000&end=1691521200000&allDay=false)
+	- DONE L2B Work Session >[2023-08-08 13:00 - 21:00](#agenda://?start=1691492400000&end=1691521200000&allDay=false)
 	- TODO L2B Work Session >[2023-08-09 13:00 - 21:00](#agenda://?start=1691578800000&end=1691607600000&allDay=false)
 	- TODO L2B Work Session >[2023-08-10 13:00 - 21:00](#agenda://?start=1691665200000&end=1691694000000&allDay=false)
 	- TODO L2B Work Session >[2023-08-11 13:00 - 21:00](#agenda://?start=1691751600000&end=1691780400000&allDay=false)
@@ -125,6 +125,8 @@
 				- Knex is a query builder and connector (?)
 		- DONE Add CI/CD config for service >[🍅🍅🍅🍅🍅🍅🍅🍅 175min](#agenda-pomo://?t=f-1690974634412-1500%2Cf-1690977502411-1500%2Cf-1690979475269-1500%2Cf-1691071505074-1200%2Cf-1691074153194-1200%2Cf-1691076281813-1200%2Cf-1691077706479-1200%2Cf-1691079122228-1200)
 		- TODO Get Whisper server to run on RunPod >[🍅🍅🍅🍅🍅🍅🍅🍅🍅 184min](#agenda-pomo://?t=f-1691148504873-1200%2Cf-1691150418094-1200%2Cf-1691152463588-1200%2Cp-1691153706305-191%2Cf-1691154949423-1200%2Cf-1691158057260-1200%2Cf-1691159315818-1200%2Cf-1691160567621-1200%2Cf-1691163237639-1200%2Cf-1691166259651-1200)
+			- TODO Make timeout server fix
+			-
 	- Mixpanel analysis
 		- TODO Look through feature list for preliminary analysis
 	- General NLP/LLM
