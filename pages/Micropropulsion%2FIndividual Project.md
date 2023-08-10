@@ -1,3 +1,5 @@
+public:: true
+
 - References and Literature Review notes
 	- Reference school reports
 		- [[@Analytical Relations for Performance Characterization of CD Micro-nozzles]]
