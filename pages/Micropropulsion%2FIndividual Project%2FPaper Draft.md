@@ -47,7 +47,7 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 		  • Laminar flow
 		  • Constant fluid properties
 		  This is due to the extremely low Reynolds numbers found in that investigation, and in order to keep the validity of the model intact, we must design our liquid flow phase according to those low Reynolds numbers. Additionally, constant heat flux from the walls was assumed, although in that model, the heat flux was chosen to ensure the flow would stay liquid, which is not the case in this more comprehensive model.
-		- The essence of this phase of the model is characterizing the loss in pressure due to friction and the interaction of the fluid with the waviness of the channel walls. This is done using the following equations and quantities, and the exact simulation procedure will be discussed in a later chapter.
+		- The essence of this phase of the model is characterizing the loss in pressure (which can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank) due to friction and the interaction of the fluid with the waviness of the channel walls. This is done using the following equations and quantities, and the exact simulation procedure will be discussed in a later chapter.
 			- Reynolds number
 			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
 			  
@@ -61,19 +61,23 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 			  
 			  In this formula, \(Re\) represents the Reynolds number, \(\dot{m}\) is the mass flow rate of the fluid, \(D_h\) is the hydraulic diameter of the conduit, \(A\) is the cross-sectional area of the flow region, and \(\mu\) is the dynamic viscosity of the fluid.
 			  
-			  The Reynolds number is crucial in determining the flow regime of a fluid. When the Reynolds number is below a certain critical value, the flow is considered laminar, characterized by smooth and orderly movement of fluid layers. On the other hand, when the Reynolds number exceeds the critical value, the flow becomes turbulent, with chaotic and irregular fluid motion.Pressure Losses
-				- Can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank
-				- Channel friction factor
-				  $$
-				  f=\frac{\left(p_{\text {inlet }}-p_{\text {outlet }}\right) \cdot D_h}{\frac{1}{2} \rho U_{\text {inlet }}^2 \cdot L}
-				  $$
-					- To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. Here \(p_{\text {inlet }}\) and \(p_{\text {outlet }}\) are the average pressures over the respective areas. \(U_{\text {inlet }}\) is the mean flow velocity, obtained from the mass flow. \(L\) is the centerline length.
-				- Shah and London affirm that, for macrochannels, for a fully developed flow, the product of the friction factor and the Reynolds number, \(f R e\), is constant. However, given the presence of a pressure drop associated with the developing region, we should expect a measured \(f R e\) to behave as depicted by the following equation:
-				  $$
-				  f R e_{e f f}=f R e+K_{\infty} \cdot R e \cdot \frac{D_h}{L}
-				  $$
-				  
-				  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
+			  The Reynolds number is crucial in determining the flow regime of a fluid. When the Reynolds number is below a certain critical value, the flow is considered laminar, characterized by smooth and orderly movement of fluid layers. On the other hand, when the Reynolds number exceeds the critical value, the flow becomes turbulent, with chaotic and irregular fluid motion.
+			- Channel friction factor
+			  $$
+			  f=\frac{\left(p_{\text {inlet }}-p_{\text {outlet }}\right) \cdot D_h}{\frac{1}{2} \rho U_{\text {inlet }}^2 \cdot L}
+			  $$
+			  
+			  To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. Here \(p_{\text {inlet }}\) and \(p_{\text {outlet }}\) are the average pressures over the respective areas. \(U_{\text {inlet }}\) is the mean flow velocity, obtained from the mass flow. \(L\) is the centerline length.
+			- Shah and London Relations
+			  
+			  Shah and London [REFERENCE] affirm that, for macrochannels, for a fully developed flow, the product of the friction factor and the Reynolds number, \(f R e\), is constant. However, given the presence of a pressure drop associated with the developing region, we should expect a measured \(f R e\) to behave as depicted by the following equation:
+			  $$
+			  f R e_{e f f}=f R e+K_{\infty} \cdot R e \cdot \frac{D_h}{L}
+			  $$
+			  
+			  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
+			  
+			  Since \( f \ Re\) and \( K_{\infty} \) can be characterized for a given channel purely through its aspect ratio, they remain fixed for a given channel geometry.
 		- Heating Chamber Liquid Phase Performance Metrics
 			- Nusselt number
 			  id:: 64b187ff-20cf-46c6-a290-4d508fe0c853
@@ -101,10 +105,14 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 				  \end{array}
 				  $$
 				  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
-				- Fluid volume
-				  id:: 64cb5b4f-fe1f-4f91-96c7-8fddf3be0c26
-				  \(V_{fluid} = V_{tot} - V_{av}\)
-			-
+			- The equation provided in the function is a polynomial fit that approximates the relationship between water boiling temperature (
+			  
+			   
+			  ​
+			    represents the boiling temperature of water in Kelvin (K).
+			  
+			  pressure represents the pressure of water in Pascals (Pa).
+			  The coefficients in the equation are determined from fitting the equation to experimental data. This polynomial equation provides a convenient way to estimate the boiling temperature of water under various pressure conditions, as observed in real-world scenarios. Keep in mind that this equation is an approximation and might not accurately represent extreme conditions or values far from the fitted data range.
 	- Heating Chamber Gaseous Phase
 		- The model for the gaseous flow phase in the heating chamber was chiefly taken from [[@A Comprehensive Model for Control of Vaporizing Liquid Microthrusters]]. In this study, two-phase flow was investigated experimentally with cameras to determine at which point of the chamber the vaporization happened, allowing a fitted equation that relates the average volume of vapor in the chamber with the pressure at vaporization and the temperature of the walls (technically the temperature of the chip at the nozzle, but the constant temperature assumption extends this to the chamber walls):
 		  
