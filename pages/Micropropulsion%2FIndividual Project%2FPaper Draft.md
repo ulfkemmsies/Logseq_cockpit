@@ -330,13 +330,23 @@ id:: 64b187ff-2940-4304-8395-8954d0948db6
 			  'channel_friction_factor' (an initial estimate of the friction factor in the channel).
 			  2. Iteration Loop:
 			  The code enters a loop that iterates until convergence is achieved or the maximum number of iterations is reached.
-			  The loop starts by storing the current value of the centerline length as ' \(\mathbf{L O}\) '.
+			  The loop starts by storing the current value of the centerline length as ' \(\mathbf{L_0}\) '.
 			  3. Boiling Pressure Calculation:
 			  Calculate the boiling pressure 'p_boil' in the microchannel using the given inlet flow, inlet radius, and the current centerline length ' \(\mathbf{L}\) '.
 			  4. Average Vapor Volume Calculation:
 			  Compute the average vapor volume within the microchannel using the chip temperature and the calculated boiling pressure. This value is important for determining the vaporliquid phase distribution.
 			  5. Comparison with Chamber Volume:
 			  Compare the calculated average vapor volume with the chamber volume. If the average vapor volume exceeds the chamber volume, an error is raised, indicating that vapor volume is larger than what the chamber can accommodate.
+			  6. Fluid Flow Centerline Calculation:
+			  Calculate the new centerline length 'L' using the calculated average vapor volume, chamber volume, and the initial centerline length. This step helps adjust the centerline length based on the vapor-liquid distribution.
+			  7. Comparison with Initial Centerline:
+			  Compare the new centerline length ' \(\mathbf{L}\) ' with the initial centerline length. If the new centerline length exceeds the initial value, an error is raised, indicating that the calculated centerline length is larger than expected.
+			  8. Update Channel Friction Factor:
+			  Update the 'channel_friction_factor` using the new centerline length 'L'.
+			  9. Convergence Check:
+			  Calculate the absolute difference 'delta_L' between the new centerline length 'L' and the previous centerline length ' \(\mathbf{L_0}\) '.
+			  10. Convergence Check and Break
+			  Check if the absolute difference 'delta_L' is smaller than the specified convergence threshold ('epsilon '). If it is, the loop is exited, and the calculations are considered converged.
 		- 5. Water Boiling Temperature Calculation: The boiling temperature of water is calculated using the previously determined boiling pressure.
 		  6. Mean Fluid Temperature Calculation: The mean fluid temperature in the chamber is calculated as the average between the inlet water temperature and the water boiling temperature.
 		  7. Heat Transfer Coefficient Calculation: The heat transfer coefficient at the heated wall surface is computed using the input power, heated wall surface area, chip temperature, and mean fluid temperature.
