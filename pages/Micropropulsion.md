@@ -14,7 +14,7 @@ type:: class
 	- DONE Microprop Work Session >[2023-08-06 07:00 - 17:00](#agenda://?start=1691298000000&end=1691334000000&allDay=false)
 	- DONE Microprop Work Session >[2023-08-07 07:00 - 11:00](#agenda://?start=1691384400000&end=1691398800000&allDay=false)
 	- DONE Microprop Work Session >[2023-08-08 07:00 - 11:00](#agenda://?start=1691470800000&end=1691485200000&allDay=false)
-	- TODO Microprop Work Session >[2023-08-09 07:00 - 11:00](#agenda://?start=1691557200000&end=1691571600000&allDay=false)
+	- DONE Microprop Work Session >[2023-08-09 07:00 - 11:00](#agenda://?start=1691557200000&end=1691571600000&allDay=false)
 	- TODO Microprop Work Session >[2023-08-10 07:00 - 11:00](#agenda://?start=1691643600000&end=1691658000000&allDay=false)
 	- TODO Microprop Work Session >[2023-08-11 07:00 - 11:00](#agenda://?start=1691730000000&end=1691744400000&allDay=false)
 	- TODO Microprop Work Session >[2023-08-12 07:00 - 17:00](#agenda://?start=1691816400000&end=1691852400000&allDay=false)

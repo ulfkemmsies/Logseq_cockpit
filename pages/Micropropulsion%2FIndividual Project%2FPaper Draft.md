@@ -1,3 +1,5 @@
+id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
+
 - Title
 	- Integrating Analytical Models for Vaporizing Liquid Micropropulsion Systems: Towards Next-Generation Design and Flow Behavior Characterization
 - Abstract
@@ -10,8 +12,6 @@
 	  To address these challenges, this study proposes a novel framework that integrates multiple analytical models to enhance the understanding and performance of vaporizing liquid micropropulsion systems. By leveraging existing models, we aim to capitalize on their strengths and overcome their limitations, ultimately leading to more accurate predictions and efficient designs.
 	  
 	  The first step involves a comprehensive review and selection of relevant analytical models for key components of the micropropulsion system, including the inlet, combustion chamber, and nozzle. Each model is carefully evaluated based on its applicability, accuracy, and computational efficiency. Subsequently, these models are integrated into a unified framework, allowing for a holistic analysis of the system's behavior.
-	  
-	  Furthermore, this paper emphasizes the importance of characterizing the flow behavior within the micropropulsion system. By employing advanced experimental techniques and numerical simulations, we aim to gain insights into the complex fluid dynamics, heat transfer phenomena, and combustion processes occurring within the system. 
 	  
 	  By combining existing analytical models and characterizing flow behavior, we can overcome the limitations of individual models and achieve a more comprehensive understanding of system performance. This, in turn, will facilitate the design of next-generation micropropulsion systems that offer enhanced efficiency, reliability, and maneuverability for small satellites in space missions.
 - Literature Review and Modeling
@@ -39,7 +39,7 @@
 		- Nozzle
 		  The micronozzle has three main sizing input variables: the throat radius $R_t$, the exit radius $R_e$, and the nozzle length $L_n$. The diverging section of the nozzle is assumed to expand outward from the throat without any curvature, so that the length along the nozzle wall can be found with \( x = \sqrt{R_{e}^2 + L_{n}^2} \), and the nozzle exit half-angle with \( \alpha = \tan^{-1} \left( \frac{R_{e}}{L_n} \right) \).
 	- Heating Chamber Liquid Phase
-		- The assumptions of the model used in this phase, in the original paper, are as follows:
+		- The assumptions of the model used in this phase, in the original paper [[@Micropropulsion course Numerical analysis of wavy microchannels employed in a Vaporizing Liquid Micro-resistojet thruster]], are as follows:
 		  • Incompressible flow
 		  • Steady state (this was verified with transient simulations)
 		  • Negligible radiative and natural convective heat transfer
@@ -47,6 +47,30 @@
 		  • Laminar flow
 		  • Constant fluid properties
 		  This is due to the extremely low Reynolds numbers found in that investigation, and in order to keep the validity of the model intact, we must design our liquid flow phase according to those low Reynolds numbers. Additionally, constant heat flux from the walls was assumed, although in that model, the heat flux was chosen to ensure the flow would stay liquid, which is not the case in this more comprehensive model.
+		- Reynolds number
+		  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
+		  
+		  The Reynolds number is a dimensionless quantity used in fluid mechanics to characterize the flow of a fluid, such as water, through a pipe or any other conduit. It helps determine the type of flow, whether it is laminar or turbulent, based on the fluid's velocity, density, viscosity, and the characteristic length or diameter of the conduit.
+		  
+		  The Reynolds number is calculated using two different formulas, both of which are equivalent but used in different situations. The first formula is:
+		  
+		  $$
+		  R e=\frac{\dot{m} \cdot D_h}{A_{\text {inlet }} \cdot \mu}
+		  $$
+		  
+		  In this formula, \(Re\) represents the Reynolds number, \(\dot{m}\) is the mass flow rate of the fluid, \(D_h\) is the hydraulic diameter of the conduit, \(A_{\text{inlet}}\) is the cross-sectional area of the inlet, and \(\mu\) is the dynamic viscosity of the fluid.
+		  
+		  The second formula is:
+		  
+		  $$
+		  R e=\frac{\rho \cdot v \cdot D}{\mu}
+		  $$
+		  
+		  Here, \(Re\) still represents the Reynolds number, \(\rho\) is the density of the fluid, \(v\) is the velocity of the fluid, \(D\) is the characteristic length or diameter of the conduit, and \(\mu\) is the dynamic viscosity of the fluid.
+		  
+		  Both formulas essentially provide the same information but are used in different scenarios, though the former is more useful for us in characterizing the flow through the inlet or channels.
+		  
+		  The Reynolds number is crucial in determining the flow regime of a fluid. When the Reynolds number is below a certain critical value, the flow is considered laminar, characterized by smooth and orderly movement of fluid layers. On the other hand, when the Reynolds number exceeds the critical value, the flow becomes turbulent, with chaotic and irregular fluid motion.
 		-
 	- Heating Chamber Gaseous Phase
 		- The model for the gaseous flow phase in the heating chamber was chiefly taken from [[@A Comprehensive Model for Control of Vaporizing Liquid Microthrusters]]. In this study, two-phase flow was investigated experimentally with cameras to determine at which point of the chamber the vaporization happened, allowing a fitted equation that relates the average volume of vapor in the chamber with the pressure at vaporization and the temperature of the walls (technically the temperature of the chip at the nozzle, but the constant temperature assumption extends this to the chamber walls):

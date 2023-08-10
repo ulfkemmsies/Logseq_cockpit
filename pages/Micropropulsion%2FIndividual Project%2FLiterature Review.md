@@ -35,6 +35,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\).
 		  Smaller nozzles will naturally cause the flow Reynolds number to become very small.
 	- Conventional Nozzles project
+	  collapsed:: true
 		- Performance Losses
 		  id:: 64b187ff-29f1-401b-aca5-8562e50de684
 			- Divergence Losses
@@ -117,7 +118,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  id:: 64c8adb2-93c4-4c41-bb4e-daf679f7fef9
 			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
-	  collapsed:: true
 		- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
 		  • Incompressible flow
 		  • Steady state (this was verified with transient simulations)
@@ -187,13 +187,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  $$
 				  
 				  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
-			- Reynolds number
-			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
-			  $$
-			  R e=\frac{\dot{m} \cdot D_h}{A_{\text {inlet }} \cdot \mu}
-			  $$
-				- which is an equivalent and more useful (for dimensioning, given the density of water is known) version of
-				  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\)
 			- ## Isp Losses
 			  id:: 64b187ff-2090-4b88-bb02-5c195b77b4e5
 			  $$
