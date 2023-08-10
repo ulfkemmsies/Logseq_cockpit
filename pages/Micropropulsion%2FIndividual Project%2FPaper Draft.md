@@ -47,7 +47,7 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 		  • Laminar flow
 		  • Constant fluid properties
 		  This is due to the extremely low Reynolds numbers found in that investigation, and in order to keep the validity of the model intact, we must design our liquid flow phase according to those low Reynolds numbers. Additionally, constant heat flux from the walls was assumed, although in that model, the heat flux was chosen to ensure the flow would stay liquid, which is not the case in this more comprehensive model.
-		- The essence of this phase of the model is characterizing the loss in pressure (which can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank) due to friction and the interaction of the fluid with the waviness of the channel walls. This is done using the following equations and quantities, and the exact simulation procedure will be discussed in a later chapter.
+		- The essence of this phase of the model is characterizing the loss in pressure (which can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank) due to friction and the interaction of the fluid with the waviness of the channel walls. Once the pressure at boiling is found, the boiling temperature follows, and the rest of the conditions can be calculated. This is done using the following equations and quantities, and the exact simulation procedure will be discussed in a later chapter.
 			- Reynolds number
 			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
 			  
@@ -78,6 +78,14 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 			  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
 			  
 			  Since \( f \ Re\) and \( K_{\infty} \) can be characterized for a given channel purely through its aspect ratio, they remain fixed for a given channel geometry.
+			- Water Boiling Temperature
+			  
+			  The equation provided in the function is a polynomial fit that approximates the relationship between water boiling temperature \(\left(T_{boil}\right)\) and pressure \(p\). This polynomial fit is based on empirical data collected from EngineeringToolbox. The equation is given by:
+			  $$
+			  T_{boil}=-1.98450335 \times 10^{-10} \cdot p^2+2.48821438 \times 10^{-4} \cdot p+ 3.50254608 \times 10^2
+			  $$
+			  ​
+			  This equation is an approximation and might not accurately represent extreme conditions, although the range of 0-100 degrees Celsius was used.
 		- Heating Chamber Liquid Phase Performance Metrics
 			- Nusselt number
 			  id:: 64b187ff-20cf-46c6-a290-4d508fe0c853
@@ -94,25 +102,17 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 			  $$N u=\frac{h \cdot D_h}{k_W}$$
 			  
 			  where \(h\) is the convective heat transfer coefficient, \(D_h\) is the hydraulic diameter, and \(k_W\) is the thermal conductivity.
-			- Mean fluid temperature \(T_M\)
-			  id:: 64b187ff-2940-4304-8395-8954d0948db6
+			- Heat transfer coefficient
+id:: 64b187ff-2940-4304-8395-8954d0948db6
+			  $$
+			  h=\frac{q}{A_{\text {wall heat }} \cdot\left(T_w-T_m\right)}
+			  $$
+			  
+			  where \(T_w\) is the average temperature of the three heated walls and \(A_{\text {wall heat }}\) is their area, and \(T_M\) is the mean fluid temperature calculated using 
+			  
 			  \(T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right)\)
-				- was calculated making an average over the whole fluid volume due to the constant wall temperature assumption. The mean fluid temperature, \(T_m\), is calculated with the following two methods:
-				  $$
-				  \begin{array}{r}
-				  T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right) \\
-				  T_{m, \text { volAve }}=\frac{\int_{V_{\text {fluid }}} T d V}{V_{\text {fluid }}}
-				  \end{array}
-				  $$
-				  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
-			- The equation provided in the function is a polynomial fit that approximates the relationship between water boiling temperature (
 			  
-			   
-			  ​
-			    represents the boiling temperature of water in Kelvin (K).
-			  
-			  pressure represents the pressure of water in Pascals (Pa).
-			  The coefficients in the equation are determined from fitting the equation to experimental data. This polynomial equation provides a convenient way to estimate the boiling temperature of water under various pressure conditions, as observed in real-world scenarios. Keep in mind that this equation is an approximation and might not accurately represent extreme conditions or values far from the fitted data range.
+			  making an average over the whole fluid volume due to the constant wall temperature assumption.
 	- Heating Chamber Gaseous Phase
 		- The model for the gaseous flow phase in the heating chamber was chiefly taken from [[@A Comprehensive Model for Control of Vaporizing Liquid Microthrusters]]. In this study, two-phase flow was investigated experimentally with cameras to determine at which point of the chamber the vaporization happened, allowing a fitted equation that relates the average volume of vapor in the chamber with the pressure at vaporization and the temperature of the walls (technically the temperature of the chip at the nozzle, but the constant temperature assumption extends this to the chamber walls):
 		  
@@ -253,7 +253,7 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 			  \end{tabular}
 			  $$
 			  
-			  A numerical root-finding method known as the Newton-Raphson method is used to find the pressure ratio given a specific area ratio.
+			  A numerical root-finding method known as the Newton-Raphson method is used to find the true pressure ratio given a specific area ratio.
 			- True Thrust
 			  
 			  The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and reduced exit pressure. The true thrust, estimated using this methodology, is given by:

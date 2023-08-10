@@ -118,6 +118,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  id:: 64c8adb2-93c4-4c41-bb4e-daf679f7fef9
 			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
+	  collapsed:: true
 		- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
 		  • Incompressible flow
 		  • Steady state (this was verified with transient simulations)
@@ -181,7 +182,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				   ~ [\mathrm{s}]
 				  $$
 	- Aerospike project
-	  collapsed:: true
 		- Vanderkerck-hove function \(\Gamma\)
 		  id:: 64cca9aa-bab3-43af-a59b-80f3fc20380c
 		  \(\Gamma=\sqrt{\gamma} \cdot\left(\frac{2}{\gamma+1}\right)^{\left(\frac{\gamma+1}{2(\gamma-1)}\right)}\)
