@@ -47,31 +47,64 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 		  • Laminar flow
 		  • Constant fluid properties
 		  This is due to the extremely low Reynolds numbers found in that investigation, and in order to keep the validity of the model intact, we must design our liquid flow phase according to those low Reynolds numbers. Additionally, constant heat flux from the walls was assumed, although in that model, the heat flux was chosen to ensure the flow would stay liquid, which is not the case in this more comprehensive model.
-		- Reynolds number
-		  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
-		  
-		  The Reynolds number is a dimensionless quantity used in fluid mechanics to characterize the flow of a fluid, such as water, through a pipe or any other conduit. It helps determine the type of flow, whether it is laminar or turbulent, based on the fluid's velocity, density, viscosity, and the characteristic length or diameter of the conduit.
-		  
-		  The Reynolds number is calculated using two different formulas, both of which are equivalent but used in different situations. The first formula is:
-		  
-		  $$
-		  R e=\frac{\dot{m} \cdot D_h}{A_{\text {inlet }} \cdot \mu}
-		  $$
-		  
-		  In this formula, \(Re\) represents the Reynolds number, \(\dot{m}\) is the mass flow rate of the fluid, \(D_h\) is the hydraulic diameter of the conduit, \(A_{\text{inlet}}\) is the cross-sectional area of the inlet, and \(\mu\) is the dynamic viscosity of the fluid.
-		  
-		  The second formula is:
-		  
-		  $$
-		  R e=\frac{\rho \cdot v \cdot D}{\mu}
-		  $$
-		  
-		  Here, \(Re\) still represents the Reynolds number, \(\rho\) is the density of the fluid, \(v\) is the velocity of the fluid, \(D\) is the characteristic length or diameter of the conduit, and \(\mu\) is the dynamic viscosity of the fluid.
-		  
-		  Both formulas essentially provide the same information but are used in different scenarios, though the former is more useful for us in characterizing the flow through the inlet or channels.
-		  
-		  The Reynolds number is crucial in determining the flow regime of a fluid. When the Reynolds number is below a certain critical value, the flow is considered laminar, characterized by smooth and orderly movement of fluid layers. On the other hand, when the Reynolds number exceeds the critical value, the flow becomes turbulent, with chaotic and irregular fluid motion.
-		-
+		- The essence of this phase of the model is characterizing the loss in pressure due to friction and the interaction of the fluid with the waviness of the channel walls. This is done using the following equations and quantities, and the exact simulation procedure will be discussed in a later chapter.
+			- Reynolds number
+			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
+			  
+			  The Reynolds number is a dimensionless quantity used in fluid mechanics to characterize the flow of a fluid, such as water, through a pipe or any other conduit. It helps determine the type of flow, whether it is laminar or turbulent, based on the fluid's velocity, density, viscosity, and the characteristic length or diameter of the conduit.
+			  
+			  The Reynolds number is calculated using two different formulas, both of which are equivalent but used in different situations. The first formula is:
+			  
+			  $$
+			  R e=\frac{\dot{m} \cdot D_h}{A \cdot \mu}
+			  $$
+			  
+			  In this formula, \(Re\) represents the Reynolds number, \(\dot{m}\) is the mass flow rate of the fluid, \(D_h\) is the hydraulic diameter of the conduit, \(A\) is the cross-sectional area of the flow region, and \(\mu\) is the dynamic viscosity of the fluid.
+			  
+			  The Reynolds number is crucial in determining the flow regime of a fluid. When the Reynolds number is below a certain critical value, the flow is considered laminar, characterized by smooth and orderly movement of fluid layers. On the other hand, when the Reynolds number exceeds the critical value, the flow becomes turbulent, with chaotic and irregular fluid motion.Pressure Losses
+				- Can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank
+				- Channel friction factor
+				  $$
+				  f=\frac{\left(p_{\text {inlet }}-p_{\text {outlet }}\right) \cdot D_h}{\frac{1}{2} \rho U_{\text {inlet }}^2 \cdot L}
+				  $$
+					- To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. Here \(p_{\text {inlet }}\) and \(p_{\text {outlet }}\) are the average pressures over the respective areas. \(U_{\text {inlet }}\) is the mean flow velocity, obtained from the mass flow. \(L\) is the centerline length.
+				- Shah and London affirm that, for macrochannels, for a fully developed flow, the product of the friction factor and the Reynolds number, \(f R e\), is constant. However, given the presence of a pressure drop associated with the developing region, we should expect a measured \(f R e\) to behave as depicted by the following equation:
+				  $$
+				  f R e_{e f f}=f R e+K_{\infty} \cdot R e \cdot \frac{D_h}{L}
+				  $$
+				  
+				  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
+		- Heating Chamber Liquid Phase Performance Metrics
+			- Nusselt number
+			  id:: 64b187ff-20cf-46c6-a290-4d508fe0c853
+			  
+			  The Nusselt number is a dimensionless parameter used in heat transfer analysis to quantify the relationship between convective and conductive heat transfer across a boundary or surface.
+			  It considers factors such as thermal conductivity, fluid properties, and flow characteristics. For low Reynolds numbers (between 10 and 100), the Nusselt number increases significantly with increasing Reynolds numbers.
+			  
+			  A higher Nusselt number also means that, given a wall temperature, a shorter channel is needed to reach certain fluid temperature (or vaporization).
+			  
+			  Studies have shown that wavy microchannels result in higher Nusselt numbers and improved convective heat transfer compared to straight channels of the same size. However, this improvement comes at the cost of increased pressure losses. 
+			  
+			  The Nusselt number can be calculated using the equation:
+			  
+			  $$N u=\frac{h \cdot D_h}{k_W}$$
+			  
+			  where \(h\) is the convective heat transfer coefficient, \(D_h\) is the hydraulic diameter, and \(k_W\) is the thermal conductivity.
+			- Mean fluid temperature \(T_M\)
+			  id:: 64b187ff-2940-4304-8395-8954d0948db6
+			  \(T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right)\)
+				- was calculated making an average over the whole fluid volume due to the constant wall temperature assumption. The mean fluid temperature, \(T_m\), is calculated with the following two methods:
+				  $$
+				  \begin{array}{r}
+				  T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right) \\
+				  T_{m, \text { volAve }}=\frac{\int_{V_{\text {fluid }}} T d V}{V_{\text {fluid }}}
+				  \end{array}
+				  $$
+				  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
+				- Fluid volume
+				  id:: 64cb5b4f-fe1f-4f91-96c7-8fddf3be0c26
+				  \(V_{fluid} = V_{tot} - V_{av}\)
+			-
 	- Heating Chamber Gaseous Phase
 		- The model for the gaseous flow phase in the heating chamber was chiefly taken from [[@A Comprehensive Model for Control of Vaporizing Liquid Microthrusters]]. In this study, two-phase flow was investigated experimentally with cameras to determine at which point of the chamber the vaporization happened, allowing a fitted equation that relates the average volume of vapor in the chamber with the pressure at vaporization and the temperature of the walls (technically the temperature of the chip at the nozzle, but the constant temperature assumption extends this to the chamber walls):
 		  

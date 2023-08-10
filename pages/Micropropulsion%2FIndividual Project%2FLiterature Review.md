@@ -128,37 +128,12 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		- Constant heat flux and constant wall temperature were assumed, with a wall temperature of 370 K and a constant heat flux chosen so that the water in the chambers would not exceed 370 K, thus remaining liquid.
 		- Performance factors (only considered for liquid phase)
 			- Larger contact area helps reduce wall temperature. Lower channel temperature means a simpler heat management. Minimizing the leakage of heat from the thruster to the surrounding environment leads to higher heating efficiency, lowering the power requirements.
-			- Nusselt number
-			  id:: 64b187ff-20cf-46c6-a290-4d508fe0c853
-			  \(N u=\frac{h \cdot D_h}{k_W}\)
-				- Is a dimensionless parameter used in heat transfer analysis to quantify the relationship between convective and conductive heat transfer across a boundary or surface.
-				  It considers factors such as thermal conductivity, fluid properties, and flow characteristics. For low Reynolds numbers (between 10 and 100), the Nusselt number increases significantly with increasing Reynolds numbers.
-				  
-				  A higher Nusselt number also means that, given a wall temperature, a shorter channel is needed to reach certain fluid temperature (or vaporization).
-				  
-				  Studies have shown that wavy microchannels result in higher Nusselt numbers and improved convective heat transfer compared to straight channels of the same size. However, this improvement comes at the cost of increased pressure losses. 
-				  
-				  The Nusselt number can be calculated using the equation: \(N u=\frac{h \cdot D_h}{k_W}\), where \(h\) is the convective heat transfer coefficient, \(D_h\) is the hydraulic diameter, and \(k_W\) is the thermal conductivity.
 			- Heat transfer coefficient
 			  id:: 64b187ff-be4a-4f5e-9218-2f61fa72d7f3
 			  $$
 			  h=\frac{q}{A_{\text {wall heat }} \cdot\left(T_w-T_m\right)}
 			  $$
 				- where \(T_w\) is the average temperature of the three heated walls and \(A_{\text {wall heat }}\) is their area.
-			- Mean fluid temperature \(T_M\)
-			  id:: 64b187ff-2940-4304-8395-8954d0948db6
-			  \(T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right)\)
-				- was calculated making an average over the whole fluid volume due to the constant wall temperature assumption. The mean fluid temperature, \(T_m\), is calculated with the following two methods:
-				  $$
-				  \begin{array}{r}
-				  T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right) \\
-				  T_{m, \text { volAve }}=\frac{\int_{V_{\text {fluid }}} T d V}{V_{\text {fluid }}}
-				  \end{array}
-				  $$
-				  Note that the inlet and outlet bulk temperature are calculated using the mass flow average over the respective areas.
-				- Fluid volume
-				  id:: 64cb5b4f-fe1f-4f91-96c7-8fddf3be0c26
-				  \(V_{fluid} = V_{tot} - V_{av}\)
 			- Water boiling temperature
 			  id:: 64cb5a30-d663-46c1-829c-ae394a71e4ba
 			  $$\ln \left(P_1 / P_2\right)=-\Delta H / R \times\left(1 / T_1-1 / T_2\right)$$
@@ -189,6 +164,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
 			- ## Isp Losses
 			  id:: 64b187ff-2090-4b88-bb02-5c195b77b4e5
+			  collapsed:: true
 			  $$
 			  I s p_{\text {loss }}=\frac{A_e}{m} \cdot\left(\frac{p_e}{p_c}\right) \cdot \Delta p 
 			   ~ [\mathrm{s}]
