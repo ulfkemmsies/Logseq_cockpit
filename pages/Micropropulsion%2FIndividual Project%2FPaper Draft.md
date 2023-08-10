@@ -318,6 +318,72 @@ id:: 64b187ff-2940-4304-8395-8954d0948db6
 			  This efficiency parameter provides insight into how well a rocket engine performs relative to its theoretical maximum performance. A higher specific impulse efficiency indicates a more efficient engine, as it is able to achieve a larger fraction of the ideal specific impulse.
 - Methods
 	- Simulation Procedure
+		- Chamber Liquid Phase
+		  
+		  1. Inlet Dynamic Viscosity Calculation: The dynamic viscosity of the inlet water is calculated based on the given water temperature.
+		  2. Reynolds Number Calculations: Two Reynolds numbers are calculated for the chamber inlet: one using the inlet radius and another using twice the inlet radius. These values are used to assess the flow regime.
+		  3. Shah-London Factors Calculation: Shah-London factors are computed using the channel aspect ratio. These factors are important for predicting heat transfer and pressure drop in the microchannels.
+		  4. Boiling Pressure Loop: A loop iteratively calculates the boiling pressure in the chamber. Within this loop, fluid flow centerline, channel friction factor, and average vapor volume are computed, contributing to the determination of boiling pressure. These parameters play a role in predicting the onset of boiling in the microchannels.
+			- 1. Initialization:
+			  Initialize variables such as 'epsilon' (a small value used to check convergence),
+			  'max_iterations' (the maximum number of iterations allowed), and
+			  'channel_friction_factor' (an initial estimate of the friction factor in the channel).
+			  2. Iteration Loop:
+			  The code enters a loop that iterates until convergence is achieved or the maximum number of iterations is reached.
+			  The loop starts by storing the current value of the centerline length as ' \(\mathbf{L O}\) '.
+			  3. Boiling Pressure Calculation:
+			  Calculate the boiling pressure 'p_boil' in the microchannel using the given inlet flow, inlet radius, and the current centerline length ' \(\mathbf{L}\) '.
+			  4. Average Vapor Volume Calculation:
+			  Compute the average vapor volume within the microchannel using the chip temperature and the calculated boiling pressure. This value is important for determining the vaporliquid phase distribution.
+			  5. Comparison with Chamber Volume:
+			  Compare the calculated average vapor volume with the chamber volume. If the average vapor volume exceeds the chamber volume, an error is raised, indicating that vapor volume is larger than what the chamber can accommodate.
+		- 5. Water Boiling Temperature Calculation: The boiling temperature of water is calculated using the previously determined boiling pressure.
+		  6. Mean Fluid Temperature Calculation: The mean fluid temperature in the chamber is calculated as the average between the inlet water temperature and the water boiling temperature.
+		  7. Heat Transfer Coefficient Calculation: The heat transfer coefficient at the heated wall surface is computed using the input power, heated wall surface area, chip temperature, and mean fluid temperature.
+		  8. Nusselt Number Calculation: The Nusselt number, which describes the heat transfer efficiency in the chamber, is calculated based on the heat transfer coefficient, hydraulic diameter, and fluid properties.
+		- Chamber Gas Phase
+		  
+		  1. Chamber Gas Temperature Calculation: The chamber gas temperature is estimated based on the previously calculated boiling pressure. This is an approximation since the system is assumed to be in thermal equilibrium.
+		  2. Reduced Temperature Calculation: The reduced temperature is computed, which is essential for determining the vapor-specific volume of the gas.
+		  3. Vapor Specific Volume Calculation: The vapor-specific volume is calculated using the reduced temperature, aiding in assessing the gas density.
+		  4. Chamber Gas Pressure Calculation: The pressure of the gas in the chamber is determined using the ideal gas law and the previously calculated vapor-specific volume.
+		  5. Chamber Gas Density Calculation: The density of the gas in the chamber is obtained using the ideal gas law with the computed pressure and temperature.
+		- Nozzle Characterization
+		  
+		  1. Throat Density and Temperature Calculation: The density and temperature at the nozzle throat are estimated using relationships between chamber gas properties and critical flow conditions.
+		  2. Throat Dynamic Viscosity Calculation: The dynamic viscosity at the throat is computed using the throat temperature and the properties of the gas.
+		  3. Throat Kinematic Viscosity Calculation: The kinematic viscosity at the throat is calculated based on the previously obtained dynamic viscosity and throat density.
+		  4. Throat Speed of Sound Calculation: The speed of sound at the throat is determined using the calculated throat temperature and properties of the gas.
+		  5. Throat Reynolds Number Calculation: The Reynolds number at the throat is calculated using the speed of sound, throat radius, and throat kinematic viscosity.
+		  6. Exit Mach Number Calculation: The Mach number at the nozzle exit is estimated based on the expansion ratio between the exit area and the throat area.
+		  7. Exit Temperature Calculation: The temperature at the nozzle exit is estimated using the chamber gas temperature and the isentropic relation applied to the calculated Mach number.
+		  8. Exit Velocity Calculation: The velocity at the nozzle exit is computed using the calculated Mach number, specific gas constant, and exit temperature.
+		  9. Exit Pressure Calculation: The pressure at the nozzle exit is determined using the isentropic relation applied to the calculated Mach number.
+		  10. Exit Density Calculation: The density at the nozzle exit is computed using the ideal gas law applied to the exit pressure and temperature.
+		  11. Exit Dynamic Viscosity Calculation: The dynamic viscosity at the nozzle exit is calculated using the exit temperature and properties of the gas.
+		  12. Exit Kinematic Viscosity Calculation: The kinematic viscosity at the nozzle exit is determined based on the previously obtained dynamic viscosity and exit density.
+		- Exit Thrust Correction
+		  
+		  1. Flat Plate Reynolds Number Calculation: The Reynolds number for the flow at the nozzle exit is calculated using the exit velocity, a characteristic length (measured at the exit), and the dynamic viscosity.
+		  2. Skin Friction Coefficient Calculation: The skin friction coefficient, a measure of viscous drag on the surface, is calculated using the flat plate Reynolds number and empirical relationships.
+		  3. Compressible Skin Friction Coefficient Calculation: The compressible skin friction coefficient is determined by accounting for the effect of gas compressibility and temperature variations on the skin friction coefficient.
+		  4. Momentum Thickness Calculation: The momentum thickness, a measure of boundary layer growth, is calculated using the compressible skin friction coefficient and characteristic length.
+		  5. Momentum Losses Calculation: Momentum losses in the exhaust are computed using the exit density, velocity, nozzle exit radius, and momentum thickness. These losses impact the thrust generated.
+		  6. Displacement Thickness Calculation: The displacement thickness is calculated based on the momentum thickness, providing insights into the boundary layer's behavior.
+		  7. True Expansion Ratio Calculation: The true area ratio is calculated by considering the nozzle exit radius, displacement thickness, and twice the throat radius.
+		  8. True Exit Pressure Ratio Calculation: The true exit pressure ratio is determined based on the calculated true area ratio, which affects the thrust generated.
+		  9. Nozzle Mass Flow Calculation: The mass flow rate through the nozzle is estimated using the chamber gas pressure, specific gas constant, and throat area.
+		  10. Divergence Losses Calculation: Divergence losses, which account for the spread of the exhaust plume, are calculated based on the nozzle exit half angle.
+		  11. True Thrust Calculation: The true thrust generated by the microthruster is calculated using various factors, including nozzle mass flow, divergence losses, gas properties, and geometric parameters. This is a key metric reflecting the system's propulsive capabilities
+		- Nozzle Performance Evaluation
+		  
+		  1. Discharge Coefficient and Measured Mass Flow Calculation: The discharge coefficient, which characterizes the nozzle's efficiency in converting mass flow rate into thrust, is calculated using the gas properties and Reynolds number. The measured mass flow rate is estimated using the discharge coefficient.
+		  2. Measured Specific Impulse Calculation: The measured specific impulse, which indicates the propulsive efficiency of the thruster, is calculated based on the true thrust and the measured mass flow rate.
+		  3. Ideal Thrust Calculation: The ideal thrust that the thruster could achieve is calculated based on the chamber and exit conditions, nozzle geometry, and gas properties.
+		  4. Ideal Specific Impulse Calculation: The ideal specific impulse, a theoretical measure of propulsive efficiency, is calculated using the ideal thrust and the measured mass flow rate.
+		  5. Specific Impulse Efficiency Calculation: The specific impulse efficiency is computed as the ratio of the measured specific impulse to the ideal specific impulse, offering insights into the thruster's actual performance compared to its theoretical potential.
+		  6. Thrust Efficiency Calculation: Thrust efficiency is calculated as the ratio of the true thrust to the ideal thrust, indicating how efficiently the thruster is producing thrust based on the given conditions.
+		  7. True Thrust Coefficient Calculation: The true thrust coefficient is calculated as the ratio of the true thrust to the product of chamber pressure and the throat area.
 	- Operational Ranges
 - Results
 	- Sensitivity Analysis
