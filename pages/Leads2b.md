@@ -21,7 +21,7 @@
 	- DONE L2B Work Session >[2023-08-04 13:00 - 21:00](#agenda://?start=1691146800000&end=1691175600000&allDay=false)
 	- DONE L2B Work Session >[2023-08-07 13:00 - 21:00](#agenda://?start=1691406000000&end=1691434800000&allDay=false)
 	- DONE L2B Work Session >[2023-08-08 13:00 - 21:00](#agenda://?start=1691492400000&end=1691521200000&allDay=false)
-	- TODO L2B Work Session >[2023-08-09 13:00 - 21:00](#agenda://?start=1691578800000&end=1691607600000&allDay=false)
+	- DONE L2B Work Session >[2023-08-09 13:00 - 21:00](#agenda://?start=1691578800000&end=1691607600000&allDay=false)
 	- TODO L2B Work Session >[2023-08-10 13:00 - 21:00](#agenda://?start=1691665200000&end=1691694000000&allDay=false)
 	- TODO L2B Work Session >[2023-08-11 13:00 - 21:00](#agenda://?start=1691751600000&end=1691780400000&allDay=false)
 	- TODO L2B Work Session >[2023-08-26 07:00 - 21:00](#agenda://?start=1693026000000&end=1693076400000&allDay=false)
