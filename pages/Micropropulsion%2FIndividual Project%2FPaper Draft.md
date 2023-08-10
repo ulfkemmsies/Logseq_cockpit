@@ -158,7 +158,7 @@ id:: 64b187ff-2940-4304-8395-8954d0948db6
 		  where \(\alpha_1\) and \(\beta_1\) are the coefficients of the first order Taylor series expansion and are functions of the same parameters used in the Antoine equation and the linearization point \(p_s = 3 \ \text{atm}\). These are evaluated to be $\alpha_1 = 0.048 \text{K}^{-1/2}$ and $\beta_1 = 626.99 \ \text{Pa} \ \text{K}^{-1/2}$
 	- Nozzle
 		- Nozzle Flow Characterization
-			- The bulk of the equations in this section were taken from [[@Simplified Modelling of Aerospike Micro-nozzles]], which discusses the performance of CD micronozzles. The final output of this model is the "true" thrust i.e. the ideal thrust corrected with various loss factors.
+			- The bulk of the equations in this section were taken from [[@Analytical Relations for Performance Characterization of CD Micro-nozzles]] , which discusses the performance of CD micronozzles. The final output of this model is the "true" thrust i.e. the ideal thrust corrected with various loss factors.
 			- Divergence loss
 			  
 			  Divergence losses occur when the exit half angle of a nozzle is greater than 0°, causing the gases ejected from the nozzle to deviate from the direction of thrust. This deviation introduces momentum components that are perpendicular to the thrust vector. However, due to the symmetry of the nozzle, these perpendicular momentum components cancel each other out, resulting in no thrust misalignment. Nevertheless, they still contribute to a loss in thrust because not all of the momentum is effectively utilized to propel the spacecraft forward.
@@ -260,7 +260,20 @@ id:: 64b187ff-2940-4304-8395-8954d0948db6
 			  
 			  \(F_{\text {true }}=\dot{m} \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
 		- Nozzle Performance Evaluation
-			-
+			- Once the true thrust of the nozzle has been found by characterizing the flow within, several different metrics can be calculated to evaluate the performance of the nozzle. The majority of these equations were taken from [[@Simplified Modelling of Aerospike Micro-nozzles]], which discusses the performance of aerospike micronozzles, although many of the relations were originally derived for CD nozzles and then repurposed for aerospikes, keeping them valid for our case.
+			- Discharge coefficient \(C_D\)
+			  
+			  Tang and Fenn (1978) derived an expression to calculate the discharge coefficient for choked axisymmetric nozzles with a circular cross-section. The expression takes into account the effect of the boundary layer in reducing the effective nozzle throat area. The expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles, which is exactly our case. These effects are more significant for throat Reynolds numbers under 100,000. The equation for the discharge coefficient is given as:
+			  
+			  \[C_D=1-\left(\frac{\gamma+1}{2}\right)^{3/4}\left(\frac{-2.128}{\gamma+1}+3.266\right) R^{-0.5}+9.428 \frac{(\gamma-1)(\gamma+2)}{(\gamma+1)^{0.5}} R^{-1} =\frac{\dot{m}_{\text {meas }}}{\dot{m}_{1 D}}\]
+			  
+			  where \(C_D\) is the discharge coefficient and \(R\) is the modified throat Reynolds number, which in our case for a circular throat, is just the original throat Reynolds number.
+			- Thrust efficiency \(\eta_F\)
+			  $$\eta_F=\frac{F_{\text {meas }}}{F_{1 D}}$$
+			  
+			  Ideal Thrust
+			  $$\left.F_{1 D}=C_F p_c A_t=
+			  p_c A_t \sqrt{\frac{2 \gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right.}\right)+A_e\left(p_e-p_{\infty}\right)$$
 - Methods
 	- Simulation Procedure
 	- Operational Ranges
