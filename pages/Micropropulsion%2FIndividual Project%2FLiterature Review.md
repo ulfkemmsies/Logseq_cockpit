@@ -118,7 +118,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  id:: 64c8adb2-93c4-4c41-bb4e-daf679f7fef9
 			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
-	  collapsed:: true
 		- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
 		  • Incompressible flow
 		  • Steady state (this was verified with transient simulations)
