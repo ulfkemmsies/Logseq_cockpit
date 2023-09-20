@@ -1,0 +1,2 @@
+- Curie temperature of 920 degrees C means potential magnetic property loss during heating as weld pool reaches those temps
+-

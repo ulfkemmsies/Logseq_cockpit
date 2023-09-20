@@ -1,0 +1,5 @@
+- Factorial Design
+- Linear Regression
+- [[Response Surface Methodology (RSM)]]
+- Artificial Neural Networks
+- Taguchi Method

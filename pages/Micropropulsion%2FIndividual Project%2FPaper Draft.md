@@ -20,12 +20,59 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 	- Model overview
 		- The general structure of the VLM is taken from [[@A Comprehensive Model for Control of Vaporizing Liquid Microthrusters]] and is shown in Figure X:. Water is pressurized to mimic the conditions of a blow-down propellant feed and fed into the inlet of the heating chamber. A resistive heater is used to heat the walls of the microchannels of the chamber, and the water is assumed to lose pressure due to the mechanics of wavy microchannels before boiling. The resulting vapor is accelerated through the remaining channel length toward the micronozzle. The nozzle is a standard axisymmetric choked convergent-divergent type.
 	- Assumptions
+		- The assumptions for the system under consideration are as follows:
+		  
+		  \begin{enumerate}
+		      \item Water enters the system at the inlet under pressure and at a standard temperature of 22°C. The corresponding density of the water is 997.8 kg/m3.
+		      
+		      \item Inside the heating chamber, water flows and experiences a decrease in pressure due to convective effects caused by wavy flow.
+		      
+		      \item The vapor phase of the water remains at the same temperature and pressure as it undergoes boiling until it reaches the nozzle. There is no additional heat transfer from the walls of the system to the vapor phase during this process.
+		      
+		      \item The nozzle is assumed to have axisymmetric choked flow, meaning that the flow rate is at its maximum and no further increase is possible. Additionally, there is no heat transfer occurring between the walls of the nozzle and the gas.
+		      
+		      \item The heaters in the system uniformly heat the entire volume of liquid and vapor mixture (VLM), ensuring that all the walls of the heating chamber and nozzle are at the same temperature, denoted as Tw.
+		      
+		      \item Inside the heating chamber, a constant heat flux is maintained, while the wall temperature along the entire nozzle remains constant.
+		  \end{enumerate}
 		- Water enters pressurized at the inlet at standard temperature (22 C), the corresponding density is 997.8 kg/m3.
 		- Water flows inside the heating chamber, losing pressure through convective effects due to wavy
 		- Vapor remains at same temperature and pressure from boiling until nozzle largely without extra heat transfer from the walls
 		- Nozzle is axisymmetric choked flow and no heat transfer between nozzle walls and gas occurs
 		- Heaters heat the entire VLM equally, so that all the walls of the heating chamber and nozzle are at the same temperature $T_w$.
-		- Constant wall temperature and heat flux
+		- Constant heat flux inside the heating chamber and constant wall temperature along the entire nozzle
+	- Ideal Rocket Theory and General Equations
+		- Ideal Gas Relation
+		  
+		  The ideal gas theory is a simplified model that describes the behavior of gases under certain conditions. It assumes that gas particles are point masses with no volume, and that they move randomly and independently. The theory states that the pressure, density, and temperature of an ideal gas are related by the equation:
+		  
+		  \[ P = \rho \cdot R_s \cdot T \]
+		  
+		  where \(P\) is the pressure, \(\rho\) is the density, \(R_s\) is the ideal gas constant, and \(T\) is the temperature in Kelvin.
+		  
+		  It is important to note that this theory assumes incompressibility, and therefore cannot be used once the Mach number \( Ma > 0.3\), which means anywhere in the nozzle, since choked flow at the throat is assumed.
+		- Speed of sound
+		  
+		  The speed of sound refers to the rate at which sound waves propagate through a medium. It is influenced by various factors, including the properties of the medium and the temperature. In an ideal gas, the speed of sound can be determined using the equation:
+		  
+		  \[
+		  a = \sqrt{\gamma \cdot R \cdot T}
+		  \]
+		  
+		  where:
+		  \(a\) represents the speed of sound,
+		  \(\gamma\) denotes the adiabatic index (also known as the heat capacity ratio),
+		  \(R\) represents the specific gas constant, and
+		  \(T\) denotes the temperature of the medium.
+		  
+		  It is important to note that this equation assumes an ideal gas behavior and neglects other factors that may affect the speed of sound, such as humidity or pressure.
+		- Kinematic viscosity
+		  
+		  Kinematic viscosity is a measure of a fluid's resistance to flow under the influence of gravity. It is defined as the ratio of dynamic viscosity to density. The equation for kinematic viscosity (\(\nu\)) is given by:
+		  
+		  \[\nu = \frac{\mu}{\rho}\]
+		  
+		  where \(\mu\) represents the dynamic viscosity and \(\rho\) represents the density of the fluid.
 	- Sizing
 		- Inlet
 		  The main model inputs for the circular inlet are the chosen mass flow $\dot{m}_{1}$ and the inlet radius $R_{in}$, which will the determine the pressure of the water.
@@ -34,7 +81,7 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 		  
 		  The centerline $L_C = 1.00714$ mm and length $L = 0.64$ mm of one such element have been previously determined, and need only be multiplied by the number of elements to be calculated for the whole chamber.
 		  
-		  The other main sizing variable for the heating chamber is the chamber depth $H$, which will determine the total area of the heated walls $A_{heat}$ when multiplied by the integrated wall length according to $$(2.01062 \ mm \cdot H + 0.213126 \ mm^{2} ) \cdot n_{elem} \cdot n_{chan}$$. The total volume of the chamber $V_{tot}$ is similarly calculated using \( (0.213126 \ mm^{2} \cdot H ) \cdot n_{elem} \cdot n_{chan}\). The aspect ratio $\alpha$ of the rectangular cross-section of the channel is found using \( \alpha = 0.212 \ mm \div H \).
+		  The other main sizing variable for the heating chamber is the chamber depth $H$, which will determine the total area of the heated walls $A_{heat}$ when multiplied by the integrated wall length according to $$(2.01062 \ mm \cdot H + 0.213126 \ mm^{2} ) \cdot n_{elem} \cdot n_{chan}$$. The total volume of the chamber $V_{tot}$ is similarly calculated using \( (0.213126 \ mm^{2} \cdot H ) \cdot n_{elem} \cdot n_{chan}\).
 		  
 		  Finally, the hydraulic diameter of this same cross-section is calculated with \(D_h=\frac{4 A}{p}\), where $A$ is the cross-sectional area and $p$ the rectangular perimeter.
 		- Nozzle
@@ -49,6 +96,40 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 		  • Constant fluid properties
 		  This is due to the extremely low Reynolds numbers found in that investigation, and in order to keep the validity of the model intact, we must design our liquid flow phase according to those low Reynolds numbers. Additionally, constant heat flux from the walls was assumed, although in that model, the heat flux was chosen to ensure the flow would stay liquid, which is not the case in this more comprehensive model.
 		- The essence of this phase of the model is characterizing the loss in pressure (which can be seen either as a performance loss or as an increased requirement in the pressure of the propellant tank) due to friction and the interaction of the fluid with the waviness of the channel walls. Once the pressure at boiling is found, the boiling temperature follows, and the rest of the conditions can be calculated. This is done using the following equations and quantities, and the exact simulation procedure will be discussed in a later chapter.
+			- Dynamic Viscosity
+			  
+			  Dynamic viscosity is a measure of a fluid's resistance to flow under an applied force or stress. It quantifies the internal friction within a fluid as it flows, determining how easily the fluid deforms or shears. In simpler terms, dynamic viscosity describes how "thick" or "sticky" a fluid is, with higher viscosity indicating a thicker or more resistant fluid, and lower viscosity indicating a thinner or more easily flowing fluid. It is typically measured in units of pascal-seconds (Pa·s) or poise (P).
+			  
+			  Because dynamic viscosity is dependent on the temperature of a liquid, a fitted equation was found that interpolates the experimental values reported on EngineeringToolbox for water.
+			  
+			  The equation for dynamic viscosity (\(\mu\)) and temperature (\(T\)) for water is:
+			  
+			  \[
+			  \mu = a \cdot T^6 + b \cdot T^5 + c \cdot T^4 + d \cdot T^3 + e \cdot T^2 + f \cdot T + g
+			  \]
+			  
+			  where:
+			  \[
+			  a = 5.26010734 \times 10^{-14}
+			  \]
+			  \[
+			  b = -1.44312831 \times 10^{-10}
+			  \]
+			  \[
+			  c = 1.63771197 \times 10^{-7}
+			  \]
+			  \[
+			  d = -9.84335889 \times 10^{-5}
+			  \]
+			  \[
+			  e = 3.30686535 \times 10^{-2}
+			  \]
+			  \[
+			  f = -5.89414841 \times 10^{0}
+			  \]
+			  \[
+			  g = 4.36419186 \times 10^{2}
+			  \]
 			- Reynolds number
 			  id:: 64b187ff-4ac4-4fb1-b528-64d9ff78d098
 			  
@@ -60,25 +141,15 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 			  R e=\frac{\dot{m} \cdot D_h}{A \cdot \mu}
 			  $$
 			  
-			  In this formula, \(Re\) represents the Reynolds number, \(\dot{m}\) is the mass flow rate of the fluid, \(D_h\) is the hydraulic diameter of the conduit, \(A\) is the cross-sectional area of the flow region, and \(\mu\) is the dynamic viscosity of the fluid.
+			  In this formula, \(Re\) represents the Reynolds number, \(\dot{m}\) is the mass flow rate of the fluid, \(D_h\) is the hydraulic diameter of the conduit, \(A\) is the cross-sectional area of the flow region, and \(\mu\) is the dynamic viscosity of the fluid. For circular cross-sections, the hydraulic diameter can just be replaced by the cross-sectional diameter.
+			  
+			  This equation can alternatively be expressed as 
+			  
+			  $$R e=\frac{ u \cdot D_h}{v}$$
+			  
+			  where \(u\) is the flow velocity and \(v\) the kinematic viscosity.
 			  
 			  The Reynolds number is crucial in determining the flow regime of a fluid. When the Reynolds number is below a certain critical value, the flow is considered laminar, characterized by smooth and orderly movement of fluid layers. On the other hand, when the Reynolds number exceeds the critical value, the flow becomes turbulent, with chaotic and irregular fluid motion.
-			- Channel friction factor
-			  $$
-			  f=\frac{\left(p_{\text {inlet }}-p_{\text {outlet }}\right) \cdot D_h}{\frac{1}{2} \rho U_{\text {inlet }}^2 \cdot L}
-			  $$
-			  
-			  To evaluate the pressure losses in the channel the friction factor of the channels is evaluated. Here \(p_{\text {inlet }}\) and \(p_{\text {outlet }}\) are the average pressures over the respective areas. \(U_{\text {inlet }}\) is the mean flow velocity, obtained from the mass flow. \(L\) is the centerline length.
-			- Shah and London Relations
-			  
-			  Shah and London [REFERENCE] affirm that, for macrochannels, for a fully developed flow, the product of the friction factor and the Reynolds number, \(f R e\), is constant. However, given the presence of a pressure drop associated with the developing region, we should expect a measured \(f R e\) to behave as depicted by the following equation:
-			  $$
-			  f R e_{e f f}=f R e+K_{\infty} \cdot R e \cdot \frac{D_h}{L}
-			  $$
-			  
-			  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
-			  
-			  Since \( f \ Re\) and \( K_{\infty} \) can be characterized for a given channel purely through its aspect ratio, they remain fixed for a given channel geometry.
 			- Water Boiling Temperature
 			  
 			  The equation provided in the function is a polynomial fit that approximates the relationship between water boiling temperature \(\left(T_{boil}\right)\) and pressure \(p\). This polynomial fit is based on empirical data collected from EngineeringToolbox. The equation is given by:
@@ -103,62 +174,122 @@ id:: d87cb3e3-b6b9-458b-8f91-7187b1c68b36
 			  $$N u=\frac{h \cdot D_h}{k_W}$$
 			  
 			  where \(h\) is the convective heat transfer coefficient, \(D_h\) is the hydraulic diameter, and \(k_W\) is the thermal conductivity.
+			- Thermal conductivity
+			  
+			  The thermal conductivity of water \(k_w\) is temperature dependent, and therefore an equation fitted on experimental data from EngineeringToolbox was found for fast calculation.
+			  
+			  $$
+			  k_w=a \cdot T_{m}^3+b \cdot T_{m}^2+c \cdot T_{m}+d
+			  $$
+			  
+			  $$
+			  \begin{aligned}
+			  & a=4.07234630 \times 10^{-5} \\
+			  & b=-4.91309248 \times 10^{-2} \\
+			  & c=2.01086194 \times 10^1 \\
+			  & d=-2.10087790 \times 10^3
+			  \end{aligned}
+			  $$
+			  \(T_{m}\) is the mean temperature of the water.
 			- Heat transfer coefficient
 id:: 64b187ff-2940-4304-8395-8954d0948db6
 			  $$
 			  h=\frac{q}{A_{\text {wall heat }} \cdot\left(T_w-T_m\right)}
 			  $$
 			  
-			  where \(T_w\) is the average temperature of the three heated walls and \(A_{\text {wall heat }}\) is their area, and \(T_M\) is the mean fluid temperature calculated using 
+			  where \(T_w\) is the chosen temperature of the three heated walls and \(A_{\text {wall heat }}\) is their area (of the section of the heating chamber needed until vaporization), and \(T_m\) is the mean fluid temperature calculated using 
 			  
 			  \(T_m=0.5 \cdot\left(T_{\text {in }}+T_{\text {out }}\right)\)
 			  
+			  In this case, the inlet and outlet temperatures of the water are the initial tank temperature and the boiling temperature.
+			  
 			  making an average over the whole fluid volume due to the constant wall temperature assumption.
 	- Heating Chamber Gaseous Phase
-		- The model for the gaseous flow phase in the heating chamber was chiefly taken from [[@A Comprehensive Model for Control of Vaporizing Liquid Microthrusters]]. In this study, two-phase flow was investigated experimentally with cameras to determine at which point of the chamber the vaporization happened, allowing a fitted equation that relates the average volume of vapor in the chamber with the pressure at vaporization and the temperature of the walls (technically the temperature of the chip at the nozzle, but the constant temperature assumption extends this to the chamber walls):
+		- The equations to model the gaseous phase inside the heating chamber were taken from the Micropropulsion course reader, and essentially consist of solving the two equation system:
 		  
 		  $$
-		  V_{av} = a_T T_n + a_p p_1 + b
-		  $$
-		  where \(a_T\), \(a_p\), and \(b\) are parameters of the linear regression, and \(T_n\) is the temperature of the chip measured around the nozzle, and \(p_1\) is the pressure of the water at the point of boiling.
-		  For the analysis presented here, the coefficients have been estimated as: \(a_T=1.63 \times 10^{-11} \mathrm{~m}^3 \mathrm{~K}^{-1}, a_p=\) \(-7.45 \times 10^{-15} \mathrm{~m}^3 \mathrm{~Pa}^{-1}\), and \(b=-4.36 \times 10^{-10} \mathrm{~m}^3\).
-		  
-		  This relation allows for the relative distance covered by the liquid phase flow to be estimated, and along with it, the total friction losses.
-		- Once the water has been vaporized, it is assumed that the vapor remains at the saturation temperature until it reaches the nozzle. The saturation temperature of the vapor in the chamber can be calculated using the Antoine equation, which is expressed as the Antoine equation:
-		  
-		  \(T_{1}=\frac{B}{A-\log _{10} p_{1}}+C\)
-		  
-		  In this equation, the constants \(A\), \(B\), and \(C\) are assigned the values of \(10.27\), \(1810.94\), and \(28.67\) respectively. It is important to note that this equation is applicable when the pressure (\(p_{1}\)) is measured in pascals (\(\mathrm{Pa}\)) and the temperature (\(T_{1}\)) falls within the range of \(372.15-647.15 \mathrm{~K}\).
-		- The pressure inside the chamber, \(p_c\), is calculated using the ideal gas law:
-		  \[
-		  p_c=\frac{1}{\alpha_2}\left(\frac{R_s}{v_g}-\beta_2\right)
-		  \]
-		  where \(\alpha_2\) and \(\beta_2\) are coefficients obtained from a linear approximation. Linearizing around a pressure of $3 \ atm$, these are evaluated to be $\alpha_2 = 0.0023 \text{K}^{-1}$ and $\beta_2 = 62.17 \ \text{Pa} \ \text{K}^{-1}$.
-		  
-		  The specific volume term $v_g$ used in the above equation is calculated using a polynomial fit taken from [[@Simplified Equations for Saturated Steam Properties for Simulation Purpose]] 
-		  $$\ln \left(\mathrm{v}_{\mathrm{g}}\right)=\mathrm{a}+\mathrm{b}\left[\ln \left(1 / \mathrm{T}_{\mathrm{r}}\right)\right]^{0.4}+\mathrm{c} / \mathrm{T}_{\mathrm{r}}^2+\mathrm{d} / \mathrm{T}_{\mathrm{r}}^4+\mathrm{e} / \mathrm{T}_{\mathrm{r}}^5$$
-		  
-		  $$
-		  \begin{array}{lllll}
-		  \hline \mathrm{a} & \mathrm{b} & \mathrm{c} & \mathrm{d} & \mathrm{e} \\
-		  \hline-7.75883 & 3.23753 & 2.05755 & -0.06052 & 0.00529 \\
-		  \hline
-		  \end{array}
+		  P_h=\dot{m} \cdot\left[c_{p L} \cdot\left(T_{b o i l}-T_0\right)+L_h+c_{p G} \cdot\left(T_C-T_{b o i l}\right)\right]
 		  $$
 		  
-		  \(\mathrm{T}_{\mathrm{r}}\) is the reduced temperature which is defined as \(\mathrm{T} / \mathrm{T}_{\mathrm{cr}}\). \(\mathrm{T}_{\mathrm{cr}}\) is critical temperature; for steam it is \(647.096 \mathrm{~K}\).
-		- The final applicable relation from this paper related the mass flow at the nozzle \(\dot{m}_3\) to the conditions in the chamber
-		  \(\dot{m}_3=\left(\alpha_1 p_1+\beta_1\right) A_t \sqrt{\frac{\gamma}{R_s}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}}\)
-		  
-		  where \(\gamma\) is the specific heat ratio, \(R_s\) is the specific gas constant for steam, \(A_t\) is the throat area.
-		  
-		  If we consider the pressure in the range \(1-5\) bar, then we can replace the term \(\frac{p_1}{\sqrt{T_1}}\), where \(p_1\) is the chamber pressure and \(T_1\) is the chamber temperature, with a function of the pressure:
 		  $$
-		  \frac{p_1}{\sqrt{T_1}}=\frac{p_1}{\sqrt{\frac{B}{A-\log _{10} p_1}+C}} \approx \alpha_1 p_1+\beta_1
+		  \dot{m}=\frac{p_C \cdot A^*}{\sqrt{\frac{R_A}{M_W} \cdot T_C}} \cdot \sqrt{\gamma \cdot\left(\frac{1+\gamma}{2}\right)^{\frac{1+\gamma}{1-\gamma}}}
 		  $$
-		  where \(\alpha_1\) and \(\beta_1\) are the coefficients of the first order Taylor series expansion and are functions of the same parameters used in the Antoine equation and the linearization point \(p_s = 3 \ \text{atm}\). These are evaluated to be $\alpha_1 = 0.048 \text{K}^{-1/2}$ and $\beta_1 = 626.99 \ \text{Pa} \ \text{K}^{-1/2}$
+		  
+		  where \(P_h\) is the available heating power, \(T_0\) is the initial propellant temperature, \(T_{\text {boil }}\) is the propellant boiling temperature (which in turn is a function of the heating chamber pressure), \(c_{p L}\) and \(c_{p G}\) are the constant pressure specific heat of respectively the liquid and gaseous propellant phase (both usually functions of the temperature), \(L_h\) is the latent heat of vaporization of the propellant.
+		  
+		  The tank pressure, which is assumed to stay constant over the length of the heating chamber, is an input along with a chosen heating power. Since the boiling temperature is known from the pressure and the initial temperature is set, that leaves the mass flow and final chamber gas temperature to be solved for. This is done using a combination of a grid-search method and optimizer, as during calculations non-unique solutions with comparable error tolerances were found, with the least erroneous option chosen and further optimized.
 	- Nozzle
+		- Throat Condition
+			- Critical Throat Condition ratios [source](https://farside.ph.utexas.edu/teaching/336L/Fluid/node197.html)
+			  
+			  Starting from the isentropic equations relating stagnation conditions (zero subscript) to local flow Mach number:
+			  
+			  \begin{aligned}
+			  & \frac{p}{p_0}=\left(\frac{T}{T_0}\right)^{\gamma /(\gamma-1)}=\left[1+\frac{1}{2}(\gamma-1) \mathrm{Ma}^2\right]^{-\gamma /(\gamma-1)} \\
+			  & \frac{\rho}{\rho_0}=\left(\frac{T}{T_0}\right)^{1 /(\gamma-1)}=\left[1+\frac{1}{2}(\gamma-1) \mathrm{Ma}^2\right]^{-1 /(\gamma-1)} .
+			  \end{aligned}
+			  
+			  Setting \(Ma = 1\) as we are assuming perfectly sonic flow at the throat yields:
+			  
+			  \begin{aligned}
+			  & \frac{T_1}{T_0}=\left(\frac{2}{\gamma+1}\right) \\
+			  & \frac{p_1}{p_0}=\left(\frac{2}{\gamma+1}\right)^{\gamma /(\gamma-1)}, \\
+			  & \frac{\rho_1}{\rho_0}=\left(\frac{2}{\gamma+1}\right)^{1 /(\gamma-1)} .
+			  \end{aligned}
+			  
+			  These relations between the stagnation conditions in the chamber to those in the throat (1 subscript) are used to characterize throat flow.
+			- Steam dynamic viscosity
+			  
+			  The dynamic viscosity of water steam is temperature and pressure dependent, so experimental values reported on EngineeringToolbox were taken and turned into a lookup table with linear interpolation between data points. The dynamic viscosity values are measured in centipoise \((\mathrm{cP})\), a common unit for viscosity, which is multiplied by \( 10^3\) to get the elsewhere used unit of \( \text{Pa} \cdot \text{s} \).
+			  
+			  In the following table, not all entries describe the gaseous state, and wherever the gas will have turned back into liquid, the original table value was replaced by -1 to allow for a quick check of state change.
+			  
+			  \begin{table}[ht]
+			  \centering
+			  \caption{Dynamic Viscosity Lookup Table}
+			  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+			  \hline
+			  Pressure (Pa) & 6900 & 13800 & 34500 & 68900 & 138000 & 345000 & 690000 \\
+			  \hline
+			  727.15 & 0.028 & 0.028 & 0.028 & 0.028 & 0.028 & 0.028 & 0.028 \\
+			  700.15 & 0.026 & 0.026 & 0.026 & 0.026 & 0.026 & 0.026 & 0.027 \\
+			  672.15 & 0.024 & 0.025 & 0.025 & 0.025 & 0.025 & 0.025 & 0.025 \\
+			  644.15 & 0.023 & 0.023 & 0.023 & 0.023 & 0.023 & 0.023 & 0.023 \\
+			  616.15 & 0.022 & 0.022 & 0.022 & 0.022 & 0.022 & 0.022 & 0.022 \\
+			  589.15 & 0.021 & 0.021 & 0.021 & 0.021 & 0.021 & 0.021 & 0.021 \\
+			  561.15 & 0.020 & 0.020 & 0.020 & 0.020 & 0.020 & 0.020 & 0.020 \\
+			  533.15 & 0.019 & 0.019 & 0.019 & 0.019 & 0.019 & 0.019 & 0.019 \\
+			  505.15 & 0.018 & 0.018 & 0.018 & 0.018 & 0.017 & 0.017 & 0.017 \\
+			  477.15 & 0.016 & 0.016 & 0.016 & 0.016 & 0.016 & 0.016 & 0.016 \\
+			  450.15 & 0.015 & 0.015 & 0.015 & 0.015 & 0.015 & 0.015 & 0.015 \\
+			  422.15 & 0.014 & 0.014 & 0.014 & 0.014 & 0.014 & 0.014 & -1 \\
+			  394.15 & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 & -1 & -1 \\
+			  366.45 & 0.012 & 0.012 & 0.012 & 0.012 & -1 & -1 & -1 \\
+			  338.75 & 0.0011 & 0.0011 & -1 & -1 & -1 & -1 & -1 \\
+			  \hline
+			  \end{tabular}
+			  \end{table}
+			-
+			-
 		- Nozzle Flow Characterization
+			- Isentropic relations
+			  
+			  The Mach number at any location in the nozzle is related to its area ratio with the throat area by:
+			  $$\frac{A}{A_t}=\frac{1}{\mathrm{Ma}}\left[1+\left(\frac{\gamma-1}{\gamma+1}\right)\left(\mathrm{Ma}^2-1\right)\right]^{(\gamma+1) /[2(\gamma-1)]}$$
+			  
+			  This equation is used to find the Mach number at the exit given the fixed expansion ratio \(A_e / A_t\) for a given design. This Mach number is further used in the following isentropic relation to calculate the temperature and density at the exit.
+			  
+			  $$ \frac{\rho_e}{\rho_c}=\left(\frac{T_e}{T_c}\right)^{1 /(\gamma-1)}=\left[1+\frac{1}{2}(\gamma-1) \mathrm{Ma_e}^2\right]^{-1 /(\gamma-1)}$$
+			  
+			  The pressure at the exit is calculated using the following relationship between the pressure ratio \(p_e / p_c\) and the expansion ratio
+			  
+			  $$\frac{\mathrm{A}_{\mathrm{e}}}{\mathrm{A}_{\mathrm{t}}}=\frac{\Gamma}{\sqrt{\frac{2 \gamma}{\gamma-1} \cdot\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{2}{\gamma}\right)}\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}}$$
+			  
+			  where \(\Gamma\) is the Vanderkerck-hove function:
+			  
+			  $$\Gamma=\sqrt{\gamma} \cdot\left(\frac{2}{\gamma+1}\right)^{\left(\frac{\gamma+1}{2(\gamma-1)}\right)}$$
+			  
+			  It is impossible to analytically solve the relation between the expansion/area ratio and pressure ratio for the pressure ratio, so instead, an inverse solution optimizer was used.
 			- The bulk of the equations in this section were taken from [[@Analytical Relations for Performance Characterization of CD Micro-nozzles]] , which discusses the performance of CD micronozzles. The final output of this model is the "true" thrust i.e. the ideal thrust corrected with various loss factors.
 			- Divergence loss
 			  
@@ -175,40 +306,15 @@ id:: 64b187ff-2940-4304-8395-8954d0948db6
 			  
 			  To accurately predict performance losses in micro-nozzles, it is crucial to characterize the boundary layer. One approach is to use a simplified model based on flat plate boundary layer solutions, which can be applied to linear convergent-divergent micro-nozzles.
 			  
-			  The flat-plate Reynolds number at the exit (\(R e_x\)) is defined as the ratio of the product of the exit velocity (\(u_e\)) and the distance from the nozzle entrance (\(x\)) to the kinematic viscosity (\(v\)) of the fluid:
+			  The flat-plate Reynolds number at the exit (\(R e_x\)) is defined as the ratio of the product of the exit velocity (\(u_e\)) and the distance from the nozzle entrance (\(x\)) to the dynamic viscosity (\(\mu\)) of the fluid:
 			  
-			  \[R e_x=\frac{u_e x}{v}\]
+			  \[R e_x=\frac{u_e x}{\mu}\]
 			  
 			  For incompressible, laminar flow, the skin friction coefficient (\(c_{f x}\)) can be calculated using the following equation:
 			  
 			  \[c_{f x}=\frac{0.664}{\sqrt{R e_x}}\]
 			  
 			  The skin friction coefficient is an important parameter that quantifies the frictional forces acting on the fluid within the boundary layer.
-			  
-			  The momentum thickness (\(\theta_x\)) is a measure of the thickness of the boundary layer and can be calculated by multiplying the skin friction coefficient (\(c_{f x}\)) by the distance from the nozzle entrance (\(x\)):
-			  
-			  \[\theta_x=c_{f x} \cdot x\]
-			  
-			  The displacement thickness (\(\delta^*\)) represents the amount by which the flow is displaced by the boundary layer. It can be calculated using the following equation:
-			  
-			  \[\delta^*=2.59036 \cdot \theta_x\]
-			  
-			  To optimize the design of the nozzle, the angle of the divergent section should be carefully chosen to balance the displacement thickness and divergence losses.
-			  
-			  The true area ratio of the nozzle (\(\left(\frac{A_e}{A_t}\right)_{t r u e}\)) can be determined using the following equation:
-			  
-			  \[\left(\frac{A_e}{A_t}\right)_{t r u e}=\frac{2 \cdot\left(R_e-\delta^*\right)}{W_t}\]
-			  
-			  Here, \(W_t\) represents the throat width and \(R_e\) denotes the exit radius.
-			  
-			  It is important to note that the assumptions underlying this boundary layer solution include laminar and attached flow, as well as the assumption that the boundary layer starts developing at the throat and increases in size until reaching the nozzle exit. These assumptions provide a simplified model for analyzing boundary layer losses in micro-nozzles.
-			- Momentum Losses
-			  
-			  The presence of a boundary layer in addition to the modification of effective nozzle geometry leads to momentum losses in the flow. These losses occur as the flow loses momentum within the boundary layer. To account for this, the thrust loss due to momentum can be calculated using the equation:
-			  
-			  \(\Delta F_{\text {momentum }}=\left(\rho_c \cdot u_c \cdot\left(2 \pi R_c\right) \cdot \theta_c\right) \cdot u_e\)
-			  
-			  It is important to note that for nozzles with non-circular cross sections, the circumference term should be replaced with the equivalent perimeter.
 			- Correcting for compressibility
 			  
 			  The Reference Temperature Approach is a method used to correct the skin friction coefficient in supersonic flow. In the previous section, we discussed a method for predicting boundary layer properties assuming incompressible flow. However, this assumption is no longer valid when the flow becomes supersonic.
@@ -221,183 +327,261 @@ id:: 64b187ff-2940-4304-8395-8954d0948db6
 			  
 			  In this equation, \(c_f\) represents the compressible skin friction coefficient, \(c_{f, i}\) is the skin friction coefficient assuming incompressible flow, \(T_w\) is the wall temperature (which remains constant along the entire VLM), \(T_0\) is the stagnation temperature at the point where the skin friction coefficient is determined, \(\gamma\) is the specific heat ratio, and \(M\) is the Mach number.
 			  
-			  The stagnation temperature (\(T_0\)) refers to the temperature of the vapor immediately after vaporization has occurred. By incorporating the average temperature across the boundary layer, the Reference Temperature Approach provides a more accurate estimation of the skin friction coefficient in supersonic flow conditions.
+			  The stagnation temperature (\(T_0\)) refers to the temperature of the vapor immediately before entering the nozzle, which is the same as the previously calculated chamber temperature. By incorporating the average temperature across the boundary layer, the Reference Temperature Approach provides a more accurate estimation of the skin friction coefficient in supersonic flow conditions.
+			- The momentum thickness (\(\theta_x\)) is a measure of the thickness of the boundary layer and can be calculated by multiplying the skin friction coefficient (\(c_{f x}\)) by the distance from the nozzle throat (\(x\)):
+			  
+			  \[\theta_x=c_{f x} \cdot x\]
+			  
+			  The displacement thickness (\(\delta^*\)) represents the amount by which the flow is displaced by the boundary layer. It can be calculated using the following equation:
+			  
+			  \[\delta^*=2.59036 \cdot \theta_x\]
+			  
+			  To optimize the design of the nozzle, the angle of the divergent section should be carefully chosen to balance the displacement thickness and divergence losses.
+			  
+			  The true area ratio, or expansion ratio, of the nozzle (\(\left(\frac{A_e}{A_t}\right)_{t r u e}\)) can be determined using the following equation:
+			  
+			  $$\left(\frac{A_e}{A_t}\right)_{t r u e}=\frac{\left(R_e-\delta^*\right)^2}{R_t^2}$$
+			  
+			  Here, \(R_t\) represents the throat radius and \(R_e\) denotes the exit radius.
+			  
+			  It is important to note that the assumptions underlying this boundary layer solution include laminar and attached flow, as well as the assumption that the boundary layer starts developing at the throat and increases in size until reaching the nozzle exit. These assumptions provide a simplified model for analyzing boundary layer losses in micro-nozzles.
+			- Momentum Losses
+			  
+			  The presence of a boundary layer in addition to the modification of effective nozzle geometry leads to momentum losses in the flow. These losses occur as the flow loses momentum within the boundary layer. To account for this, the thrust loss due to momentum can be calculated using the equation:
+			  
+			  \(\Delta F_{\text {momentum }}=\left(\rho_e \cdot u_e \cdot\left(2 \pi R_e\right) \cdot \theta_e\right) \cdot u_e\)
 			- True pressure ratio
 			  
-			  The true area ratio found earlier leads to a lower exit pressure than predicted by IRT, and this true pressure ratio between the exit pressure \(p_e\) and chamber pressure \(p_c\) can be found using the following relation iteratively:
+			  The true area ratio found earlier leads to a different exit pressure than that predicted by IRT, and this true pressure ratio between the exit pressure \(p_e\) and chamber pressure \(p_c\) can be found, as before, iteratively using the relation between the pressure ratio and expansion ratio.
+			- The ideal thrust represents the maximum achievable thrust under ideal conditions. \(F_{ideal}\) can be calculated using the following equation:
 			  
-			  \(\frac{\mathrm{A}_{\mathrm{e}}}{\mathrm{A}_{\mathrm{t}}}=\frac{\Gamma}{\sqrt{\frac{2 \gamma}{\gamma-1} \cdot\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{2}{\gamma}\right)}\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}}\)
+			  \[F_{i deal}=\dot{m} \cdot u_{e q}\]
 			  
-			  where \(\Gamma\) is the Vanderkerck-hove function:
-			  
-			  \(\Gamma=\sqrt{\gamma} \cdot\left(\frac{2}{\gamma+1}\right)^{\left(\frac{\gamma+1}{2(\gamma-1)}\right)}\)
-			  
-			  It is impossible to analytically solve the relation between the expansion/area ratio and pressure ratio for the pressure ratio, so instead, a quartic polynomial was fitted to allow a faster albeit less precise inverse calculation.
-			  
-			  The quartic polynomial function is defined as follows:
+			  where \(u_{eq}\) is the (equivalent) exit pressure. The ambient pressure is assumed to be very small given the VLM's final application in the vacuum of space, and generally, the pressure term can be neglected in micropropulsion systems, which was done here as well. Some expansion and rearrangement using the definition of the exit velocity yields:
 			  
 			  $$
-			  f(x)=e \cdot x^4+d \cdot x^3+c \cdot x^2+b \cdot x+a
+			  F_{ideal} = \dot{m} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot R_s \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)^{\left(\frac{\gamma-1}{\gamma}\right)}\right)}
 			  $$
-			  
-			  $$
-			  \begin{tabular}{|c|c|}
-			  \hline
-			  Coefficient & Value \\
-			  \hline
-			  $a$ & $2.126678050764823$ \\
-			  $b$ & $-9.245481760842422$ \\
-			  $c$ & $25.283279766409915$ \\
-			  $d$ & $-31.775573578601517$ \\
-			  $e$ & $1$ \\
-			  \hline
-			  \end{tabular}
-			  $$
-			  
-			  A numerical root-finding method known as the Newton-Raphson method is used to find the true pressure ratio given a specific area ratio.
-			- True Thrust
-			  
-			  The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and reduced exit pressure. The true thrust, estimated using this methodology, is given by:
-			  
-			  \(F_{\text {true }}=\dot{m} \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot \frac{\mathrm{R}_{\mathrm{A}}}{\mathrm{M}} \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}\)
-		- Nozzle Performance Evaluation
-			- Once the true thrust of the nozzle has been found by characterizing the flow within, several different metrics can be calculated to evaluate the performance of the nozzle. The majority of these equations were taken from [[@Simplified Modelling of Aerospike Micro-nozzles]], which discusses the performance of aerospike micronozzles, although many of the relations were originally derived for CD nozzles and then repurposed for aerospikes, keeping them valid for our case.
 			- Discharge coefficient \(C_D\)
+			  
+			  There is only one missing variable to find the true thrust: the true mass flow. The ratio of the real and ideal mass flow in the throat is called the discharge coefficient.
 			  
 			  Tang and Fenn (1978) derived an expression to calculate the discharge coefficient for choked axisymmetric nozzles with a circular cross-section. The expression takes into account the effect of the boundary layer in reducing the effective nozzle throat area. The expression by Tang and Fenn was derived for adiabatic flow of cold gases through smooth circular nozzles, which is exactly our case. These effects are more significant for throat Reynolds numbers under 100,000. The equation for the discharge coefficient is given as:
 			  
-			  \[C_D=1-\left(\frac{\gamma+1}{2}\right)^{3/4}\left(\frac{-2.128}{\gamma+1}+3.266\right) R^{-0.5}+9.428 \frac{(\gamma-1)(\gamma+2)}{(\gamma+1)^{0.5}} R^{-1} =\frac{\dot{m}_{\text {meas }}}{\dot{m}_{1 D}}\]
+			  $$C_D=1-\left(\frac{\gamma+1}{2}\right)^{3/4}\left(\frac{-2.128}{\gamma+1}+3.266\right) R^{-0.5}+9.428 \frac{(\gamma-1)(\gamma+2)}{(\gamma+1)^{0.5}} R^{-1} =\frac{\dot{m}_{\text {true }}}{\dot{m}_{ideal}}$$
 			  
 			  where \(C_D\) is the discharge coefficient and \(R\) is the modified throat Reynolds number, which in our case for a circular throat, is just the original throat Reynolds number.
-			- Thrust efficiency, denoted as \(\eta_F\), is a measure of how effectively a propulsion system converts the input power into thrust. It is defined as the ratio of the measured thrust, \(F_{\text{meas}}\), to the ideal thrust, \(F_{1D}\). The ideal thrust represents the maximum achievable thrust under ideal conditions.
+			- True Thrust
 			  
-			  The ideal thrust, \(F_{1D}\), can be calculated using the following equation:
+			  The resulting aggregate thrust loss is calculated by combining the divergence loss, momentum loss, and corrected exit pressure. The true thrust, estimated using this methodology, is given by:
 			  
-			  \[F_{1D} = C_F p_c A_t + A_e(p_e - p_{\infty})\]
+			  $$F_{\text {true }}=\dot{m}_{true} \cdot \epsilon_{\text {div }} \cdot \sqrt{2 \cdot \frac{\gamma}{\gamma-1} \cdot R_s \cdot \mathrm{T}_{\mathrm{c}} \cdot\left(1-\left(\frac{\mathrm{p}_{\mathrm{e}}}{\mathrm{p}_{\mathrm{c}}}\right)_{\text {true }}^{\frac{\gamma-1}{\gamma}}\right)}-\Delta F_{\text {momentum }}$$
+		- Nozzle Performance Evaluation
+			- Once the true thrust of the nozzle has been found by characterizing the flow within, several different metrics can be calculated to evaluate the performance of the nozzle. The majority of these equations were taken from [[@Simplified Modelling of Aerospike Micro-nozzles]], which discusses the performance of aerospike micronozzles, although many of the relations were originally derived for CD nozzles and then repurposed for aerospikes, keeping them valid for our case.
+			- Thrust efficiency, denoted as \(\eta_F\), is a measure of how effectively a propulsion system converts the input power into thrust. It is defined as the ratio of the measured thrust, \(F_{\text{meas}}\), to the ideal thrust, \(F_{ideal}\). By dividing the measured thrust, \(F_{\text{true}}\), by the ideal thrust, \(F_{ideal}\), we obtain the thrust efficiency, \(\eta_F\):
 			  
-			  where:
-			  \(C_F\) is the thrust coefficient, \(p_c\) is the chamber pressure, \(A_t\) is the throat area, \(A_e\) is the exit area, \(p_e\) is the exit pressure, and \(p_{\infty}\) is the ambient pressure.
-			  
-			  The first term in the equation represents the thrust generated by the combustion process, while the second term represents the thrust generated by the pressure difference between the exit and ambient conditions.
-			  
-			  The thrust coefficient, \(C_F\), is given by:
-			  
-			  \[C_F = \sqrt{\frac{2\gamma^2}{\gamma-1}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{\gamma-1}}\left(1-\frac{p_e}{p_c}\right)}\]
-			  
-			  where:
-			  \(\gamma\) is the specific heat ratio of the working fluid.
-			  
-			  By dividing the measured thrust, \(F_{\text{meas}}\), by the ideal thrust, \(F_{1D}\), we obtain the thrust efficiency, \(\eta_F\):
-			  
-			  \[\eta_F = \frac{F_{\text{meas}}}{F_{1D}}\]
+			  $$\eta_F = \frac{F_{\text{true}}}{F_{ideal}}$$
 			  
 			  The thrust efficiency provides a quantitative measure of how well the propulsion system is performing in converting the input power into useful thrust. A higher thrust efficiency indicates a more efficient propulsion system, while a lower thrust efficiency suggests that a significant portion of the input power is being wasted or lost in the conversion process.
 			- Specific Impulse Efficiency
 			  
 			  Specific impulse efficiency (\(\eta_{I_{sp}}\)) is a parameter used to evaluate the performance of rocket engines. It quantifies the efficiency of a rocket engine in converting propellant mass flow rate into thrust.
 			  
-			  The specific impulse (\(I_{sp}\)) is a measure of how effectively a rocket engine utilizes its propellant. It is defined as the thrust generated per unit of propellant mass flow rate. The specific impulse efficiency compares the measured specific impulse (\(I_{sp_{meas}}\)) of an engine to the specific impulse (\(I_{sp_{1D}}\)) that would be achieved by an ideal engine operating under the same conditions.
+			  The specific impulse (\(I_{sp}\)) is a measure of how effectively a rocket engine utilizes its propellant. It is defined as the thrust generated per unit of propellant mass flow rate. The specific impulse efficiency compares the measured specific impulse (\(I_{sp_{true}}\)) of an engine to the specific impulse (\(I_{sp_{ideal}}\)) that would be achieved by an ideal engine operating under the same conditions.
 			  
 			  The ideal specific impulse (\(I_{sp_{1D}}\)) is calculated using the thrust (\(F_{1D}\)) generated by the engine, the propellant mass flow rate (\(\dot{m}_{1D}\)), and the standard acceleration due to gravity (\(g_0\)). It represents the maximum specific impulse achievable by an engine with perfect efficiency.
 			  
-			  \[
-			  I_{sp_{1D}} = \frac{F_{1D}}{\dot{m}_{1D} \cdot g_0}
-			  \]
+			  $$
+			  I_{sp_{ideal}} = \frac{F_{ideal}}{\dot{m}_{ideal} \cdot g_0}
+			  $$
 			  
 			  On the other hand, the measured specific impulse (\(I_{sp_{meas}}\)) is determined experimentally by measuring the thrust (\(F_{meas}\)) and the propellant mass flow rate (\(\dot{m}_{meas}\)) of the engine. It represents the actual specific impulse achieved by the engine in real-world conditions.
 			  
-			  \[
-			  I_{sp_{meas}} = \frac{F_{meas}}{\dot{m}_{meas} \cdot g_0}
-			  \]
+			  $$
+			  I_{sp_{true}} = \frac{F_{true}}{\dot{m}_{true} \cdot g_0}
+			  $$
 			  
 			  The specific impulse efficiency (\(\eta_{I_{sp}}\)) is then calculated by dividing the measured specific impulse by the ideal specific impulse:
 			  
-			  \[
-			  \eta_{I_{sp}} = \frac{I_{sp_{meas}}}{I_{sp_{1D}}}
-			  \]
+			  $$
+			  \eta_{I_{sp}} = \frac{I_{sp_{meas}}}{I_{sp_{ideal}}}
+			  $$
 			  
 			  This efficiency parameter provides insight into how well a rocket engine performs relative to its theoretical maximum performance. A higher specific impulse efficiency indicates a more efficient engine, as it is able to achieve a larger fraction of the ideal specific impulse.
-- Methods
-	- Simulation Procedure
-		- Chamber Liquid Phase
+			- Thrust per power
+			  
+			  The final evaluation variable is the amount of thrust generated for a given input power, expressed as
+			  
+			  $$\eta_{F/P} = \frac{F_{true}}{P_{input}} \ [\text{mN/W}]$$
+- Methodology
+	- In order to design a next-generation VLM based on the theory presented in the literature review, a comprehensive simulation of the VLM's performance was created. This calculation was performed for a large number of design parameters within a feasible range, the values for which were sampled using Latin Hypercube Sampling in order to efficiently and comprehensively cover the entire design space. The best designs were evaluated using a multi-objective composite score, equally weighting the main performance indicators of the VLM. The best designs according to this score were then subjected to sensitivity analyses and further parameter sweeps to ascertain individual inputs' effect on the system performance.
+	- VLM Performance Simulation
+	  In order to design a next-generation VLM based on the theoretical background gleaned from the above sources, a comprehensive characterization of the behavior and performance of the VLM was created. The equations used are detailed in the previous section, and the general order of the procedure is:
+	  
+	  \begin{enumerate}
+	  \item Size the VLM
+	  \item Calculate the liquid flow conditions in the heating chamber
+	  \item Calculate the gaseous flow conditions in the heating chamber
+	  \item Find the throat conditions
+	  \item Find the exit flow conditions
+	  \item Correct the nozzle flow conditions with error terms and find the true thrust
+	  \item Calculate all remaining evaluation parameters
+	  \end{enumerate}
+	  
+	  The full code for the simulation can be found in the GitHub repository for this project.
+	  
+	  Interspersed in the main calculations are a number of sanity checks, preferably performed as early in the calculations as possible, to exclude any parameter combinations that are not physically realistic. These include:
+	  
+	  \begin{itemize}
+	  \item Ensuring the exit radius is greater than the throat radius
+	  \item Keeping the exit Mach number between 1 and 5
+	  \item Asserting the positive sign of all non-negative variables
+	  \item Ensuring the steam has not turned back into water at the exit due to low temperatures
+	  \item Finding the existence of solutions for mass flow and chamber temperature combinations for the input power and pressure
+	  \end{itemize}
+	- Optimization Procedure
+		- **Design and Evaluation Variables:**
+		  The design variables include nine key parameters:
 		  
-		  1. Inlet Dynamic Viscosity Calculation: The dynamic viscosity of the inlet water is calculated based on the given water temperature.
-		  2. Reynolds Number Calculations: Two Reynolds numbers are calculated for the chamber inlet: one using the inlet radius and another using twice the inlet radius. These values are used to assess the flow regime.
-		  3. Shah-London Factors Calculation: Shah-London factors are computed using the channel aspect ratio. These factors are important for predicting heat transfer and pressure drop in the microchannels.
-		  4. Boiling Pressure Loop: A loop iteratively calculates the boiling pressure in the chamber. Within this loop, fluid flow centerline, channel friction factor, and average vapor volume are computed, contributing to the determination of boiling pressure. These parameters play a role in predicting the onset of boiling in the microchannels.
-			- 1. Initialization:
-			  Initialize variables such as 'epsilon' (a small value used to check convergence),
-			  'max_iterations' (the maximum number of iterations allowed), and
-			  'channel_friction_factor' (an initial estimate of the friction factor in the channel).
-			  2. Iteration Loop:
-			  The code enters a loop that iterates until convergence is achieved or the maximum number of iterations is reached.
-			  The loop starts by storing the current value of the centerline length as ' \(\mathbf{L_0}\) '.
-			  3. Boiling Pressure Calculation:
-			  Calculate the boiling pressure 'p_boil' in the microchannel using the given inlet flow, inlet radius, and the current centerline length ' \(\mathbf{L}\) '.
-			  4. Average Vapor Volume Calculation:
-			  Compute the average vapor volume within the microchannel using the chip temperature and the calculated boiling pressure. This value is important for determining the vaporliquid phase distribution.
-			  5. Comparison with Chamber Volume:
-			  Compare the calculated average vapor volume with the chamber volume. If the average vapor volume exceeds the chamber volume, an error is raised, indicating that vapor volume is larger than what the chamber can accommodate.
-			  6. Fluid Flow Centerline Calculation:
-			  Calculate the new centerline length 'L' using the calculated average vapor volume, chamber volume, and the initial centerline length. This step helps adjust the centerline length based on the vapor-liquid distribution.
-			  7. Comparison with Initial Centerline:
-			  Compare the new centerline length ' \(\mathbf{L}\) ' with the initial centerline length. If the new centerline length exceeds the initial value, an error is raised, indicating that the calculated centerline length is larger than expected.
-			  8. Update Channel Friction Factor:
-			  Update the 'channel_friction_factor` using the new centerline length 'L'.
-			  9. Convergence Check:
-			  Calculate the absolute difference 'delta_L' between the new centerline length 'L' and the previous centerline length ' \(\mathbf{L_0}\) '.
-			  10. Convergence Check and Break
-			  Check if the absolute difference 'delta_L' is smaller than the specified convergence threshold ('epsilon '). If it is, the loop is exited, and the calculations are considered converged.
-		- 5. Water Boiling Temperature Calculation: The boiling temperature of water is calculated using the previously determined boiling pressure.
-		  6. Mean Fluid Temperature Calculation: The mean fluid temperature in the chamber is calculated as the average between the inlet water temperature and the water boiling temperature.
-		  7. Heat Transfer Coefficient Calculation: The heat transfer coefficient at the heated wall surface is computed using the input power, heated wall surface area, chip temperature, and mean fluid temperature.
-		  8. Nusselt Number Calculation: The Nusselt number, which describes the heat transfer efficiency in the chamber, is calculated based on the heat transfer coefficient, hydraulic diameter, and fluid properties.
-		- Chamber Gas Phase
+		  Chip Temperature
+		  Tank Pressure
+		  Throat Radius
+		  Nozzle Exit Radius
+		  Number of Elements (Integer)
+		  Number of Channels (Integer)
+		  Chamber Depth
+		  Input Power
+		  Nozzle Length
 		  
-		  1. Chamber Gas Temperature Calculation: The chamber gas temperature is estimated based on the previously calculated boiling pressure. This is an approximation since the system is assumed to be in thermal equilibrium.
-		  2. Reduced Temperature Calculation: The reduced temperature is computed, which is essential for determining the vapor-specific volume of the gas.
-		  3. Vapor Specific Volume Calculation: The vapor-specific volume is calculated using the reduced temperature, aiding in assessing the gas density.
-		  4. Chamber Gas Pressure Calculation: The pressure of the gas in the chamber is determined using the ideal gas law and the previously calculated vapor-specific volume.
-		  5. Chamber Gas Density Calculation: The density of the gas in the chamber is obtained using the ideal gas law with the computed pressure and temperature.
-		- Nozzle Characterization
+		  The evaluation parameters are as follows:
 		  
-		  1. Throat Density and Temperature Calculation: The density and temperature at the nozzle throat are estimated using relationships between chamber gas properties and critical flow conditions.
-		  2. Throat Dynamic Viscosity Calculation: The dynamic viscosity at the throat is computed using the throat temperature and the properties of the gas.
-		  3. Throat Kinematic Viscosity Calculation: The kinematic viscosity at the throat is calculated based on the previously obtained dynamic viscosity and throat density.
-		  4. Throat Speed of Sound Calculation: The speed of sound at the throat is determined using the calculated throat temperature and properties of the gas.
-		  5. Throat Reynolds Number Calculation: The Reynolds number at the throat is calculated using the speed of sound, throat radius, and throat kinematic viscosity.
-		  6. Exit Mach Number Calculation: The Mach number at the nozzle exit is estimated based on the expansion ratio between the exit area and the throat area.
-		  7. Exit Temperature Calculation: The temperature at the nozzle exit is estimated using the chamber gas temperature and the isentropic relation applied to the calculated Mach number.
-		  8. Exit Velocity Calculation: The velocity at the nozzle exit is computed using the calculated Mach number, specific gas constant, and exit temperature.
-		  9. Exit Pressure Calculation: The pressure at the nozzle exit is determined using the isentropic relation applied to the calculated Mach number.
-		  10. Exit Density Calculation: The density at the nozzle exit is computed using the ideal gas law applied to the exit pressure and temperature.
-		  11. Exit Dynamic Viscosity Calculation: The dynamic viscosity at the nozzle exit is calculated using the exit temperature and properties of the gas.
-		  12. Exit Kinematic Viscosity Calculation: The kinematic viscosity at the nozzle exit is determined based on the previously obtained dynamic viscosity and exit density.
-		- Exit Thrust Correction
+		  Specific Impulse Efficiency
+		  Thrust Efficiency
+		  Nusselt Number
+		  Discharge Coefficient
+		  Reynolds Number (Chamber)
+		  Mass Flow Error
+		  Chamber Length
+		  Chamber Width
+		  Thrust per Power
 		  
-		  1. Flat Plate Reynolds Number Calculation: The Reynolds number for the flow at the nozzle exit is calculated using the exit velocity, a characteristic length (measured at the exit), and the dynamic viscosity.
-		  2. Skin Friction Coefficient Calculation: The skin friction coefficient, a measure of viscous drag on the surface, is calculated using the flat plate Reynolds number and empirical relationships.
-		  3. Compressible Skin Friction Coefficient Calculation: The compressible skin friction coefficient is determined by accounting for the effect of gas compressibility and temperature variations on the skin friction coefficient.
-		  4. Momentum Thickness Calculation: The momentum thickness, a measure of boundary layer growth, is calculated using the compressible skin friction coefficient and characteristic length.
-		  5. Momentum Losses Calculation: Momentum losses in the exhaust are computed using the exit density, velocity, nozzle exit radius, and momentum thickness. These losses impact the thrust generated.
-		  6. Displacement Thickness Calculation: The displacement thickness is calculated based on the momentum thickness, providing insights into the boundary layer's behavior.
-		  7. True Expansion Ratio Calculation: The true area ratio is calculated by considering the nozzle exit radius, displacement thickness, and twice the throat radius.
-		  8. True Exit Pressure Ratio Calculation: The true exit pressure ratio is determined based on the calculated true area ratio, which affects the thrust generated.
-		  9. Nozzle Mass Flow Calculation: The mass flow rate through the nozzle is estimated using the chamber gas pressure, specific gas constant, and throat area.
-		  10. Divergence Losses Calculation: Divergence losses, which account for the spread of the exhaust plume, are calculated based on the nozzle exit half angle.
-		  11. True Thrust Calculation: The true thrust generated by the microthruster is calculated using various factors, including nozzle mass flow, divergence losses, gas properties, and geometric parameters. This is a key metric reflecting the system's propulsive capabilities
-		- Nozzle Performance Evaluation
+		  Table X shows the input parameter ranges used for the simulation.
 		  
-		  1. Discharge Coefficient and Measured Mass Flow Calculation: The discharge coefficient, which characterizes the nozzle's efficiency in converting mass flow rate into thrust, is calculated using the gas properties and Reynolds number. The measured mass flow rate is estimated using the discharge coefficient.
-		  2. Measured Specific Impulse Calculation: The measured specific impulse, which indicates the propulsive efficiency of the thruster, is calculated based on the true thrust and the measured mass flow rate.
-		  3. Ideal Thrust Calculation: The ideal thrust that the thruster could achieve is calculated based on the chamber and exit conditions, nozzle geometry, and gas properties.
-		  4. Ideal Specific Impulse Calculation: The ideal specific impulse, a theoretical measure of propulsive efficiency, is calculated using the ideal thrust and the measured mass flow rate.
-		  5. Specific Impulse Efficiency Calculation: The specific impulse efficiency is computed as the ratio of the measured specific impulse to the ideal specific impulse, offering insights into the thruster's actual performance compared to its theoretical potential.
-		  6. Thrust Efficiency Calculation: Thrust efficiency is calculated as the ratio of the true thrust to the ideal thrust, indicating how efficiently the thruster is producing thrust based on the given conditions.
-		  7. True Thrust Coefficient Calculation: The true thrust coefficient is calculated as the ratio of the true thrust to the product of chamber pressure and the throat area.
-	- Operational Ranges
+		  \begin{table}[htbp]
+		    \centering
+		    \caption{Input Ranges for Optimization}
+		    \label{tab:input_ranges}
+		    \begin{tabular}{|c|c|c|}
+		        \hline
+		        \textbf{Parameter} & \textbf{Range} & \textbf{Unit} \\
+		        \hline
+		        Chip Temperature & $(400, 600)$ & K \\
+		        Tank Pressure & $(100000, 500000)$ & Pa \\
+		        Throat Radius & $(1 \times 10^{-2}, 1 \times 10^{-1})$ & mm \\
+		        Nozzle Exit Radius & $(1 \times 10^{-2}, 1 \times 10^{-1})$ & mm \\
+		        Number of Elements & $(5, 20)$ & \\
+		        Number of Channels & $(5, 15)$ & \\
+		        Chamber Depth & $(0.01, 0.1)$ & mm \\
+		        Input Power & $(0.5, 10)$ & W \\
+		        Nozzle Length & $(0.1, 1)$ & mm \\
+		        \hline
+		    \end{tabular}
+		  \end{table}
+		- **Latin Hypercube Sampling (LHS):**
+		  Latin Hypercube Sampling is employed to efficiently explore the multidimensional design parameter space. This method ensures a comprehensive yet balanced sampling by dividing each variable's range into equal intervals and selecting a unique value from each interval. The use of LHS reduces the risk of missing critical regions of the design space and provides a representative set of designs for subsequent evaluation.
+		- **Multi-Objective Evaluation:**
+		  Each design generated by LHS, after calculating all the evaluation parameters, undergoes a multi-objective evaluation. The various objectives are combined using a weighted sum approach into a single score. In order to make the parameters comparable between each other, they were normalized, mapping their range onto the $[0,1]$ domain. Some of these variables are supposed to be minimized, like the chamber length and width, and the mass flow error - these were made negative to reflect their influence on the score.
+		  
+		  \begin{table}[htbp]
+		      \centering
+		      \caption{Weight Coefficients for Performance Metrics}
+		      \label{tab:weight_coefficients}
+		      \begin{tabular}{|c|c|}
+		          \hline
+		          \textbf{Performance Metric} & \textbf{Weight Coefficient} \\
+		          \hline
+		          Specific Impulse Efficiency & 0.1 \\
+		          Thrust Efficiency & 0.2 \\
+		          Nusselt Number & 0.05 \\
+		          Discharge Coefficient & 0.2 \\
+		          Reynolds Number (Chamber) & 0.025 \\
+		          Mass Flow Error & 0.025 \\
+		          Chamber Length & 0.1 \\
+		          Chamber Width & 0.1 \\
+		          Thrust per Power & 0.2 \\
+		          \hline
+		      \end{tabular}
+		  \end{table}
 - Results
-	- Sensitivity Analysis
+	- An initial simulation with one million samples and the input parameter ranges reported above was performed, but due to the relationship between mass flow, heating power, pressure and chamber temperature, the vast majority of samples did not yield a physically meaningful result, with another portion having the steam condense at the exit and thus yield an error as well. Out of one million, only around 25 thousand simulations were successfully completed.
+	  
+	  In all following scatter plots, the top 10 percent in terms of the combined evaluation score as described above are plotted in blue, while the bottom 90 percent are plotted in red.
 	- Optimized Design
-- Conculusion
+	  
+	  Taking the design with the highest combined evaluation score out of all 25 thousand yielded the following design:
+	  
+	  \begin{table}[htbp]
+	      \centering
+	      \caption{Best Design}
+	      \label{tab:best_design}
+	      \begin{tabular}{|c|c|c|}
+	          \hline
+	          \textbf{Parameter} & \textbf{Value} & \textbf{Unit} \\
+	          \hline
+	          Specific Impulse Efficiency & 0.990 & \\
+	          Thrust Efficiency & 0.935 & \\
+	          Nusselt Number & 0.0009897 & \\
+	          Discharge Coefficient & 0.944 & \\
+	          Reynolds Number (Chamber) & 3.03 & \\
+	          Mass Flow Error & -1.73 & mg/s \\
+	          Chamber Length & 3.2 & mm \\
+	          Chamber Width & 1.06 & mm \\
+	          Thrust per Power & 0.417 & mN \\
+	          Mass Flow & $3.14 $ & mg/s \\
+	          Chamber Temperature & 510.5 & K \\
+	          Combined Evaluation Parameter & 0.654 & \\
+	          Input Power & 9.21 & W \\
+	          Tank Pressure & 3.275 & bar \\
+	          Nozzle Exit Radius & $9.76 \times 10^{-2}$ & mm \\
+	          Throat Radius & $3.14 \times 10^{-2}$ & mm \\
+	          Number of Elements & 5.00 & \\
+	          Number of Channels & 5.00 & \\
+	          Chamber Depth & 0.2158 & mm \\
+	          Chip Temperature & 537.5 & K \\
+	          Nozzle Length & 8.13 & mm \\
+	          \hline
+	      \end{tabular}
+	  \end{table}
+	- Sensitivity Analysis
+	  
+	  An attempt at a sensitivity analysis was made by fixing all input parameters to those of the best design and sweeping a given parameter over its design range, but because of the narrow range of possible solutions for the mass flow and heating power equation system, rarely any feasible solutions were found using this procedure.
+	- Recalculation for Mass Flow vs. Power relationship
+	  
+	  However, an interesting result arose from the initial one million sample run, illustrating the narrow relationship between the mass flow and heating power.
+	  
+	  INSERT MASS FLOW X POWER GRAPH
+	  
+	  INSERT TANK PRESSURE X CHAMBER TEMPERATURE GRAPH
+	  
+	  This revealed the real constraints on physically real solutions for this equation system. These relations were fitted through visual analysis:
+	  
+	  Pressure x Chamber Temperature relation
+	  
+	  $$
+	  \begin{cases}
+	    T_c \geq425 & \text{if } 1 \ \text{bar} < p_c < 1.3 \ \text{bar}\\
+	    T_c \geq 1.8 \cdot \log{p_c - 130000} + 446 & \text{if }1.3 \ \text{bar} < p_c < 2.6 \ \text{bar} \\
+	   T_c \geq 2.8 \cdot \log{p_c - 260000} + 475 & \text{if } 2.6 \ \text{bar} < p_c < 5 \ \text{bar}
+	  \end{cases}
+	  $$
+	  
+	  Mass Flow x Heating Power Relation (in mg/s)
+	  
+	  $$ 0.342 \cdot P_{heat} - 0.175  \leq \dot{m} \leq 0.3947 \cdot P_{heat} -0.2 $$
+	  
+	  These constraints were added to the two equation system solver to constrain the search domain for a given calculation. Then, the existence of mass flow and temperature solutions and gaseous exit phase check were added as conditions for the generation of a sample using LHS, raising the successful simulation rate from 2.5 to 50 percent. A new set of one hundred thousand samples was generated to have 50,000 for a new optimization attempt.
+	  
+	  Of these, X thousand were successfully completed, yielding a new dataset with hopefully a more precise look into the domain of interest.
+	- Optimized Design
+- Conclusion
 - Discussion

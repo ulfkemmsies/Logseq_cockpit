@@ -34,7 +34,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		  \(R e=\frac{\rho \cdot v \cdot D}{\mu}\).
 		  Smaller nozzles will naturally cause the flow Reynolds number to become very small.
 	- Conventional Nozzles project
-	  collapsed:: true
 		- Performance Losses
 		  id:: 64b187ff-29f1-401b-aca5-8562e50de684
 			- Divergence Losses
@@ -117,7 +116,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  id:: 64c8adb2-93c4-4c41-bb4e-daf679f7fef9
 			  \(C_{F_{\text {true }}}=\frac{F_{\text {true }}}{p_c \cdot A_t}\)
 	- Wavy chambers project
-	  collapsed:: true
 		- Given the extremely low Reynolds numbers, the flow was assumed to be completely laminar. The following assumptions were used:
 		  • Incompressible flow
 		  • Steady state (this was verified with transient simulations)
@@ -164,6 +162,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				  ![image.png](../assets/image_1689091009539_0.png){:height 152, :width 526}
 			- ## Isp Losses
 			  id:: 64b187ff-2090-4b88-bb02-5c195b77b4e5
+			  collapsed:: true
 			  $$
 			  I s p_{\text {loss }}=\frac{A_e}{m} \cdot\left(\frac{p_e}{p_c}\right) \cdot \Delta p 
 			   ~ [\mathrm{s}]
@@ -180,7 +179,6 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 				   ~ [\mathrm{s}]
 				  $$
 	- Aerospike project
-	  collapsed:: true
 		- Vanderkerck-hove function \(\Gamma\)
 		  id:: 64cca9aa-bab3-43af-a59b-80f3fc20380c
 		  \(\Gamma=\sqrt{\gamma} \cdot\left(\frac{2}{\gamma+1}\right)^{\left(\frac{\gamma+1}{2(\gamma-1)}\right)}\)
@@ -252,6 +250,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 			  
 			  \(\frac{A_{\text {eff }}}{A_{\text {geo }}}=0.322135-\frac{38.6498}{R e}+0.063732 \cdot \log (R e)\)
 	- Control model paper
+	  collapsed:: true
 		- The text discusses important parameters for design trade-offs, including size, wall temperature, and pressure losses. It mentions that a wavy microchannel geometry can enhance convective heat transfer by thinning the boundary layer and creating Dean vortices. The Nusselt number is introduced as a measure of the ratio between heat transferred through convection and conduction. A higher Nusselt number indicates lower wall temperatures, which is crucial for Cubesats with limited power. The text suggests that future research should focus on simulating boiling and vapor in the flow.
 		- Nozzle Mass Flow Model
 		  id:: 64b187ff-09db-463e-b211-48932b579005
@@ -381,6 +380,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		- Energy efficiency: relates to the efficiency in the heat transfer process occurring inside the vaporization chamber
 		- Propulsion efficiency: relates to the friction losses in the fluid flow inside the vaporization chamber that affects the thrust and specific impulse. Friction losses are known to impact the nozzle performance as well but here we focus only on the chamber aspects.
 	- Fluid flow control paper
+	  collapsed:: true
 		- Solving the Navier-Stokes equations for the connecting channel between the pressure valve and heating chamber...
 		  
 		  If we define the velocity as the state of the system we can re-write it in the state space form \(\dot{x}=A x+B \bar{u}\) considering the pressure drop as the input \(\bar{u}=\Delta p\) :
@@ -394,6 +394,7 @@ id:: 64b187ff-e8c5-4450-a3fb-a11c4577bac0
 		  \frac{8 \eta}{R^2 \rho} u = -\frac{\Delta p}{\rho L}
 		  $$
 	- Integrated heaters paper
+	  collapsed:: true
 		- This paper has little to offer from a theoretical/modelling standpoint that has not been covered in other papers.
 		- The resistance of the heaters depends on the temperature and might be approximated by the following linear relation:
 		  $$

@@ -1,0 +1,6 @@
+- Globular transfer mode
+- Spray transfer mode
+- Short-circuiting transfer mode
+- Pulsed transfer mode
+- [[WAAM/Weld Modes/Cold Metal Transfer]]
+-

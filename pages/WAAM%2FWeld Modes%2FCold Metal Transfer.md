@@ -1,0 +1,18 @@
+- Spatter-free welding and brazing seams
+- Welded joins between steel and aluminum
+- Welding ultra-light gauge sheets from only 0.3 mm thick
+- Digital process-control system for improved weld quality
+- Up to 90% less thermal input than with TIG cold-wire
+- Higher welding speeds, up to 10 times faster for the same seam quality
+- Minimal distortion on thinner steel, reducing the need for weld preparation and finishing work
+- Excellent gap-bridging-ability, increasing on e.g. 2 mm (0.08 in) aluminum from 1 mm to 2.5 mm (0.04 to 0.1 in) as compared with pulsed-arc welding
+- 50% less dilution of base and filler metal, cutting costs when cladding
+- Reduced heat input and distortion, which can lead to less warping and deformation of the welded parts
+- Improved weld quality and appearance, with a consistent and precise weld bead
+- Reduced need for post-weld cleaning and finishing, saving time and labor costs
+- Increased efficiency and productivity, with faster welding speeds and reduced downtime for cleaning and maintenance
+- Reduced environmental impact, with lower energy consumption and reduced emissions compared to traditional welding methods
+- Improved safety, with reduced risk of spatter and fumes, and less need for personal protective equipment (PPE)
+- Versatility, with the ability to weld a wide range of materials and thicknesses, including dissimilar metals
+- Reduced consumable costs, with less wire and gas usage compared to traditional welding methods
+- Improved operator comfort, with reduced noise and vibration during the welding process.

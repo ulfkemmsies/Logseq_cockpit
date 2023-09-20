@@ -1,0 +1,12 @@
+- Being researched in [[RAMLAB Internship]]
+- Papers
+	- [[@Additive manufacturing processing and characterization of Fe-Si soft magnetic alloys]]
+	- [[@Effect of heat treatment on the microstructure and magnetic properties of laser powder bed fusion processed equiatomic Co-Fe]]
+	- [[@Electron Beam Processing of Sensors Relevant Vacoflux-49 Alloy: Experimental Studies of Thermal Zones and Microstructure]]
+	- [[@Fe–Co-based crystalline soft magnetic coatings with ultra-high saturation magnetization above 1.9T via co-axial powder feeding plasma-transferred arc welding]]
+	- [[@Nd:YAG laser micro-welding of ultra-thin FeCo–V magnetic alloy: optimization of weld strength]]
+	- [[@Properties of soft magnetic Fe-Co-V alloy produced by laser powder bed fusion]]
+	- [[@PTA-Welded Coatings with Saturation Magnetization above 1.3 T Using FeCrBSi Powders with Chemical Composition Similar to AISI 430 Ferrite Stainless Steel]]
+	- [[@Electron Beam Processing of Sensors Relevant Vacoflux-49 Alloy: Experimental Studies of Thermal Zones and Microstructure]]
+	- [[@Weldability of High Alloys]]
+	-

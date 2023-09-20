@@ -1,0 +1,6 @@
+- Laboratory notes
+	- Machines
+		- Cobot
+		- Panasonic
+		- Fronius TPS 550i
+			- Manual: ![tps_320i (1).pdf](../assets/tps_320i_(1)_1693819395135_0.pdf)

@@ -23,7 +23,7 @@
 	- DONE L2B Work Session >[2023-08-08 13:00 - 21:00](#agenda://?start=1691492400000&end=1691521200000&allDay=false)
 	- DONE L2B Work Session >[2023-08-09 13:00 - 21:00](#agenda://?start=1691578800000&end=1691607600000&allDay=false)
 	- DONE L2B Work Session >[2023-08-10 13:00 - 21:00](#agenda://?start=1691665200000&end=1691694000000&allDay=false)
-	- TODO L2B Work Session >[2023-08-11 13:00 - 21:00](#agenda://?start=1691751600000&end=1691780400000&allDay=false)
+	- DONE L2B Work Session >[2023-08-11 13:00 - 21:00](#agenda://?start=1691751600000&end=1691780400000&allDay=false)
 	- TODO L2B Work Session >[2023-08-26 07:00 - 21:00](#agenda://?start=1693026000000&end=1693076400000&allDay=false)
 	- TODO L2B Work Session >[2023-08-27 07:00 - 21:00](#agenda://?start=1693112400000&end=1693162800000&allDay=false)
 	- TODO L2B Work Session >[2023-08-23 18:00 - 21:00](#agenda://?start=1692806400000&end=1692817200000&allDay=false)
@@ -36,12 +36,12 @@
 	- TODO L2B Work Session >[2023-09-01 18:00 - 21:00](#agenda://?start=1693584000000&end=1693594800000&allDay=false)
 	- TODO L2B Work Session >[2023-09-02 07:00 - 21:00](#agenda://?start=1693630800000&end=1693681200000&allDay=false)
 	- TODO L2B Work Session >[2023-09-03 07:00 - 21:00](#agenda://?start=1693717200000&end=1693767600000&allDay=false)
-	- TODO L2B Work Session >[2023-08-12 17:00 - 21:00](#agenda://?start=1691852400000&end=1691866800000&allDay=false)
-	- TODO L2B Work Session >[2023-08-13 17:00 - 21:00](#agenda://?start=1691938800000&end=1691953200000&allDay=false)
-	- TODO L2B Work Session >[2023-08-14 13:00 - 21:00](#agenda://?start=1692010800000&end=1692039600000&allDay=false)
-	- TODO L2B Work Session >[2023-08-15 13:00 - 21:00](#agenda://?start=1692097200000&end=1692126000000&allDay=false)
-	- TODO L2B Work Session >[2023-08-16 13:00 - 21:00](#agenda://?start=1692183600000&end=1692212400000&allDay=false)
-	- TODO L2B Work Session >[2023-08-17 13:00 - 21:00](#agenda://?start=1692270000000&end=1692298800000&allDay=false)
+	- DONE L2B Work Session >[2023-08-12 17:00 - 21:00](#agenda://?start=1691852400000&end=1691866800000&allDay=false)
+	- DONE L2B Work Session >[2023-08-13 17:00 - 21:00](#agenda://?start=1691938800000&end=1691953200000&allDay=false)
+	- DONE L2B Work Session >[2023-08-14 13:00 - 21:00](#agenda://?start=1692010800000&end=1692039600000&allDay=false)
+	- DONE L2B Work Session >[2023-08-15 13:00 - 21:00](#agenda://?start=1692097200000&end=1692126000000&allDay=false)
+	- DONE L2B Work Session >[2023-08-16 13:00 - 21:00](#agenda://?start=1692183600000&end=1692212400000&allDay=false)
+	- DONE L2B Work Session >[2023-08-17 13:00 - 21:00](#agenda://?start=1692270000000&end=1692298800000&allDay=false)
 	- TODO L2B Work Session >[2023-08-18 13:00 - 21:00](#agenda://?start=1692356400000&end=1692385200000&allDay=false)
 	- TODO L2B Work Session >[2023-08-19 17:00 - 21:00](#agenda://?start=1692457200000&end=1692471600000&allDay=false)
 	- TODO L2B Work Session >[2023-08-20 17:00 - 21:00](#agenda://?start=1692543600000&end=1692558000000&allDay=false)
@@ -60,6 +60,7 @@
 -
 - Projects (epics)
 	- TODO Sales probability prediction
+	  collapsed:: true
 		- TODO Get access to other customer databases
 		- TODO Create proper analytics dashboard from live predictions
 		- TODO Create cron jobs to run training, optimization routines
@@ -81,6 +82,8 @@
 		- TODO Create Prodigy setup for manual validation
 		- TODO Implement Portuguese Llama 2 LoRa in packaged form >[🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅 410min](#agenda-pomo://?t=f-1690889386766-1200%2Cf-1690891212601-1500%2Cf-1690893098123-1500%2Cf-1690895158876-1500%2Cf-1690897624458-1500%2Cf-1690899150337-1500%2Cf-1690901567435-1500%2Cf-1690903417773-1500%2Cf-1690906028550-1500%2Cf-1690908218686-1500%2Cf-1690910380069-1500%2Cf-1690913030637-1500%2Cf-1691502848670-1200%2Cf-1691506204348-1200%2Cf-1691507426273-1200%2Cf-1691508638517-1200%2Cf-1691510359664-1200%2Cf-1691511565260-900)
 		- TODO Test local LLM model on call transcripts to validate output quality >[🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅 341min](#agenda-pomo://?t=f-1690981463927-1500%2Cf-1690983727320-1500%2Cf-1690985930205-1500%2Cf-1690988026582-1500%2Cf-1690990593391-1500%2Cf-1690992759686-1500%2Cp-1690995489338-437%2Cf-1691061294576-1500%2Cf-1691062843082-1200%2Cf-1691064827779-1200%2Cf-1691066066529-1200%2Cp-1691071140411-193%2Cf-1691672232697-900%2Cf-1691673138406-1200%2Cf-1691674350458-1200%2Cf-1691676070740-1200%2Cf-1691678288400-1200)
+		- TODO Implement GPT language server in JS >[🍅🍅🍅🍅🍅🍅 139min](#agenda-pomo://?t=f-1692427864208-1200%2Cf-1692429187756-1200%2Cp-1692436996229-1138%2Cf-1692445238504-1200%2Cf-1692448804257-1200%2Cf-1692633420464-1200%2Cf-1692634667383-1200)
+		-
 		-
 	- Audio transcription
 		- DONE Make API calls asynchronous >[🍅🍅🍅🍅🍅🍅🍅🍅 148min](#agenda-pomo://?t=f-1679903310354-1200-21679904088836Aster+on+call%2Cf-1679905254310-1200-21679906027861Aster+asked+for+code%2Cp-1679911025881-545-11679911402565Aster+asking+to+open+window%7C%60%7E%7C21679911564164Aster+asking+to+get+ready%2Cf-1679992850925-1500-11679994142798Stopped+to+look+at+clock%2Cf-1679994899350-1500-11679995682572Had+to+pee%2Cp-1679997188393-308%2Cf-1680264310676-600%2Cp-1680265068137-174-11680265139799Went+to+go+boil+water%2Cf-1680265949689-600%2Cf-1680266891700-600%2Cf-1680267504777-600)
@@ -124,16 +127,22 @@
 				- Migrations are DB schema diffs and belong in the voice repo
 				- Knex is a query builder and connector (?)
 		- DONE Add CI/CD config for service >[🍅🍅🍅🍅🍅🍅🍅🍅 175min](#agenda-pomo://?t=f-1690974634412-1500%2Cf-1690977502411-1500%2Cf-1690979475269-1500%2Cf-1691071505074-1200%2Cf-1691074153194-1200%2Cf-1691076281813-1200%2Cf-1691077706479-1200%2Cf-1691079122228-1200)
-		- TODO Get Whisper server to run on RunPod >[🍅🍅🍅🍅🍅🍅🍅🍅🍅 184min](#agenda-pomo://?t=f-1691148504873-1200%2Cf-1691150418094-1200%2Cf-1691152463588-1200%2Cp-1691153706305-191%2Cf-1691154949423-1200%2Cf-1691158057260-1200%2Cf-1691159315818-1200%2Cf-1691160567621-1200%2Cf-1691163237639-1200%2Cf-1691166259651-1200)
-			- TODO Make timeout server fix >[🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅 343min](#agenda-pomo://?t=f-1691581616523-1500%2Cf-1691583688997-1200%2Cf-1691584905072-1200%2Cf-1691586648365-1200%2Cf-1691587899495-1200%2Cf-1691589172801-1200%2Cf-1691591085603-1200%2Cf-1691592296336-1200%2Cf-1691593540187-1200%2Cf-1691594803231-1200%2Cp-1691596289994-318%2Cf-1691599756006-1200%2Cp-1691600999316-722%2Cf-1691602625580-1200%2Cf-1691603863961-1200%2Cf-1691605337316-1200%2Cf-1691606861478-1200%2Cf-1691608939379-1200)
+		- DONE Get Whisper server to run on RunPod >[🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅 232min](#agenda-pomo://?t=f-1691148504873-1200%2Cf-1691150418094-1200%2Cf-1691152463588-1200%2Cp-1691153706305-191%2Cf-1691154949423-1200%2Cf-1691158057260-1200%2Cf-1691159315818-1200%2Cf-1691160567621-1200%2Cf-1691163237639-1200%2Cf-1691166259651-1200%2Cp-1692793858487-1370%2Cf-1692795756328-1500)
+			- TODO Make timeout server fix >[🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅 358min](#agenda-pomo://?t=f-1691581616523-1500%2Cf-1691583688997-1200%2Cf-1691584905072-1200%2Cf-1691586648365-1200%2Cf-1691587899495-1200%2Cf-1691589172801-1200%2Cf-1691591085603-1200%2Cf-1691592296336-1200%2Cf-1691593540187-1200%2Cf-1691594803231-1200%2Cp-1691596289994-318%2Cf-1691599756006-1200%2Cp-1691600999316-722%2Cf-1691602625580-1200%2Cf-1691603863961-1200%2Cf-1691605337316-1200%2Cf-1691606861478-1200%2Cf-1691608939379-1200%2Cf-1692281283137-900)
 			-
 	- Mixpanel analysis
+	  collapsed:: true
 		- TODO Look through feature list for preliminary analysis
 	- General NLP/LLM
+	  collapsed:: true
 		- TODO Test out GPT-4 more fully and map out capabilities with rest of team
 			- TODO Investigate self-hosting the ChatGPT retrieval plugin
 		- TODO Create routines to gather full sales timeline extracts
 		- TODO Create cleaning/filtering logic for DB entries
+	- Clustering
+		- TODO Do statistical analysis of DB >[🍅🍅🍅🍅🍅🍅 121min](#agenda-pomo://?t=f-1692018011238-1200%2Cf-1692020461967-1200%2Cp-1692021705651-19%2Cf-1692022914728-1200%2Cf-1692024165733-1200%2Cf-1692025427257-1200%2Cf-1692029684452-1200)
+		- TODO Get company to company sale info >[🍅🍅🍅🍅🍅🍅 116min](#agenda-pomo://?t=f-1692111368297-1200%2Cf-1692191467203-1200%2Cf-1692193909706-1200%2Cf-1692195162334-900%2Cf-1692199994295-1200%2Cp-1692202646183-314%2Cf-1692283435058-900)
+		-
 	- Graph Analysis
 		- DONE Create Graph ontology from SQL schema
 		  id:: 647edf9b-ae69-4d8d-9d71-2ba091662383

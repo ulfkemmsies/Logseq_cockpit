@@ -1,0 +1,2 @@
+- Agenda
+	- TODO Space Economy Colloquium - Lecture Room A >[2023-06-22 12:45 - 13:45](#agenda://?start=1687430700000&end=1687434300000&allDay=false)
